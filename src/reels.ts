@@ -65,7 +65,7 @@ export const reels: ReelSpec[] = [
     captions: [
       {kind: 'hook', style: 'type', text: "the sitar wasn't supposed to sound like this.", from: 0.04, to: 3.6},
       {kind: 'label', text: 'track 02 · sitar 1 played', from: 4.0, to: 7.3, align: 'left', y: 1440, accent: true},
-      {kind: 'line', text: 'then everything else had to fit around it.', from: 10.4, to: 14.6, y: 300},
+      {kind: 'line', text: 'then the rest had to fit around it.', from: 10.4, to: 14.6, y: 300},
     ],
     signature: true,
   },
@@ -198,8 +198,8 @@ export const reels: ReelSpec[] = [
       shot(1.85, 540, 960, 1.03, {ease: 'linear'}),
       shot(BAR, 700, L(3), 2.1, {cut: true}),
       shot(6.5, 640, L(3), 2.15, {ease: 'linear'}),
-      shot(9.6, 720, L(12.5), 1.9),
-      shot(13.9, 780, L(12.5), 2.0, {ease: 'linear'}),
+      shot(9.6, 500, L(12.5), 1.6),
+      shot(13.9, 470, L(12.5), 1.68, {ease: 'linear'}),
       shot(15.2, 540, 960, 1.0),
     ],
     lights: [
@@ -224,8 +224,8 @@ export const reels: ReelSpec[] = [
     id: 'MIZRAB-REEL-09',
     segments: [{src: 82.5, dur: 16.875}],
     shots: [
-      shot(0, 380, 700, 1.35),
-      shot(14.95, 760, 1300, 1.62, {ease: 'linear'}),
+      shot(0, 760, 1320, 1.62),
+      shot(14.95, 470, 900, 1.3, {ease: 'linear'}),
       shot(15, 540, 960, 1.0, {cut: true}),
     ],
     grade: [grade(0, 0.7, 1.18, 0.92, 0.08), grade(14.95, 0.7, 1.18, 0.92, 0.08), grade(15, 0.3, 1.1, 0.22, 0.1, {cut: true})],

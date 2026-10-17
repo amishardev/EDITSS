@@ -95,8 +95,8 @@ export const CaptionLayer: React.FC<{captions: Caption[]}> = ({captions}) => {
                 transform: `translateX(${x}px)`,
                 fontFamily: MONO,
                 fontWeight: 500,
-                fontSize: 27,
-                letterSpacing: '0.16em',
+                fontSize: 30,
+                letterSpacing: '0.14em',
                 textTransform: 'uppercase',
                 color: c.accent ? ACCENT : 'rgba(244,241,234,0.88)',
               }}
