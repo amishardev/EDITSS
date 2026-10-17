@@ -19,7 +19,11 @@ Links aren't clickable in Shorts descriptions or IG captions, so every descripti
 | 7 | Sat 31 Oct | 8:00 PM | REEL_09 | cinematic, saturday night |
 | 8 | Mon 2 Nov | 6:30 PM | REEL_06 | black and white to colour |
 | 9 | Wed 4 Nov | 7:00 PM | REEL_08 | outro + end card |
-| 10 | Fri 6 Nov | 6:30 PM | REEL_10 | recap, reuses 4s bits of earlier reels, so it goes last |
+| 10 | Fri 6 Nov | 6:30 PM | REEL_10 | recap, reuses 4s bits of earlier reels |
+| 11 | Sun 8 Nov | 12:30 PM | REEL_11 | sitar close-up, 18 days after REEL_02 |
+| 12 | Tue 10 Nov | 7:00 PM | REEL_12 | build breakdown, producer audience |
+| 13 | Thu 12 Nov | 6:30 PM | REEL_13 | outro, 8 days after REEL_08 |
+| 14 | Sat 14 Nov | 8:00 PM | REEL_14 | 3+ weeks after REEL_03 |
 
 ---
 
@@ -124,6 +128,47 @@ Full track: search "MIZRAB AMISHAR" on YouTube or Spotify
 #sitar #sounddesign #flstudio #producer #mizrab
 **Caption:** played. chopped. sampled. dropped.
 **Pinned comment:** which version is your favourite, 1, 2, 3 or 4?
+
+## REEL_11
+**Title:** This sitar line built the whole song 🎧 #shorts
+**Description:**
+The drop first, then the one part everything came from: SITAR I PLAYED on track 2, up close.
+Full track: search "MIZRAB AMISHAR" on YouTube or Spotify
+
+MIZRAB by AMISHAR, out now.
+#sitar #flstudio #indianfusion #housemusic #mizrab
+**Caption:** one sitar. a whole track built around it.
+**Pinned comment:** would you have guessed this drop started with a sitar?
+
+## REEL_12
+**Title:** How this sitar house drop was built, track by track #shorts
+**Description:**
+Hear the drop, then watch it get built: sitar chops, two risers and the build arps, one track at a time in FL Studio. Then the drop again.
+Full track: search "MIZRAB AMISHAR" on YouTube or Spotify
+
+#flstudio #musicproduction #drop #edm #amishar
+**Caption:** the drop, then every layer that made it.
+**Pinned comment:** which layer made the biggest difference? chops, risers or arps?
+
+## REEL_13
+**Title:** The same sitar starts and ends this song #shorts
+**Description:**
+After the last drop, the sitar from the intro comes back on track 3, and reverb automation slowly takes it away. The ending of MIZRAB.
+Full track: search "MIZRAB AMISHAR" on YouTube or Spotify
+
+#sitar #outro #flstudio #automation #mizrab
+**Caption:** the first sound is also the last.
+**Pinned comment:** do you like songs that end where they started?
+
+## REEL_14
+**Title:** I almost deleted this sitar sample 😳 #shorts
+**Description:**
+This sitar sample on track 4 almost got cut from MIZRAB. Here's the drop it lives in, then the sample up close, then the hit it builds into.
+Full track: search "MIZRAB AMISHAR" on YouTube or Spotify
+
+#musicproducer #sitar #sample #flstudio #amishar
+**Caption:** this part almost got cut. glad it didn't.
+**Pinned comment:** ever kept a sound you almost deleted?
 
 ---
 
