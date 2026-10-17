@@ -1,6 +1,6 @@
 # MIZRAB Reels
 
-Ten 9:16 Instagram Reels for **MIZRAB** by **AMISHAR**, cut from the FL Studio session recording (`flrecording.mp4`, 1080x1920, 24fps, 128 BPM) with Remotion.
+Fourteen 9:16 Instagram Reels for **MIZRAB** by **AMISHAR**, cut from the FL Studio session recording (`flrecording.mp4`, 1080x1920, 24fps, 128 BPM) with Remotion.
 
 ## Setup
 
@@ -8,7 +8,7 @@ Ten 9:16 Instagram Reels for **MIZRAB** by **AMISHAR**, cut from the FL Studio s
 npm install
 # flrecording.mp4 is stored in Git LFS. If `git lfs pull` is not available,
 # the render script downloads it to public/flrecording.mp4 automatically.
-npm run render              # all ten -> out/MIZRAB_REEL_01..10.mp4
+npm run render              # all -> out/MIZRAB_REEL_01..14.mp4
 bash scripts/render-all.sh 03 07   # just some of them
 npm run studio              # preview / tweak in Remotion Studio
 ```
@@ -37,3 +37,7 @@ The render uses a local Chromium when one is found (see `remotion.config.ts`), o
 | 08 | 3:20-3:38 outro | how MIZRAB says goodbye. | sitar returns, reverb automation, end card |
 | 09 | 1:22-1:39 drop 1 | no vocals. no lyrics. just this. | letterbox, one unbroken drift, cut to dark |
 | 10 | four slices | one sitar. four lives. | played / chopped / sampled / dropped, bar-accurate cuts |
+| 11 | drop 2 → 0:01-0:11 → drop 2 | the sitar wasn't supposed to sound like this. | payoff first, then tight on SITAR I PLAYED, crop changes every 2 bars |
+| 12 | drop 1 → 0:57-1:07 → drop 1 | how this drop was built. | payoff first, then sitar chops, risers, arps one by one, into the drop |
+| 13 | drop 2 → 3:23-3:37 | the sitar that opens MIZRAB also closes it. | payoff first, tight on the returning sitar + reverb automation, end card |
+| 14 | drop 2 → 1:40-1:52 → hit | i almost deleted this part. | payoff first, tight on the sitar sample, push into the hit |

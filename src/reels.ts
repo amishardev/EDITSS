@@ -21,6 +21,25 @@ const grade = (at: number, sat: number, con: number, bri: number, warm = 0, o: {
 const FULL: Rect = [0, 0, WIDTH, 1920];
 const CX = 620; // centre of the clip area, right of the track headers
 
+// Payoff-first cuts: 1.5 bars of a drop, then the explanation from beat 3, so
+// the beat count never breaks across the join.
+const P = BAR * 1.5;
+const PH = 340; // frames the playhead (FL keeps it pinned at x~218) on the left third
+// Reel time of a source moment inside the second segment.
+const at = (segSrc: number, src: number) => P + (src - segSrc);
+// Wide full-project shot with an impact settle.
+const payoffShots = (t: number): Shot[] => [
+  shot(t, 540, 960, 1.14, {cut: t > 0}),
+  shot(t + 0.4, 540, 960, 1.0, {ease: 'out'}),
+  shot(t + 2.8, 560, 960, 1.05, {ease: 'linear'}),
+];
+// Tight crop: hard cut slightly over-zoomed, settles, then drifts until the next cut.
+const crop = (t: number, cx: number, cy: number, z: number, dur: number): Shot[] => [
+  shot(t, cx, cy, z * 1.12, {cut: true}),
+  shot(t + 0.3, cx, cy, z, {ease: 'out'}),
+  shot(t + dur - 0.04, cx + 25, cy, z * 1.06, {ease: 'linear'}),
+];
+
 export const reels: ReelSpec[] = [
   // 01 - build 1 into DROP 1. Slow tense push on the risers, then the frame opens.
   {
@@ -273,5 +292,143 @@ export const reels: ReelSpec[] = [
       {kind: 'label', text: '04  dropped', from: 11.25, to: 14.8, align: 'left', y: 1440, accent: true},
     ],
     signature: true,
+  },
+
+  // ---- Payoff-first cuts (11-14) ----
+  // Each opens on 1.5 bars of a finished drop with the whole project on screen,
+  // then hard-cuts on beat 3 into tight crops of the one track being discussed.
+  // Framing changes every 2 bars; nothing sits still for more than ~2s.
+
+  // 11 - live sitar intro, bookended by drop 2.
+  {
+    id: 'MIZRAB-REEL-11',
+    segments: [{src: 157.5, dur: P}, {src: 0.9375, dur: 10.3125}, {src: 161.25, dur: BAR * 2}],
+    shots: [
+      ...payoffShots(0),
+      ...crop(P, PH, L(2), 3.1, 3.75 - 0.9375),
+      ...crop(at(0.9375, 3.75), PH - 30, L(2) + 22, 4.0, BAR),
+      ...crop(at(0.9375, 5.625), PH + 70, L(2) - 10, 3.4, BAR),
+      ...crop(at(0.9375, 7.5), PH, L(2), 3.0, BAR),
+      ...crop(at(0.9375, 9.375), PH + 30, L(2), 3.5, BAR),
+      ...payoffShots(P + 10.3125),
+    ],
+    lights: [light(0, FULL, 0), light(P, lanes(2, 2), 0.72, {cut: true}), light(P + 10.3125, FULL, 0, {cut: true})],
+    grade: [grade(0, 1, 1.12, 1), grade(P, 0.85, 1.08, 0.95, 0.16, {cut: true}), grade(P + 10.3125, 1, 1.12, 1, 0, {cut: true})],
+    pulse: [{from: 0, to: P, amt: 0.02}, {from: P + 10.3125, to: 16.875, amt: 0.02}],
+    captions: [
+      {kind: 'hook', style: 'cut', text: "the sitar wasn't supposed to sound like this.", from: 0, to: P},
+      {kind: 'label', text: 'track 02 · sitar i played', from: P, to: P + 6.4, align: 'left', y: 1440, accent: true},
+      {kind: 'line', text: 'then the rest had to fit around it.', from: P + 6.6, to: P + 10.2, y: 300},
+      {kind: 'label', text: 'mizrab · out now', from: P + 10.4, to: 16.7, align: 'left', y: 1440, accent: true},
+    ],
+    signature: true,
+  },
+
+  // 12 - drop 1 first, then the build that makes it: sitar chops and risers.
+  {
+    id: 'MIZRAB-REEL-12',
+    segments: [{src: 67.5, dur: P}, {src: 57.1875, dur: 10.3125}, {src: 67.5, dur: BAR * 2}],
+    shots: [
+      ...payoffShots(0),
+      ...crop(P, PH, L(7), 3.0, 58.125 - 57.1875),
+      ...crop(at(57.1875, 58.125), PH + 40, L(9), 2.8, BAR),
+      ...crop(at(57.1875, 60), PH - 20, L(7) + 18, 3.8, BAR),
+      ...crop(at(57.1875, 61.875), PH + 40, L(14), 2.8, BAR),
+      ...crop(at(57.1875, 63.75), PH + 60, L(11), 2.8, BAR),
+      shot(at(57.1875, 65.625), PH + 120, L(10.5), 1.6, {cut: true}),
+      shot(P + 10.3125 - 0.04, PH + 160, L(10.5), 2.3, {ease: 'in'}),
+      ...payoffShots(P + 10.3125),
+    ],
+    lights: [
+      light(0, FULL, 0),
+      light(P, lanes(7, 7), 0.68, {cut: true}),
+      light(at(57.1875, 58.125), lanes(9, 9), 0.68, {cut: true}),
+      light(at(57.1875, 60), lanes(7, 7), 0.68, {cut: true}),
+      light(at(57.1875, 61.875), lanes(14, 14), 0.68, {cut: true}),
+      light(at(57.1875, 63.75), lanes(10, 11), 0.68, {cut: true}),
+      light(at(57.1875, 65.625), lanes(7, 14), 0.5, {cut: true}),
+      light(P + 10.3125, FULL, 0, {cut: true}),
+    ],
+    grade: [grade(0, 1, 1.12, 1), grade(P, 0.8, 1.1, 0.92, 0.04, {cut: true}), grade(P + 10.3125, 1, 1.12, 1, 0, {cut: true})],
+    pulse: [{from: 0, to: P, amt: 0.02}, {from: P + 10.3125, to: 16.875, amt: 0.02}],
+    captions: [
+      {kind: 'hook', style: 'cut', text: 'how this drop was built.', from: 0, to: P},
+      {kind: 'label', text: 'sitar chops · track 7', from: P, to: at(57.1875, 58.125), align: 'left', y: 1440, accent: true},
+      {kind: 'label', text: 'riser · track 9', from: at(57.1875, 58.125), to: at(57.1875, 60), align: 'left', y: 1440},
+      {kind: 'label', text: 'sitar chops, closer', from: at(57.1875, 60), to: at(57.1875, 61.875), align: 'left', y: 1440, accent: true},
+      {kind: 'label', text: 'second riser · track 14', from: at(57.1875, 61.875), to: at(57.1875, 63.75), align: 'left', y: 1440},
+      {kind: 'label', text: 'build arps · track 11', from: at(57.1875, 63.75), to: at(57.1875, 65.625), align: 'left', y: 1440},
+      {kind: 'line', text: 'all of it, together:', from: at(57.1875, 65.625), to: P + 10.3125, y: 300},
+      {kind: 'label', text: 'drop · bar 37', from: P + 10.3125, to: 16.7, align: 'left', y: 1440, accent: true},
+    ],
+  },
+
+  // 13 - drop 2 first, then the outro: the live sitar returns on track 3,
+  // reverb automation carries it out. End card.
+  {
+    id: 'MIZRAB-REEL-13',
+    segments: [{src: 195, dur: P}, {src: 203.4375, dur: 14.0625}],
+    shots: [
+      ...payoffShots(0),
+      ...crop(P, PH, L(3), 3.1, 206.25 - 203.4375),
+      ...crop(at(203.4375, 206.25), PH - 30, L(3) + 22, 4.0, BAR),
+      ...crop(at(203.4375, 208.125), 560, L(12.5), 2.0, BAR * 2),
+      ...crop(at(203.4375, 211.875), PH + 40, L(3), 3.3, 2.1),
+      shot(at(203.4375, 211.875) + 2.15, 540, 960, 1.0),
+    ],
+    lights: [
+      light(0, FULL, 0),
+      light(P, lanes(3, 3), 0.72, {cut: true}),
+      light(at(203.4375, 208.125), lanes(11, 14), 0.6, {cut: true}),
+      light(at(203.4375, 211.875), lanes(3, 3), 0.72, {cut: true}),
+      light(at(203.4375, 211.875) + 1.9, FULL, 0),
+    ],
+    grade: [
+      grade(0, 1, 1.12, 1),
+      grade(P, 0.8, 1.08, 0.95, 0.12, {cut: true}),
+      grade(13.6, 0.6, 1.08, 0.9, 0.14),
+      grade(14.4, 0.4, 1.0, 0.26, 0.14),
+    ],
+    pulse: [{from: 0, to: P, amt: 0.02}],
+    captions: [
+      {kind: 'hook', style: 'cut', text: 'the sitar that opens MIZRAB also closes it.', from: 0, to: P},
+      {kind: 'label', text: 'track 03 · sitar i played', from: P, to: at(203.4375, 208.125), align: 'left', y: 1440, accent: true},
+      {kind: 'label', text: 'reverb mix · automation', from: at(203.4375, 208.125), to: at(203.4375, 211.875), align: 'left', y: 1440},
+      {kind: 'title', text: 'MIZRAB|AMISHAR|out now', from: 14.3, to: 16.875},
+    ],
+  },
+
+  // 14 - drop 2 first, then the breakdown sample that almost got cut, into the hit.
+  {
+    id: 'MIZRAB-REEL-14',
+    segments: [{src: 172.5, dur: P}, {src: 100.3125, dur: 12.1875}, {src: 112.5, dur: BAR}],
+    shots: [
+      ...payoffShots(0),
+      ...crop(P, PH, L(4), 3.1, 101.25 - 100.3125),
+      ...crop(at(100.3125, 101.25), PH - 30, L(4) + 22, 3.9, BAR),
+      ...crop(at(100.3125, 103.125), PH + 70, L(4) - 10, 3.4, BAR),
+      ...crop(at(100.3125, 105), PH + 40, L(4.5), 2.6, BAR),
+      ...crop(at(100.3125, 106.875), PH, L(4), 3.1, BAR),
+      ...crop(at(100.3125, 108.75), PH - 30, L(4) + 22, 4.0, BAR),
+      shot(at(100.3125, 110.625), PH + 20, L(4), 2.9, {cut: true}),
+      shot(P + 12.1875 - 0.04, PH + 40, L(4), 3.8, {ease: 'in'}),
+      shot(P + 12.1875, 540, 960, 1.12, {cut: true}),
+      shot(P + 12.6, 540, 960, 1.0, {ease: 'out'}),
+    ],
+    lights: [
+      light(0, FULL, 0),
+      light(P, lanes(4, 4), 0.7, {cut: true}),
+      light(at(100.3125, 105), lanes(4, 5), 0.6, {cut: true}),
+      light(at(100.3125, 106.875), lanes(4, 4), 0.7, {cut: true}),
+      light(P + 12.1875, FULL, 0, {cut: true}),
+    ],
+    grade: [grade(0, 1, 1.12, 1), grade(P, 0.4, 1.06, 0.85, 0.12, {cut: true}), grade(P + 12.1875, 1, 1.12, 1, 0, {cut: true})],
+    pulse: [{from: 0, to: P, amt: 0.02}],
+    captions: [
+      {kind: 'hook', style: 'cut', text: 'i almost deleted this part.', from: 0, to: P},
+      {kind: 'line', text: 'a sitar sample on track 4.', from: P + 0.2, to: P + 4.4, y: 300},
+      {kind: 'label', text: 'track 04 · sitar sample', from: P, to: P + 12.1, align: 'left', y: 1440, accent: true},
+      {kind: 'line', text: 'glad i kept it.', from: P + 12.1875, to: 16.8, y: 300},
+    ],
   },
 ];
