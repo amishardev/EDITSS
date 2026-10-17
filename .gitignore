@@ -1,0 +1,4 @@
+node_modules/
+out/
+# Source video is downloaded from LFS (see README), not committed twice
+public/flrecording.mp4
