@@ -4,6 +4,7 @@ import {loadFont} from '@remotion/fonts';
 import {Reel} from './components/Reel';
 import {FPS, HEIGHT, WIDTH} from './lib/timeline';
 import {reels} from './reels';
+import {WrappedMessage} from './extras/WrappedMessage';
 import type {ReelSpec} from './lib/types';
 
 const fonts: [string, string, string][] = [
@@ -34,5 +35,6 @@ export const Root: React.FC = () => (
         height={HEIGHT}
       />
     ))}
+    <Composition id="WRAPPED-MESSAGE" component={WrappedMessage} durationInFrames={10 * FPS} fps={FPS} width={WIDTH} height={HEIGHT} />
   </>
 );
