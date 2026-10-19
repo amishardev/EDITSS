@@ -1,0 +1,4 @@
+node_modules/
+build/
+out/stills/
+out/*.mp4.part

@@ -1,0 +1,225 @@
+# Storyboards, captions and voiceover
+
+All six ads are 30 fps, 1080x1920. Timestamps are seconds. Every on-screen
+headline doubles as the caption track, so the ads work with sound off. The VO
+lines are written for a warm, conversational Hinglish read (not influencer
+shouting), and they deliberately don't repeat every word on screen.
+
+No voice was generated (no TTS or voice talent was available). The VO below
+is ready to record, and the pacing already leaves room for it.
+
+Campaign system: real screens inside one handset design, IRA as the constant
+character, Sora headlines with one accent word, green/teal anchors with haldi
+gold for milestones. Each ad gets its own signature device so no two open,
+transition or end the same way.
+
+---
+
+## Ad 01 · "Bhai, plate mein hai kya?" (20.0s)
+
+Signature device: the food photo *becomes* the scanner viewfinder, and the
+macros lift out of the phone.
+Music: MIZRAB 63.8s (riser), drop on the result at 3.7s.
+
+| Time | Picture | On-screen text |
+|---|---|---|
+| 0.0 | Close-up roti, paneer, sabzi. Slow push. | **Bhai, plate mein hai kya?** |
+| 0.5 | IRA peeks up from the bottom, head tilt | |
+| 1.7 | Photo zooms out into the real AI Scanner screen ("Hold steady. Fit the whole plate in.") | **Bas ek photo.** |
+| 3.2 | Shutter tap, flash, green scan beam | |
+| 3.7 | Drop. Result sheet slides up: Lunch, Paneer bhurji + 2 roti, health score 82, macro tiles count up. IRA hops | |
+| 5.3 | Score + 4 macro cards lift out full-screen over teal | **Ek photo. Poora breakdown.** / AI estimate. Tap any value to correct it. |
+| 9.2 | Cards drop back into the phone | |
+| 10.1 | "Log lunch" tapped, green check | **Ek tap. Logged.** |
+| 11.7 | Phone tilts away, real Share-to-Story card (Day 12 · Lunch) slides in | **Log karo. Share karo.** |
+| 15.7 | Circle reveal to end card, IRA drops in | **Snap your plate. Know what you're eating.** · Try Dietary Guide |
+
+VO:
+> (0.0) Bhai, plate mein hai kya?
+> (2.0) Bas ek photo lo.
+> (4.5) Calories, protein, carbs, fat... sab ek nazar mein.
+> (10.2) Ek tap mein log.
+> (12.0) Aur mann ho, toh story pe share.
+> (16.0) Dietary Guide. Snap your plate, know what you're eating.
+
+---
+
+## Ad 02 · "Packet ke peeche kya hai?" (19.0s)
+
+Signature device: a scan-line wipe into the product, then a magnifier lens
+that pulls parts of the real Label result out at 2x.
+Music: MIZRAB 125.6s (breakdown into the second build).
+
+| Time | Picture | On-screen text |
+|---|---|---|
+| 0.0 | Macro of a chips-pack nutrition table | **Packet ke peeche kya hai?** |
+| 0.4 | IRA slides in, leans toward the label. Green ring on "Calories 150" | |
+| 1.9 | Green scan line wipes down, revealing the real AI Scanner in label mode ("Line up the nutrition table") | **Bas label scan karo.** |
+| 2.8 / 3.4 | "Scan label" tapped, shutter tapped, beam sweeps the label | |
+| 5.0 | Real Label result slides up | |
+| 6.5 | Lens: Label scanned, Salted potato chips, per 28g serving | **Seedha label se.** |
+| 9.1 | Lens: health score 38/100 "Fine now and then", High sodium, Palm oil, Low protein | **Score aur flags, saaf.** |
+| 11.7 | Lens: TRY THIS, pair with roasted chana, pour one serving into a bowl | **Aur IRA ka smart swap.** |
+| 14.1 | Screen scrolls, "Add to snacks" tapped | **Ek tap. Snacks mein add.** |
+| 15.2 | Bottom wipe to green end card | **Label padhna, ab aasaan.** · Try Dietary Guide · Read from the label. Check the pack if something looks off. |
+
+VO:
+> (0.0) Packet ke peeche kya hai?
+> (2.2) Label scan karo, bas.
+> (6.5) Kya hai, kitna hai...
+> (9.2) ...aur kis cheez pe dhyaan dena hai.
+> (11.8) Saath mein IRA ka ek simple swap.
+> (15.5) Dietary Guide. Label padhna, ab aasaan.
+
+---
+
+## Ad 03 · "Nutrition ka doubt? IRA se pooch." (20.0s)
+
+Signature device: chat bubbles in a clean studio, then the real chat revealed
+message by message (pieces of the actual screen slide in).
+Music: MIZRAB 101.3s (calm breakdown, conversational).
+
+| Time | Picture | On-screen text |
+|---|---|---|
+| 0.0 | IRA rises in a bright studio. Typing dots, then a bubble | **Nutrition ka doubt?** |
+| 0.9 | Green bubble, IRA hops | **IRA se pooch.** |
+| 2.2 | The user's real question floats in. IRA tilts, thinking dots | "What should I have for dinner? Something quick." |
+| 3.7 | Real IRA chat rises in. IRA settles bottom-left | **Seedha sawaal.** |
+| 4.7 | User message lands, typing dots, then IRA's real reply | |
+| 6.7 | Real suggestion card: Paneer bhurji + 2 roti, 25g protein, 420 kcal, 5g fibre | **Jawab, tere khane ke hisaab se.** |
+| 7.9 | Card lifts out, enlarged | Veg? Kal training? Sab dhyaan mein. |
+| 11.3 | "Add to dinner" tapped | **Ek tap. Dinner sorted.** |
+| 13.1 | Real follow-up chips appear: Is my iron low? · High-protein snacks · Swap rice at lunch? Input bar highlighted ("Ask Ira anything about food") | **Kuch bhi pooch, khane ke baare mein.** |
+| 14.7 | Phone drops away, IRA returns to centre on soft green | |
+| 15.8 | IRA final frame | **Ask IRA.** · logo · **Your nutrition companion.** · Try Dietary Guide · Food guidance, not medical advice. |
+
+VO:
+> (0.0) Nutrition ka doubt? IRA se pooch.
+> (2.4) "Dinner mein kya khaun? Kuch quick."
+> (6.8) Jawab milega, tumhare khane ke hisaab se.
+> (11.4) Ek tap, dinner sorted.
+> (13.2) Kuch bhi poocho, khane ke baare mein.
+> (16.0) Dietary Guide. Ask IRA.
+
+---
+
+## Ad 04 · "Apna khana. Better awareness." (19.0s)
+
+Signature device: beat-synced three-strip cuts (no phone-on-gradient opener),
+then a tilted phone with native nutrition rings.
+Music: MIZRAB 37.5s (rhythmic build). One cut every two beats.
+
+| Time | Picture | On-screen text |
+|---|---|---|
+| 0.0 | Roti (strips) | Tumhara roz ka khana · **Roti.** |
+| 0.9 | Paneer | **Paneer.** |
+| 1.9 | Thali | **Thali.** |
+| 2.8 | Rajma-chawal | **Rajma-chawal.** |
+| 3.7 | Three panning strips. IRA drops in at 4.2, glances left/right on the beat | **Apna khana. Apna routine.** |
+| 6.8 | Strips split away. Real Home screen swings in, tilted, and scrolls | **Roz ka hisaab, bina guilt.** |
+| 8.1 | Native cards from Home's "Today's nutrition": Protein 34/147g 23%, Calories 895/2,356 38%, Carbs 154/265g 58%, Fat 19/79g 24% | |
+| 11.1 | Real "Ira's insight" card lifts out: "Keep it up. Protein is your gap today, 34 of 147g..." | **Protein kam? Pata chal jaata hai.** / Supportive nudges, not judgement. |
+| 14.0 | Three beats, three foods | **Snap. / Log. / Samjho.** |
+| 15.7 | Left wipe to teal end card, IRA rises | **Apna khana. Better awareness.** · Try Dietary Guide |
+
+VO:
+> (0.0) Roti. Paneer. Thali. Rajma-chawal.
+> (3.8) Apna khana, apna routine.
+> (7.0) Roz ka hisaab... bina guilt.
+> (11.2) Protein kam ho, toh pata chal jaata hai.
+> (14.0) Snap. Log. Samjho.
+> (16.0) Dietary Guide. Apna khana, better awareness.
+
+---
+
+## Ad 05 · "Small habits count." (20.0s)
+
+Signature device: the app's own streak strip as the metaphor (filled flame =
+logged day, outline = missed day). The tone is supportive, not competitive.
+Music: MIZRAB from 0s (gentle intro).
+
+| Time | Picture | On-screen text |
+|---|---|---|
+| 0.0 | Dark teal. A single haldi-gold flame glows | **Ek din. Ek meal. Ek flame.** |
+| 1.7 | IRA peeks up, curious | |
+| 3.1 | Flame shrinks into a 14-day strip that fills one day at a time. Two days stay as outlines | Filled = logged · outline = missed |
+| 4.4 | IRA does an encouraging hop | **Ek din miss hua? Chalta hai. Kal phir.** |
+| 6.7 | Real streak celebration screen rises (12-day streak, week row highlighted) | **Chhoti aadatein. Badi awareness.** |
+| 11.2 | The real milestone story designs fan in on the beat: Day 7, 30, 100, 365 | **Har milestone, apni pace pe.** |
+| 15.1 | They gather into the real 30-day gold story design | **Share karo, proudly.** |
+| 16.9 | Circle reveal to warm end card | **Small habits count.** · Try Dietary Guide |
+
+VO:
+> (0.0) Ek din. Ek meal. Ek flame.
+> (4.2) Ek din miss hua? Chalta hai. Kal phir.
+> (7.0) Chhoti aadatein... badi awareness.
+> (11.4) Har milestone, apni pace pe.
+> (17.0) Dietary Guide. Small habits count.
+
+---
+
+## Ad 06 · "Meet IRA. Your nutrition companion." (20.0s)
+
+Signature device: a face-first IRA close-up, beat cuts, then a phone slam on
+the drop followed by whip pans through real screens. The fastest ad.
+Music: MIZRAB 153.8s, drop on the phone slam at 3.7s.
+
+| Time | Picture | On-screen text |
+|---|---|---|
+| 0.0 | Extreme close-up of IRA's face, fast pull-back | |
+| 0.5 | | **Meet IRA.** |
+| 0.9 | IRA hops on the beat | **Your nutrition companion.** |
+| 1.9 / 2.3 / 2.8 / 3.3 | Beat cuts: roti plate, label, IRA with thali, IRA jumping | **Scan food. / Scan label. / Ask IRA. / Build streaks.** |
+| 3.7 | Drop. Phone slams in on the real meal result. Macro chips pop out on each beat: 615 kcal, 12g protein, 93g carbs, 22g fat | **Snap. Know.** |
+| 6.5 | Whip pan to the real Label result, score highlighted | **Packet bhi scan.** |
+| 8.8 | Whip pan to the real IRA chat, dinner card highlighted | **IRA se pooch.** |
+| 11.3 | Streak, scanner and home phones fan up from below | **Sab kuch, ek jagah.** |
+| 14.0 | Circle reveal. IRA drops in, green rings burst | **Meet IRA. Your nutrition companion.** · Try Dietary Guide |
+
+VO:
+> (0.4) Meet IRA.
+> (0.9) Your nutrition companion.
+> (1.9) Scan food. Scan label. Ask IRA. Build streaks.
+> (3.8) Snap... aur jaano.
+> (6.6) Packet bhi scan.
+> (8.9) IRA se pooch.
+> (11.4) Sab kuch, ek jagah.
+> (14.5) Dietary Guide. Meet IRA.
+
+---
+
+## Missing assets and limits
+
+- **Source files named in the brief were not in the workspace**: `IRA_COLOURED.png`,
+  the five `.dc.html` files and `support.js`. What was supplied instead: the
+  Dietary Guide v2 design export (PDF, the same flows: welcome, onboarding,
+  home, scanner, meal result, label result, IRA chat, metrics, profile,
+  streak, share-to-story), the IRA image attached in chat (1254px transparent
+  PNG, used as the authoritative character), and `bunny_doll.blend`.
+- **`bunny_doll.blend` is unused.** Blender isn't installed here, and the brief
+  asks for IRA to be animated from the flat PNG only.
+- **Indian meal result (Ad 01) is a native rebuild.** The design's meal-result
+  screen shows pancakes. Ad 01 rebuilds that exact layout with the design's
+  own data for the roti/paneer photo (story overlay 4c and macro ring: Paneer
+  bhurji + 2 roti, 420 kcal, 25g protein, 48g carbs, 14g fat, score 82).
+  There's no qualitative label for that score in the design, so none is shown.
+  The pancake-specific IRA tip was dropped. "Log lunch" follows the screen's
+  "Log breakfast" pattern. Note the design itself captions the same meal
+  "score 62" in one share sheet and 82 in the overlay; 82 was used. Ad 06
+  shows the real pancakes result unchanged.
+- **The green check after "Log lunch"** (Ad 01) is a motion-graphic accent,
+  not app UI.
+- **Photo resolution**: embedded photos in the PDF top out at 900px wide, so
+  full-bleed food shots are upscaled (Lanczos + light sharpening) and can look
+  slightly soft. The roti photo has the scanner's corner brackets baked in.
+- **Food variety**: the design only contains roti/paneer/sabzi, a thali,
+  rajma-chawal, pancakes and a chips label. Idli, dosa, chole etc. weren't
+  available, so they don't appear. No food imagery was generated.
+- **Music**: the MIZRAB track from the FL Studio session recording in the repo
+  (`flrecording.mp4`). Treated as the owner's own track. Please confirm
+  usage rights before paid distribution. It's a one-line swap
+  (`src/components/Sound.tsx`).
+- **No CTA URL, store listing or QR code** was found in any asset, so the CTA
+  is "Try Dietary Guide" with no link.
+- **IRA's pronouns**: copy avoids gendered Hindi verb forms for IRA.
+- The `story-editor` crop (dark editor screen) didn't extract cleanly and isn't used.

@@ -1,0 +1,33 @@
+{
+  "name": "dietary-guide-ira-campaign",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dietary Guide x IRA vertical ad campaign (Remotion)",
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "build": "tsc --noEmit && remotion bundle src/index.ts --out-dir build",
+    "typecheck": "tsc --noEmit",
+    "render:01": "remotion render src/index.ts Ad01-Plate out/ad-01-plate.mp4",
+    "render:02": "remotion render src/index.ts Ad02-LabelScan out/ad-02-label-scan.mp4",
+    "render:03": "remotion render src/index.ts Ad03-AskIra out/ad-03-ask-ira.mp4",
+    "render:04": "remotion render src/index.ts Ad04-IndianFood out/ad-04-indian-food.mp4",
+    "render:05": "remotion render src/index.ts Ad05-SmallHabits out/ad-05-small-habits.mp4",
+    "render:06": "remotion render src/index.ts Ad06-BrandIntro out/ad-06-brand-intro.mp4",
+    "render:all": "npm run render:01 && npm run render:02 && npm run render:03 && npm run render:04 && npm run render:05 && npm run render:06",
+    "still": "remotion still src/index.ts",
+    "assets": "bash scripts/build-assets.sh"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.537",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.537"
+  },
+  "devDependencies": {
+    "@fontsource/poppins": "^5.3.0",
+    "@fontsource/sora": "^5.3.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "^7.0.2"
+  }
+}
