@@ -17,7 +17,9 @@
     "still": "remotion still src/index.ts",
     "assets": "bash scripts/build-assets.sh",
     "render:07": "remotion render src/index.ts Ad07-IraHop out/ad-07-ira-hop.mp4",
-    "music": "python3 -I scripts/compose.py public/audio"
+    "music": "python3 -I scripts/compose.py public/audio",
+    "finish": "bash scripts/finish.sh out/ad-0*.mp4",
+    "qa": "python3 -I scripts/qa.py out"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.537",

@@ -26,6 +26,8 @@ npm run dev            # Remotion Studio preview
 npm run typecheck
 npm run render:all     # all seven MP4s into out/
 npm run render:03      # or one ad
+npm run finish         # delivery pass: yuv420p, -14 LUFS, exact length, faststart
+npm run qa             # verify specs + build out/contact-sheet.jpg
 ```
 
 Exact render commands (what the npm scripts run):

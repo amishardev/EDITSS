@@ -1,0 +1,2 @@
+# Rendered ads are small (<10MB each); keep them as plain git blobs, not LFS.
+out/*.mp4 -filter -diff -merge binary
