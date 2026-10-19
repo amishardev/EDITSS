@@ -15,7 +15,7 @@ import {C, clamp, ease, lerp, prog, spr} from '../theme';
  * IRA in a clean studio asks the hook -> the user's real question floats in ->
  * it lands in the real IRA chat, revealed message by message -> the suggested
  * dinner card lifts out -> Add to dinner -> follow-up chips -> back to IRA.
- * Music: MIZRAB breakdown from 101.27s (calm, conversational).
+ * Music: theme-ad03 (calm kalimba opening, light groove under the chat).
  */
 export const AD03_DURATION = 600;
 
@@ -67,7 +67,7 @@ export const Ad03AskIra: React.FC = () => {
 
   return (
     <AbsoluteFill style={{background: C.off}}>
-      <Music start={101.27} duration={AD03_DURATION} volume={0.62} />
+      <Music track="ad03" duration={AD03_DURATION} />
       <Bg kind="warm" glow={[540, 1000]} />
       <AbsoluteFill style={{opacity: prog(f, 444, 470)}}>
         <Bg kind="green" glow={[540, 760]} />

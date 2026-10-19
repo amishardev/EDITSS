@@ -14,7 +14,7 @@ import {BEAT, C, clamp, ease, F, spr} from '../theme';
  * Face-first IRA reveal -> beat cuts naming real features -> drop: phone
  * slams in on the real meal result, macros fly out -> whip pans through the
  * real label result and IRA chat -> three-phone fan -> logo.
- * Music: MIZRAB from 153.77s; the second drop lands on frame 112.
+ * Music: theme-ad06, a tabla-roll build whose drop lands on frame 112.
  */
 export const AD06_DURATION = 600;
 const DROP = 112;
@@ -59,7 +59,7 @@ export const Ad06BrandIntro: React.FC = () => {
 
   return (
     <AbsoluteFill style={{background: '#071416'}}>
-      <Music start={153.77} duration={AD06_DURATION} volume={0.64} />
+      <Music track="ad06" duration={AD06_DURATION} />
 
       {/* A+B · face-first reveal */}
       <Scene from={0} to={60}>

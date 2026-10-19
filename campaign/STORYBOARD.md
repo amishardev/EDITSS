@@ -1,6 +1,6 @@
 # Storyboards, captions and voiceover
 
-All six ads are 30 fps, 1080x1920. Timestamps are seconds. Every on-screen
+All seven ads are 30 fps, 1080x1920. Timestamps are seconds. Every on-screen
 headline doubles as the caption track, so the ads work with sound off. The VO
 lines are written for a warm, conversational Hinglish read (not influencer
 shouting), and they deliberately don't repeat every word on screen.
@@ -15,11 +15,45 @@ transition or end the same way.
 
 ---
 
+## Ad 07 · "IRA ki Hop" (hero, 22.0s)
+
+The most character-driven spot. IRA is a tiny platformer hero hopping through
+the real product, and **every landing plays the next note of the theme's
+hook** (composed into `theme-ad07` at the exact landing frames). It's cute,
+it's readable, and it says what the app does without a single feature list.
+
+| Time | Picture | On-screen text |
+|---|---|---|
+| 0.0 | IRA's ears poke up over a roti plate, then IRA springs up | "Psst!" |
+| 0.8 | Big chat bubble | **Plate mein kya hai?** |
+| 2.0 | IRA leaps off the top of the frame. The plate pulls back into the real AI Scanner | **Chalo, dekhte hain!** |
+| 3.3 | IRA falls from the sky and **lands on the shutter button**. That's the photo: tap, flash, drop | |
+| 3.8 | Phone drops away. Score card + 4 macro tiles fall in as a staircase | |
+| 4.7 / 5.6 / 6.6 / 7.5 | IRA hops tile to tile. Each landing dips the tile, reveals its value and plays a rising note: Calories 420 kcal, Protein 25g, Carbs 48g, Fat 14g | **Ek snap. Poora hisaab.** / AI estimate. Tap any value to correct it. |
+| 8.4 | IRA lands on the score card: 82/100, leaf confetti. Happy hop at 9.4 | |
+| 10.0 | IRA leaps out. The real question appears, then the real IRA chat card floats up like a cloud. IRA lands on it and bobs along | "What should I have for dinner? Something quick." |
+| 11.5 | | **IRA se pooch.** |
+| 12.8 | "Add to dinner" tapped | |
+| 13.7 | Week tiles (like the app's streak screen). IRA hops Mon, Tue, Wed, Thu, lighting a flame on each; Thu turns teal + gold | **Har din, ek hop.** / Small habits count. |
+| 16.5 | Super jump: IRA arcs up and grows toward camera... | |
+| 17.8 | ...and lands on the Dietary Guide wordmark. It dips, rings burst, leaves fly, sting | **Hop. Snap. Know.** / Snap your plate. Know what you're eating. · Try Dietary Guide |
+| 19.7 | One last happy hop | |
+
+VO (light, playful, lots of air for the music):
+> (0.1) Psst... plate mein kya hai?
+> (2.2) Chalo, dekhte hain!
+> (4.8) Ek snap... poora hisaab.
+> (11.5) Dinner ka idea? IRA se pooch.
+> (13.8) Har din, ek hop.
+> (18.0) Hop. Snap. Know. Dietary Guide.
+
+---
+
 ## Ad 01 · "Bhai, plate mein hai kya?" (20.0s)
 
 Signature device: the food photo *becomes* the scanner viewfinder, and the
 macros lift out of the phone.
-Music: MIZRAB 63.8s (riser), drop on the result at 3.7s.
+Music: theme-ad01. Sitar-pluck intro and riser, the drop lands on the result at 3.7s, sting on the end card.
 
 | Time | Picture | On-screen text |
 |---|---|---|
@@ -48,7 +82,7 @@ VO:
 
 Signature device: a scan-line wipe into the product, then a magnifier lens
 that pulls parts of the real Label result out at 2x.
-Music: MIZRAB 125.6s (breakdown into the second build).
+Music: theme-ad02. Curious plucks and shaker until the groove drops on the result (5.2s).
 
 | Time | Picture | On-screen text |
 |---|---|---|
@@ -56,7 +90,7 @@ Music: MIZRAB 125.6s (breakdown into the second build).
 | 0.4 | IRA slides in, leans toward the label. Green ring on "Calories 150" | |
 | 1.9 | Green scan line wipes down, revealing the real AI Scanner in label mode ("Line up the nutrition table") | **Bas label scan karo.** |
 | 2.8 / 3.4 | "Scan label" tapped, shutter tapped, beam sweeps the label | |
-| 5.0 | Real Label result slides up | |
+| 5.2 | Real Label result slides up on the drop | |
 | 6.5 | Lens: Label scanned, Salted potato chips, per 28g serving | **Seedha label se.** |
 | 9.1 | Lens: health score 38/100 "Fine now and then", High sodium, Palm oil, Low protein | **Score aur flags, saaf.** |
 | 11.7 | Lens: TRY THIS, pair with roasted chana, pour one serving into a bowl | **Aur IRA ka smart swap.** |
@@ -77,7 +111,7 @@ VO:
 
 Signature device: chat bubbles in a clean studio, then the real chat revealed
 message by message (pieces of the actual screen slide in).
-Music: MIZRAB 101.3s (calm breakdown, conversational).
+Music: theme-ad03. Calm kalimba and pad, a light drumless groove under the chat.
 
 | Time | Picture | On-screen text |
 |---|---|---|
@@ -107,7 +141,7 @@ VO:
 
 Signature device: beat-synced three-strip cuts (no phone-on-gradient opener),
 then a tilted phone with native nutrition rings.
-Music: MIZRAB 37.5s (rhythmic build). One cut every two beats.
+Music: theme-ad04. Tabla-led groove, one cut every two beats, chord stabs on Snap / Log / Samjho.
 
 | Time | Picture | On-screen text |
 |---|---|---|
@@ -136,7 +170,7 @@ VO:
 
 Signature device: the app's own streak strip as the metaphor (filled flame =
 logged day, outline = missed day). The tone is supportive, not competitive.
-Music: MIZRAB from 0s (gentle intro).
+Music: theme-ad05. Kalimba twinkle that grows into the groove at the milestones.
 
 | Time | Picture | On-screen text |
 |---|---|---|
@@ -162,7 +196,7 @@ VO:
 
 Signature device: a face-first IRA close-up, beat cuts, then a phone slam on
 the drop followed by whip pans through real screens. The fastest ad.
-Music: MIZRAB 153.8s, drop on the phone slam at 3.7s.
+Music: theme-ad06. Accelerating tabla roll and riser, drop on the phone slam at 3.7s.
 
 | Time | Picture | On-screen text |
 |---|---|---|
@@ -215,10 +249,11 @@ VO:
 - **Food variety**: the design only contains roti/paneer/sabzi, a thali,
   rajma-chawal, pancakes and a chips label. Idli, dosa, chole etc. weren't
   available, so they don't appear. No food imagery was generated.
-- **Music**: the MIZRAB track from the FL Studio session recording in the repo
-  (`flrecording.mp4`). Treated as the owner's own track. Please confirm
-  usage rights before paid distribution. It's a one-line swap
-  (`src/components/Sound.tsx`).
+- **Music is original and synthesised in code** (`scripts/compose.py`), so
+  there are no third-party rights to clear. It's a programmatic score, not a
+  studio production. For a big paid push, a produced version of the same
+  theme (same tempo and hit points) would be a worthwhile upgrade, and it's a
+  one-line swap per ad. `flrecording.mp4` (MIZRAB) is no longer used.
 - **No CTA URL, store listing or QR code** was found in any asset, so the CTA
   is "Try Dietary Guide" with no link.
 - **IRA's pronouns**: copy avoids gendered Hindi verb forms for IRA.

@@ -6,6 +6,7 @@ import {Ad03AskIra, AD03_DURATION} from './ads/Ad03AskIra';
 import {Ad04IndianFood, AD04_DURATION} from './ads/Ad04IndianFood';
 import {Ad05SmallHabits, AD05_DURATION} from './ads/Ad05SmallHabits';
 import {Ad06BrandIntro, AD06_DURATION} from './ads/Ad06BrandIntro';
+import {Ad07IraHop, AD07_DURATION} from './ads/Ad07IraHop';
 import {loadFonts} from './components/Fonts';
 import {FPS, H, W} from './theme';
 
@@ -18,6 +19,7 @@ export const ADS = [
   {id: 'Ad04-IndianFood', component: Ad04IndianFood, duration: AD04_DURATION},
   {id: 'Ad05-SmallHabits', component: Ad05SmallHabits, duration: AD05_DURATION},
   {id: 'Ad06-BrandIntro', component: Ad06BrandIntro, duration: AD06_DURATION},
+  {id: 'Ad07-IraHop', component: Ad07IraHop, duration: AD07_DURATION},
 ];
 
 export const RemotionRoot: React.FC = () => (

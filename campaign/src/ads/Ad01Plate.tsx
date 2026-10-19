@@ -15,7 +15,7 @@ import {C, clamp, ease, F, lerp, prog, spr} from '../theme';
  * AD 01 · "Bhai, plate mein hai kya?"
  * Food close-up -> it becomes the AI Scanner viewfinder -> shutter -> result
  * sheet with macros -> macros lift out full-screen -> Log lunch -> story card
- * -> brand. Music: MIZRAB from 63.77s, so the drop lands on the result (f112).
+ * -> brand. Music: theme-ad01, the drop lands on the result (f112).
  */
 export const AD01_DURATION = 600;
 
@@ -108,7 +108,7 @@ export const Ad01Plate: React.FC = () => {
 
   return (
     <AbsoluteFill style={{background: C.off}}>
-      <Music start={63.77} duration={AD01_DURATION} volume={0.62} />
+      <Music track="ad01" duration={AD01_DURATION} />
 
       {/* A · food hook */}
       <Scene from={0} to={66}>

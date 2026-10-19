@@ -13,7 +13,7 @@ import {BEAT, C, clamp, ease, F, prog, spr, track} from '../theme';
  * AD 04 · "Apna khana. Better awareness."
  * Beat-cut strip montage of real Indian meals -> three-strip collage with IRA
  * -> the real Home screen + Today's nutrition rings -> IRA's insight ->
- * "Snap. Log. Samjho." on the beat -> brand. Music: MIZRAB build from 37.52s.
+ * "Snap. Log. Samjho." on stabs -> brand. Music: theme-ad04 (tabla-led groove).
  */
 export const AD04_DURATION = 570;
 
@@ -113,7 +113,7 @@ export const Ad04IndianFood: React.FC = () => {
 
   return (
     <AbsoluteFill style={{background: C.tealDark}}>
-      <Music start={37.52} duration={AD04_DURATION} volume={0.62} />
+      <Music track="ad04" duration={AD04_DURATION} />
 
       {/* A · beat cuts */}
       <Scene from={0} to={124}>

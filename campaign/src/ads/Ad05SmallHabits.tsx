@@ -15,7 +15,7 @@ import {BEAT, C, clamp, ease, prog, spr} from '../theme';
  * One flame = one logged day (the app's own streak strip: filled = logged,
  * outline = missed). The strip fills, a missed day is shrugged off, then the
  * real streak screen, the real milestone story designs, and a warm close.
- * Music: MIZRAB intro from 0s (gentle, building).
+ * Music: theme-ad05, kalimba and pad that grow into a groove at the milestones.
  */
 export const AD05_DURATION = 600;
 
@@ -49,7 +49,7 @@ export const Ad05SmallHabits: React.FC = () => {
 
   return (
     <AbsoluteFill style={{background: C.tealDark}}>
-      <Music start={0.02} duration={AD05_DURATION} volume={0.66} fadeIn={2} />
+      <Music track="ad05" duration={AD05_DURATION} />
 
       {/* A+B · flame metaphor */}
       <Scene from={0} to={214}>

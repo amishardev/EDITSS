@@ -14,11 +14,11 @@ import {C, clamp, ease, prog, spr, track} from '../theme';
  * Label close-up -> IRA notices -> scan-line wipe into the real label scanner
  * -> scan -> real Label result -> a lens pulls out each part of the result
  * (what it is, score + flags, IRA's swap) -> Add to snacks -> brand.
- * Music: MIZRAB from 125.64s (end of the breakdown into the second build).
+ * Music: theme-ad02, curious plucks until the groove drops on the result.
  */
 export const AD02_DURATION = 570;
 
-const RESULT = 150;
+const RESULT = 155;
 const LABEL_H = SCREEN_H[UI.labelResult];
 
 const LENS = [
@@ -67,7 +67,7 @@ export const Ad02LabelScan: React.FC = () => {
 
   return (
     <AbsoluteFill style={{background: C.off}}>
-      <Music start={125.64} duration={AD02_DURATION} volume={0.6} />
+      <Music track="ad02" duration={AD02_DURATION} />
 
       {/* A · the label */}
       <Scene from={0} to={80}>

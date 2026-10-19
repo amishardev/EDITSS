@@ -1,27 +1,21 @@
 import React from 'react';
 import {Audio, interpolate, Sequence, staticFile} from 'remotion';
-import {clamp, FPS} from '../theme';
+import {clamp} from '../theme';
 
 /**
- * Replaceable music layer. Every ad points at a section of the MIZRAB track
- * (128 BPM). Swap MUSIC_FILE or the `start` seconds to re-score an ad.
+ * Replaceable music layer. Each ad has its own arrangement of the original
+ * IRA theme (scripts/compose.py), cut so its drops and stings land on the
+ * ad's key frames. Point `track` at any other file in public/audio to re-score.
  */
-export const MUSIC_FILE = 'audio/mizrab.m4a';
-
 export const Music: React.FC<{
-  start: number; // seconds into the track
+  track: string; // e.g. "ad01" -> audio/theme-ad01.m4a
   duration: number; // frames
   volume?: number;
-  fadeIn?: number;
   fadeOut?: number;
-}> = ({start, duration, volume = 0.6, fadeIn = 4, fadeOut = 40}) => (
+}> = ({track, duration, volume = 0.5, fadeOut = 12}) => (
   <Audio
-    src={staticFile(MUSIC_FILE)}
-    startFrom={Math.round(start * FPS)}
-    volume={(f) =>
-      volume *
-      interpolate(f, [0, fadeIn, duration - fadeOut, duration], [0, 1, 1, 0], clamp)
-    }
+    src={staticFile(track.includes('/') ? track : `audio/theme-${track}.m4a`)}
+    volume={(f) => volume * interpolate(f, [duration - fadeOut, duration], [1, 0], clamp)}
   />
 );
 
