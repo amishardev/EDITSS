@@ -1,6 +1,6 @@
 import React from 'react';
 import {Img, interpolate, useCurrentFrame} from 'remotion';
-import {IRA, src} from '../assets';
+import {Emote, EMOTE_SIZE, emoteFile, IRA, src} from '../assets';
 import {clamp, ease, spr, track} from '../theme';
 
 export type IraEnter = 'pop' | 'rise' | 'drop' | 'left' | 'right' | 'peek' | 'none';
@@ -26,6 +26,8 @@ export type IraProps = {
   idle?: boolean;
   shadow?: boolean;
   shadowColor?: string;
+  /** expression from the emote sheet, or a timeline [[frame, emote], ...] */
+  emote?: Emote | [number, Emote][];
   style?: React.CSSProperties;
 };
 
@@ -49,6 +51,7 @@ export const Ira: React.FC<IraProps> = ({
   idle = true,
   shadow = true,
   shadowColor = 'rgba(15,23,42,0.28)',
+  emote,
   style,
 }) => {
   const f = useCurrentFrame();
@@ -117,7 +120,15 @@ export const Ira: React.FC<IraProps> = ({
     op *= exit === 'fade' ? 1 - e : 1;
   }
 
-  const total = sc * ks;
+  // expression changes get a small pop (uniform scale, never a stretch)
+  let face: Emote | undefined;
+  let swapAt = -999;
+  if (typeof emote === 'string') face = emote;
+  else if (emote) {
+    for (const [at, e] of emote) if (f >= at) [face, swapAt] = [e, at];
+  }
+  const pop = swapAt > enterAt + 2 ? interpolate(spr(f, swapAt, {damping: 9, stiffness: 260}), [0, 1], [0.86, 1]) : 1;
+  const total = sc * ks * pop;
   const air = Math.max(0, -(hopY + idleY)) / size;
 
   return (
@@ -148,10 +159,13 @@ export const Ira: React.FC<IraProps> = ({
         />
       )}
       <Img
-        src={src(IRA)}
+        src={src(face ? emoteFile(face) : IRA)}
         style={{
-          width: size,
-          height: size,
+          position: 'absolute',
+          left: face ? (size - (size * 0.98 * EMOTE_SIZE[face][0]) / EMOTE_SIZE[face][1]) / 2 : 0,
+          top: face ? size * 0.02 : 0,
+          width: face ? (size * 0.98 * EMOTE_SIZE[face][0]) / EMOTE_SIZE[face][1] : size,
+          height: face ? size * 0.98 : size,
           transformOrigin: '50% 100%',
           transform: `translate(${tx}px, ${ty + hopY + idleY}px) rotate(${
             rot + hopR + idleR + tiltR

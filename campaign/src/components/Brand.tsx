@@ -3,6 +3,7 @@ import {AbsoluteFill, Img, interpolate, useCurrentFrame} from 'remotion';
 import {BRAND, src} from '../assets';
 import {C, clamp, ease, F, spr} from '../theme';
 import {Bg, Grain} from './Stage';
+import {Emote} from '../assets';
 import {Ira, IraEnter} from './Ira';
 import {Headline, Pill, Sub} from './Text';
 
@@ -22,7 +23,7 @@ export const Logo: React.FC<{at: number; cx: number; y: number; width: number; w
 
 export type EndCardProps = {
   at: number;
-  bg?: 'warm' | 'teal' | 'green';
+  bg?: 'warm' | 'teal' | 'green' | 'ink';
   tagline: string[];
   cta?: string;
   note?: string;
@@ -31,6 +32,7 @@ export type EndCardProps = {
   iraSize?: number;
   /** green rings bursting from IRA's landing */
   burst?: boolean;
+  emote?: Emote | [number, Emote][];
 };
 
 /**
@@ -47,13 +49,14 @@ export const EndCard: React.FC<EndCardProps> = ({
   iraHop,
   iraSize = 560,
   burst,
+  emote,
 }) => {
-  const dark = bg === 'teal';
+  const dark = bg === 'teal' || bg === 'ink';
   return (
     <AbsoluteFill>
       <Bg kind={bg} glow={[540, 700]} />
       {burst && <Burst at={at + 12} cx={540} cy={900} />}
-      <Ira x={540} y={930} size={iraSize} enter={iraEnter} enterAt={at} hops={iraHop ? [iraHop] : []} shadowColor={dark ? 'rgba(0,0,0,0.45)' : undefined} />
+      <Ira x={540} y={930} size={iraSize} enter={iraEnter} enterAt={at} hops={iraHop ? [iraHop] : []} shadowColor={dark ? 'rgba(0,0,0,0.45)' : undefined} emote={emote} />
       <Logo at={at + 10} cx={540} y={968} width={470} white={dark} />
       <Headline lines={tagline} at={at + 22} y={1222} size={66} weight={700} color={dark ? C.white : C.ink} accent={dark ? '#4ADE80' : C.leaf} lineHeight={1.12} stagger={2} />
       <Pill text={cta} at={at + 38} cx={540} y={1430} bg={dark ? C.leaf : C.teal} size={46} pad={[30, 64]} />

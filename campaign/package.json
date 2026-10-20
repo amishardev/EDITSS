@@ -13,13 +13,18 @@
     "render:04": "remotion render src/index.ts Ad04-IndianFood out/ad-04-indian-food.mp4",
     "render:05": "remotion render src/index.ts Ad05-SmallHabits out/ad-05-small-habits.mp4",
     "render:06": "remotion render src/index.ts Ad06-BrandIntro out/ad-06-brand-intro.mp4",
-    "render:all": "npm run render:01 && npm run render:02 && npm run render:03 && npm run render:04 && npm run render:05 && npm run render:06 && npm run render:07",
+    "render:all": "npm run render:01 && npm run render:02 && npm run render:03 && npm run render:04 && npm run render:05 && npm run render:06 && npm run render:07 && npm run render:08 && npm run render:09 && npm run render:10 && npm run render:11",
     "still": "remotion still src/index.ts",
     "assets": "bash scripts/build-assets.sh",
     "render:07": "remotion render src/index.ts Ad07-IraHop out/ad-07-ira-hop.mp4",
     "music": "python3 -I scripts/compose.py public/audio",
     "finish": "bash scripts/finish.sh out/ad-0*.mp4",
-    "qa": "python3 -I scripts/qa.py out"
+    "qa": "python3 -I scripts/qa.py out",
+    "render:08": "remotion render src/index.ts Ad08-Personal out/ad-08-personal.mp4",
+    "render:09": "remotion render src/index.ts Ad09-Metrics out/ad-09-metrics.mp4",
+    "render:10": "remotion render src/index.ts Ad10-Story out/ad-10-story.mp4",
+    "render:11": "remotion render src/index.ts Ad11-GenZRate out/ad-11-genz-rate.mp4",
+    "render:new": "npm run render:08 && npm run render:09 && npm run render:10 && npm run render:11"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.537",

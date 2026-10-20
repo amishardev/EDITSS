@@ -8,7 +8,7 @@ import json, os, subprocess, sys
 from PIL import Image, ImageDraw
 
 OUT = sys.argv[1]
-ADS = ["ad-01-plate", "ad-02-label-scan", "ad-03-ask-ira", "ad-04-indian-food", "ad-05-small-habits", "ad-06-brand-intro", "ad-07-ira-hop"]
+ADS = sys.argv[2:] or ["ad-01-plate", "ad-02-label-scan", "ad-03-ask-ira", "ad-04-indian-food", "ad-05-small-habits", "ad-06-brand-intro", "ad-07-ira-hop", "ad-08-personal", "ad-09-metrics", "ad-10-story", "ad-11-genz-rate"]
 POINTS = [0.05, 0.2, 0.4, 0.6, 0.8, 0.97]
 TW, TH = 216, 384
 

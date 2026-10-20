@@ -2,6 +2,7 @@
 # Rebuild everything in public/ from the supplied source files.
 #   DESIGN_PDF  Dietary Guide v2 design export (PDF)
 #   IRA_PNG     transparent IRA character render
+#   EMOTE_SHEET 3x3 IRA expression sheet (optional)
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
@@ -15,6 +16,7 @@ python3 -I scripts/extract_screens.py "$DESIGN_PDF" public/ui
 pdfimages -png "$DESIGN_PDF" "$TMP/im"
 python3 -I scripts/extract_images.py "$TMP" "$IRA_PNG" public
 python3 -I scripts/make_sfx.py public/sfx
+if [ -n "${EMOTE_SHEET:-}" ]; then python3 -I scripts/extract_emotes.py "$EMOTE_SHEET" public/ira; fi
 
 mkdir -p public/audio public/fonts
 python3 -I scripts/compose.py "$TMP/music"

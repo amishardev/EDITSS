@@ -1,6 +1,6 @@
 # Dietary Guide x IRA · vertical ad campaign
 
-Seven 9:16 ads (1080x1920, 30 fps, H.264 + AAC) built in Remotion from the real
+Eleven 9:16 ads (1080x1920, 30 fps, H.264 + AAC) built in Remotion from the real
 Dietary Guide v2 design and the IRA character render, scored with an original
 IRA theme composed in code.
 
@@ -13,6 +13,10 @@ IRA theme composed in code.
 | 05 | `Ad05-SmallHabits` | `out/ad-05-small-habits.mp4` | 20.0s | Streaks and milestones |
 | 06 | `Ad06-BrandIntro` | `out/ad-06-brand-intro.mp4` | 20.0s | Full product intro |
 | 07 | `Ad07-IraHop` | `out/ad-07-ira-hop.mp4` | 22.0s | **Hero:** IRA hops through the app |
+| 08 | `Ad08-Personal` | `out/ad-08-personal.mp4` | 20.0s | Personalised onboarding + plan |
+| 09 | `Ad09-Metrics` | `out/ad-09-metrics.mp4` | 20.0s | Metrics decoded + IRA's tips |
+| 10 | `Ad10-Story` | `out/ad-10-story.mp4` | 19.0s | Share-to-Story editor |
+| 11 | `Ad11-GenZRate` | `out/ad-11-genz-rate.mp4` | 20.0s | **Gen Z:** "POV: IRA rates your plate" |
 
 Storyboards, captions and voiceover scripts: [`STORYBOARD.md`](STORYBOARD.md).
 Contact sheet of every ad: `out/contact-sheet.jpg`.
@@ -24,7 +28,7 @@ cd campaign
 npm install
 npm run dev            # Remotion Studio preview
 npm run typecheck
-npm run render:all     # all seven MP4s into out/
+npm run render:all     # all eleven MP4s into out/
 npm run render:03      # or one ad
 npm run finish         # delivery pass: yuv420p, -14 LUFS, exact length, faststart
 npm run qa             # verify specs + build out/contact-sheet.jpg
@@ -40,6 +44,10 @@ npx remotion render src/index.ts Ad04-IndianFood  out/ad-04-indian-food.mp4
 npx remotion render src/index.ts Ad05-SmallHabits out/ad-05-small-habits.mp4
 npx remotion render src/index.ts Ad06-BrandIntro  out/ad-06-brand-intro.mp4
 npx remotion render src/index.ts Ad07-IraHop      out/ad-07-ira-hop.mp4
+npx remotion render src/index.ts Ad08-Personal    out/ad-08-personal.mp4
+npx remotion render src/index.ts Ad09-Metrics     out/ad-09-metrics.mp4
+npx remotion render src/index.ts Ad10-Story       out/ad-10-story.mp4
+npx remotion render src/index.ts Ad11-GenZRate    out/ad-11-genz-rate.mp4
 ```
 
 Codec settings live in `remotion.config.ts` (H.264, CRF 18, yuv420p, AAC).
@@ -63,6 +71,10 @@ Everything renders from `public/`, nothing loads from the network.
   sticker poses and the wordmark, pulled from the same PDF
   (`scripts/extract_images.py`).
 - `public/ira/ira.png` the supplied transparent IRA render (1254x1254 RGBA).
+- `public/ira/emote-*.png` nine IRA expressions (wave, thinking, celebrate,
+  thumbsup, surprised, present, phone, eating, shrug) cut from the 3x3 emote
+  sheet by `scripts/extract_emotes.py`. `<Ira emote=...>` switches between
+  them with a small pop (uniform scale only).
 - `public/audio/theme-ad0X.m4a` the original IRA theme, one arrangement per ad,
   synthesised by `scripts/compose.py` (`npm run music`). No samples, no
   third-party music.

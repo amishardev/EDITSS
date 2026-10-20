@@ -187,6 +187,15 @@ ARR = {
                  risers=[(486, 534)], stings=[534], stabs=[],
                  notes=[(140.6, 74), (168.75, 78), (196.9, 81), (225, 83), (253.1, 86), (281.25, 90),
                         (337.5, 81), (421.9, 81), (435.9, 83), (450, 86), (464.1, 88)]),
+    'ad08': dict(frames=600, sections=[(0, 'curious'), (4, 'light'), (8, 'groove'), (33.1, 'stop'), (34, 'outro')],
+                 risers=[(440, 474)], stings=[478], stabs=[0]),
+    'ad09': dict(frames=600, sections=[(0, 'calm'), (6, 'light'), (25, 'groove'), (33.5, 'stop'), (34, 'outro')],
+                 risers=[(446, 476)], stings=[476], stabs=[],
+                 notes=[(372, 81), (392, 83), (412, 86), (432, 88)]),
+    'ad10': dict(frames=570, sections=[(0, 'intro'), (2, 'groove'), (20, 'drop'), (29.9, 'build'), (32.4, 'stop'), (32.6, 'outro')],
+                 risers=[], stings=[458], stabs=[]),
+    'ad11': dict(frames=600, sections=[(0, 'intro'), (2, 'drop'), (26, 'groove'), (36.3, 'stop'), (36.4, 'outro')],
+                 risers=[(330, 364)], stings=[513], stabs=[56, 168, 280]),
 }
 
 # ---------------------------------------------------------------- render

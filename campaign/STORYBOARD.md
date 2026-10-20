@@ -1,6 +1,6 @@
 # Storyboards, captions and voiceover
 
-All seven ads are 30 fps, 1080x1920. Timestamps are seconds. Every on-screen
+All eleven ads are 30 fps, 1080x1920. Timestamps are seconds. Every on-screen
 headline doubles as the caption track, so the ads work with sound off. The VO
 lines are written for a warm, conversational Hinglish read (not influencer
 shouting), and they deliberately don't repeat every word on screen.
@@ -222,6 +222,117 @@ VO:
 
 ---
 
+## Ad 08 · "Sirf tumhare liye" (personalised onboarding, 20.0s)
+
+Signature device: photocopied generic diet charts, swept away; then a swipe
+carousel through the real onboarding. Emotes: surprised, present, thinking,
+eating, thumbs up, celebrate, wave.
+
+| Time | Picture | On-screen text |
+|---|---|---|
+| 0.0 | Three grey "Diet chart · Same for everyone · COPY" sheets slam in | **Sabke liye ek hi diet chart?** |
+| 0.3 | IRA peeks up, surprised | |
+| 1.3 | IRA presents, the charts fly away | |
+| 1.9 | | **Na. Tumhare hisaab se.** |
+| 3.3 | Carousel slides in. Real "Select your goal": each option highlights in turn. IRA thinking | 1 · Goal · **Tumhara goal.** |
+| 6.5 | Next tapped, swipe. Real "How do you eat?", Vegetarian (Dal, paneer, dahi) highlighted. IRA eats a roti | 2 · Khana · **Tumhara khana.** |
+| 9.3 | Real "What's your age?" ruler highlighted. IRA thumbs up | 3 · Body · **Tumhari body.** |
+| 12.4 | Real "Your plan is ready": 2,200 kcal a day, 85g protein, 5 veg servings highlighted. IRA celebrates | Plan ready · **Tumhara plan.** / Estimate only, not medical advice. |
+| 15.8 | Wipe to end card, IRA celebrates then waves | **Plan ho toh apne hisaab ka.** · Try Dietary Guide |
+
+VO:
+> (0.0) Sabke liye ek hi diet chart?
+> (1.9) Na. Tumhare hisaab se.
+> (3.6) Tumhara goal. (6.8) Tumhara khana. (9.6) Tumhari body.
+> (12.6) Aur ban gaya... tumhara plan.
+> (16.0) Dietary Guide. Plan ho toh apne hisaab ka.
+
+---
+
+## Ad 09 · "Numbers ka confusion?" (Metrics, 20.0s)
+
+Signature device: a jargon cloud that gets sucked into the real Metrics
+screen, then scramble-decoded into plain Hinglish. Emotes: thinking,
+present, surprised, thumbs up, celebrate.
+
+| Time | Picture | On-screen text |
+|---|---|---|
+| 0.0 | BMR, TDEE, kcal/day, macros, target?, maintenance?, deficit? burst around a thinking IRA | **Numbers ka confusion?** |
+| 2.3 | IRA presents; the words get sucked down into the real Metrics screen | |
+| 5.0 | Real BMR card lifts out (1,693 kcal/day) and decodes | **BMR** · Aaram karte hue bhi body jitni energy use karti hai. |
+| 7.1 | Real TDEE card (2,856) | **TDEE** · Poore din ka total energy kharcha. |
+| 9.1 | Real Target card (2,356) | **Target** · Tumhara roz ka calorie goal. |
+| 11.3 | Screen scrolls to "Ira recommends", which lifts out full size | **Aur IRA ki simple tips.** |
+| 12.4-14.4 | Each real tip ticks on the beat, IRA thumbs-up hop: Keep logging every meal. It's working. · Add 30 minutes of walking most days · Aim for 2.5-3 litres of water · Sleep 7-8 hours to curb late cravings | |
+| 15.7 | End card | **Numbers samjho, bina stress.** · Try Dietary Guide · Estimates, not a medical assessment. |
+
+VO:
+> (0.0) BMR? TDEE? Numbers ka confusion?
+> (5.0) BMR, matlab aaram mein bhi body jitni energy use karti hai.
+> (7.1) TDEE, poore din ka kharcha. (9.1) Aur target, tumhara roz ka goal.
+> (11.4) Upar se IRA ki simple tips.
+> (16.0) Dietary Guide. Numbers samjho, bina stress.
+
+---
+
+## Ad 10 · "Khana bhi. Flex bhi." (Share to Story, 19.0s)
+
+Signature device: the ad is itself a story (segment bars + header), so the
+format is the message. Emotes: phone, celebrate, present, surprised,
+thumbs up.
+
+| Time | Picture | On-screen text |
+|---|---|---|
+| 0.0 | Story bars start. IRA holds up a phone | **Khana ready?** |
+| 0.9 | Shutter, flash. The photo flies up, then turns into the real meal story (Day 12 · Lunch, 25G 420 82) | **Khana bhi. Flex bhi.** |
+| 4.3 | Real story editor rises. Auto/White/Dark toggle highlighted ("Auto picked white text for this photo") | **Text colour? Auto.** |
+| 6.5 | IRA sticker on the story highlighted. IRA surprised | **IRA sticker. Cute, na?** |
+| 8.0 | Streak / Protein / Calories toggles highlighted | **Jo dikhana hai, wahi.** |
+| 9.5 | Real story styles flip on the beat: Just the meal, Meal, Milestone · Day 30, Day 100, Day 365 | **Har mood ka style.** |
+| 13.9 | Editor returns, "Share to Instagram Story" tapped | |
+| 15.1 | End card | **Plate se story tak, ek tap.** · Try Dietary Guide |
+
+VO:
+> (0.0) Khana ready?
+> (1.2) Khana bhi... flex bhi.
+> (4.4) Text colour apne aap set. (6.6) IRA sticker bhi.
+> (8.0) Jo dikhana hai, wahi dikhao.
+> (9.6) Har mood ka style.
+> (15.3) Dietary Guide. Plate se story tak, ek tap.
+
+---
+
+## Ad 11 · Gen Z · "POV: IRA rates your plate" (20.0s)
+
+For a younger, very online audience: the creator caption idiom (white text
+boxes with a highlighted word), stickers, dark mode, beat cuts every two
+beats, and stabs on each score. Every score, verdict and tip is the app's
+own; the tone stays supportive (no food shaming: "chalta hai", "treat day?
+valid."). Emotes: phone, thumbs up, shrug, eating, surprised, celebrate.
+
+| Time | Picture | On-screen text |
+|---|---|---|
+| 0.0 | Dark. IRA holding up a phone | **POV: IRA rates your plate** |
+| 0.9 | Flash. Plate #1: roti + paneer, scan beam, score card slams in. IRA winks a thumbs up | plate #1 · Health score **82** · Paneer bhurji + 2 roti · 420 kcal · 25g protein · **25g protein? Ate.** |
+| 4.7 | Plate #2: chips nutrition label. IRA shrugs | plate #2 (ok, packet) · **38** · Fine now and then · High sodium · Palm oil · Low protein · **chalta hai. bas bowl mein daal, packet se nahi.** |
+| 8.4 | Plate #3: pancakes. IRA eats happily | plate #3 · **62** · Okay as a treat · 615 kcal · 12g protein · **treat day? valid.** · IRA tip: aadha syrup + ek katori dahi = 8g protein |
+| 12.1 | Dark-mode Home and Meal result phones, tilted. IRA surprised | **it's giving dark mode** |
+| 13.8 | Dark streak screen (12-day streak). IRA celebrates | **12-day streak = main character energy** |
+| 15.4 | Story editor, Share to Instagram Story tapped | **post it. obviously.** |
+| 17.0 | Dark end card | **Rate. Samjho. Post.** · Try Dietary Guide |
+
+VO (fast, deadpan, creator delivery):
+> (0.0) POV: IRA rates your plate.
+> (1.9) Eighty-two. Twenty-five gram protein? Ate.
+> (5.6) Thirty-eight. Chalta hai... bas bowl mein daal, packet se nahi.
+> (9.3) Sixty-two. Treat day? Valid.
+> (12.2) It's giving dark mode.
+> (13.9) Twelve-day streak. Main character energy.
+> (15.5) Post it. Obviously.
+> (17.2) Dietary Guide. Rate. Samjho. Post.
+
+---
+
 ## Missing assets and limits
 
 - **Source files named in the brief were not in the workspace**: `IRA_COLOURED.png`,
@@ -230,6 +341,10 @@ VO:
   home, scanner, meal result, label result, IRA chat, metrics, profile,
   streak, share-to-story), the IRA image attached in chat (1254px transparent
   PNG, used as the authoritative character), and `bunny_doll.blend`.
+- **IRA emotes (Ads 08-11)** come from a 3x3 expression sheet generated from
+  the IRA reference and supplied by the brand owner. They're cut into
+  transparent PNGs by `scripts/extract_emotes.py`. Earlier ads use the
+  original render.
 - **`bunny_doll.blend` is unused.** Blender isn't installed here, and the brief
   asks for IRA to be animated from the flat PNG only.
 - **Indian meal result (Ad 01) is a native rebuild.** The design's meal-result

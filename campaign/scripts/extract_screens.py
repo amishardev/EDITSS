@@ -1,7 +1,7 @@
 """Rasterize real Dietary Guide screens from the v2 design PDF.
 
 Boxes are in 100dpi page pixels (detected from phone bezels / story cards).
-Usage: python3 -I extract_screens.py <design.pdf> <out_dir>
+Usage: python3 -I extract_screens.py <design.pdf> <out_dir> [name ...]
 """
 import subprocess, sys, os
 import numpy as np
@@ -14,7 +14,7 @@ K = DPI / 100
 # name: (x, y, w, h, kind) ; kind 'phone' -> strip bezel, 'card' -> keep as-is
 BOXES = {
     "share-sheet":     (32, 82, 285, 601, "phone"),
-    "story-editor":    (353, 82, 285, 601, "phone"),
+    "story-editor":    (353, 82, 285, 601, "phone-dark"),
     "meal-share":      (32, 1779, 285, 600, "phone"),
     "welcome":         (32, 3882, 285, 601, "phone"),
     "goal":            (32, 5200, 285, 601, "phone"),
@@ -26,6 +26,15 @@ BOXES = {
     "label-result":    (32, 10058, 285, 737, "phone"),
     "chat":            (353, 10058, 285, 601, "phone"),
     "streak":          (32, 11800, 285, 600, "phone"),
+    "age":             (353, 5862, 285, 601, "phone"),
+    "plan-muscle":     (32, 7848, 285, 601, "phone"),
+    "plan-maintain":   (353, 7848, 285, 601, "phone"),
+    "metrics":         (32, 10856, 285, 834, "phone"),
+    "profile":         (353, 10856, 285, 882, "phone"),
+    "dark-welcome":    (56, 12480, 286, 601, "phone-dark"),
+    "dark-home":       (377, 12480, 286, 601, "phone-dark"),
+    "dark-meal":       (377, 13142, 286, 695, "phone-dark"),
+    "dark-streak":     (56, 13898, 286, 601, "phone-dark"),
     "story-meal":      (39, 751, 250, 445, "card"),
     "story-gym":       (339, 751, 250, 445, "card"),
     "story-30":        (39, 1271, 250, 445, "card"),
@@ -36,8 +45,11 @@ BOXES = {
     "ms-365":          (447, 2963, 125, 222, "card"),
 }
 
+ONLY = set(sys.argv[3:])  # optional: names to (re)extract
 os.makedirs(OUT, exist_ok=True)
 for name, (x, y, w, h, kind) in BOXES.items():
+    if ONLY and name not in ONLY:
+        continue
     tmp = os.path.join(OUT, f"_{name}")
     subprocess.run(["pdftoppm", "-r", str(DPI), "-png", "-singlefile",
                     "-x", str(int(x * K)), "-y", str(int(y * K)),
@@ -53,5 +65,9 @@ for name, (x, y, w, h, kind) in BOXES.items():
         t = next(i for i in range(H) if col[i] > 45 and col[i + 3] > 45)
         b = H - next(i for i in range(H) if col[H - 1 - i] > 45 and col[H - 4 - i] > 45)
         im = im.crop((l, t, r, b))
+    if kind == "phone-dark":
+        # dark screens run to the bezel, so use the bezel inset measured on
+        # the light phones (42px sides, 60px top/bottom at 600dpi)
+        im = im.crop((42, 60, im.width - 42, im.height - 60))
     im.save(os.path.join(OUT, f"{name}.png"), optimize=True)
     print(name, im.size)

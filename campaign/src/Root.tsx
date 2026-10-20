@@ -7,6 +7,10 @@ import {Ad04IndianFood, AD04_DURATION} from './ads/Ad04IndianFood';
 import {Ad05SmallHabits, AD05_DURATION} from './ads/Ad05SmallHabits';
 import {Ad06BrandIntro, AD06_DURATION} from './ads/Ad06BrandIntro';
 import {Ad07IraHop, AD07_DURATION} from './ads/Ad07IraHop';
+import {Ad08Personal, AD08_DURATION} from './ads/Ad08Personal';
+import {Ad09Metrics, AD09_DURATION} from './ads/Ad09Metrics';
+import {Ad10Story, AD10_DURATION} from './ads/Ad10Story';
+import {Ad11GenZRate, AD11_DURATION} from './ads/Ad11GenZRate';
 import {loadFonts} from './components/Fonts';
 import {FPS, H, W} from './theme';
 
@@ -20,6 +24,10 @@ export const ADS = [
   {id: 'Ad05-SmallHabits', component: Ad05SmallHabits, duration: AD05_DURATION},
   {id: 'Ad06-BrandIntro', component: Ad06BrandIntro, duration: AD06_DURATION},
   {id: 'Ad07-IraHop', component: Ad07IraHop, duration: AD07_DURATION},
+  {id: 'Ad08-Personal', component: Ad08Personal, duration: AD08_DURATION},
+  {id: 'Ad09-Metrics', component: Ad09Metrics, duration: AD09_DURATION},
+  {id: 'Ad10-Story', component: Ad10Story, duration: AD10_DURATION},
+  {id: 'Ad11-GenZRate', component: Ad11GenZRate, duration: AD11_DURATION},
 ];
 
 export const RemotionRoot: React.FC = () => (
