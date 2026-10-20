@@ -18,7 +18,7 @@ import {Diya, FEST, Firework, Petals, Rangoli, Toran} from './kit';
  * Contents are only what the real photos show; no prices or offers.
  */
 export const D02_DURATION = 750;
-const LIGHT = 14;
+const LIGHT = 8;
 const DESIRE = 80;
 const REVEAL = 206;
 const OPEN = 330;
@@ -58,7 +58,7 @@ const GoldCta: React.FC<{at: number; y: number}> = ({at, y}) => {
 
 export const D02Treat: React.FC = () => {
   const f = useCurrentFrame();
-  const glow = interpolate(f, [LIGHT, 60], [0, 1], {...clamp, easing: ease.inOut});
+  const glow = interpolate(f, [0, LIGHT, 56], [0.3, 0.38, 1], {...clamp, easing: ease.inOut});
   // the first diya: big and centred, then it settles into the row
   const settle = prog(f, DESIRE - 6, DESIRE + 22, ease.inOut);
   const d0x = 540;
@@ -156,7 +156,7 @@ export const D02Treat: React.FC = () => {
 
       <Cues
         cues={[
-          [8, 'match', 0.6],
+          [2, 'match', 0.6],
           [LIGHT, 'fire', 0.18],
           [34, 'shimmer', 0.3],
           [DESIRE + 4, 'whoosh', 0.35],
