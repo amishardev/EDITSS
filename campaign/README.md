@@ -19,6 +19,30 @@ IRA theme composed in code.
 | 11 | `Ad11-GenZRate` | `out/ad-11-genz-rate.mp4` | 20.0s | **Gen Z:** "POV: IRA rates your plate" |
 
 Storyboards, captions and voiceover scripts: [`STORYBOARD.md`](STORYBOARD.md).
+
+## Product films
+
+Seven more films sell the actual products, one per verified SKU plus a hero
+for The Wellness Treat gift box. They use only real packaging and on-pack
+claims, with no prices, reviews or medical claims.
+
+| # | Composition | File | Length |
+|---|---|---|---|
+| P01 | `P01-ChanaJor` | `out/product-01-chana-jor.mp4` | 18.0s |
+| P02 | `P02-RajmaJor` | `out/product-02-rajma-jor-masala.mp4` | 18.0s |
+| P03 | `P03-MilletGranola` | `out/product-03-millet-granola.mp4` | 20.0s |
+| P04 | `P04-MixedSeedBar` | `out/product-04-mixed-seed-protein-bar.mp4` | 18.0s |
+| P05 | `P05-AlmondBar` | `out/product-05-almond-protein-bar.mp4` | 18.0s |
+| P06 | `P06-DigestionTea` | `out/product-06-digestion-tea.mp4` | 20.0s |
+| P07 | `P07-WellnessTreat` | `out/wellness-treat-hero.mp4` | 27.0s |
+
+```bash
+npm run render:products && npm run finish:products && npm run qa:products
+```
+
+Hooks, CTAs, scene timings, Hinglish VO, captions and the missing-asset list are in
+[`PRODUCT_STORYBOARD.md`](PRODUCT_STORYBOARD.md). Research is in [`research/`](research/).
+Contact sheet: `out/products-contact-sheet.jpg`.
 Contact sheet of every ad: `out/contact-sheet.jpg`.
 
 ## Run it

@@ -30,11 +30,20 @@ export type SfxName =
   | 'scan'
   | 'impact'
   | 'riser'
-  | 'sparkle';
+  | 'sparkle'
+  | 'crunch'
+  | 'crackle'
+  | 'pour'
+  | 'crinkle'
+  | 'steam'
+  | 'lid'
+  | 'shimmer'
+  | 'clock';
 
 const SFX_LEN: Record<SfxName, number> = {
   tap: 4, tick: 3, whoosh: 18, swish: 10, pop: 8, chime: 44,
   success: 20, scan: 50, impact: 22, riser: 38, sparkle: 28,
+  crunch: 13, crackle: 60, pour: 48, crinkle: 21, steam: 72, lid: 30, shimmer: 72, clock: 2,
 };
 
 /** One-shot sound cue on a frame. */

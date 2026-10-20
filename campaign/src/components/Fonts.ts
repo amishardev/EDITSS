@@ -1,6 +1,8 @@
 import {continueRender, delayRender, staticFile} from 'remotion';
 
 const FONTS: [family: string, file: string, weight: string][] = [
+  ['Sora', 'fonts/sora-latin-200-normal.woff2', '200'],
+  ['Sora', 'fonts/sora-latin-300-normal.woff2', '300'],
   ['Sora', 'fonts/sora-latin-400-normal.woff2', '400'],
   ['Sora', 'fonts/sora-latin-600-normal.woff2', '600'],
   ['Sora', 'fonts/sora-latin-700-normal.woff2', '700'],

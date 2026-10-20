@@ -79,6 +79,24 @@ def pad_chord(notes, dur, vel=1.0):
     a = np.minimum(t / 0.35, 1.0) * np.minimum((dur - t) / 0.4, 1.0)
     return vel * s / (len(notes) * 3) * np.clip(a, 0, 1)
 
+def piano(f, dur=2.0, vel=1.0):
+    """Additive piano-like voice: stretched partials, faster decay up high, hammer."""
+    n = int(dur * SR); t = np.arange(n) / SR
+    s = np.zeros(n)
+    for k in range(1, 8):
+        fk = f * k * (1 + 0.0004 * k * k)
+        if fk > 12000:
+            break
+        s += (1 / k ** 1.25) * np.sin(2 * np.pi * fk * t) * np.exp(-t * (0.9 + 0.55 * k))
+    hammer = lp(rng.standard_normal(n), 3000) * env_ad(n, 0.0005, 0.006) * 0.15
+    return vel * (s + hammer) * np.minimum(t / 0.004, 1)
+
+
+def sub(f, dur=1.2, vel=1.0):
+    n = int(dur * SR); t = np.arange(n) / SR
+    return vel * np.sin(2 * np.pi * f * t) * env_ad(n, 0.02, dur * 0.4)
+
+
 def bass(f, dur=0.45, vel=1.0):
     n = int(dur * SR); t = np.arange(n) / SR
     s = np.sin(2 * np.pi * f * t) + 0.35 * np.sin(2 * np.pi * 2 * f * t) + 0.12 * np.sin(2 * np.pi * 3 * f * t)
@@ -144,6 +162,12 @@ CHORDS = [  # (pad notes, bass root, pluck chord tones)
     ([55, 59, 62], 43, [55, 59, 62, 67]),   # G
     ([57, 61, 64], 45, [57, 61, 64, 69]),   # A
 ]
+CHORDS_MINOR = [  # Bm G D A
+    ([59, 62, 66], 35, [59, 62, 66, 71]),
+    ([55, 59, 62], 43, [55, 59, 62, 67]),
+    ([62, 66, 69], 38, [62, 66, 69, 74]),
+    ([57, 61, 64], 45, [57, 61, 64, 69]),
+]
 HOOK = [  # kalimba hook, 8th notes per bar (None = rest)
     [81, None, 78, 81, 83, None, 81, 78],
     [76, None, 74, 76, 78, None, None, None],
@@ -165,6 +189,16 @@ KINDS = {
     'build':   {'pad': .35, 'shaker': .5, 'roll': .8, 'bass': .5, 'sitar': .45},
     'outro':   {'pad': .5, 'hook': .45, 'shaker': .25, 'tabla_light': .35},
     'stop':    {},
+    # premium product-film moods
+    'luxe':    {'pad': .55, 'piano_slow': .55, 'sub': .6, 'bell_sparse': .3},
+    'luxe_pulse': {'pad': .5, 'piano_arp': .45, 'sub': .7, 'kick_soft': .55, 'shaker': .25, 'bell_sparse': .25},
+    'velvet':  {'pad': .45, 'piano_arp': .5, 'sub': .6, 'kick_soft': .6, 'clap': .25, 'shaker': .3},
+    'zen':     {'pad': .6, 'piano_slow': .45, 'bell_sparse': .35},
+    'morning': {'pad': .35, 'piano_arp': .6, 'shaker': .4, 'clap': .3, 'bass': .55, 'kick_soft': .5},
+    'spice':   {'pad': .3, 'sitar': .55, 'tabla': .85, 'shaker': .6, 'bass': .9, 'clap': .6, 'kick': .95, 'pluck': .4},
+    'ember':   {'pad': .5, 'sitar': .45, 'tabla_light': .7, 'bass': .8, 'kick_soft': .7, 'sub': .5},
+    'tick':    {'tick16': .5, 'bass': .8, 'kick': .85, 'clap': .45, 'pluck': .5, 'pad': .3},
+    'calm_tick': {'tick16': .45, 'pad': .3, 'sub': .4},
 }
 
 # ---------------------------------------------------------------- arrangements
@@ -196,6 +230,22 @@ ARR = {
                  risers=[], stings=[458], stabs=[]),
     'ad11': dict(frames=600, sections=[(0, 'intro'), (2, 'drop'), (26, 'groove'), (36.3, 'stop'), (36.4, 'outro')],
                  risers=[(330, 364)], stings=[513], stabs=[56, 168, 280]),
+    # ---- product films ----
+    'p01': dict(frames=540, transpose=2, sections=[(0, 'intro'), (2, 'spice'), (21.3, 'build'), (24, 'spice'), (37.4, 'stop'), (37.5, 'outro')],
+                risers=[(126, 155)], stings=[155, 440], stabs=[0]),
+    'p02': dict(frames=540, minor=True, sections=[(0, 'curious'), (3.4, 'ember'), (37.5, 'stop'), (37.6, 'outro')],
+                risers=[(146, 176)], stings=[176, 464], stabs=[30]),
+    'p03': dict(frames=600, sections=[(0, 'zen'), (2.8, 'morning'), (41.5, 'stop'), (41.6, 'outro')],
+                risers=[(127, 155)], stings=[155, 496], stabs=[]),
+    'p04': dict(frames=540, transpose=-2, sections=[(0, 'calm_tick'), (8, 'tick'), (37.4, 'stop'), (37.5, 'outro')],
+                risers=[(84, 112)], stings=[112, 450], stabs=[]),
+    'p05': dict(frames=540, minor=True, transpose=-3, sections=[(0, 'luxe'), (10.67, 'velvet'), (37.4, 'stop'), (37.5, 'outro')],
+                risers=[(124, 156)], stings=[156, 450], stabs=[]),
+    'p06': dict(frames=600, sections=[(0, 'tick'), (3.7, 'zen'), (11.4, 'luxe'), (42.2, 'stop'), (42.3, 'outro')],
+                risers=[], stings=[], stabs=[], notes=[(52, 86), (160, 86), (336, 81), (496, 86)]),
+    'p07': dict(frames=810, transpose=-2, sections=[(0, 'luxe'), (14.6, 'luxe_pulse'), (23.9, 'velvet'), (37.7, 'luxe_pulse'), (46.2, 'luxe'), (57.0, 'stop'), (57.1, 'outro')],
+                risers=[(176, 206), (610, 650)], stings=[206, 650], stabs=[],
+                notes=[(380, 81), (396, 83), (412, 86), (428, 88), (446, 90)]),
 }
 
 # ---------------------------------------------------------------- render
@@ -246,12 +296,29 @@ def render(name, spec):
         L = KINDS[k]
         bar = int(beat // 4)
         s16 = step % 16
-        chord = CHORDS[bar % 4]
+        prog_chords = CHORDS_MINOR if spec.get('minor') else CHORDS
+        tr = spec.get('transpose', 0)
+        c0 = prog_chords[bar % 4]
+        chord = ([m + tr for m in c0[0]], c0[1] + tr, [m + tr for m in c0[2]])
         if 'pad' in L and s16 == 0:
             stop_b = next((s for s, kk in sections if s > beat), total_beats)
             span = min(4, stop_b - beat) * BEAT
             if span > 0.2:
                 x = pad_chord(chord[0], span + 0.3, L['pad']); add(dry, x, t, .5); add(wet, x, t, .5)
+        if 'piano_slow' in L and s16 in (0, 8):
+            for j, m in enumerate(chord[2][:3] if s16 == 0 else chord[2][1:]):
+                x = piano(midi(m + 12), 3.0, L['piano_slow'] * (0.8 if j else 1)); add(dry, x, t + j * 0.045, .22); add(wet, x, t + j * 0.045, .35)
+        if 'piano_arp' in L and s16 % 2 == 0:
+            m = chord[2][(s16 // 2) % 4] + 12 + (12 if (s16 // 2) % 8 >= 4 else 0)
+            x = piano(midi(m), 1.6, L['piano_arp'] * (1 if s16 % 4 == 0 else .7)); add(dry, x, t, .2); add(wet, x, t, .3)
+        if 'sub' in L and s16 == 0:
+            add(dry, sub(midi(chord[1] - 12 if chord[1] > 40 else chord[1]), BEAT * 3.5, L['sub']), t, .5)
+        if 'bell_sparse' in L and s16 == 6 and bar % 2 == 1:
+            x = bell(midi(chord[2][2] + 24), 2.0, L['bell_sparse']); add(dry, x, t, .1); add(wet, x, t, .3)
+        if 'kick_soft' in L and s16 in (0, 8):
+            add(dry, kick(L['kick_soft'] * .7), t, .6); add(side, np.linspace(.6, 0, int(.18 * SR)), t)
+        if 'tick16' in L:
+            add(dry, tabla('tin', L['tick16'] * (1 if s16 % 4 == 0 else .45)) * 0.6, t, .3)
         if 'kick' in L and s16 in (0, 10):
             add(dry, kick(L['kick']), t, .9); add(side, np.ones(int(.18 * SR)) * np.linspace(1, 0, int(.18 * SR)), t)
         if 'clap' in L and s16 in (4, 12):
@@ -270,11 +337,12 @@ def render(name, spec):
             m = chord[2][(s16 // 4) % 4]
             x = pluck(midi(m + 12), .6, L['pluck'], .5); add(dry, x, t, .22); add(wet, x, t, .2)
         if 'sitar' in L and s16 % 2 == 0:
-            m = SITAR[(s16 // 2) % 8]
+            m = SITAR[(s16 // 2) % 8] + spec.get('transpose', 0)
             x = pluck(midi(m), 1.0, L['sitar'] * (1 if s16 % 8 == 0 else .7), .8); add(dry, x, t, .3); add(wet, x, t, .25)
         if 'hook' in L and s16 % 2 == 0:
             m = HOOK[bar % 4][s16 // 2]
             if m:
+                m += spec.get('transpose', 0)
                 x = kalimba(midi(m), 1.0, L['hook']); add(dry, x, t, .3); add(wet, x, t, .3)
                 if 'bell' in L:
                     x = bell(midi(m + 12), 1.0, L['bell']); add(dry, x, t, .12); add(wet, x, t, .2)

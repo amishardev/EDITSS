@@ -12,6 +12,13 @@ import {Ad09Metrics, AD09_DURATION} from './ads/Ad09Metrics';
 import {Ad10Story, AD10_DURATION} from './ads/Ad10Story';
 import {Ad11GenZRate, AD11_DURATION} from './ads/Ad11GenZRate';
 import {loadFonts} from './components/Fonts';
+import {P01Chana, P01_DURATION} from './products/P01Chana';
+import {P02Rajma, P02_DURATION} from './products/P02Rajma';
+import {P03Granola, P03_DURATION} from './products/P03Granola';
+import {P04Seeds, P04_DURATION} from './products/P04Seeds';
+import {P05Almond, P05_DURATION} from './products/P05Almond';
+import {P06Tea, P06_DURATION} from './products/P06Tea';
+import {P07WellnessTreat, P07_DURATION} from './products/P07WellnessTreat';
 import {FPS, H, W} from './theme';
 
 loadFonts();
@@ -28,6 +35,13 @@ export const ADS = [
   {id: 'Ad09-Metrics', component: Ad09Metrics, duration: AD09_DURATION},
   {id: 'Ad10-Story', component: Ad10Story, duration: AD10_DURATION},
   {id: 'Ad11-GenZRate', component: Ad11GenZRate, duration: AD11_DURATION},
+  {id: 'P01-ChanaJor', component: P01Chana, duration: P01_DURATION},
+  {id: 'P02-RajmaJor', component: P02Rajma, duration: P02_DURATION},
+  {id: 'P03-MilletGranola', component: P03Granola, duration: P03_DURATION},
+  {id: 'P04-MixedSeedBar', component: P04Seeds, duration: P04_DURATION},
+  {id: 'P05-AlmondBar', component: P05Almond, duration: P05_DURATION},
+  {id: 'P06-DigestionTea', component: P06Tea, duration: P06_DURATION},
+  {id: 'P07-WellnessTreat', component: P07WellnessTreat, duration: P07_DURATION},
 ];
 
 export const RemotionRoot: React.FC = () => (

@@ -92,4 +92,65 @@ for i, f in enumerate([2637, 3136, 3951, 4699]):
     o = int(i*0.06*SR); xs = x[:len(x)-o]
     sp[o:] += np.sin(2*np.pi*f*xs) * env(len(xs), .001, .15)
 save("sparkle", sp, 0.35)
+# ---- product campaign ----------------------------------------------------
+
+def bursts(d, count, dur_each, lo, hi, decay, seed_amp=1.0, spread=None):
+    out = np.zeros(int(SR * d))
+    for i in range(count):
+        o = int(rng.uniform(0, (spread or d) - dur_each) * SR)
+        n = int(dur_each * SR)
+        b = lowpass(rng.standard_normal(n), hi) - lowpass(rng.standard_normal(n), lo) * 0.3
+        out[o:o + n] += b * env(n, 0.0005, decay) * rng.uniform(0.4, 1.0) * seed_amp
+    return out
+
+# crunch: a dense cluster of short bright fractures plus a low body knock
+d = 0.42
+c = bursts(d, 26, 0.05, 300, 6500, 0.012, spread=0.16)
+x = t(d)
+c += 0.5 * np.sin(2*np.pi*np.cumsum(180*np.exp(-x*20)+70)/SR) * env(len(x), .001, .03)
+save("crunch", c, 0.8)
+
+# crackle: sparse ember pops over a soft roar
+d = 2.0
+cr = bursts(d, 40, 0.01, 1000, 7000, 0.002)
+cr += 0.08 * lowpass(rng.standard_normal(int(SR*d)), 500)
+save("crackle", cr * np.sin(np.pi*t(d)/d)**0.5, 0.45)
+
+# pour: granola falling into a bowl, many tiny ticks thinning out
+d = 1.6
+po = np.zeros(int(SR*d))
+for i in range(260):
+    tt = rng.uniform(0, d) ** 1.4 / d ** 0.4
+    o = int(min(tt, d - 0.02) * SR); n = int(0.012 * SR)
+    f0 = rng.uniform(1500, 4500)
+    po[o:o+n] += np.sin(2*np.pi*f0*t(0.012)) * env(n, 0.0003, 0.002) * rng.uniform(0.2, 1)
+save("pour", po * np.minimum(1, (d - t(d)) * 2.5), 0.45)
+
+# crinkle: wrapper tear
+d = 0.7
+ck = bursts(d, 70, 0.02, 2500, 9000, 0.004)
+save("crinkle", ck * np.sin(np.pi*t(d)/d)**0.4, 0.5)
+
+# steam: soft breathy hiss swell
+d = 2.4; x = t(d)
+st_ = lowpass(rng.standard_normal(len(x)), 2600) - lowpass(rng.standard_normal(len(x)), 600)
+save("steam", st_ * np.sin(np.pi*x/d)**1.5, 0.3)
+
+# lid: cardboard lid sliding off, then a soft settle thump
+d = 1.0; x = t(d)
+lid = lowpass(rng.standard_normal(len(x)), 900 + 600*np.sin(np.pi*x/0.7).clip(0)) * np.sin(np.pi*np.clip(x/0.7, 0, 1))
+th = np.zeros(len(x)); o = int(0.72*SR); xx = x[:len(x)-o]
+th[o:] = np.sin(2*np.pi*np.cumsum(90*np.exp(-xx*15)+45)/SR) * env(len(xx), .002, .08)
+save("lid", lid * 0.6 + th, 0.6)
+
+# shimmer: long airy gold glint (high bell cluster with slow attack)
+d = 2.4; x = t(d); sh = np.zeros(len(x))
+for i, f0 in enumerate([2093, 2637, 3136, 3951, 4186, 5274]):
+    sh += np.sin(2*np.pi*f0*x + i) * np.minimum(x/0.5, 1) * np.exp(-x/0.9) * (0.6 + 0.4*np.sin(2*np.pi*(3+i)*x))
+save("shimmer", sh, 0.3)
+
+# clock: mechanical tick
+x = t(0.06)
+save("clock", (np.sin(2*np.pi*3200*x) * env(len(x), .0002, .004) + 0.6*lowpass(rng.standard_normal(len(x)), 5000) * env(len(x), .0002, .002)), 0.4)
+
 print("ok")

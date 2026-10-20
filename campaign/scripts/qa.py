@@ -2,7 +2,7 @@
 
 Usage: python3 -I scripts/qa.py <out_dir>
 Checks: resolution, fps, codecs, duration, near-black frames, loudness.
-Writes <out_dir>/contact-sheet.jpg (6 frames per ad, read from the MP4s).
+Writes <out_dir>/contact-sheet.jpg (or $SHEET) (6 frames per ad, read from the MP4s).
 """
 import json, os, subprocess, sys
 from PIL import Image, ImageDraw
@@ -47,5 +47,5 @@ for row, name in enumerate(ADS):
     ImageDraw.Draw(sheet).text((8, y + TH // 2), name, fill="black")
     for i, p in enumerate(POINTS):
         sheet.paste(frame_at(path, p * dur), (170 + i * TW, y))
-sheet.save(os.path.join(OUT, "contact-sheet.jpg"), quality=88)
+sheet.save(os.path.join(OUT, os.environ.get("SHEET", "contact-sheet.jpg")), quality=88)
 print("ALL OK" if ok else "PROBLEMS FOUND")

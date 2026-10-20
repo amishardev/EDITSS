@@ -20,11 +20,21 @@
     "music": "python3 -I scripts/compose.py public/audio",
     "finish": "bash scripts/finish.sh out/ad-0*.mp4",
     "qa": "python3 -I scripts/qa.py out",
+    "qa:products": "SHEET=products-contact-sheet.jpg python3 -I scripts/qa.py out product-01-chana-jor product-02-rajma-jor-masala product-03-millet-granola product-04-mixed-seed-protein-bar product-05-almond-protein-bar product-06-digestion-tea wellness-treat-hero",
     "render:08": "remotion render src/index.ts Ad08-Personal out/ad-08-personal.mp4",
     "render:09": "remotion render src/index.ts Ad09-Metrics out/ad-09-metrics.mp4",
     "render:10": "remotion render src/index.ts Ad10-Story out/ad-10-story.mp4",
     "render:11": "remotion render src/index.ts Ad11-GenZRate out/ad-11-genz-rate.mp4",
-    "render:new": "npm run render:08 && npm run render:09 && npm run render:10 && npm run render:11"
+    "render:new": "npm run render:08 && npm run render:09 && npm run render:10 && npm run render:11",
+    "render:p01": "remotion render src/index.ts P01-ChanaJor out/product-01-chana-jor.mp4",
+    "render:p02": "remotion render src/index.ts P02-RajmaJor out/product-02-rajma-jor-masala.mp4",
+    "render:p03": "remotion render src/index.ts P03-MilletGranola out/product-03-millet-granola.mp4",
+    "render:p04": "remotion render src/index.ts P04-MixedSeedBar out/product-04-mixed-seed-protein-bar.mp4",
+    "render:p05": "remotion render src/index.ts P05-AlmondBar out/product-05-almond-protein-bar.mp4",
+    "render:p06": "remotion render src/index.ts P06-DigestionTea out/product-06-digestion-tea.mp4",
+    "render:p07": "remotion render src/index.ts P07-WellnessTreat out/wellness-treat-hero.mp4",
+    "render:products": "npm run render:p01 && npm run render:p02 && npm run render:p03 && npm run render:p04 && npm run render:p05 && npm run render:p06 && npm run render:p07",
+    "finish:products": "bash scripts/finish.sh out/product-*.mp4 out/wellness-treat-hero.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.537",
