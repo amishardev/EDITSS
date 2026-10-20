@@ -33,6 +33,11 @@
     "render:p05": "remotion render src/index.ts P05-AlmondBar out/product-05-almond-protein-bar.mp4",
     "render:p06": "remotion render src/index.ts P06-DigestionTea out/product-06-digestion-tea.mp4",
     "render:p07": "remotion render src/index.ts P07-WellnessTreat out/wellness-treat-hero.mp4",
+    "render:d01": "remotion render src/index.ts D01-DussehraApp out/dussehra-01-app.mp4",
+    "render:d02": "remotion render src/index.ts D02-DussehraTreat out/dussehra-02-wellness-treat.mp4",
+    "render:dussehra": "npm run render:d01 && npm run render:d02",
+    "finish:dussehra": "bash scripts/finish.sh out/dussehra-*.mp4",
+    "qa:dussehra": "SHEET=dussehra-contact-sheet.jpg python3 -I scripts/qa.py out dussehra-01-app dussehra-02-wellness-treat",
     "render:products": "npm run render:p01 && npm run render:p02 && npm run render:p03 && npm run render:p04 && npm run render:p05 && npm run render:p06 && npm run render:p07",
     "finish:products": "bash scripts/finish.sh out/product-*.mp4 out/wellness-treat-hero.mp4"
   },

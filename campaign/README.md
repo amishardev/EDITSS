@@ -20,6 +20,13 @@ IRA theme composed in code.
 
 Storyboards, captions and voiceover scripts: [`STORYBOARD.md`](STORYBOARD.md).
 
+## Dussehra films
+
+Two festive films for Vijayadashami: `out/dussehra-01-app.mp4` (22s, the app:
+"Is Dussehra, 10 sar jalao.") and `out/dussehra-02-wellness-treat.mp4` (25s,
+the gift box). Run `npm run render:dussehra && npm run finish:dussehra && npm run qa:dussehra`.
+Storyboards and VO: [`DUSSEHRA.md`](DUSSEHRA.md).
+
 ## Product films
 
 Seven more films sell the actual products, one per verified SKU plus a hero

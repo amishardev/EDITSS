@@ -38,12 +38,17 @@ export type SfxName =
   | 'steam'
   | 'lid'
   | 'shimmer'
-  | 'clock';
+  | 'clock'
+  | 'arrow'
+  | 'firework'
+  | 'fire'
+  | 'match';
 
 const SFX_LEN: Record<SfxName, number> = {
   tap: 4, tick: 3, whoosh: 18, swish: 10, pop: 8, chime: 44,
   success: 20, scan: 50, impact: 22, riser: 38, sparkle: 28,
   crunch: 13, crackle: 60, pour: 48, crinkle: 21, steam: 72, lid: 30, shimmer: 72, clock: 2,
+  arrow: 18, firework: 78, fire: 66, match: 27,
 };
 
 /** One-shot sound cue on a frame. */

@@ -137,6 +137,41 @@ def tabla(bol, vel=1.0):
         out += 1.1 * np.sin(2 * np.pi * np.cumsum(f) / SR) * env_ad(n, 0.003, 0.22)
     return vel * out
 
+
+def dhol(hit, vel=1.0):
+    """Dhol: 'ge' is the deep dagga head (pitch drop), 'ti' the thin tilli slap."""
+    n = int(0.5 * SR); t = np.arange(n) / SR
+    out = np.zeros(n)
+    if hit == 'ge':
+        f = 62 + 70 * np.exp(-t * 22)
+        out += 1.2 * np.sin(2 * np.pi * np.cumsum(f) / SR) * env_ad(n, 0.002, 0.2)
+        out += 0.35 * lp(rng.standard_normal(n), 900) * env_ad(n, 0.0005, 0.02)
+    else:
+        out += 0.55 * (np.sin(2 * np.pi * 410 * t) + 0.6 * np.sin(2 * np.pi * 1130 * t)) * env_ad(n, 0.0005, 0.035)
+        out += 0.5 * bp(rng.standard_normal(n), 1800, 7000) * env_ad(n, 0.0003, 0.012)
+    return vel * out
+
+def shehnai(f, dur=0.5, vel=1.0):
+    """Nasal double-reed lead: bright harmonic stack, formant band, slow vibrato and a scoop into the note."""
+    n = int(dur * SR); t = np.arange(n) / SR
+    scoop = 1 - 0.03 * np.exp(-t * 30)
+    vib = 1 + 0.008 * np.sin(2 * np.pi * 5.6 * t) * np.clip(t / 0.15, 0, 1)
+    ph = 2 * np.pi * np.cumsum(f * scoop * vib) / SR
+    x = sum((1 / k) * np.sin(k * ph) for k in range(1, 12))
+    x = bp(x, 700, 3600) + 0.3 * x
+    return vel * 0.35 * x * env_ad(n, 0.03, dur * 0.9) * np.clip((dur - t) / 0.04, 0, 1)
+
+def drone(root, dur, vel=1.0):
+    """Tanpura-ish drone: root + fifth + octave, with a buzzy jawari shimmer."""
+    n = int(dur * SR); t = np.arange(n) / SR
+    out = np.zeros(n)
+    for m, g in [(0, 1.0), (7, 0.6), (12, 0.7), (-12, 0.5)]:
+        fq = midi(root + m)
+        ph = 2 * np.pi * fq * t
+        out += g * (np.sin(ph) + 0.4 * np.sin(2 * ph) * (0.5 + 0.5 * np.sin(2 * np.pi * 0.7 * t + m)) + 0.2 * np.sin(3 * ph))
+    a = np.clip(t / 0.6, 0, 1) * np.clip((dur - t) / 0.6, 0, 1)
+    return vel * 0.12 * out * a
+
 def noise_riser(dur, vel=1.0):
     n = int(dur * SR)
     x = rng.standard_normal(n)
@@ -176,6 +211,14 @@ HOOK = [  # kalimba hook, 8th notes per bar (None = rest)
 ]
 SITAR = [62, 66, 69, 71, 69, 66, 64, 66]
 TABLA16 = {0: 'dha', 2: 'na', 3: 'na', 4: 'tin', 6: 'na', 8: 'dha', 10: 'ge', 11: 'na', 12: 'tin', 14: 'na', 15: 'na'}
+DHOL16 = {0: 'ge', 2: 'ti', 3: 'ge', 4: 'ti', 6: 'ge', 7: 'ti', 8: 'ge', 10: 'ti', 11: 'ge', 12: 'ti', 14: 'ti', 15: 'ti'}
+# shehnai phrase per bar (16ths -> (midi, length in 16ths)); D major pentatonic, festive
+SHEHNAI = [
+    {0: (74, 3), 3: (76, 1), 4: (78, 4), 8: (81, 2), 10: (78, 2), 12: (76, 4)},
+    {0: (74, 2), 2: (76, 2), 4: (78, 2), 6: (76, 2), 8: (74, 6), 14: (71, 2)},
+    {0: (78, 3), 3: (81, 1), 4: (83, 4), 8: (81, 2), 10: (78, 2), 12: (81, 4)},
+    {0: (78, 2), 2: (76, 2), 4: (74, 4), 8: (76, 2), 10: (74, 6)},
+]
 TABLA_LIGHT = {0: 'dha', 3: 'na', 6: 'na', 8: 'ge', 11: 'na', 14: 'tin'}
 
 # layers per section kind
@@ -199,6 +242,11 @@ KINDS = {
     'ember':   {'pad': .5, 'sitar': .45, 'tabla_light': .7, 'bass': .8, 'kick_soft': .7, 'sub': .5},
     'tick':    {'tick16': .5, 'bass': .8, 'kick': .85, 'clap': .45, 'pluck': .5, 'pad': .3},
     'calm_tick': {'tick16': .45, 'pad': .3, 'sub': .4},
+    # festive (Dussehra) moods
+    'diya':    {'drone': .7, 'pad': .35, 'bell_sparse': .35},
+    'mela':    {'drone': .4, 'shehnai': .6, 'tabla_light': .6, 'shaker': .3, 'pad': .25},
+    'fest':    {'pad': .3, 'shehnai': .75, 'dhol': .9, 'bass': .85, 'clap': .55, 'shaker': .5, 'kick': .8},
+    'fest_build': {'drone': .4, 'dhol_roll': .9, 'bass': .5, 'pad': .3},
 }
 
 # ---------------------------------------------------------------- arrangements
@@ -246,6 +294,15 @@ ARR = {
     'p07': dict(frames=810, transpose=-2, sections=[(0, 'luxe'), (14.6, 'luxe_pulse'), (23.9, 'velvet'), (37.7, 'luxe_pulse'), (46.2, 'luxe'), (57.0, 'stop'), (57.1, 'outro')],
                 risers=[(176, 206), (610, 650)], stings=[206, 650], stabs=[],
                 notes=[(380, 81), (396, 83), (412, 86), (428, 88), (446, 90)]),
+    # ---- Dussehra ----
+    # app film: mela -> dhol build as IRA arrives -> full fest; every arrow hit rings a note; sting on the burn
+    'd01': dict(frames=660, sections=[(0, 'mela'), (13.5, 'fest_build'), (16.8, 'fest'), (37.75, 'stop'), (37.85, 'fest'), (41.9, 'outro')],
+                risers=[(500, 532)], stings=[532], stabs=[0, 236],
+                notes=[(276, 74), (338, 78), (400, 81), (462, 86), (506, 86), (512, 88), (518, 90)]),
+    # gift film: tanpura + diya, mela as the stage is dressed, fest on the reveal, mela for IRA's gift, fest to close
+    'd02': dict(frames=750, sections=[(0, 'diya'), (5.7, 'mela'), (14.65, 'fest'), (35.55, 'mela'), (44.1, 'fest'), (52.6, 'stop')],
+                risers=[(176, 206), (590, 620)], stings=[206, 620], stabs=[],
+                notes=[(374, 74), (390, 76), (406, 78), (422, 81), (440, 83)]),
 }
 
 # ---------------------------------------------------------------- render
@@ -305,6 +362,23 @@ def render(name, spec):
             span = min(4, stop_b - beat) * BEAT
             if span > 0.2:
                 x = pad_chord(chord[0], span + 0.3, L['pad']); add(dry, x, t, .5); add(wet, x, t, .5)
+        if 'drone' in L and s16 == 0 and bar % 2 == 0:
+            stop_b = next((s for s, kk in sections if s > beat), total_beats)
+            span = min(8, stop_b - beat) * BEAT
+            if span > 0.3:
+                x = drone(50 + tr, span + 0.2, L['drone']); add(dry, x, t, .5); add(wet, x, t, .35)
+        if 'dhol' in L and s16 in DHOL16:
+            hit = DHOL16[s16]
+            x = dhol(hit, L['dhol'] * (1 if s16 % 4 == 0 else .75)); add(dry, x, t, .5 if hit == 'ge' else .35); add(wet, x, t, .1)
+        if 'dhol_roll' in L:
+            nxt = next((s for s, kk in sections if s > beat), total_beats)
+            prog_ = 1 - min(1, (nxt - beat) / 8)
+            dens = 1 if prog_ > 0.5 else (2 if prog_ > 0.25 else 4)
+            if s16 % dens == 0:
+                x = dhol('ge' if s16 % 4 == 0 else 'ti', L['dhol_roll'] * (0.5 + 0.5 * prog_)); add(dry, x, t, .45)
+        if 'shehnai' in L and s16 in SHEHNAI[bar % 4]:
+            m, ln = SHEHNAI[bar % 4][s16]
+            x = shehnai(midi(m + tr), ln * BEAT / 4 + 0.05, L['shehnai']); add(dry, x, t, .5); add(wet, x, t, .35)
         if 'piano_slow' in L and s16 in (0, 8):
             for j, m in enumerate(chord[2][:3] if s16 == 0 else chord[2][1:]):
                 x = piano(midi(m + 12), 3.0, L['piano_slow'] * (0.8 if j else 1)); add(dry, x, t + j * 0.045, .22); add(wet, x, t + j * 0.045, .35)

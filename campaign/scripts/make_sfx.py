@@ -153,4 +153,39 @@ save("shimmer", sh, 0.3)
 x = t(0.06)
 save("clock", (np.sin(2*np.pi*3200*x) * env(len(x), .0002, .004) + 0.6*lowpass(rng.standard_normal(len(x)), 5000) * env(len(x), .0002, .002)), 0.4)
 
+# ---- Dussehra --------------------------------------------------------------
+
+# arrow: a tight airy swish with a falling doppler whistle, then a dull thunk
+d = 0.6; x = t(d)
+sw = lowpass(rng.standard_normal(len(x)), 3000 + 3000*np.exp(-x*8)) * np.exp(-((x-0.14)/0.09)**2)
+wh = np.sin(2*np.pi*np.cumsum(2600*np.exp(-x*4)+700)/SR) * np.exp(-((x-0.14)/0.07)**2) * 0.25
+th = np.zeros(len(x)); o = int(0.3*SR); xx = x[:len(x)-o]
+th[o:] = np.sin(2*np.pi*np.cumsum(160*np.exp(-xx*25)+60)/SR) * env(len(xx), .001, .05) + 0.4*lowpass(rng.standard_normal(len(xx)), 1500) * env(len(xx), .0005, .01)
+save("arrow", sw + wh + th, 0.7)
+
+# firework: rising launch whistle, a bang, then a long sparkle crackle
+d = 2.6; x = t(d)
+fw = np.zeros(len(x))
+li = x < 0.55
+fw[li] = 0.3 * np.sin(2*np.pi*np.cumsum(900 + 1800*x[li])/SR) * (x[li]/0.55)
+o = int(0.58*SR); xx = x[:len(x)-o]
+fw[o:] += lowpass(rng.standard_normal(len(xx)), 1200*np.exp(-xx*6)+80) * env(len(xx), .001, .25) * 1.4
+cr = bursts(d - 0.6, 90, 0.008, 2000, 9000, 0.0015) * np.exp(-np.arange(int(SR*(d-0.6)))/SR/0.8)
+fw[int(0.6*SR):int(0.6*SR)+len(cr)] += cr * 0.8
+save("firework", fw, 0.75)
+
+# fire: an ignition whoomp swelling into a roar
+d = 2.2; x = t(d)
+roar = lowpass(rng.standard_normal(len(x)), 300 + 1600*np.clip(x/0.35, 0, 1)) * np.minimum(x/0.12, 1) * np.exp(-x/1.4)
+roar += 0.6*np.sin(2*np.pi*np.cumsum(55+40*np.exp(-x*6))/SR) * env(len(x), .02, .4)
+roar += bursts(d, 30, 0.01, 1200, 7000, 0.002) * 0.6
+save("fire", roar, 0.75)
+
+# match: scratch then a soft flare
+d = 0.9; x = t(d)
+mt = bursts(0.2, 40, 0.006, 3000, 9000, 0.002, spread=0.18)
+mt = np.concatenate([mt, np.zeros(len(x)-len(mt))])
+mt += lowpass(rng.standard_normal(len(x)), 900) * np.clip((x-0.15)/0.08, 0, 1) * np.exp(-(x-0.15).clip(0)/0.3) * 0.7
+save("match", mt, 0.55)
+
 print("ok")

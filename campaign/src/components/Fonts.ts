@@ -1,6 +1,8 @@
 import {continueRender, delayRender, staticFile} from 'remotion';
 
-const FONTS: [family: string, file: string, weight: string][] = [
+const DEVA = 'U+0900-097F, U+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FF';
+
+const FONTS: [family: string, file: string, weight: string, range?: string][] = [
   ['Sora', 'fonts/sora-latin-200-normal.woff2', '200'],
   ['Sora', 'fonts/sora-latin-300-normal.woff2', '300'],
   ['Sora', 'fonts/sora-latin-400-normal.woff2', '400'],
@@ -11,6 +13,10 @@ const FONTS: [family: string, file: string, weight: string][] = [
   ['Poppins', 'fonts/poppins-latin-500-normal.woff2', '500'],
   ['Poppins', 'fonts/poppins-latin-600-normal.woff2', '600'],
   ['Poppins', 'fonts/poppins-latin-700-normal.woff2', '700'],
+  // Devanagari glyphs for the festive films (same family, so Hindi falls in naturally)
+  ['Poppins', 'fonts/poppins-devanagari-300-normal.woff2', '300', DEVA],
+  ['Poppins', 'fonts/poppins-devanagari-500-normal.woff2', '500', DEVA],
+  ['Poppins', 'fonts/poppins-devanagari-600-normal.woff2', '600', DEVA],
 ];
 
 let loaded = false;
@@ -21,8 +27,8 @@ export const loadFonts = () => {
   loaded = true;
   const handle = delayRender('Loading brand fonts');
   Promise.all(
-    FONTS.map(([family, file, weight]) =>
-      new FontFace(family, `url(${staticFile(file)}) format('woff2')`, {weight})
+    FONTS.map(([family, file, weight, range]) =>
+      new FontFace(family, `url(${staticFile(file)}) format('woff2')`, range ? {weight, unicodeRange: range} : {weight})
         .load()
         .then((ff) => document.fonts.add(ff)),
     ),

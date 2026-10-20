@@ -19,6 +19,8 @@ import {P04Seeds, P04_DURATION} from './products/P04Seeds';
 import {P05Almond, P05_DURATION} from './products/P05Almond';
 import {P06Tea, P06_DURATION} from './products/P06Tea';
 import {P07WellnessTreat, P07_DURATION} from './products/P07WellnessTreat';
+import {D01App, D01_DURATION} from './festive/D01App';
+import {D02Treat, D02_DURATION} from './festive/D02Treat';
 import {FPS, H, W} from './theme';
 
 loadFonts();
@@ -42,6 +44,8 @@ export const ADS = [
   {id: 'P05-AlmondBar', component: P05Almond, duration: P05_DURATION},
   {id: 'P06-DigestionTea', component: P06Tea, duration: P06_DURATION},
   {id: 'P07-WellnessTreat', component: P07WellnessTreat, duration: P07_DURATION},
+  {id: 'D01-DussehraApp', component: D01App, duration: D01_DURATION},
+  {id: 'D02-DussehraTreat', component: D02Treat, duration: D02_DURATION},
 ];
 
 export const RemotionRoot: React.FC = () => (
