@@ -71,23 +71,25 @@ const Raking: React.FC = () => {
   );
 };
 
-const LABELS: {at: number; text: string; px: number; py: number; lx: number; ly: number; align: 'left' | 'right'}[] = [
-  {at: OPEN + 44, text: 'Digestion Tea', px: 235, py: 830, lx: 70, ly: 470, align: 'left'},
-  {at: OPEN + 60, text: 'High Protein Millet Granola', px: 420, py: 870, lx: 70, ly: 380, align: 'left'},
-  {at: OPEN + 76, text: 'Roasted Chana Jor Masala', px: 590, py: 870, lx: 1010, ly: 470, align: 'right'},
-  {at: OPEN + 92, text: 'Protein Bars', px: 190, py: 1060, lx: 70, ly: 1440, align: 'left'},
-  {at: OPEN + 110, text: '+ a little surprise', px: 600, py: 1050, lx: 1010, ly: 1440, align: 'right'},
+export const LABELS: {d: number; text: string; px: number; py: number; lx: number; ly: number; align: 'left' | 'right'}[] = [
+  {d: 44, text: 'Digestion Tea', px: 235, py: 830, lx: 70, ly: 470, align: 'left'},
+  {d: 60, text: 'High Protein Millet Granola', px: 420, py: 870, lx: 70, ly: 380, align: 'left'},
+  {d: 76, text: 'Roasted Chana Jor Masala', px: 590, py: 870, lx: 1010, ly: 470, align: 'right'},
+  {d: 92, text: 'Protein Bars', px: 190, py: 1060, lx: 70, ly: 1440, align: 'left'},
+  {d: 110, text: '+ a little surprise', px: 600, py: 1050, lx: 1010, ly: 1440, align: 'right'},
 ];
-const OPEN_FX = 450;
-const OPEN_FY = 960;
-const openZoom = (f: number) => track(f, [[OPEN, 1.24], [RANGE, 1.36]], ease.soft);
+/** Framing of the real opened-box photo (899x1599), shared with the festive gift film. */
+export const OPEN_FX = 450;
+export const OPEN_FY = 960;
+export const openZoom = (f: number, open: number, end: number) => track(f, [[open, 1.24], [end, 1.36]], ease.soft);
 
-const Label: React.FC<(typeof LABELS)[number]> = ({at, text, px, py, lx, ly, align}) => {
+const Label: React.FC<(typeof LABELS)[number] & {open: number; end: number; gold: string}> = ({d, text, px, py, lx, ly, align, open, end, gold}) => {
   const f = useCurrentFrame();
+  const at = open + d;
   if (f < at) return null;
-  const pt = shotPoint(899, 1599, OPEN_FX, OPEN_FY, openZoom(f), px, py);
+  const pt = shotPoint(899, 1599, OPEN_FX, OPEN_FY, openZoom(f, open, end), px, py);
   const p = interpolate(f, [at, at + 16], [0, 1], {...clamp, easing: ease.out});
-  const o = interpolate(f, [RANGE - 14, RANGE], [1, 0], clamp);
+  const o = interpolate(f, [end - 14, end], [1, 0], clamp);
   const ex = lx + (align === 'left' ? 30 : -30);
   const ey = ly + 34;
   const mx = ex + (pt.x - ex) * p;
@@ -95,16 +97,25 @@ const Label: React.FC<(typeof LABELS)[number]> = ({at, text, px, py, lx, ly, ali
   return (
     <div style={{position: 'absolute', inset: 0, opacity: o}}>
       <svg width={1080} height={1920} style={{position: 'absolute', inset: 0}}>
-        <line x1={ex} y1={ey} x2={mx} y2={my} stroke={GOLD} strokeWidth={2.5} />
-        <circle cx={pt.x} cy={pt.y} r={9 * p} fill={GOLD} />
-        <circle cx={pt.x} cy={pt.y} r={9 + 18 * p} fill="none" stroke={GOLD} strokeWidth={1.5} opacity={1 - p * 0.6} />
+        <line x1={ex} y1={ey} x2={mx} y2={my} stroke={gold} strokeWidth={2.5} />
+        <circle cx={pt.x} cy={pt.y} r={9 * p} fill={gold} />
+        <circle cx={pt.x} cy={pt.y} r={9 + 18 * p} fill="none" stroke={gold} strokeWidth={1.5} opacity={1 - p * 0.6} />
       </svg>
-      <div style={{position: 'absolute', left: align === 'left' ? lx : undefined, right: align === 'right' ? 1080 - lx : undefined, top: ly, padding: '14px 26px', borderRadius: 999, background: 'rgba(30,18,12,0.82)', border: `1.5px solid ${GOLD}`, color: CREAM, fontFamily: F.body, fontWeight: 500, fontSize: 32, whiteSpace: 'nowrap', opacity: p, transform: `translateY(${(1 - p) * 16}px)`}}>
+      <div style={{position: 'absolute', left: align === 'left' ? lx : undefined, right: align === 'right' ? 1080 - lx : undefined, top: ly, padding: '14px 26px', borderRadius: 999, background: 'rgba(30,18,12,0.82)', border: `1.5px solid ${gold}`, color: CREAM, fontFamily: F.body, fontWeight: 500, fontSize: 32, whiteSpace: 'nowrap', opacity: p, transform: `translateY(${(1 - p) * 16}px)`}}>
         {text}
       </div>
     </div>
   );
 };
+
+/** Gold leader-line labels naming each item visible in the real opened box. */
+export const BoxLabels: React.FC<{open: number; end: number; gold?: string}> = ({open, end, gold = GOLD}) => (
+  <>
+    {LABELS.map((l, i) => (
+      <Label key={i} {...l} open={open} end={end} gold={gold} />
+    ))}
+  </>
+);
 
 const RANGE_ITEMS: {k: 'tea' | 'granola' | 'chana' | 'seeds'; h?: number; w?: number; ax: number; ay: number; d: number}[] = [
   {k: 'tea', h: 400, ax: 230, ay: 760, d: 0},
@@ -119,7 +130,7 @@ export const P07WellnessTreat: React.FC = () => {
   const boxCy = interpolate(rise, [0, 1], [1500, 980]);
   const conv = prog(f, RANGE + 50, RANGE + 96, ease.inOut);
   const boxIn = spr(f, RANGE + 84, {damping: 14, stiffness: 120});
-  const candle = interpolate(f, [SIL, RISE - 20], [0.22, 1.0], {...clamp, easing: ease.inOut});
+  const candle = interpolate(f, [SIL - 14, RISE - 20], [0.42, 1.0], {...clamp, easing: ease.inOut});
 
   return (
     <AbsoluteFill style={{background: '#070404'}}>
@@ -134,7 +145,7 @@ export const P07WellnessTreat: React.FC = () => {
       </Scene>
 
       {/* B · candle-lit silhouette */}
-      <Scene from={SIL} to={RISE + 6} fadeIn={10}>
+      <Scene from={SIL - 14} to={RISE + 6} fadeIn={16}>
         <Shot file="products/treat-scene-candle.jpg" iw={1024} ih={1536} fx={600} fy={[[SIL, 760], [RISE, 740]]} zoom={[[SIL, 1.4], [RISE, 1.12]]} filter={`brightness(${candle}) saturate(1.05)`} />
         <Grade warm={0.12} vignette={0.6} />
         <Particles kind="dust" at={SIL} dur={RISE - SIL + 6} n={40} seed={71} />
@@ -161,9 +172,7 @@ export const P07WellnessTreat: React.FC = () => {
           <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(20,12,8,0.94) 0%, rgba(20,12,8,0.8) 15%, rgba(20,12,8,0) 27%, rgba(20,12,8,0) 80%, rgba(20,12,8,0.75) 100%)'}} />
         </Reveal>
         <Title text={'Curated *with care.*'} at={OPEN + 26} out={RANGE - 10} y={232} size={76} weight={300} color={CREAM} accent={GOLD} />
-        {LABELS.map((l, i) => (
-          <Label key={i} {...l} />
-        ))}
+        <BoxLabels open={OPEN} end={RANGE} />
         <Title text="Shown: the actual box" at={OPEN + 120} out={RANGE - 10} y={1585} size={26} weight={400} color="rgba(245,234,217,0.7)" font="'Poppins', sans-serif" tracking={0.04} />
       </Scene>
 
@@ -213,7 +222,7 @@ export const P07WellnessTreat: React.FC = () => {
           [RISE + 4, 'impact', 0.4],
           [RISE + 40, 'shimmer', 0.35],
           [OPEN, 'lid', 0.6],
-          ...LABELS.map((l) => [l.at, 'tick', 0.3] as [number, 'tick', number]),
+          ...LABELS.map((l) => [OPEN + l.d, 'tick', 0.3] as [number, 'tick', number]),
           [RANGE, 'whoosh', 0.3],
           [RANGE + 84, 'impact', 0.35],
           [RANGE + 100, 'shimmer', 0.3],
