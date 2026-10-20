@@ -1,0 +1,2677 @@
+[
+ {
+  "slug": "protein-kitna",
+  "title": "Roz kitna protein chahiye?",
+  "accent": "turmeric",
+  "segs": [
+   {
+    "vo": "आपको रोज़ कितना प्रोटीन चाहिए? ज़्यादातर लोग इसका अंदाज़ा गलत लगाते हैं।",
+    "cap": "Roz kitna *protein* chahiye? Zyaadatar log galat guess karte hain.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Roz kitna",
+      "*protein*",
+      "chahiye?"
+     ],
+     "kicker": "Protein",
+     "icon": "egg"
+    }
+   },
+   {
+    "vo": "आई सी एम आर के हिसाब से, एक स्वस्थ वयस्क को हर किलो वज़न पर लगभग ज़ीरो पॉइंट एट थ्री ग्राम प्रोटीन चाहिए।",
+    "cap": "ICMR: har kilo body weight par lagbhag *0.83 gram* protein.",
+    "scene": {
+     "type": "stat",
+     "value": 0.83,
+     "label": "protein, har *kg* body weight par, roz",
+     "decimals": 2,
+     "unit": "g",
+     "note": "ICMR-NIN 2020 · RDA for healthy adults"
+    }
+   },
+   {
+    "vo": "यानी साठ किलो के इंसान को रोज़ करीब पचास ग्राम प्रोटीन।",
+    "cap": "Matlab 60 kg ke insaan ko roz karib *50 gram*.",
+    "scene": {
+     "type": "compare",
+     "left": {
+      "label": "Body weight",
+      "value": "60 kg"
+     },
+     "right": {
+      "label": "Protein / din",
+      "value": "~50 g"
+     },
+     "title": "Ek *example*",
+     "verdict": "60 × 0.83 = *49.8 g*"
+    }
+   },
+   {
+    "vo": "इसे हर मील में बाँट दीजिए। दाल, दही, पनीर, चना, या अंडा, हर प्लेट में थोड़ा प्रोटीन।",
+    "cap": "Har meal mein thoda: *dal, dahi, paneer, chana* ya anda.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "bowl",
+       "text": "Dal ya sprouts"
+      },
+      {
+       "icon": "milk",
+       "text": "Dahi ya paneer"
+      },
+      {
+       "icon": "grain",
+       "text": "Roasted chana"
+      },
+      {
+       "icon": "egg",
+       "text": "Anda, agar khaate ho"
+      }
+     ],
+     "title": "Har meal mein *thoda*"
+    }
+   },
+   {
+    "vo": "आपकी प्लेट में कितना प्रोटीन है? डाइटरी गाइड पर बस एक फोटो लीजिए।",
+    "cap": "Plate mein kitna protein? Ek photo lo.",
+    "scene": {
+     "type": "cta",
+     "line": "Plate mein kitna *protein*? Ek photo lo.",
+     "sub": "Meal scan",
+     "screen": "meal-result"
+    }
+   }
+  ],
+  "sources": [
+   "ICMR-NIN (2020) Nutrient Requirements for Indians: protein RDA 0.83 g/kg/day for healthy adults"
+  ],
+  "n": 1
+ },
+ {
+  "slug": "chai-khane-ke-saath",
+  "title": "Khaane ke saath chai?",
+  "accent": "tomato",
+  "segs": [
+   {
+    "vo": "खाने के साथ चाय पीते हैं? एक मिनट रुकिए।",
+    "cap": "Khaane ke saath *chai*? Ek minute rukiye.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Khaane ke saath",
+      "*chai?*"
+     ],
+     "kicker": "Iron alert",
+     "icon": "cup"
+    }
+   },
+   {
+    "vo": "चाय और कॉफ़ी में टैनिन होते हैं, जो खाने से मिलने वाले आयरन का अवशोषण कम कर सकते हैं।",
+    "cap": "Chai-coffee ke *tannins* khaane se *iron absorption* kam kar sakte hain.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Tannins",
+      "*iron* ko",
+      "rok sakte hain"
+     ],
+     "icon": "cup"
+    }
+   },
+   {
+    "vo": "इसलिए आई सी एम आर की सलाह है: खाने से एक घंटा पहले, और एक घंटा बाद तक, चाय कॉफ़ी से बचिए।",
+    "cap": "ICMR: khaane se *1 ghanta pehle* aur *1 ghanta baad* chai-coffee avoid karein.",
+    "scene": {
+     "type": "timeline",
+     "steps": [
+      {
+       "icon": "cup",
+       "label": "Chai"
+      },
+      {
+       "icon": "plate",
+       "label": "Khaana"
+      },
+      {
+       "icon": "cup",
+       "label": "Chai"
+      }
+     ],
+     "gaps": [
+      "1 ghanta",
+      "1 ghanta"
+     ],
+     "title": "*1 ghanta* ka gap",
+     "note": "ICMR-NIN Dietary Guidelines for Indians, 2024"
+    }
+   },
+   {
+    "vo": "ये ज़रूरी है, क्योंकि भारत में पंद्रह से उनचास साल की सत्तावन प्रतिशत महिलाओं में खून की कमी पाई गई।",
+    "cap": "NFHS-5: 15-49 saal ki *57%* mahilaon mein anaemia.",
+    "scene": {
+     "type": "stat",
+     "value": 57,
+     "label": "15-49 saal ki *mahilaon* mein anaemia",
+     "decimals": 0,
+     "unit": "%",
+     "note": "NFHS-5 (2019-21)",
+     "icon": "drop"
+    }
+   },
+   {
+    "vo": "आयरन से जुड़ा सवाल है? डाइटरी गाइड पर आइरा से पूछिए।",
+    "cap": "Iron ka sawaal? IRA se poochho.",
+    "scene": {
+     "type": "cta",
+     "line": "Iron ka *sawaal*? IRA se poochho.",
+     "sub": "Ask IRA",
+     "screen": "chat"
+    }
+   }
+  ],
+  "sources": [
+   "ICMR-NIN Dietary Guidelines for Indians, 2024: avoid tea/coffee 1 hour before and after meals (tannins reduce iron absorption)",
+   "NFHS-5 (2019-21): 57.0% of women aged 15-49 anaemic"
+  ],
+  "n": 2
+ },
+ {
+  "slug": "namak-8-gram",
+  "title": "Roz kitna namak?",
+  "accent": "sky",
+  "segs": [
+   {
+    "vo": "आप रोज़ कितना नमक खाते हैं? औसत भारतीय, लगभग आठ ग्राम।",
+    "cap": "Roz kitna *namak*? Average Indian: lagbhag *8 gram*.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "roz ka *namak*"
+     ],
+     "kicker": "Salt check",
+     "big": "8g"
+    }
+   },
+   {
+    "vo": "जबकि डब्ल्यू एच ओ कहता है, पाँच ग्राम से कम। यानी एक छोटी चम्मच से भी कम।",
+    "cap": "WHO limit: *5 gram se kam*. Ek chhoti chammach se bhi kam.",
+    "scene": {
+     "type": "bars",
+     "items": [
+      {
+       "label": "Average Indian",
+       "value": 8,
+       "unit": "g",
+       "hi": true
+      },
+      {
+       "label": "WHO limit",
+       "value": 5,
+       "unit": "g",
+       "hi": false
+      }
+     ],
+     "title": "Hum vs *limit*",
+     "note": "ICMR-NCDIR, Sci Rep 2023 · WHO"
+    }
+   },
+   {
+    "vo": "ज़्यादा नमक छुपा होता है: अचार, पापड़, नमकीन, और पैकेट वाले खाने में।",
+    "cap": "Hidden namak: *achaar, papad, namkeen*, packaged food.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "jar",
+       "text": "Achaar"
+      },
+      {
+       "icon": "salt",
+       "text": "Namkeen & papad"
+      },
+      {
+       "icon": "tag",
+       "text": "Packaged snacks"
+      },
+      {
+       "icon": "bowl",
+       "text": "Instant noodles"
+      }
+     ],
+     "title": "Namak *chhupa* kahan hai?"
+    }
+   },
+   {
+    "vo": "छोटा सा बदलाव: खाने पर ऊपर से नमक डालना बंद कीजिए, और लेबल पर सोडियम देखिए।",
+    "cap": "Table pe *upar se namak* band. Label pe *sodium* dekho.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Upar se namak?",
+      "*Band.*"
+     ],
+     "icon": "salt"
+    }
+   },
+   {
+    "vo": "पैकेट में कितना सोडियम है? डाइटरी गाइड से लेबल स्कैन कीजिए।",
+    "cap": "Packet mein kitna sodium?",
+    "scene": {
+     "type": "cta",
+     "line": "Packet mein kitna *sodium*?",
+     "sub": "Label scan",
+     "screen": "label-result"
+    }
+   }
+  ],
+  "sources": [
+   "Scientific Reports 2023 (ICMR-NCDIR, National NCD Monitoring Survey): mean salt intake 8.0 g/day",
+   "WHO: adults < 5 g salt/day"
+  ],
+  "n": 3
+ },
+ {
+  "slug": "cheeni-6-chammach",
+  "title": "3 cup chai = din ki cheeni?",
+  "accent": "turmeric",
+  "segs": [
+   {
+    "vo": "तीन कप चाय, और दिन का पूरा शुगर कोटा खत्म?",
+    "cap": "Teen cup chai, aur din ka *sugar quota* khatam?",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "3 cup chai =",
+      "poore din ki",
+      "*cheeni?*"
+     ],
+     "kicker": "Sugar math",
+     "icon": "cup"
+    }
+   },
+   {
+    "vo": "डब्ल्यू एच ओ कहता है, फ़्री शुगर दस प्रतिशत से कम रखिए, और बेहतर हो तो पाँच प्रतिशत, यानी लगभग छह चम्मच।",
+    "cap": "WHO: free sugar *10% se kam*, behtar *5%*: lagbhag *6 chammach*.",
+    "scene": {
+     "type": "cubes",
+     "count": 6,
+     "label": "chammach",
+     "kind": "sugar",
+     "sub": "Lagbhag *25 g* free sugar, poore din mein",
+     "note": "WHO Sugars Guideline 2015"
+    }
+   },
+   {
+    "vo": "अगर हर कप में दो चम्मच चीनी है, तो तीन कप में ही छह चम्मच हो गई।",
+    "cap": "Har cup mein 2 chammach? *3 cup = 6 chammach.*",
+    "scene": {
+     "type": "compare",
+     "left": {
+      "label": "1 cup chai",
+      "value": "2",
+      "sub": "chammach cheeni"
+     },
+     "right": {
+      "label": "3 cup chai",
+      "value": "6",
+      "sub": "chammach cheeni"
+     },
+     "title": "Chai *math*",
+     "verdict": "Biscuit, juice, mithai *alag se*."
+    }
+   },
+   {
+    "vo": "धीरे-धीरे घटाइए: पहले डेढ़ चम्मच, फिर एक। और बिस्किट, जूस में छुपी चीनी भी गिनिए।",
+    "cap": "Dheere ghatao: *1.5*, phir *1 chammach*. Biscuit-juice ki cheeni bhi gino.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "cube",
+       "text": "2 → 1.5 → 1 chammach"
+      },
+      {
+       "icon": "tag",
+       "text": "Label pe sugar check"
+      },
+      {
+       "icon": "glass",
+       "text": "Juice nahi, poora phal"
+      }
+     ],
+     "title": "Dheere *dheere*"
+    }
+   },
+   {
+    "vo": "अपना रोज़ का खाना डाइटरी गाइड पर ट्रैक कीजिए, और फ़र्क खुद देखिए।",
+    "cap": "Roz ka khaana track karo.",
+    "scene": {
+     "type": "cta",
+     "line": "Roz ka khaana, *track* karo",
+     "sub": "Meal scan",
+     "screen": "meal-result"
+    }
+   }
+  ],
+  "sources": [
+   "WHO Guideline: Sugars intake for adults and children (2015): free sugars < 10% of energy, ideally < 5% (about 25 g, 6 teaspoons)"
+  ],
+  "n": 4
+ },
+ {
+  "slug": "real-fruit-juice",
+  "title": "'Real fruit juice' ka sach",
+  "accent": "amla",
+  "segs": [
+   {
+    "vo": "पैकेट पर लिखा है रियल फ्रूट जूस? पर अंदर असली फल कितना है?",
+    "cap": "'*Real fruit juice*' likha hai? Andar asli phal kitna?",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "'Real fruit'",
+      "*juice?*"
+     ],
+     "kicker": "Label check",
+     "icon": "glass"
+    }
+   },
+   {
+    "vo": "आई सी एम आर के मुताबिक, नियमों के तहत सिर्फ़ दस प्रतिशत फल वाला प्रोडक्ट भी रियल फ्रूट का दावा कर सकता है।",
+    "cap": "ICMR: sirf *10% fruit* wala product bhi 'real fruit' claim kar sakta hai.",
+    "scene": {
+     "type": "stat",
+     "value": 10,
+     "label": "fruit pulp, aur phir bhi *'real fruit'*",
+     "decimals": 0,
+     "unit": "%",
+     "note": "ICMR-NIN Dietary Guidelines for Indians, 2024"
+    }
+   },
+   {
+    "vo": "बाकी में चीनी और दूसरी चीज़ें हो सकती हैं। और डब्ल्यू एच ओ, जूस की शुगर को भी फ़्री शुगर गिनता है।",
+    "cap": "Baaki mein *added sugar* ho sakti hai. WHO juice ko bhi *free sugar* ginta hai.",
+    "scene": {
+     "type": "myth",
+     "myth": "Juice = phal jitna *healthy*",
+     "fact": "Juice ki sugar *free sugar* hai, aur fibre bhi kam.",
+     "note": "WHO Sugars Guideline 2015"
+    }
+   },
+   {
+    "vo": "इसलिए जूस की जगह पूरा फल खाइए, जिसमें फाइबर भी मिलता है।",
+    "cap": "Juice ki jagah *poora phal*: fibre bhi milta hai.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Juice nahi,",
+      "*poora phal.*"
+     ],
+     "icon": "lemon"
+    }
+   },
+   {
+    "vo": "अगली बार खरीदने से पहले, डाइटरी गाइड से लेबल स्कैन कर लीजिए।",
+    "cap": "Kharidne se pehle label scan.",
+    "scene": {
+     "type": "cta",
+     "line": "Kharidne se pehle, *label scan*",
+     "sub": "Label scan",
+     "screen": "label-result"
+    }
+   }
+  ],
+  "sources": [
+   "ICMR-NIN Dietary Guidelines for Indians, 2024: 'real fruit' claims allowed with as little as 10% fruit pulp",
+   "WHO (2015): free sugars include sugars in fruit juices"
+  ],
+  "n": 5
+ },
+ {
+  "slug": "sugar-free-label",
+  "title": "'Sugar-free' = healthy?",
+  "accent": "berry",
+  "segs": [
+   {
+    "vo": "शुगर फ़्री लिखा है, तो हेल्दी है? ज़रूरी नहीं।",
+    "cap": "*Sugar-free* likha hai, toh healthy? Zaroori nahi.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "'Sugar-free'",
+      "= *healthy?*"
+     ],
+     "kicker": "Label myth",
+     "icon": "tag"
+    }
+   },
+   {
+    "vo": "आई सी एम आर चेतावनी देता है: ऐसे प्रोडक्ट में फैट, मैदा, स्टार्च, और छुपी हुई मिठास हो सकती है।",
+    "cap": "ICMR: inmein *fat, maida, starch* aur chhupi mithaas ho sakti hai.",
+    "scene": {
+     "type": "label",
+     "heading": "INGREDIENTS",
+     "words": [
+      {
+       "t": "Refined wheat flour (Maida)",
+       "hi": true
+      },
+      {
+       "t": "Edible vegetable fat",
+       "hi": true
+      },
+      {
+       "t": "Maltitol",
+       "hi": true
+      },
+      {
+       "t": "Milk solids"
+      },
+      {
+       "t": "Fructose",
+       "hi": true
+      },
+      {
+       "t": "Emulsifier"
+      },
+      {
+       "t": "Salt"
+      }
+     ],
+     "footer": "'Sugar-free' · mithaas phir bhi",
+     "note": "Example label · ICMR-NIN Dietary Guidelines for Indians, 2024"
+    }
+   },
+   {
+    "vo": "माल्टिटॉल, फ्रुक्टोज़, कॉर्न सिरप, मोलासेस, ये सब भी मिठास देने वाली चीज़ें हैं।",
+    "cap": "*Maltitol, fructose, corn syrup, molasses*: ye bhi mithaas hain.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "cube",
+       "text": "Maltitol"
+      },
+      {
+       "icon": "sparkle",
+       "text": "Fructose"
+      },
+      {
+       "icon": "drop",
+       "text": "Corn syrup"
+      },
+      {
+       "icon": "jar",
+       "text": "Molasses"
+      }
+     ],
+     "title": "Inhe *pehchano*"
+    }
+   },
+   {
+    "vo": "इसलिए नाम नहीं, इंग्रीडिएंट लिस्ट पढ़िए।",
+    "cap": "Naam nahi, *ingredient list* padho.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Naam nahi,",
+      "*ingredients* padho."
+     ],
+     "icon": "tag"
+    }
+   },
+   {
+    "vo": "लेबल समझना मुश्किल लगे, तो डाइटरी गाइड पर स्कैन कीजिए।",
+    "cap": "Label confusing? Scan karo.",
+    "scene": {
+     "type": "cta",
+     "line": "Label *confusing*? Scan karo.",
+     "sub": "Label scan",
+     "screen": "label-result"
+    }
+   }
+  ],
+  "sources": [
+   "ICMR-NIN Dietary Guidelines for Indians, 2024: 'sugar-free' foods may contain fats, refined flour, starch and hidden sugars (maltitol, fructose, corn syrup, molasses)"
+  ],
+  "n": 6
+ },
+ {
+  "slug": "brown-bread",
+  "title": "Brown bread ka sach",
+  "accent": "turmeric",
+  "segs": [
+   {
+    "vo": "ब्राउन ब्रेड, मतलब हेल्दी ब्रेड? पहला इंग्रीडिएंट देखिए।",
+    "cap": "*Brown bread* = healthy? Pehla ingredient dekho.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Brown bread,",
+      "*healthy?*"
+     ],
+     "kicker": "Label check",
+     "icon": "bread"
+    }
+   },
+   {
+    "vo": "लेबल पर इंग्रीडिएंट्स मात्रा के हिसाब से लिखे जाते हैं, सबसे ज़्यादा वाला सबसे पहले।",
+    "cap": "Ingredients *zyaada se kam* order mein likhe hote hain.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Jo *pehle* likha,",
+      "woh sabse *zyaada*"
+     ],
+     "icon": "tag",
+     "note": "FSSAI Labelling & Display Regulations"
+    }
+   },
+   {
+    "vo": "अगर पहला शब्द व्हीट फ़्लोर या मैदा है, तो वह रिफ़ाइंड आटा हो सकता है। भूरा रंग कैरेमल से भी आ सकता है।",
+    "cap": "Pehla *'wheat flour'* ya maida? Refined ho sakta hai. Rang *caramel* se bhi.",
+    "scene": {
+     "type": "label",
+     "heading": "INGREDIENTS",
+     "words": [
+      {
+       "t": "Wheat flour (Maida)",
+       "hi": true
+      },
+      {
+       "t": "Water"
+      },
+      {
+       "t": "Wheat bran"
+      },
+      {
+       "t": "Sugar"
+      },
+      {
+       "t": "Yeast"
+      },
+      {
+       "t": "Colour (Caramel)",
+       "hi": true
+      },
+      {
+       "t": "Salt"
+      }
+     ],
+     "note": "Example label"
+    }
+   },
+   {
+    "vo": "सही पहचान: सबसे ऊपर होल व्हीट, यानी आटा लिखा हो।",
+    "cap": "Sahi pehchaan: sabse upar *whole wheat (atta)*.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "check",
+       "text": "Pehla: Whole wheat (atta)"
+      },
+      {
+       "icon": "cross",
+       "text": "Pehla: Wheat flour (maida)"
+      },
+      {
+       "icon": "bread",
+       "text": "Rang pe mat jao"
+      }
+     ],
+     "title": "Sahi *pehchaan*"
+    }
+   },
+   {
+    "vo": "ब्रेड हो या बिस्किट, डाइटरी गाइड से लेबल स्कैन करके सच जानिए।",
+    "cap": "Bread ho ya biscuit, scan karo.",
+    "scene": {
+     "type": "cta",
+     "line": "Bread ho ya biscuit, *scan karo*",
+     "sub": "Label scan",
+     "screen": "label-result"
+    }
+   }
+  ],
+  "sources": [
+   "FSSAI Labelling & Display Regulations 2020: ingredients listed in descending order of weight",
+   "ICMR-NIN Dietary Guidelines for Indians, 2024: 'made with whole grain' claims can mislead"
+  ],
+  "n": 7
+ },
+ {
+  "slug": "label-trick",
+  "title": "Label padhne ka 10-second trick",
+  "accent": "sky",
+  "segs": [
+   {
+    "vo": "किसी भी पैकेट का सच, दस सेकंड में। ये तीन चीज़ें देखिए।",
+    "cap": "Kisi bhi packet ka sach, *10 second* mein.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "label padhne ka",
+      "*trick*"
+     ],
+     "kicker": "Label 101",
+     "big": "10s"
+    }
+   },
+   {
+    "vo": "पहला, शुरुआती तीन इंग्रीडिएंट्स। दूसरा, प्रति सौ ग्राम चीनी, नमक और फैट। तीसरा, सर्विंग साइज़, क्योंकि पूरा पैकेट एक सर्विंग नहीं होता।",
+    "cap": "Pehle *3 ingredients*, per 100 g *sugar-salt-fat*, aur *serving size*.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "tag",
+       "text": "Pehle 3 ingredients"
+      },
+      {
+       "icon": "chart",
+       "text": "Per 100 g: sugar, salt, fat"
+      },
+      {
+       "icon": "scale",
+       "text": "Serving size check"
+      }
+     ],
+     "title": "Bas *3 cheezein*",
+     "note": "FSSAI Labelling & Display Regulations"
+    }
+   },
+   {
+    "vo": "और चीनी के दूसरे नाम भी पहचानिए: ग्लूकोज़ सिरप, डेक्सट्रोज़, इन्वर्ट शुगर, कॉर्न सिरप।",
+    "cap": "Cheeni ke *doosre naam*: glucose syrup, dextrose, invert sugar, corn syrup.",
+    "scene": {
+     "type": "label",
+     "heading": "CHEENI KE NAAM",
+     "words": [
+      {
+       "t": "Glucose syrup",
+       "hi": true
+      },
+      {
+       "t": "Dextrose",
+       "hi": true
+      },
+      {
+       "t": "Invert sugar",
+       "hi": true
+      },
+      {
+       "t": "Corn syrup",
+       "hi": true
+      },
+      {
+       "t": "Fructose",
+       "hi": true
+      },
+      {
+       "t": "Sucrose",
+       "hi": true
+      },
+      {
+       "t": "Honey",
+       "hi": true
+      }
+     ],
+     "title": "Cheeni *bhes badal* ke"
+    }
+   },
+   {
+    "vo": "हर पैकेट पढ़ना मुश्किल है? डाइटरी गाइड पर लेबल स्कैन कीजिए।",
+    "cap": "Label scan karo.",
+    "scene": {
+     "type": "cta",
+     "line": "Label, *aasaan* bhasha mein",
+     "sub": "Label scan",
+     "screen": "label-result"
+    }
+   }
+  ],
+  "sources": [
+   "FSSAI Labelling & Display Regulations 2020",
+   "WHO (2015) free sugars"
+  ],
+  "n": 8
+ },
+ {
+  "slug": "gud-vs-cheeni",
+  "title": "Gud vs cheeni",
+  "accent": "turmeric",
+  "segs": [
+   {
+    "vo": "गुड़ हेल्दी, चीनी अनहेल्दी? कैलोरी देखेंगे तो चौंक जाएँगे।",
+    "cap": "*Gud* healthy, cheeni unhealthy? Calories dekh ke chaunk jaoge.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Gud vs",
+      "*cheeni*"
+     ],
+     "kicker": "Myth or fact",
+     "icon": "cube"
+    }
+   },
+   {
+    "vo": "सौ ग्राम गुड़ में लगभग तीन सौ अस्सी कैलोरी, और चीनी में भी लगभग उतनी ही।",
+    "cap": "100 g gud: *~380 kcal*. Cheeni: *lagbhag utni hi*.",
+    "scene": {
+     "type": "compare",
+     "left": {
+      "label": "Gud · 100 g",
+      "value": "~383",
+      "sub": "kcal"
+     },
+     "right": {
+      "label": "Cheeni · 100 g",
+      "value": "~387",
+      "sub": "kcal"
+     },
+     "title": "Calories *per 100 g*",
+     "verdict": "Farak *na ke barabar*.",
+     "note": "Approx. values, Indian food composition data"
+    }
+   },
+   {
+    "vo": "गुड़ में थोड़े मिनरल्स ज़रूर होते हैं, पर एक चम्मच में बहुत कम। शरीर के लिए वह भी शुगर ही है।",
+    "cap": "Gud mein thode *minerals*, par ek chammach mein bahut kam. Hai toh *sugar* hi.",
+    "scene": {
+     "type": "myth",
+     "myth": "Gud healthy hai, *jitna chaho* khao",
+     "fact": "Gud bhi *sugar* hai. Minerals bas thode."
+    }
+   },
+   {
+    "vo": "तो गुड़ हो या चीनी, मात्रा ही असली बात है।",
+    "cap": "Gud ho ya cheeni, *quantity* hi asli baat.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Gud ho ya cheeni,",
+      "*matra* hi asli baat."
+     ],
+     "icon": "spoon"
+    }
+   },
+   {
+    "vo": "अपने दिन की मिठास का हिसाब, डाइटरी गाइड पर रखिए।",
+    "cap": "Mithaas ka hisaab rakho.",
+    "scene": {
+     "type": "cta",
+     "line": "Mithaas ka *hisaab* rakho",
+     "sub": "Meal tracking",
+     "screen": "home"
+    }
+   }
+  ],
+  "sources": [
+   "Indian food composition values (per 100 g): jaggery ~383 kcal, sugar ~387 kcal (approx.)",
+   "WHO (2015) free sugars"
+  ],
+  "n": 9
+ },
+ {
+  "slug": "tel-baar-baar",
+  "title": "Wahi tel, baar baar?",
+  "accent": "tomato",
+  "segs": [
+   {
+    "vo": "पकोड़े वाला तेल, बार-बार इस्तेमाल? ये ज़रूर जानिए।",
+    "cap": "Pakode wala *tel*, baar-baar? Ye zaroor jaano.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Wahi *tel*,",
+      "baar baar?"
+     ],
+     "kicker": "Kitchen check",
+     "icon": "oil"
+    }
+   },
+   {
+    "vo": "तेल को बार-बार गरम करने से उसमें पोलर कंपाउंड्स बढ़ते जाते हैं।",
+    "cap": "Baar-baar garam karne se *polar compounds* badhte hain.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Har baar garam,",
+      "*kharaab* thoda aur"
+     ],
+     "icon": "flame"
+    }
+   },
+   {
+    "vo": "एफ़ एस एस ए आई का नियम है: जब ये पच्चीस प्रतिशत तक पहुँचें, तो तेल फेंक देना चाहिए।",
+    "cap": "FSSAI: *25%* polar compounds par tel discard.",
+    "scene": {
+     "type": "stat",
+     "value": 25,
+     "label": "*total polar compounds*: iske baad tel discard",
+     "decimals": 0,
+     "unit": "%",
+     "note": "FSSAI · RUCO guidance"
+    }
+   },
+   {
+    "vo": "घर पर पहचान: तेल काला हो जाए, झाग आए, या धुआँ जल्दी उठे, तो बदल दीजिए।",
+    "cap": "Ghar pe pehchaan: *kaala*, *jhaag*, ya *jaldi dhuan*? Badal do.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "oil",
+       "text": "Rang gehra ya kaala"
+      },
+      {
+       "icon": "drop",
+       "text": "Jhaag banna"
+      },
+      {
+       "icon": "flame",
+       "text": "Jaldi dhuan uthna"
+      }
+     ],
+     "title": "Kab *badlein*?",
+     "note": "FSSAI guidance note on used cooking oil"
+    }
+   },
+   {
+    "vo": "तली हुई चीज़ें कितनी बार खा रहे हैं? डाइटरी गाइड पर अपनी मील्स ट्रैक कीजिए।",
+    "cap": "Fried kitni baar? Track karo.",
+    "scene": {
+     "type": "cta",
+     "line": "Fried kitni baar? *Track karo*",
+     "sub": "Meal scan",
+     "screen": "meal-result"
+    }
+   }
+  ],
+  "sources": [
+   "FSSAI: vegetable oil not to be used once Total Polar Compounds exceed 25%; RUCO guidance note (discard on darkening, foaming, smoke)"
+  ],
+  "n": 10
+ },
+ {
+  "slug": "walk-after-meal",
+  "title": "Khaane ke baad 2-5 minute",
+  "accent": "leaf",
+  "segs": [
+   {
+    "vo": "खाने के बाद सिर्फ़ दो से पाँच मिनट। बस इतना सा काम।",
+    "cap": "Khaane ke baad sirf *2-5 minute*. Bas itna.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "minute ki *walk*"
+     ],
+     "kicker": "Easy habit",
+     "big": "2-5"
+    }
+   },
+   {
+    "vo": "साल दो हज़ार बाईस की एक रिसर्च में पाया गया कि बैठे रहने के मुकाबले, हल्की वॉक से खाने के बाद शुगर कम बढ़ी।",
+    "cap": "2022 research: baithne ke mukable *halki walk* se post-meal sugar *kam badhi*.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Halki walk =",
+      "*kam* sugar spike"
+     ],
+     "icon": "walk",
+     "note": "Buffey et al., Sports Medicine 2022"
+    }
+   },
+   {
+    "vo": "खाना खाइए, फिर दो से पाँच मिनट टहल लीजिए, घर में ही सही।",
+    "cap": "Khaana, phir *2-5 min* tehlo. Ghar mein bhi chalega.",
+    "scene": {
+     "type": "timeline",
+     "steps": [
+      {
+       "icon": "plate",
+       "label": "Khaana"
+      },
+      {
+       "icon": "walk",
+       "label": "Walk"
+      },
+      {
+       "icon": "check",
+       "label": "Done"
+      }
+     ],
+     "gaps": [
+      "phir",
+      "2-5 min"
+     ],
+     "title": "Simple *routine*"
+    }
+   },
+   {
+    "vo": "लंच के बाद, डिनर के बाद, या लंबे समय बैठने के बीच में।",
+    "cap": "Lunch ke baad, dinner ke baad, ya *lambi sitting* ke beech.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "fork",
+       "text": "Lunch ke baad"
+      },
+      {
+       "icon": "moon",
+       "text": "Dinner ke baad"
+      },
+      {
+       "icon": "clock",
+       "text": "Lambi sitting ke beech"
+      }
+     ],
+     "title": "Kab *karein*?"
+    }
+   },
+   {
+    "vo": "ऐसी छोटी आदतों की स्ट्रीक बनाइए, डाइटरी गाइड के साथ।",
+    "cap": "Chhoti aadatein, badi streak.",
+    "scene": {
+     "type": "cta",
+     "line": "Chhoti aadatein, *badi streak*",
+     "sub": "Streaks",
+     "screen": "streak"
+    }
+   }
+  ],
+  "sources": [
+   "Buffey AJ et al., Sports Medicine 2022: light walking after eating reduced post-meal glucose vs sitting"
+  ],
+  "n": 11
+ },
+ {
+  "slug": "neend-aur-cravings",
+  "title": "Neend kam, bhookh zyaada?",
+  "accent": "berry",
+  "segs": [
+   {
+    "vo": "रात को नींद कम, और अगले दिन मीठा नमकीन खाने का मन? ये इत्तेफ़ाक़ नहीं भी हो सकता।",
+    "cap": "Neend kam, aur *cravings* zyaada? Ittefaq nahi bhi ho sakta.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Neend *kam*,",
+      "bhookh *zyaada?*"
+     ],
+     "kicker": "Sleep & food",
+     "icon": "moon"
+    }
+   },
+   {
+    "vo": "दो हज़ार चार की एक छोटी स्टडी में, दो रात सिर्फ़ चार घंटे सोने पर, भूख वाला हार्मोन घ्रेलिन अट्ठाईस प्रतिशत बढ़ा।",
+    "cap": "2004 study: 2 raat, 4 ghante neend. *Ghrelin* (bhookh) *28%* upar.",
+    "scene": {
+     "type": "bars",
+     "items": [
+      {
+       "label": "Ghrelin (bhookh) ↑",
+       "value": 28,
+       "unit": "%",
+       "hi": true
+      },
+      {
+       "label": "Leptin (pet bhara) ↓",
+       "value": 18,
+       "unit": "%",
+       "hi": false
+      }
+     ],
+     "title": "2 raat, sirf *4 ghante*",
+     "note": "Spiegel et al., Ann Intern Med 2004 · small study"
+    }
+   },
+   {
+    "vo": "और पेट भरने का सिग्नल देने वाला लेप्टिन अठारह प्रतिशत घटा। भूख चौबीस प्रतिशत बढ़ गई।",
+    "cap": "*Leptin* 18% neeche, bhookh *24%* upar.",
+    "scene": {
+     "type": "stat",
+     "value": 24,
+     "label": "zyaada bhookh, khaaskar *meetha, namkeen*",
+     "decimals": 0,
+     "unit": "%",
+     "note": "Spiegel et al., 2004 · later studies are mixed",
+     "prefix": "+"
+    }
+   },
+   {
+    "vo": "रोज़ एक ही समय पर सोइए, सात घंटे या उससे ज़्यादा का लक्ष्य रखिए, और शाम के बाद कैफ़ीन कम।",
+    "cap": "Roz same time, *7+ ghante*, aur shaam ke baad *caffeine kam*.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "clock",
+       "text": "Roz same time"
+      },
+      {
+       "icon": "moon",
+       "text": "7+ ghante ka target"
+      },
+      {
+       "icon": "cup",
+       "text": "Shaam ke baad caffeine kam"
+      }
+     ],
+     "title": "Better *neend*",
+     "note": "Adults: 7+ hours (AASM/SRS)"
+    }
+   },
+   {
+    "vo": "नींद और खाने का पूरा पैटर्न समझना है? डाइटरी गाइड पर अपने मेट्रिक्स देखिए।",
+    "cap": "Neend aur khaana, connected.",
+    "scene": {
+     "type": "cta",
+     "line": "Neend aur khaana, *connected*",
+     "sub": "Metrics",
+     "screen": "metrics"
+    }
+   }
+  ],
+  "sources": [
+   "Spiegel K et al., Annals of Internal Medicine 2004: 2 nights of 4 h sleep, leptin -18%, ghrelin +28%, hunger +24% (small study; replication mixed)",
+   "AASM/SRS consensus: adults 7+ hours sleep"
+  ],
+  "n": 12
+ },
+ {
+  "slug": "intermittent-fasting",
+  "title": "Intermittent fasting: jaadu?",
+  "accent": "sky",
+  "segs": [
+   {
+    "vo": "इंटरमिटेंट फ़ास्टिंग, वज़न घटाने का जादू? बारह महीने की एक रिसर्च ने कुछ और बताया।",
+    "cap": "*Intermittent fasting* = jaadu? 12 mahine ki research ne kuch aur bataya.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Intermittent",
+      "*fasting*",
+      "= jaadu?"
+     ],
+     "kicker": "Trend check",
+     "icon": "clock"
+    }
+   },
+   {
+    "vo": "इस स्टडी में दोनों ग्रुप्स ने कैलोरी कम की। एक ग्रुप ने सिर्फ़ आठ घंटे की विंडो में खाया।",
+    "cap": "Dono groups ne *calories kam* ki. Ek ne *8 ghante* ki window mein khaaya.",
+    "scene": {
+     "type": "compare",
+     "left": {
+      "label": "Sirf calorie kam",
+      "value": "6.3 kg",
+      "sub": "12 mahine"
+     },
+     "right": {
+      "label": "+ 8 hr window",
+      "value": "8.0 kg",
+      "sub": "12 mahine"
+     },
+     "title": "Weight loss, *12 mahine*",
+     "verdict": "Farak *statistically significant nahi*.",
+     "note": "Liu et al., NEJM 2022 · 139 adults"
+    }
+   },
+   {
+    "vo": "फ़र्क साफ़ नहीं निकला। असली असर कुल कैलोरी और निरंतरता का था।",
+    "cap": "Asli asar: *total calories* aur *consistency*.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Asli game:",
+      "*calories* +",
+      "*consistency*"
+     ],
+     "icon": "scale"
+    }
+   },
+   {
+    "vo": "तो वही तरीका चुनिए जो आप लंबे समय तक निभा सकें। डायबिटीज़ हो या कोई दवा चल रही हो, तो पहले डॉक्टर से बात कीजिए।",
+    "cap": "Jo *lambe time* nibha sako, wahi. Dawai chal rahi ho toh *doctor* se poochho.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "check",
+       "text": "Jo nibha sako, wahi"
+      },
+      {
+       "icon": "scale",
+       "text": "Total calories pe dhyaan"
+      },
+      {
+       "icon": "heart",
+       "text": "Dawai chal rahi? Pehle doctor"
+      }
+     ],
+     "title": "Kya *chunein*?"
+    }
+   },
+   {
+    "vo": "अपनी कैलोरी का अंदाज़ा चाहिए? डाइटरी गाइड पर अपनी मील्स स्कैन कीजिए।",
+    "cap": "Calories ka andaaza, ek photo mein.",
+    "scene": {
+     "type": "cta",
+     "line": "Calories ka *andaaza*, ek photo mein",
+     "sub": "Meal scan",
+     "screen": "meal-result"
+    }
+   }
+  ],
+  "sources": [
+   "Liu D et al., NEJM 2022 (TREATY): time-restricted eating + calorie restriction vs calorie restriction alone, 8.0 vs 6.3 kg at 12 months, difference not significant"
+  ],
+  "n": 13
+ },
+ {
+  "slug": "ultra-processed",
+  "title": "Ultra-processed food kya hai?",
+  "accent": "tomato",
+  "segs": [
+   {
+    "vo": "अल्ट्रा प्रोसेस्ड फ़ूड, आख़िर होता क्या है? और इसकी इतनी बात क्यों हो रही है?",
+    "cap": "*Ultra-processed food* kya hota hai? Itni baat kyun?",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Ultra-processed",
+      "*food*",
+      "kya hai?"
+     ],
+     "kicker": "Food science",
+     "icon": "tag"
+    }
+   },
+   {
+    "vo": "ऐसा पैकेट वाला खाना, जिसमें घर की रसोई में न मिलने वाली चीज़ें होती हैं, जैसे फ़्लेवर, कलर, इमल्सीफ़ायर।",
+    "cap": "Packet food jismein *ghar ki rasoi* mein na milne wali cheezein: flavour, colour, emulsifier.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "tag",
+       "text": "Chips, instant noodles"
+      },
+      {
+       "icon": "glass",
+       "text": "Sugary drinks"
+      },
+      {
+       "icon": "bread",
+       "text": "Packaged biscuits, cakes"
+      }
+     ],
+     "title": "Kuch *examples*"
+    }
+   },
+   {
+    "vo": "दो हज़ार चौबीस की बी एम जे की एक बड़ी समीक्षा में, लगभग एक करोड़ लोगों के डेटा में, इन्हें बत्तीस हेल्थ प्रॉब्लम्स से जुड़ा पाया गया।",
+    "cap": "BMJ 2024: ~1 crore logon ka data, *32 health outcomes* se link.",
+    "scene": {
+     "type": "stat",
+     "value": 32,
+     "label": "health outcomes se *link* (association)",
+     "decimals": 0,
+     "note": "Lane et al., BMJ 2024 · umbrella review"
+    }
+   },
+   {
+    "vo": "ये जुड़ाव है, हर पैकेट ज़हर नहीं। पर रोज़ का खाना ज़्यादातर घर का, और कम प्रोसेस्ड रखिए।",
+    "cap": "Link hai, har packet zehar nahi. Par roz ka khaana *mostly ghar ka*.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Roz ka khaana,",
+      "*mostly ghar ka.*"
+     ],
+     "icon": "bowl"
+    }
+   },
+   {
+    "vo": "आपका खाना कितना प्रोसेस्ड है? डाइटरी गाइड से लेबल स्कैन करके देखिए।",
+    "cap": "Kitna processed? Scan karo.",
+    "scene": {
+     "type": "cta",
+     "line": "Kitna *processed*? Scan karo",
+     "sub": "Label scan",
+     "screen": "label-result"
+    }
+   }
+  ],
+  "sources": [
+   "Lane MM et al., BMJ 2024;384:e077310: umbrella review, ~10 million participants, direct associations with 32 health parameters"
+  ],
+  "n": 14
+ },
+ {
+  "slug": "iron-vitamin-c",
+  "title": "Iron ka secret partner",
+  "accent": "amla",
+  "segs": [
+   {
+    "vo": "पालक, दाल सब खा रहे हैं, फिर भी आयरन कम? ये ट्रिक शायद मिस हो रही है।",
+    "cap": "Palak, dal sab kha rahe ho, phir bhi *iron* kam? Ye trick miss ho rahi hai.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Iron wala khaana,",
+      "phir bhi *kami?*"
+     ],
+     "kicker": "Iron trick",
+     "icon": "leaf"
+    }
+   },
+   {
+    "vo": "पौधों वाला आयरन शरीर आसानी से नहीं सोखता। विटामिन सी इसमें मदद करता है।",
+    "cap": "Plant iron body aasaani se nahi sokhti. *Vitamin C* madad karta hai.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Plant iron +",
+      "*vitamin C*",
+      "= better absorption"
+     ],
+     "icon": "lemon",
+     "note": "Thakaan ya kamzori? Doctor se test karwayein"
+    }
+   },
+   {
+    "vo": "दाल पर नींबू, पालक के साथ टमाटर, या खाने के साथ आँवला या संतरा।",
+    "cap": "Dal pe *nimbu*, palak ke saath *tamatar*, ya *amla*.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "lemon",
+       "text": "Dal + nimbu"
+      },
+      {
+       "icon": "leaf",
+       "text": "Palak + tamatar"
+      },
+      {
+       "icon": "sparkle",
+       "text": "Khaane ke saath amla/santra"
+      }
+     ],
+     "title": "Easy *pairs*"
+    }
+   },
+   {
+    "vo": "और चाय कॉफ़ी को खाने से कम से कम एक घंटा दूर रखिए।",
+    "cap": "Aur *chai-coffee* khaane se 1 ghanta door.",
+    "scene": {
+     "type": "timeline",
+     "steps": [
+      {
+       "icon": "plate",
+       "label": "Khaana"
+      },
+      {
+       "icon": "cup",
+       "label": "Chai"
+      }
+     ],
+     "gaps": [
+      "1 ghanta"
+     ],
+     "title": "Chai *baad mein*",
+     "note": "ICMR-NIN Dietary Guidelines for Indians, 2024"
+    }
+   },
+   {
+    "vo": "आयरन से जुड़ा सवाल है? डाइटरी गाइड पर आइरा से पूछिए।",
+    "cap": "Iron ka sawaal? IRA se poochho.",
+    "scene": {
+     "type": "cta",
+     "line": "*Iron* ka sawaal? IRA se poochho",
+     "sub": "Ask IRA",
+     "screen": "chat"
+    }
+   }
+  ],
+  "sources": [
+   "Vitamin C enhances non-heme iron absorption (e.g. Hallberg L et al., Am J Clin Nutr 1989)",
+   "ICMR-NIN Dietary Guidelines for Indians, 2024: tea/coffee 1 hour away from meals"
+  ],
+  "n": 15
+ },
+ {
+  "slug": "icmr-plate",
+  "title": "ICMR ki ideal plate",
+  "accent": "leaf",
+  "segs": [
+   {
+    "vo": "आई सी एम आर के हिसाब से, दिन भर की प्लेट कैसी दिखनी चाहिए?",
+    "cap": "ICMR ke hisaab se din bhar ki *plate* kaisi?",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "ICMR ki",
+      "*ideal plate*"
+     ],
+     "kicker": "My Plate for the Day",
+     "icon": "plate"
+    }
+   },
+   {
+    "vo": "लगभग दो हज़ार कैलोरी के लिए: चार सौ ग्राम सब्ज़ियाँ, सौ ग्राम फल, और तीन सौ मिलीलीटर दूध या दही।",
+    "cap": "~2000 kcal: *400 g sabzi*, 100 g phal, 300 ml doodh/dahi.",
+    "scene": {
+     "type": "plate",
+     "parts": [
+      {
+       "label": "Sabziyan",
+       "value": "400 g",
+       "share": 400
+      },
+      {
+       "label": "Anaaj",
+       "value": "250-270 g",
+       "share": 260
+      },
+      {
+       "label": "Doodh/dahi",
+       "value": "300 ml",
+       "share": 300
+      },
+      {
+       "label": "Phal",
+       "value": "100 g",
+       "share": 100
+      },
+      {
+       "label": "Dal/anda/meat",
+       "value": "~90 g",
+       "share": 90
+      },
+      {
+       "label": "Nuts & seeds",
+       "value": "30 g",
+       "share": 30
+      },
+      {
+       "label": "Tel/ghee",
+       "value": "27 g",
+       "share": 27
+      }
+     ],
+     "title": "Din bhar, *~2000 kcal*",
+     "centre": "per day",
+     "note": "ICMR-NIN My Plate for the Day"
+    }
+   },
+   {
+    "vo": "यानी प्लेट में सबसे ज़्यादा जगह सब्ज़ियों और फलों की, अनाज सीमित, और दाल या प्रोटीन ज़रूर।",
+    "cap": "Plate ka bada hissa *sabzi-phal*, anaaj seemit, dal/protein zaroor.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Aadhi plate",
+      "*sabzi aur phal*"
+     ],
+     "icon": "leaf"
+    }
+   },
+   {
+    "vo": "और रोज़ लगभग तीस ग्राम नट्स या बीज, और तेल सत्ताईस ग्राम के आसपास।",
+    "cap": "Roz ~*30 g nuts/seeds*, tel ~*27 g*.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "grain",
+       "text": "Nuts & seeds ~30 g"
+      },
+      {
+       "icon": "oil",
+       "text": "Tel/ghee ~27 g"
+      },
+      {
+       "icon": "bowl",
+       "text": "Dal, anda ya meat ~90 g"
+      }
+     ],
+     "title": "Chhoti *cheezein*",
+     "note": "ICMR-NIN My Plate for the Day (~2000 kcal)"
+    }
+   },
+   {
+    "vo": "आपकी प्लेट इस आदर्श प्लेट के कितना करीब है? डाइटरी गाइड पर स्कैन करके देखिए।",
+    "cap": "Aapki plate kitni close?",
+    "scene": {
+     "type": "cta",
+     "line": "Aapki plate *kitni close*?",
+     "sub": "Meal scan",
+     "screen": "meal-result"
+    }
+   }
+  ],
+  "sources": [
+   "ICMR-NIN My Plate for the Day (~2000 kcal): vegetables 400 g, fruits 100 g, milk/curd 300 ml, nuts & seeds 30 g, fats & oils 27 g; cereals 250-270 g; pulses/eggs/meat ~90 g"
+  ],
+  "n": 16
+ },
+ {
+  "slug": "protein-powder",
+  "title": "Protein powder zaroori?",
+  "accent": "sky",
+  "segs": [
+   {
+    "vo": "जिम जाते हैं, तो प्रोटीन पाउडर ज़रूरी है? आई सी एम आर ने क्या कहा, सुनिए।",
+    "cap": "Gym jaate ho toh *protein powder* zaroori? ICMR ne kya kaha?",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Protein powder",
+      "*zaroori?*"
+     ],
+     "kicker": "ICMR 2024",
+     "icon": "jar"
+    }
+   },
+   {
+    "vo": "दो हज़ार चौबीस की गाइडलाइंस में, आई सी एम आर ने मसल्स बनाने के लिए प्रोटीन सप्लीमेंट्स से बचने की सलाह दी।",
+    "cap": "ICMR 2024: muscle ke liye *protein supplements* avoid karne ki salah.",
+    "scene": {
+     "type": "myth",
+     "myth": "Muscle = *protein powder*",
+     "fact": "ICMR: protein *khaane* se lo, supplements se bacho.",
+     "note": "ICMR-NIN Dietary Guidelines for Indians, 2024"
+    }
+   },
+   {
+    "vo": "लंबे समय तक बहुत ज़्यादा प्रोटीन पाउडर लेने के जोखिमों का भी ज़िक्र किया गया है।",
+    "cap": "Lambe time tak *bahut zyaada* protein powder ke risks ka zikr hai.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Bahut zyaada,",
+      "bahut lamba?",
+      "*Risk.*"
+     ],
+     "icon": "pill"
+    }
+   },
+   {
+    "vo": "खाने से प्रोटीन लीजिए: दाल के साथ अनाज, दूध, दही, पनीर, और अगर खाते हैं तो अंडा।",
+    "cap": "Khaane se protein: *dal + anaaj*, doodh, dahi, paneer, anda.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "bowl",
+       "text": "Dal + roti/chawal"
+      },
+      {
+       "icon": "milk",
+       "text": "Doodh, dahi, paneer"
+      },
+      {
+       "icon": "egg",
+       "text": "Anda, fish, chicken"
+      }
+     ],
+     "title": "Food *first*"
+    }
+   },
+   {
+    "vo": "आपको कितना प्रोटीन चाहिए, डाइटरी गाइड आपके गोल के हिसाब से बताता है।",
+    "cap": "Aapka protein target.",
+    "scene": {
+     "type": "cta",
+     "line": "Aapka *protein target*, aapke goal se",
+     "sub": "Personal plan",
+     "screen": "home"
+    }
+   }
+  ],
+  "sources": [
+   "ICMR-NIN Dietary Guidelines for Indians, 2024: discourages protein supplements for muscle building; cautions on prolonged high intake"
+  ],
+  "n": 17
+ },
+ {
+  "slug": "56-percent",
+  "title": "56% bimariyon ka link",
+  "accent": "tomato",
+  "segs": [
+   {
+    "vo": "भारत में बीमारियों का आधे से ज़्यादा बोझ, खाने से जुड़ा है।",
+    "cap": "India mein *aadhe se zyaada* disease burden, khaane se juda.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "bimariyon ka *link*",
+      "khaane se"
+     ],
+     "kicker": "ICMR 2024",
+     "big": "56%"
+    }
+   },
+   {
+    "vo": "आई सी एम आर के अनुसार, कुल डिज़ीज़ बर्डन का छप्पन दशमलव चार प्रतिशत, अनहेल्दी डाइट की वजह से है।",
+    "cap": "ICMR: *56.4%* total disease burden, unhealthy diet ki wajah se.",
+    "scene": {
+     "type": "stat",
+     "value": 56.4,
+     "label": "total disease burden, *unhealthy diet* se",
+     "decimals": 1,
+     "unit": "%",
+     "note": "ICMR-NIN Dietary Guidelines for Indians, 2024"
+    }
+   },
+   {
+    "vo": "शुरुआत तीन आसान बदलावों से कीजिए: सब्ज़ी और फल ज़्यादा, नमक चीनी और तला हुआ कम, और रोज़ थोड़ी एक्टिविटी।",
+    "cap": "3 badlaav: *sabzi-phal zyaada*, namak-cheeni-fried *kam*, roz *activity*.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "leaf",
+       "text": "Sabzi & phal zyaada"
+      },
+      {
+       "icon": "salt",
+       "text": "Namak, cheeni, fried kam"
+      },
+      {
+       "icon": "walk",
+       "text": "Roz thodi activity"
+      }
+     ],
+     "title": "*3* badlaav"
+    }
+   },
+   {
+    "vo": "परफ़ेक्ट नहीं, बस हर दिन थोड़ा बेहतर।",
+    "cap": "Perfect nahi, bas *har din thoda behtar*.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Perfect nahi,",
+      "*thoda behtar.*"
+     ],
+     "icon": "sparkle",
+     "dark": true
+    }
+   },
+   {
+    "vo": "हर दिन का खाना ट्रैक कीजिए, डाइटरी गाइड के साथ।",
+    "cap": "Har din, thoda behtar.",
+    "scene": {
+     "type": "cta",
+     "line": "Har din, *thoda behtar*",
+     "sub": "Track meals",
+     "screen": "home"
+    }
+   }
+  ],
+  "sources": [
+   "ICMR-NIN Dietary Guidelines for Indians, 2024: 56.4% of total disease burden in India due to unhealthy diets"
+  ],
+  "n": 18
+ },
+ {
+  "slug": "dal-chawal-combo",
+  "title": "Dal-chawal: smart combo",
+  "accent": "turmeric",
+  "segs": [
+   {
+    "vo": "दाल चावल सिर्फ़ कम्फ़र्ट फ़ूड नहीं, ये एक स्मार्ट प्रोटीन कॉम्बो है।",
+    "cap": "*Dal-chawal* sirf comfort food nahi, smart *protein combo* hai.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Dal-chawal:",
+      "*smart combo*"
+     ],
+     "kicker": "Desi science",
+     "icon": "bowl"
+    }
+   },
+   {
+    "vo": "अनाज में लाइसिन नाम का अमीनो एसिड कम होता है, और दालों में सल्फ़र वाले अमीनो एसिड।",
+    "cap": "Anaaj mein *lysine* kam, dal mein *sulphur amino acids* kam.",
+    "scene": {
+     "type": "compare",
+     "left": {
+      "label": "Anaaj (roti/chawal)",
+      "value": "Lysine",
+      "sub": "kam"
+     },
+     "right": {
+      "label": "Dal",
+      "value": "Methionine",
+      "sub": "kam"
+     },
+     "title": "Dono mein *ek kami*"
+    }
+   },
+   {
+    "vo": "साथ खाने पर दोनों एक दूसरे की कमी पूरी करते हैं, और प्रोटीन की क्वालिटी बेहतर होती है।",
+    "cap": "Saath khaane par *ek doosre ki kami* poori. Protein quality *behtar*.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Anaaj + dal =",
+      "*better* protein"
+     ],
+     "icon": "check",
+     "note": "Cereal-pulse complementarity (protein quality research)"
+    }
+   },
+   {
+    "vo": "इसीलिए रोटी दाल, इडली सांभर, खिचड़ी, राजमा चावल, सब कमाल के कॉम्बो हैं।",
+    "cap": "Roti-dal, idli-sambar, khichdi, rajma-chawal: *sab combos*.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "bowl",
+       "text": "Roti + dal"
+      },
+      {
+       "icon": "plate",
+       "text": "Idli + sambar"
+      },
+      {
+       "icon": "bowl",
+       "text": "Khichdi"
+      },
+      {
+       "icon": "fork",
+       "text": "Rajma + chawal"
+      }
+     ],
+     "title": "Desi *combos*"
+    }
+   },
+   {
+    "vo": "अपनी थाली में कितना प्रोटीन है, डाइटरी गाइड पर एक फोटो से जानिए।",
+    "cap": "Thaali ka protein, ek photo mein.",
+    "scene": {
+     "type": "cta",
+     "line": "Thaali ka *protein*, ek photo mein",
+     "sub": "Meal scan",
+     "screen": "meal-result"
+    }
+   }
+  ],
+  "sources": [
+   "Cereal-pulse amino acid complementarity: cereals limited in lysine, pulses in sulphur amino acids (e.g. Br J Nutr reviews; Han F et al., Nutrients 2021)"
+  ],
+  "n": 19
+ },
+ {
+  "slug": "ragi-calcium",
+  "title": "Calcium = sirf doodh?",
+  "accent": "berry",
+  "segs": [
+   {
+    "vo": "कैल्शियम मतलब सिर्फ़ दूध? रागी से मिलिए।",
+    "cap": "*Calcium* matlab sirf doodh? *Ragi* se miliye.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Calcium =",
+      "sirf doodh?",
+      "Miliye *ragi* se"
+     ],
+     "kicker": "Millet power",
+     "icon": "grain"
+    }
+   },
+   {
+    "vo": "सौ ग्राम रागी में लगभग तीन सौ चवालीस मिलीग्राम कैल्शियम होता है।",
+    "cap": "100 g ragi: lagbhag *344 mg calcium*.",
+    "scene": {
+     "type": "stat",
+     "value": 344,
+     "label": "calcium, *100 g ragi* mein",
+     "decimals": 0,
+     "unit": "mg",
+     "note": "ICMR-NIN food composition data (via APEDA)"
+    }
+   },
+   {
+    "vo": "रागी रोटी, रागी डोसा, या रागी का दलिया। हफ़्ते में कुछ बार शामिल कीजिए।",
+    "cap": "*Ragi roti*, ragi dosa, ya ragi daliya.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "bread",
+       "text": "Ragi roti"
+      },
+      {
+       "icon": "plate",
+       "text": "Ragi dosa ya idli"
+      },
+      {
+       "icon": "bowl",
+       "text": "Ragi daliya"
+      }
+     ],
+     "title": "Kaise *khaayein*?"
+    }
+   },
+   {
+    "vo": "साथ में थोड़ी धूप भी, क्योंकि विटामिन डी, कैल्शियम के अवशोषण में मदद करता है।",
+    "cap": "Saath mein *vitamin D* bhi: calcium absorption ke liye.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Calcium +",
+      "*vitamin D*",
+      "= team"
+     ],
+     "icon": "sun"
+    }
+   },
+   {
+    "vo": "मिलेट्स को अपनी डाइट में ट्रैक कीजिए, डाइटरी गाइड के साथ।",
+    "cap": "Millets, apni diet mein.",
+    "scene": {
+     "type": "cta",
+     "line": "Millets, *apni diet* mein",
+     "sub": "Meal scan",
+     "screen": "meal-result"
+    }
+   }
+  ],
+  "sources": [
+   "APEDA Millet Portal (NIN/ICMR data): finger millet calcium 344 mg/100 g"
+  ],
+  "n": 20
+ },
+ {
+  "slug": "paani-kitna",
+  "title": "8 glass paani: sach ya myth?",
+  "accent": "sky",
+  "segs": [
+   {
+    "vo": "आठ गिलास पानी वाला नियम, सच या मिथ?",
+    "cap": "*8 glass* paani ka rule: sach ya myth?",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "glass paani:",
+      "*sach ya myth?*"
+     ],
+     "kicker": "Hydration",
+     "big": "8"
+    }
+   },
+   {
+    "vo": "यूरोपियन फ़ूड सेफ़्टी अथॉरिटी के अनुसार, महिलाओं को लगभग दो लीटर, और पुरुषों को ढाई लीटर कुल पानी चाहिए।",
+    "cap": "EFSA: mahilayein *~2.0 L*, purush *~2.5 L* total paani.",
+    "scene": {
+     "type": "bars",
+     "items": [
+      {
+       "label": "Purush",
+       "value": 2.5,
+       "unit": "L",
+       "hi": true
+      },
+      {
+       "label": "Mahilayein",
+       "value": 2.0,
+       "unit": "L",
+       "hi": true
+      }
+     ],
+     "title": "Roz ka *total* paani",
+     "note": "EFSA reference intake · moderate climate & activity"
+    }
+   },
+   {
+    "vo": "इसमें खाने से मिलने वाला पानी भी शामिल है, लगभग बीस से तीस प्रतिशत।",
+    "cap": "Ismein *khaane ka paani* bhi shaamil: ~20-30%.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Dal, sabzi, phal",
+      "mein bhi *paani*"
+     ],
+     "icon": "drop"
+    }
+   },
+   {
+    "vo": "गर्मी, पसीना, या एक्सरसाइज़ हो तो ज़्यादा पीजिए। पेशाब का रंग हल्का पीला रहना अच्छा संकेत है।",
+    "cap": "Garmi, pasina, exercise? *Zyaada piyo*. Halka peela rang = theek.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "sun",
+       "text": "Garmi mein zyaada"
+      },
+      {
+       "icon": "walk",
+       "text": "Exercise ke baad"
+      },
+      {
+       "icon": "drop",
+       "text": "Halka peela = theek"
+      }
+     ],
+     "title": "Apna *signal* pehchano"
+    }
+   },
+   {
+    "vo": "आपके लिए सही मात्रा क्या है? डाइटरी गाइड पर आइरा से पूछिए।",
+    "cap": "Sahi amount? IRA se poochho.",
+    "scene": {
+     "type": "cta",
+     "line": "Apne liye *sahi amount*? IRA se poochho",
+     "sub": "Ask IRA",
+     "screen": "chat"
+    }
+   }
+  ],
+  "sources": [
+   "EFSA (2010) Dietary Reference Values for water: adequate total water intake 2.0 L/day women, 2.5 L/day men (about 20-30% from food)"
+  ],
+  "n": 21
+ },
+ {
+  "slug": "b12-vegetarian",
+  "title": "Vegetarian? B12 check",
+  "accent": "amla",
+  "segs": [
+   {
+    "vo": "वेजिटेरियन हैं? तो विटामिन बी ट्वेल्व पर ध्यान देना ज़रूरी है।",
+    "cap": "Vegetarian ho? *Vitamin B12* pe dhyaan zaroori.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Vegetarian?",
+      "*B12* check karo"
+     ],
+     "kicker": "Veg nutrition",
+     "icon": "pill"
+    }
+   },
+   {
+    "vo": "बी ट्वेल्व ज़्यादातर पशु स्रोतों से मिलता है, जैसे दूध, दही, अंडा, मछली और मीट।",
+    "cap": "B12 zyaadatar *animal sources* se: doodh, dahi, anda, fish.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "milk",
+       "text": "Doodh, dahi, paneer"
+      },
+      {
+       "icon": "egg",
+       "text": "Anda"
+      },
+      {
+       "icon": "fork",
+       "text": "Fish, chicken"
+      }
+     ],
+     "title": "B12 *kahan* milta hai"
+    }
+   },
+   {
+    "vo": "भारतीय रिसर्च में, शाकाहारियों का बी ट्वेल्व लेवल, नॉन वेजिटेरियन्स से कम पाया गया है।",
+    "cap": "Indian research: *vegetarians* mein B12 level *kam* paaya gaya.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Veg diet,",
+      "*B12 kam*",
+      "ho sakta hai"
+     ],
+     "icon": "chart",
+     "note": "Indian studies, e.g. Naik et al., Nutrition Journal 2013"
+    }
+   },
+   {
+    "vo": "दूध दही रोज़ लीजिए, फ़ोर्टिफ़ाइड फ़ूड देखिए, और थकान या झुनझुनी हो तो डॉक्टर से टेस्ट करवाइए।",
+    "cap": "Roz *doodh-dahi*, fortified foods, aur thakaan ho toh *doctor se test*.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "milk",
+       "text": "Roz doodh ya dahi"
+      },
+      {
+       "icon": "tag",
+       "text": "Fortified foods"
+      },
+      {
+       "icon": "heart",
+       "text": "Lakshan? Doctor se test"
+      }
+     ],
+     "title": "Kya *karein*?"
+    }
+   },
+   {
+    "vo": "अपने खाने से जुड़े सवाल, डाइटरी गाइड पर आइरा से पूछिए।",
+    "cap": "Veg diet ke sawaal? IRA se poochho.",
+    "scene": {
+     "type": "cta",
+     "line": "Veg diet ke *sawaal*? IRA se poochho",
+     "sub": "Ask IRA",
+     "screen": "chat"
+    }
+   }
+  ],
+  "sources": [
+   "Naik S et al., Nutrition Journal 2013: lower B12 status in Indian lacto-vegetarians; milk improved status",
+   "Down To Earth: India lacks nationwide B12 data"
+  ],
+  "n": 22
+ },
+ {
+  "slug": "food-order",
+  "title": "Pehle sabzi, phir roti",
+  "accent": "leaf",
+  "segs": [
+   {
+    "vo": "वही खाना, बस खाने का क्रम बदलिए। पहले सब्ज़ी, फिर रोटी।",
+    "cap": "Wahi khaana, bas *order* badlo. Pehle *sabzi*, phir roti.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Pehle *sabzi*,",
+      "phir roti"
+     ],
+     "kicker": "Food order",
+     "icon": "fork"
+    }
+   },
+   {
+    "vo": "पहले सब्ज़ी और प्रोटीन, और आख़िर में रोटी चावल।",
+    "cap": "Pehle *sabzi*, phir *protein*, aakhir mein *roti-chawal*.",
+    "scene": {
+     "type": "timeline",
+     "steps": [
+      {
+       "icon": "leaf",
+       "label": "Sabzi"
+      },
+      {
+       "icon": "egg",
+       "label": "Protein"
+      },
+      {
+       "icon": "bread",
+       "label": "Roti/chawal"
+      }
+     ],
+     "gaps": [
+      "phir",
+      "phir"
+     ],
+     "title": "Khaane ka *order*"
+    }
+   },
+   {
+    "vo": "दो हज़ार पंद्रह की एक छोटी स्टडी में, टाइप टू डायबिटीज़ वाले लोगों में, इस क्रम से खाने पर शुगर कम बढ़ी।",
+    "cap": "2015 ki ek *chhoti study*: is order se post-meal sugar *kam badhi*.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Same khaana,",
+      "*kam* sugar spike"
+     ],
+     "icon": "chart",
+     "note": "Shukla et al., Diabetes Care 2015 · 11 adults with type 2 diabetes"
+    }
+   },
+   {
+    "vo": "ये कोई इलाज नहीं, एक आसान आदत है। डायबिटीज़ है तो अपने डॉक्टर की सलाह मानिए।",
+    "cap": "Ilaaj nahi, *aasaan aadat*. Diabetes hai toh *doctor* ki salah.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Ilaaj nahi,",
+      "*aasaan aadat.*"
+     ],
+     "icon": "heart",
+     "dark": true
+    }
+   },
+   {
+    "vo": "अपनी हर मील का बैलेंस देखना है? डाइटरी गाइड पर एक फोटो लीजिए।",
+    "cap": "Har meal ka balance.",
+    "scene": {
+     "type": "cta",
+     "line": "Har meal ka *balance*",
+     "sub": "Meal scan",
+     "screen": "meal-result"
+    }
+   }
+  ],
+  "sources": [
+   "Shukla AP et al., Diabetes Care 2015;38(7):e98-e99: vegetables and protein before carbohydrate lowered post-meal glucose (pilot, n=11)"
+  ],
+  "n": 23
+ },
+ {
+  "slug": "veg-protein",
+  "title": "Veg protein, desi style",
+  "accent": "turmeric",
+  "segs": [
+   {
+    "vo": "शाकाहारी हैं और प्रोटीन की टेंशन है? ये देसी सोर्स देखिए।",
+    "cap": "Veg ho aur *protein* ki tension? Ye desi sources dekho.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Veg *protein*,",
+      "desi style"
+     ],
+     "kicker": "Protein list",
+     "icon": "bowl"
+    }
+   },
+   {
+    "vo": "सौ ग्राम में: सोया चंक्स में लगभग बावन ग्राम, मूंग दाल में करीब चौबीस, और पनीर में लगभग अठारह ग्राम प्रोटीन।",
+    "cap": "Per 100 g: *soya chunks ~52 g*, moong dal ~24 g, paneer ~18 g.",
+    "scene": {
+     "type": "bars",
+     "items": [
+      {
+       "label": "Soya chunks (sookhe)",
+       "value": 52,
+       "unit": "g",
+       "hi": true
+      },
+      {
+       "label": "Moong dal (sookhi)",
+       "value": 24,
+       "unit": "g",
+       "hi": false
+      },
+      {
+       "label": "Paneer",
+       "value": 18,
+       "unit": "g",
+       "hi": false
+      }
+     ],
+     "title": "Protein *per 100 g*",
+     "note": "Approx. values · Indian food composition data"
+    }
+   },
+   {
+    "vo": "ध्यान रहे, सूखी और पकी दाल में फ़र्क है। पकने पर पानी से वज़न बढ़ता है।",
+    "cap": "Dhyaan rahe: *sookhi* vs *paki* dal. Pakne par weight badhta hai.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Sookhi vs *paki*",
+      "dal: farak hai"
+     ],
+     "icon": "scale"
+    }
+   },
+   {
+    "vo": "दिन भर में बाँटिए: नाश्ते में दही या चना, लंच में दाल, और डिनर में पनीर या सोया।",
+    "cap": "Din bhar baanto: *nashte* mein dahi, *lunch* mein dal, *dinner* mein paneer.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "sun",
+       "text": "Nashta: dahi ya chana"
+      },
+      {
+       "icon": "bowl",
+       "text": "Lunch: dal ya rajma"
+      },
+      {
+       "icon": "moon",
+       "text": "Dinner: paneer ya soya"
+      }
+     ],
+     "title": "Din bhar *baanto*"
+    }
+   },
+   {
+    "vo": "हर मील का प्रोटीन, डाइटरी गाइड पर एक फोटो से।",
+    "cap": "Har meal ka protein, ek photo se.",
+    "scene": {
+     "type": "cta",
+     "line": "Har meal ka *protein*, ek photo se",
+     "sub": "Meal scan",
+     "screen": "meal-result"
+    }
+   }
+  ],
+  "sources": [
+   "Approximate protein per 100 g from Indian food composition data: soya chunks (dry) ~52 g, moong dal (dry) ~24 g, paneer ~18-19 g"
+  ],
+  "n": 24
+ },
+ {
+  "slug": "fibre",
+  "title": "Fibre: underrated hero",
+  "accent": "amla",
+  "segs": [
+   {
+    "vo": "पेट जल्दी खाली लगता है? शायद आपकी डाइट में फ़ाइबर कम है।",
+    "cap": "Pet jaldi khaali lagta hai? Shaayad *fibre* kam hai.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Fibre:",
+      "*underrated*",
+      "hero"
+     ],
+     "kicker": "Gut & fullness",
+     "icon": "leaf"
+    }
+   },
+   {
+    "vo": "फ़ाइबर साबुत अनाज, दाल, सब्ज़ी, फल और बीजों से मिलता है।",
+    "cap": "Fibre: *saabut anaaj*, dal, sabzi, phal, beej.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "grain",
+       "text": "Saabut anaaj, millets"
+      },
+      {
+       "icon": "bowl",
+       "text": "Dal, chana, rajma"
+      },
+      {
+       "icon": "leaf",
+       "text": "Sabzi & phal"
+      }
+     ],
+     "title": "Fibre *kahan* hai?"
+    }
+   },
+   {
+    "vo": "ये पेट भरा महसूस करवाता है, और आँतों के अच्छे बैक्टीरिया का खाना भी है।",
+    "cap": "Pet *bhara* rakhta hai, aur *gut bacteria* ka khaana bhi.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Pet bhara,",
+      "*gut* khush"
+     ],
+     "icon": "gut"
+    }
+   },
+   {
+    "vo": "आसान स्वैप्स: मैदा की जगह आटा, जूस की जगह फल, और चावल के साथ दाल और सलाद।",
+    "cap": "Swaps: *maida → atta*, *juice → phal*, chawal ke saath dal-salad.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "bread",
+       "text": "Maida → atta"
+      },
+      {
+       "icon": "glass",
+       "text": "Juice → poora phal"
+      },
+      {
+       "icon": "bowl",
+       "text": "Chawal + dal + salad"
+      }
+     ],
+     "title": "Easy *swaps*"
+    }
+   },
+   {
+    "vo": "अपने खाने का बैलेंस, डाइटरी गाइड पर देखिए।",
+    "cap": "Khaane ka balance dekho.",
+    "scene": {
+     "type": "cta",
+     "line": "Khaane ka *balance* dekho",
+     "sub": "Meal scan",
+     "screen": "meal-result"
+    }
+   }
+  ],
+  "sources": [
+   "ICMR-NIN Dietary Guidelines for Indians, 2024: whole grains, pulses, vegetables and fruits as fibre sources",
+   "Dietary fibre and gut microbiota (general nutrition science)"
+  ],
+  "n": 25
+ },
+ {
+  "slug": "gut-dahi",
+  "title": "Gut health aur ghar ka dahi",
+  "accent": "berry",
+  "segs": [
+   {
+    "vo": "गट हेल्थ का ट्रेंड हर जगह है। पर घर का दही इसमें कितना काम का है?",
+    "cap": "*Gut health* trend everywhere. Ghar ka *dahi* kitna kaam ka?",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Gut health",
+      "aur *ghar ka dahi*"
+     ],
+     "kicker": "Trend check",
+     "icon": "gut"
+    }
+   },
+   {
+    "vo": "दही, छाछ और कांजी जैसे फ़र्मेंटेड फ़ूड में ज़िंदा बैक्टीरिया होते हैं।",
+    "cap": "*Dahi, chaas* aur *kanji* jaise fermented foods mein live bacteria.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "milk",
+       "text": "Dahi"
+      },
+      {
+       "icon": "glass",
+       "text": "Chaas"
+      },
+      {
+       "icon": "jar",
+       "text": "Kanji"
+      }
+     ],
+     "title": "*Fermented* desi"
+    }
+   },
+   {
+    "vo": "पर गट बैक्टीरिया को खाना भी चाहिए, और वो है फ़ाइबर।",
+    "cap": "Par gut bacteria ko *khaana* bhi chahiye: *fibre*.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Bacteria ko",
+      "*khaana* bhi chahiye:",
+      "fibre"
+     ],
+     "icon": "leaf"
+    }
+   },
+   {
+    "vo": "तो दही के साथ दाल, सब्ज़ी, साबुत अनाज और फल भी रखिए। महंगे शॉट्स से पहले, ये बेसिक्स।",
+    "cap": "Dahi + *fibre*: dal, sabzi, saabut anaaj. Mehenge shots se pehle *basics*.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Mehenge shots se",
+      "pehle, *basics.*"
+     ],
+     "icon": "sparkle",
+     "dark": true
+    }
+   },
+   {
+    "vo": "रोज़ का बैलेंस्ड खाना, डाइटरी गाइड पर ट्रैक कीजिए।",
+    "cap": "Gut ke liye roz ka plan.",
+    "scene": {
+     "type": "cta",
+     "line": "Gut ke liye *roz ka plan*",
+     "sub": "Meal scan",
+     "screen": "meal-result"
+    }
+   }
+  ],
+  "sources": [
+   "Marco ML et al., Nat Rev Gastroenterol Hepatol 2021 (ISAPP consensus on fermented foods)",
+   "Dietary fibre as substrate for gut microbiota"
+  ],
+  "n": 26
+ },
+ {
+  "slug": "diwali-mithai",
+  "title": "Diwali mithai, smart plan",
+  "accent": "turmeric",
+  "segs": [
+   {
+    "vo": "दिवाली आ रही है, मिठाई भी आएगी। गिल्ट नहीं, स्मार्ट प्लान।",
+    "cap": "Diwali aa rahi hai, *mithai* bhi. Guilt nahi, *smart plan*.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Diwali *mithai*:",
+      "guilt nahi,",
+      "plan"
+     ],
+     "kicker": "Festive special",
+     "icon": "sweet"
+    }
+   },
+   {
+    "vo": "छोटा पीस चुनिए, आराम से स्वाद लेकर खाइए, और खाली पेट नहीं, खाने के बाद।",
+    "cap": "*Chhota piece*, aaram se, aur khaali pet nahi.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "sweet",
+       "text": "Chhota piece"
+      },
+      {
+       "icon": "clock",
+       "text": "Aaram se, swaad lekar"
+      },
+      {
+       "icon": "plate",
+       "text": "Khaali pet nahi, khaane ke baad"
+      }
+     ],
+     "title": "Mithai *rules*"
+    }
+   },
+   {
+    "vo": "मिठाई के बाद दो से पाँच मिनट की वॉक। रिसर्च कहती है, हल्की वॉक खाने के बाद शुगर संभालने में मदद करती है।",
+    "cap": "Mithai ke baad *2-5 min walk*. Post-meal sugar ke liye helpful.",
+    "scene": {
+     "type": "timeline",
+     "steps": [
+      {
+       "icon": "sweet",
+       "label": "Mithai"
+      },
+      {
+       "icon": "walk",
+       "label": "Walk"
+      }
+     ],
+     "gaps": [
+      "2-5 min"
+     ],
+     "title": "Phir *walk*",
+     "note": "Buffey et al., Sports Medicine 2022"
+    }
+   },
+   {
+    "vo": "और याद रखिए, डब्ल्यू एच ओ के हिसाब से, पूरे दिन की फ़्री शुगर लगभग छह चम्मच तक बेहतर।",
+    "cap": "WHO: poore din ki free sugar *~6 chammach* tak behtar.",
+    "scene": {
+     "type": "cubes",
+     "count": 6,
+     "label": "chammach",
+     "kind": "sugar",
+     "sub": "*Poore din* ki free sugar, behtar limit",
+     "note": "WHO 2015 (< 5% energy, about 25 g)"
+    }
+   },
+   {
+    "vo": "त्योहार में भी अपना हिसाब रखिए, डाइटरी गाइड के साथ। हैप्पी दिवाली!",
+    "cap": "Tyohaar bhi, hisaab bhi.",
+    "scene": {
+     "type": "cta",
+     "line": "Tyohaar bhi, *hisaab* bhi",
+     "sub": "Meal scan",
+     "screen": "meal-result"
+    }
+   }
+  ],
+  "sources": [
+   "WHO (2015) free sugars < 5% energy (about 25 g)",
+   "Buffey AJ et al., Sports Medicine 2022"
+  ],
+  "n": 27
+ },
+ {
+  "slug": "protein-bar-label",
+  "title": "'High protein' likha hai, toh?",
+  "accent": "berry",
+  "segs": [
+   {
+    "vo": "प्रोटीन बार, प्रोटीन चिप्स, हर जगह हैं। पर हर प्रोटीन वाला पैकेट हेल्दी नहीं होता।",
+    "cap": "*Protein* bar, protein chips, har jagah. Par har packet healthy nahi.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "'High protein'",
+      "likha hai,",
+      "*toh?*"
+     ],
+     "kicker": "Trend check",
+     "icon": "bar"
+    }
+   },
+   {
+    "vo": "लेबल पर तीन चीज़ें देखिए: प्रति सर्विंग कितना प्रोटीन, कितनी शुगर, और पहले इंग्रीडिएंट्स क्या हैं।",
+    "cap": "Dekho: *protein per serving*, *sugar*, aur *pehle ingredients*.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "chart",
+       "text": "Protein per serving"
+      },
+      {
+       "icon": "cube",
+       "text": "Kitni sugar?"
+      },
+      {
+       "icon": "tag",
+       "text": "Pehle 3 ingredients"
+      }
+     ],
+     "title": "Label pe *3 cheezein*"
+    }
+   },
+   {
+    "vo": "अगर चीनी और फ़ैट ज़्यादा हैं, तो वह एक कैंडी बार जैसा भी हो सकता है।",
+    "cap": "Sugar-fat zyaada? Toh *candy bar* jaisa bhi ho sakta hai.",
+    "scene": {
+     "type": "myth",
+     "myth": "'Protein' likha = *healthy*",
+     "fact": "*Sugar, fat* aur ingredients bhi dekho."
+    }
+   },
+   {
+    "vo": "और याद रखिए, ज़्यादातर प्रोटीन, असली खाने से आ सकता है।",
+    "cap": "Zyaadatar protein *asli khaane* se aa sakta hai.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Pehle *asli khaana*,",
+      "phir packet"
+     ],
+     "icon": "bowl",
+     "note": "ICMR-NIN Dietary Guidelines for Indians, 2024: food first"
+    }
+   },
+   {
+    "vo": "कोई भी बार खरीदने से पहले, डाइटरी गाइड से उसका लेबल स्कैन कीजिए।",
+    "cap": "Kharidne se pehle, scan.",
+    "scene": {
+     "type": "cta",
+     "line": "Kharidne se pehle, *scan*",
+     "sub": "Label scan",
+     "screen": "label-result"
+    }
+   }
+  ],
+  "sources": [
+   "Google Trends India 2025: protein bar / protein chips searches at 5-year highs (as reported)",
+   "ICMR-NIN Dietary Guidelines for Indians, 2024: protein from food first; read labels"
+  ],
+  "n": 28
+ },
+ {
+  "slug": "nimbu-shahad-detox",
+  "title": "Nimbu + shahad = fat burn?",
+  "accent": "amla",
+  "segs": [
+   {
+    "vo": "सुबह गरम पानी, नींबू और शहद, और फ़ैट बर्न? सुनिए सच।",
+    "cap": "Garam paani + nimbu + *shahad* = fat burn? Suno sach.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Nimbu + shahad",
+      "= *fat burn?*"
+     ],
+     "kicker": "Myth buster",
+     "icon": "lemon"
+    }
+   },
+   {
+    "vo": "ऐसा कोई पक्का सबूत नहीं कि ये ड्रिंक फ़ैट जलाती है। उल्टा, शहद में शुगर होती है, जिसे डब्ल्यू एच ओ फ़्री शुगर गिनता है।",
+    "cap": "Fat burn ka *pakka saboot nahi*. Aur shahad = *free sugar* (WHO).",
+    "scene": {
+     "type": "myth",
+     "myth": "Nimbu-shahad paani *fat jalata* hai",
+     "fact": "Saboot nahi. Shahad bhi *free sugar* hai.",
+     "note": "WHO Sugars Guideline 2015"
+    }
+   },
+   {
+    "vo": "और डिटॉक्स? वो काम आपका लिवर और किडनी हर दिन करते हैं।",
+    "cap": "Aur *detox*? Woh kaam *liver aur kidney* roz karte hain.",
+    "scene": {
+     "type": "statement",
+     "lines": [
+      "Detox?",
+      "*Liver aur kidney*",
+      "already on duty"
+     ],
+     "icon": "heart"
+    }
+   },
+   {
+    "vo": "पानी पीना अच्छा है, नींबू भी ठीक। बस इसे जादू मत समझिए, कुल खाना और एक्टिविटी मायने रखते हैं।",
+    "cap": "Paani accha, nimbu theek. Bas *jaadu* mat samjho.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "drop",
+       "text": "Paani: haan"
+      },
+      {
+       "icon": "lemon",
+       "text": "Nimbu: theek"
+      },
+      {
+       "icon": "scale",
+       "text": "Asli game: total khaana + activity"
+      }
+     ],
+     "title": "Toh *kya karein*?"
+    }
+   },
+   {
+    "vo": "फ़िटनेस के मिथ्स पर सवाल? डाइटरी गाइड पर आइरा से पूछिए।",
+    "cap": "Koi bhi myth? IRA se poochho.",
+    "scene": {
+     "type": "cta",
+     "line": "Koi bhi *myth*? IRA se poochho",
+     "sub": "Ask IRA",
+     "screen": "chat"
+    }
+   }
+  ],
+  "sources": [
+   "WHO (2015): honey counts as free sugar",
+   "No good evidence that lemon-honey water burns fat; detoxification is done by liver and kidneys"
+  ],
+  "n": 29
+ },
+ {
+  "slug": "calorie-balance",
+  "title": "Weight loss ka basic rule",
+  "accent": "sky",
+  "segs": [
+   {
+    "vo": "वज़न घटाने का सबसे बेसिक नियम, जिसे लोग सबसे ज़्यादा भूलते हैं।",
+    "cap": "Weight loss ka *sabse basic* rule.",
+    "scene": {
+     "type": "hook",
+     "lines": [
+      "Weight loss ka",
+      "*basic rule*"
+     ],
+     "kicker": "Back to basics",
+     "icon": "scale"
+    }
+   },
+   {
+    "vo": "जितनी कैलोरी शरीर खर्च करता है, उससे थोड़ी कम खाइए। यही कैलोरी डेफ़िसिट है।",
+    "cap": "Kharch se *thoda kam* khao: yahi *calorie deficit*.",
+    "scene": {
+     "type": "compare",
+     "left": {
+      "label": "Khaaya",
+      "value": "In"
+     },
+     "right": {
+      "label": "Kharch kiya",
+      "value": "Out"
+     },
+     "title": "Calorie *balance*",
+     "verdict": "In < Out = *deficit*"
+    }
+   },
+   {
+    "vo": "मोटे तौर पर, एक किलो फ़ैट लगभग सात हज़ार सात सौ कैलोरी के बराबर माना जाता है। पर ये सिर्फ़ एक मोटा अंदाज़ा है।",
+    "cap": "Rough estimate: *1 kg fat ≈ 7700 kcal*. Bas ek andaaza.",
+    "scene": {
+     "type": "stat",
+     "value": 7700,
+     "label": "kcal ≈ *1 kg* body fat, rough estimate",
+     "decimals": 0,
+     "note": "Common approximation · real results vary"
+    }
+   },
+   {
+    "vo": "बहुत ज़्यादा कमी लंबे समय तक नहीं टिकती। छोटा, टिकाऊ डेफ़िसिट, अच्छा प्रोटीन, और रोज़ की एक्टिविटी।",
+    "cap": "Crash diet *tikti nahi*. Chhota deficit, protein, activity.",
+    "scene": {
+     "type": "list",
+     "items": [
+      {
+       "icon": "check",
+       "text": "Chhota, tikaau deficit"
+      },
+      {
+       "icon": "egg",
+       "text": "Har meal mein protein"
+      },
+      {
+       "icon": "walk",
+       "text": "Roz activity"
+      }
+     ],
+     "title": "Jo *tike*, wahi"
+    }
+   },
+   {
+    "vo": "आपका कैलोरी टारगेट क्या होना चाहिए? डाइटरी गाइड आपके लिए कैलकुलेट करता है।",
+    "cap": "Aapka calorie target?",
+    "scene": {
+     "type": "cta",
+     "line": "Aapka *calorie target*?",
+     "sub": "Metrics",
+     "screen": "metrics"
+    }
+   }
+  ],
+  "sources": [
+   "Energy balance; ~7700 kcal per kg fat is a common approximation (Wishnofsky 1958) with known limits (Hall KD 2008)"
+  ],
+  "n": 30
+ }
+]

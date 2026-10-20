@@ -13,6 +13,12 @@ const FONTS: [family: string, file: string, weight: string, range?: string][] = 
   ['Poppins', 'fonts/poppins-latin-500-normal.woff2', '500'],
   ['Poppins', 'fonts/poppins-latin-600-normal.woff2', '600'],
   ['Poppins', 'fonts/poppins-latin-700-normal.woff2', '700'],
+  // Fraunces: the editorial serif for the education series
+  ['Fraunces', 'fonts/fraunces-latin-300-normal.woff2', '300'],
+  ['Fraunces', 'fonts/fraunces-latin-400-normal.woff2', '400'],
+  ['Fraunces', 'fonts/fraunces-latin-600-normal.woff2', '600'],
+  ['FrauncesItalic', 'fonts/fraunces-latin-400-italic.woff2', '400'],
+  ['FrauncesItalic', 'fonts/fraunces-latin-600-italic.woff2', '600'],
   // Devanagari glyphs for the festive films (same family, so Hindi falls in naturally)
   ['Poppins', 'fonts/poppins-devanagari-300-normal.woff2', '300', DEVA],
   ['Poppins', 'fonts/poppins-devanagari-500-normal.woff2', '500', DEVA],

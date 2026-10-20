@@ -242,6 +242,9 @@ KINDS = {
     'ember':   {'pad': .5, 'sitar': .45, 'tabla_light': .7, 'bass': .8, 'kick_soft': .7, 'sub': .5},
     'tick':    {'tick16': .5, 'bass': .8, 'kick': .85, 'clap': .45, 'pluck': .5, 'pad': .3},
     'calm_tick': {'tick16': .45, 'pad': .3, 'sub': .4},
+    # education series: a calm, steady bed that sits under a voice
+    'edu_bed': {'pad': .45, 'piano_arp': .32, 'sub': .45, 'kick_soft': .35, 'shaker': .14},
+    'edu_intro': {'pad': .5, 'piano_slow': .35, 'sub': .35, 'bell_sparse': .2},
     # festive (Dussehra) moods
     'diya':    {'drone': .7, 'pad': .35, 'bell_sparse': .35},
     'mela':    {'drone': .4, 'shehnai': .6, 'tabla_light': .6, 'shaker': .3, 'pad': .25},
@@ -294,6 +297,9 @@ ARR = {
     'p07': dict(frames=810, transpose=-2, sections=[(0, 'luxe'), (14.6, 'luxe_pulse'), (23.9, 'velvet'), (37.7, 'luxe_pulse'), (46.2, 'luxe'), (57.0, 'stop'), (57.1, 'outro')],
                 risers=[(176, 206), (610, 650)], stings=[206, 650], stabs=[],
                 notes=[(380, 81), (396, 83), (412, 86), (428, 88), (446, 90)]),
+    # ---- education series beds (long; each video fades out where it ends) ----
+    'edu1': dict(frames=1800, sections=[(0, 'edu_intro'), (4, 'edu_bed'), (112, 'stop')], risers=[], stings=[], stabs=[]),
+    'edu2': dict(frames=1800, minor=True, transpose=-2, sections=[(0, 'edu_intro'), (4, 'edu_bed'), (112, 'stop')], risers=[], stings=[], stabs=[]),
     # ---- Dussehra ----
     # app film: mela -> dhol build as IRA arrives -> full fest; every arrow hit rings a note; sting on the burn
     'd01': dict(frames=660, sections=[(0, 'mela'), (13.5, 'fest_build'), (16.8, 'fest'), (37.75, 'stop'), (37.85, 'fest'), (41.9, 'outro')],

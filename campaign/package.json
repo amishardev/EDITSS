@@ -38,6 +38,8 @@
     "render:dussehra": "npm run render:d01 && npm run render:d02",
     "finish:dussehra": "bash scripts/finish.sh out/dussehra-*.mp4",
     "qa:dussehra": "SHEET=dussehra-contact-sheet.jpg python3 -I scripts/qa.py out dussehra-01-app dussehra-02-wellness-treat",
+    "edu:voice": "python3 -I scripts/edu_topics.py && python3 -I scripts/edu_tts.py $KOKORO_DIR",
+    "render:edu": "bash scripts/render_edu.sh",
     "render:products": "npm run render:p01 && npm run render:p02 && npm run render:p03 && npm run render:p04 && npm run render:p05 && npm run render:p06 && npm run render:p07",
     "finish:products": "bash scripts/finish.sh out/product-*.mp4 out/wellness-treat-hero.mp4"
   },

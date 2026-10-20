@@ -22,6 +22,13 @@ import {P07WellnessTreat, P07_DURATION} from './products/P07WellnessTreat';
 import {D01App, D01_DURATION} from './festive/D01App';
 import {D02Treat, D02_DURATION} from './festive/D02Treat';
 import {FPS, H, W} from './theme';
+import {Edu} from './edu/Edu';
+import topicsJson from './edu/topics.json';
+import timingsJson from './edu/timings.json';
+import {Timing, Topic} from './edu/types';
+
+const TOPICS = topicsJson as unknown as Topic[];
+const TIMINGS = timingsJson as unknown as Record<string, Timing>;
 
 loadFonts();
 
@@ -52,6 +59,9 @@ export const RemotionRoot: React.FC = () => (
   <>
     {ADS.map((a) => (
       <Composition key={a.id} id={a.id} component={a.component} durationInFrames={a.duration} fps={FPS} width={W} height={H} />
+    ))}
+    {TOPICS.filter((t) => TIMINGS[t.slug]).map((t) => (
+      <Composition key={t.slug} id={`Edu-${String(t.n).padStart(2, '0')}-${t.slug}`} component={Edu} durationInFrames={TIMINGS[t.slug].total} fps={FPS} width={W} height={H} defaultProps={{topic: t, timing: TIMINGS[t.slug]}} />
     ))}
   </>
 );
