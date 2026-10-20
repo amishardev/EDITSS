@@ -613,7 +613,18 @@ dict(slug='calorie-balance', title='Weight loss ka basic rule', accent='sky', se
 ], sources=['Energy balance; ~7700 kcal per kg fat is a common approximation (Wishnofsky 1958) with known limits (Hall KD 2008)']),
 ]
 
-assert len(TOPICS) == 30, len(TOPICS)
+# Episode numbers follow the posting calendar (25 Oct to 23 Nov 2026), so the
+# "Food Fact No." burned into each video matches the day it goes out.
+ORDER = [
+    'protein-kitna', 'chai-khane-ke-saath', 'sugar-free-label', 'namak-8-gram', 'intermittent-fasting',
+    'brown-bread', 'neend-aur-cravings', 'icmr-plate', 'cheeni-6-chammach', 'protein-bar-label',
+    'gud-vs-cheeni', 'diwali-mithai', 'tel-baar-baar', 'walk-after-meal', 'real-fruit-juice',
+    'nimbu-shahad-detox', 'calorie-balance', 'ultra-processed', 'protein-powder', 'dal-chawal-combo',
+    'food-order', 'gut-dahi', 'iron-vitamin-c', 'veg-protein', 'label-trick',
+    'b12-vegetarian', 'ragi-calcium', 'fibre', 'paani-kitna', '56-percent',
+]
+assert len(TOPICS) == 30 and sorted(ORDER) == sorted(t['slug'] for t in TOPICS)
+TOPICS.sort(key=lambda t: ORDER.index(t['slug']))
 for i, t in enumerate(TOPICS, 1):
     t['n'] = i
 

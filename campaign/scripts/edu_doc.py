@@ -66,6 +66,6 @@ for t in topics:
     md += [f"## {t['n']:02d} · {t['title']}", '', '**Voiceover (Hindi/Hinglish)**', '']
     md += [f"{i + 1}. {s['vo']}" for i, s in enumerate(t['segs'])]
     md += ['', '**Sources**', ''] + [f'- {s}' for s in t['sources']]
-    md += ['', '**Caption (copy-paste)**', '', '```text', caption, '```', '']
+    md += ['', f"Caption and posting date: see `CAPTIONS.md` (Food Fact No.{t['n']:02d}).", '']
 open(os.path.join(ROOT, 'EDU_SERIES.md'), 'w').write('\n'.join(md))
 print('wrote EDU_SERIES.md')
