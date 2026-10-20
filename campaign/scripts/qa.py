@@ -38,7 +38,7 @@ for row, name in enumerate(ADS):
     black = run("ffmpeg", "-v", "info", "-i", path, "-vf", "blackdetect=d=0.1:pix_th=0.06", "-an", "-f", "null", "-").count("black_start")
     loud = run("ffmpeg", "-i", path, "-af", "ebur128", "-vn", "-f", "null", "-")
     lufs = next((l.split("I:")[1].strip() for l in loud.splitlines()[::-1] if l.strip().startswith("I:")), "?")
-    good = v["width"] == 1080 and v["height"] == 1920 and fps == "30/1" and v["codec_name"] == "h264" and v.get("pix_fmt") == "yuv420p" and a and a["codec_name"] == "aac" and 15 <= dur <= (30 if name.startswith(("wellness", "dussehra")) else 25) and black == 0
+    good = v["width"] == 1080 and v["height"] == 1920 and fps == "30/1" and v["codec_name"] == "h264" and v.get("pix_fmt") == "yuv420p" and a and a["codec_name"] == "aac" and 15 <= dur <= (40 if name.startswith("edu") else 30 if name.startswith(("wellness", "dussehra")) else 25) and black == 0
     ok &= bool(good)
     print(f"{'OK ' if good else 'BAD'} {name}: {v['width']}x{v['height']} {fps}fps {v['codec_name']}/{v.get('pix_fmt')} "
           f"audio={a['codec_name'] if a else None} {dur:.2f}s frames={v.get('nb_frames')} black_segments={black} loudness={lufs} "

@@ -8,6 +8,7 @@ import {Timing, Topic} from './types';
 
 export const LEAD = 4; // frames before the first word
 export const PAD = 10; // breathing room after each spoken segment
+const XFADE = 8; // frames a scene enters early, overlapping the previous scene's exit
 
 /** Segment start frames from the voice timing. */
 export const layout = (t: Timing) => {
@@ -156,11 +157,16 @@ export const Edu: React.FC<{topic: Topic; timing: Timing}> = ({topic, timing}) =
   return (
     <AbsoluteFill style={{background: PAPER}}>
       <Backdrop topic={topic} starts={starts} timing={timing} />
-      {topic.segs.map((s, i) => (
-        <Sequence key={i} from={starts[i]} durationInFrames={timing.segs[i] + (i === topic.segs.length - 1 ? 30 : 0)} layout="none">
-          <SceneView s={s.scene} accent={topic.accent} n={topic.n} dur={timing.segs[i] + (i === topic.segs.length - 1 ? 30 : 0)} />
-        </Sequence>
-      ))}
+      {topic.segs.map((s, i) => {
+        // each scene starts a little before its line, so it crossfades with the one leaving
+        const lead = i ? XFADE : 0;
+        const dur = timing.segs[i] + lead + (i === topic.segs.length - 1 ? 30 : 0);
+        return (
+          <Sequence key={i} from={starts[i] - lead} durationInFrames={dur} layout="none">
+            <SceneView s={s.scene} accent={topic.accent} n={topic.n} dur={dur} />
+          </Sequence>
+        );
+      })}
       <Header topic={topic} starts={starts} total={total} />
       <Captions topic={topic} starts={starts} timing={timing} />
       <Grain opacity={0.045} vignette={0.12} />
