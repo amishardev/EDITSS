@@ -10,7 +10,7 @@ import { C } from "../engine/palette";
 import { clamp, glow, haze, lerp, mix, rgba } from "../engine/draw";
 import { kick } from "../engine/music";
 import { mulberry32 } from "../engine/rng";
-import { drawHorizonBand, drawSky, drawSkyline, makeSkyline } from "./common";
+import { drawHorizonBand, drawSky, drawSkyline, makeSkyline, projectedShadow } from "./common";
 
 export type BacklightParams = {
   variant: "shadows" | "rise";
@@ -31,46 +31,6 @@ const DEF: BacklightParams = {
 };
 
 const city = makeSkyline(71, 1300, 120, 520, 40, 150);
-
-/** one long shadow on the ground, foreshortened toward the vanishing point */
-const shadow = (ctx: CanvasRenderingContext2D, footX: number, footY: number, vpX: number, vpY: number, len: number, phase: number, alpha: number) => {
-  const dx = vpX - footX;
-  const dy = vpY - footY;
-  const ang = Math.atan2(dy, dx);
-  ctx.save();
-  ctx.translate(footX, footY);
-  ctx.rotate(ang);
-  ctx.filter = "blur(5px)";
-  ctx.fillStyle = rgba("#1a0f08", alpha);
-  const width = 170;
-  // perspective taper: the shadow narrows as it runs away from us
-  const wAt = (u: number) => width * (1 - 0.6 * (u / len));
-  const sw = Math.sin(phase) * 0.12;
-  ctx.beginPath();
-  // two legs
-  for (const side of [-1, 1]) {
-    const lift = side * sw;
-    ctx.moveTo(0, side * wAt(0) * 0.08);
-    ctx.lineTo(len * 0.47, side * wAt(len * 0.47) * (0.06 + lift));
-    ctx.lineTo(len * 0.47, side * wAt(len * 0.47) * (0.3 + lift));
-    ctx.lineTo(0, side * wAt(0) * 0.2);
-    ctx.closePath();
-  }
-  ctx.fill();
-  // torso + shoulders
-  ctx.beginPath();
-  ctx.moveTo(len * 0.45, -wAt(len * 0.45) * 0.34);
-  ctx.lineTo(len * 0.8, -wAt(len * 0.8) * 0.5);
-  ctx.quadraticCurveTo(len * 0.86, 0, len * 0.8, wAt(len * 0.8) * 0.5);
-  ctx.lineTo(len * 0.45, wAt(len * 0.45) * 0.34);
-  ctx.closePath();
-  ctx.fill();
-  // head
-  ctx.beginPath();
-  ctx.ellipse(len * 0.91, 0, len * 0.055, wAt(len * 0.91) * 0.26, 0, 0, Math.PI * 2);
-  ctx.fill();
-  ctx.restore();
-};
 
 export const Backlight: React.FC<{ p?: Partial<BacklightParams> }> = ({ p }) => {
   const T = useSongTime();
@@ -98,57 +58,52 @@ export const Backlight: React.FC<{ p?: Partial<BacklightParams> }> = ({ p }) => 
           ctx.restore();
           return;
         }
-        // shadows variant: low warm sun behind camera
-        const hz = h * 0.38;
+        // shadows variant: low warm sun behind the camera, our shadows run ahead to the horizon
+        const hz = h * 0.36;
         drawSky(ctx, w, hz + 2, "dusk");
         haze(ctx, w, hz, 360, "#f0b07a", 0.35 * P.warmth);
         drawHorizonBand(ctx, w, hz + 2, 50, 5, "#3a2a28");
-        // road receding
-        const vpX = w * 0.5;
+        const cx = w * 0.5;
+        const f = h * 0.62;
+        const CH = 1.7;
+        const prj = (x: number, z: number) => [cx + (x * f) / z, hz + (CH * f) / z] as const;
+        const camZ = lt * 1.4 * P.walk;
+        // verges and road
+        ctx.fillStyle = "#3f2c22";
+        ctx.fillRect(0, hz, w, h - hz);
+        const road = (xa: number, xb: number, fill: string | CanvasGradient) => {
+          const [a0x, a0y] = prj(xa, 0.6);
+          const [b0x] = prj(xb, 0.6);
+          const [a1x, a1y] = prj(xa, 400);
+          const [b1x] = prj(xb, 400);
+          ctx.beginPath();
+          ctx.moveTo(a0x, a0y);
+          ctx.lineTo(b0x, a0y);
+          ctx.lineTo(b1x, a1y);
+          ctx.lineTo(a1x, a1y);
+          ctx.closePath();
+          ctx.fillStyle = fill;
+          ctx.fill();
+        };
         const g = ctx.createLinearGradient(0, hz, 0, h);
-        g.addColorStop(0, mix("#5a4038", "#3a2c28", 1 - P.warmth));
-        g.addColorStop(0.45, "#7e5640");
+        g.addColorStop(0, mix("#6a4c3e", "#3a2c28", 1 - P.warmth));
+        g.addColorStop(0.5, "#8a5f44");
         g.addColorStop(1, "#a8734c");
-        ctx.fillStyle = g;
-        ctx.beginPath();
-        ctx.moveTo(vpX - 12, hz);
-        ctx.lineTo(vpX + 12, hz);
-        ctx.lineTo(w * 1.3, h);
-        ctx.lineTo(-w * 0.3, h);
-        ctx.closePath();
-        ctx.fill();
-        // verges
-        ctx.fillStyle = "#4a3426";
-        ctx.beginPath();
-        ctx.moveTo(0, hz);
-        ctx.lineTo(vpX - 12, hz);
-        ctx.lineTo(-w * 0.3, h);
-        ctx.lineTo(0, h);
-        ctx.fill();
-        ctx.beginPath();
-        ctx.moveTo(w, hz);
-        ctx.lineTo(vpX + 12, hz);
-        ctx.lineTo(w * 1.3, h);
-        ctx.lineTo(w, h);
-        ctx.fill();
-        // centre dashes drifting toward the horizon (we walk forward)
-        const r = mulberry32(2);
-        for (let k = 0; k < 14; k++) {
-          const v = ((k / 14 + lt * 0.05 * P.walk) % 1);
-          const y0 = lerp(h, hz, Math.pow(v, 0.35));
-          const y1 = lerp(h, hz, Math.pow(Math.min(1, v + 0.025), 0.35));
-          const ww = lerp(14, 1, Math.pow(v, 0.35));
-          ctx.fillStyle = rgba("#f3e2c0", 0.55);
-          ctx.fillRect(vpX - ww / 2, y1, ww, y0 - y1);
+        road(-3.2, 3.2, g);
+        // centre dashes moving toward the horizon as we walk
+        for (let k = 0; k < 30; k++) {
+          const z = k * 6 - (camZ % 6) + 0.8;
+          const [x0, y0] = prj(-0.06, z);
+          const [x1, y1] = prj(0.06, z + 2.5);
+          ctx.fillStyle = rgba("#f3e2c0", 0.5 * Math.min(1, 40 / z));
+          ctx.fillRect(Math.min(x0, x1), y1, Math.max(1, Math.abs(x1 - x0) + 2), y0 - y1);
         }
-        // the group's shadows
+        // the group's shadows, parallel, pointing to the vanishing point
+        const L = 7.5;
         for (let i = 0; i < P.people; i++) {
-          const spread = (i - (P.people - 1) / 2) * 190;
-          const bob = Math.sin(lt * 4.2 * P.walk + i * 1.7);
-          const footX = vpX + spread + Math.sin(lt * 0.7 + i) * 6;
-          const footY = h * 1.02;
-          const len = (h - hz) * (0.66 + i * 0.03) + bob * 6;
-          shadow(ctx, footX, footY, vpX + spread * 0.05, hz + 30, len, lt * 4.2 * P.walk + i * 1.7, 0.78);
+          const xs = (i - (P.people - 1) / 2) * 1.1 + Math.sin(lt * 0.6 + i) * 0.05;
+          const stride = lt * 4.6 * P.walk + i * 1.7;
+          projectedShadow(ctx, prj, xs, 1.0 + Math.sin(stride) * 0.03, -0.04 * xs, 1, L, stride, 0.72, 4, "#1e1209");
         }
         // dust in the sunbeam, kicks give it a shimmer
         const dr = mulberry32(44);

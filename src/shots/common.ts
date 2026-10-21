@@ -340,4 +340,59 @@ export const cityGlow = (ctx: Ctx, w: number, y: number, color: string, a: numbe
   haze(ctx, w, y, 520, color, a);
 };
 
+/**
+ * A human shadow lying on the ground plane, drawn in metres and projected through `prj`.
+ * (xs, zs) = feet, (ux, uz) = unit direction the shadow points, L = shadow length.
+ */
+export const projectedShadow = (
+  ctx: Ctx,
+  prj: (x: number, z: number) => readonly [number, number],
+  xs: number,
+  zs: number,
+  ux: number,
+  uz: number,
+  L: number,
+  stride: number,
+  alpha: number,
+  blur: number,
+  color = "#000000",
+) => {
+  const vx = -uz;
+  const vz = ux;
+  const pt = (u: number, v: number) => prj(xs + ux * u + vx * v, zs + uz * u + vz * v);
+  const sw = Math.sin(stride) * 0.12;
+  ctx.save();
+  ctx.filter = `blur(${blur}px)`;
+  ctx.fillStyle = rgba(color, alpha);
+  ctx.beginPath();
+  const poly: [number, number][] = [
+    [0, -0.08 - sw],
+    [L * 0.46, -0.16],
+    [L * 0.5, -0.24],
+    [L * 0.62, -0.27],
+    [L * 0.8, -0.22],
+    [L * 0.86, -0.1],
+    [L * 0.86, 0.1],
+    [L * 0.8, 0.22],
+    [L * 0.62, 0.27],
+    [L * 0.5, 0.24],
+    [L * 0.46, 0.16],
+    [0, 0.08 + sw],
+  ];
+  poly.forEach(([u, v], k) => {
+    const [x, y] = pt(u, v);
+    k ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+  });
+  ctx.closePath();
+  ctx.fill();
+  ctx.beginPath();
+  for (let k = 0; k <= 12; k++) {
+    const ang = (k / 12) * Math.PI * 2;
+    const [x, y] = pt(L * 0.93 + Math.cos(ang) * L * 0.07, Math.sin(ang) * 0.11);
+    k ? ctx.lineTo(x, y) : ctx.moveTo(x, y);
+  }
+  ctx.fill();
+  ctx.restore();
+};
+
 export { hash };

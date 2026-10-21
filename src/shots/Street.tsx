@@ -12,6 +12,7 @@ import { clamp, glow, glowEllipse, mix, rgba, smooth } from "../engine/draw";
 import { beatIndex, kick, travel } from "../engine/music";
 import { mulberry32, noise1 } from "../engine/rng";
 import { F } from "../engine/fonts";
+import { projectedShadow } from "./common";
 
 type Ctx = CanvasRenderingContext2D;
 
@@ -83,8 +84,13 @@ const pavement = (ctx: Ctx, w: number, h: number, scroll: number, tone: string) 
 };
 
 export type ShadowsParams = { people: number; lampColor: string; run: number; spacing: number; tone: string; wet: number };
-const SH_DEF: ShadowsParams = { people: 3, lampColor: C.sodium, run: 0, spacing: 1, tone: "#4a3f33", wet: 0.3 };
+const SH_DEF: ShadowsParams = { people: 3, lampColor: C.sodium, run: 0, spacing: 1, tone: "#3b342c", wet: 0.3 };
 
+/**
+ * Looking down at the pavement while walking with friends. Each time we pass under a lamp
+ * (on the grid: every 2 beats walking, every beat running) a new hard shadow is born at our
+ * feet and stretches ahead, getting longer and fainter until the next lamp takes over.
+ */
 export const Shadows: React.FC<{ p?: Partial<ShadowsParams> }> = ({ p }) => {
   const T = useSongTime();
   const lt = useLocalTime();
@@ -93,38 +99,92 @@ export const Shadows: React.FC<{ p?: Partial<ShadowsParams> }> = ({ p }) => {
     <Canvas
       bloom={0.45}
       draw={(ctx, w, h) => {
-        // we look down at the pavement; the group walks "up" the frame, lamps pass every travel unit
-        const unitPx = 1500 * P.spacing;
-        const d = travel(T) * unitPx;
-        pavement(ctx, w, h, d, P.tone);
-        // lamp positions in screen space (off-frame left, scrolling down = we walk up)
-        const lamps: { x: number; y: number }[] = [];
-        for (let k = -2; k < 3; k++) {
-          lamps.push({ x: -160, y: ((d % unitPx) + k * unitPx) });
-        }
-        // light pools
-        for (const L of lamps) glowEllipse(ctx, L.x + 300, L.y, 1000, 760, P.lampColor, 0.38);
-        ctx.fillStyle = "rgba(0,0,0,0.22)";
+        const cx = w * 0.5;
+        const cy = -h * 0.12; // horizon above the frame: we look down
+        const f = h * 0.75;
+        const CH = 1.7;
+        const S = 8 * P.spacing; // metres between lamps
+        const rate = P.run ? 1 : 0.5;
+        const camZ = travel(T) * S * rate;
+        const prj = (x: number, z: number) => [cx + (x * f) / z, cy + (CH * f) / z] as const;
+
+        // pavement
+        ctx.fillStyle = P.tone;
         ctx.fillRect(0, 0, w, h);
-        for (const L of lamps) glowEllipse(ctx, L.x + 300, L.y, 800, 600, P.lampColor, 0.25);
-        const phase = lt * (P.run ? 9 : 5.2);
-        for (let i = 0; i < P.people; i++) {
-          const fx = w * (0.32 + i * 0.17) + noise1(lt * 0.3, i) * 30;
-          const fy = h * (0.52 + (i % 2) * 0.06) + Math.sin(phase + i) * 4;
-          for (const L of lamps) {
-            const dx = fx - L.x;
-            const dy = fy - L.y;
-            const dist = Math.hypot(dx, dy);
-            const a = clamp(1.3 - dist / 1500) * 0.85;
-            const len = clamp(dist * 0.42, 150, 760);
-            groundShadow(ctx, fx, fy, Math.atan2(dy, dx), len, 120, phase + i * 1.3, a);
-          }
-          // feet contact
-          glowEllipse(ctx, fx, fy, 40, 18, "#000000", 0);
+        const r = mulberry32(4);
+        for (let i = 0; i < 1600; i++) {
+          const gx = (r() - 0.5) * 12;
+          const gz = ((r() * 14 - (camZ % 14)) + 14) % 14 + 0.9;
+          const [sx, sy] = prj(gx, gz);
+          const sz = Math.max(1.5, (0.04 * f) / gz);
+          ctx.fillStyle = rgba(r() > 0.5 ? "#ffffff" : "#000000", 0.035 + r() * 0.05);
+          ctx.fillRect(sx, sy, sz, sz * 0.5);
         }
+        ctx.strokeStyle = "rgba(0,0,0,0.3)";
+        ctx.lineWidth = 3;
+        for (let k = 0; k < 14; k++) {
+          const z = k * 1.5 - (camZ % 1.5) + 0.9;
+          const [x0, y0] = prj(-8, z);
+          const [x1] = prj(8, z);
+          ctx.beginPath();
+          ctx.moveTo(x0, y0);
+          ctx.lineTo(x1, y0);
+          ctx.stroke();
+        }
+        for (const gx of [-3.1, -1.6, -0.1, 1.4, 2.9]) {
+          const [x0, y0] = prj(gx, 0.9);
+          const [x1, y1] = prj(gx, 40);
+          ctx.beginPath();
+          ctx.moveTo(x0, y0);
+          ctx.lineTo(x1, y1);
+          ctx.stroke();
+        }
+
+        // lamps on the right, slightly ahead of where we pass under them
+        const lamps: number[] = [];
+        const base = Math.floor(camZ / S);
+        for (let k = -3; k < 6; k++) lamps.push((base + k) * S + 0.5 - camZ);
+        const XL = 3.4;
+        const HL = 5.5;
+        let wash = 0;
+        for (const zl of lamps) {
+          const zz = Math.max(0.9, zl);
+          const [lx, ly] = prj(XL, zz);
+          const near = Math.exp(-(zl * zl) / (2 * 4 * 4));
+          wash += near;
+          glowEllipse(ctx, lx - 120, ly, 1100 / Math.max(1, zz * 0.5), 520 / Math.max(1, zz * 0.5), P.lampColor, 0.35 * Math.min(1, 3 / Math.max(0.9, zz)));
+        }
+        ctx.save();
+        ctx.globalCompositeOperation = "lighter";
+        ctx.fillStyle = rgba(P.lampColor, 0.05 + 0.12 * wash);
+        ctx.fillRect(0, 0, w, h);
+        ctx.restore();
+
+        // shadows: one per person per lamp behind us
+        const people = Array.from({ length: P.people }, (_, i) => (i - (P.people - 1) / 2) * 1.05);
+        const HP = 1.75;
+        const stride = lt * (P.run ? 9 : 5.4);
+        people.forEach((xp, i) => {
+          const zp = 0.5 + Math.sin(stride + i) * 0.04;
+          const xs = xp + Math.sin(lt * 0.5 + i * 2) * 0.06;
+          for (const zl of lamps) {
+            if (zl > zp - 0.05) continue; // lamp in front: shadow falls behind us
+            const dx = xs - XL;
+            const dz = zp - zl;
+            const dist = Math.hypot(dx, dz);
+            if (dist > 34) continue;
+            const L = (HP * dist) / (HL - HP);
+            // newborn shadows (lamp just overhead) fade in as they stretch out from our feet
+            const a = clamp((1.6 * HL * HL) / (dist * dist + HL * HL)) * 0.85 * smooth(0.5, 2.6, L);
+            if (a < 0.02) continue;
+            projectedShadow(ctx, prj, xs, zp, dx / dist, dz / dist, L, stride + i * 1.3, a, 3 + L * 0.8);
+          }
+        });
         // wet sheen
         ctx.fillStyle = rgba(P.lampColor, 0.04 * P.wet);
         ctx.fillRect(0, 0, w, h);
+        void noise1;
+        void groundShadow;
       }}
     />
   );
