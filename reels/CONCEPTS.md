@@ -380,6 +380,10 @@ Every Reel is rendered from the procedural shot library; every cut and reaction 
 - **Payoff:** Burst out of the tunnel exactly on 'OUT'.
 - **Loop:** No.
 - **Caption:** some nights you hear the exit before you see it.
+  - some nights you hear the exit before you see it.
+  - 2:45. that's where it opens up.
+  - the tunnel was the build. the exit was the drop.
+  - moonlight · AMISHAR  #progressivehouse #melodichouse #latenight #AMISHAR
 - **Why it's in the campaign:** The cleanest possible drop moment for the strongest drop.
 
 ### 15. STILL  `R15-still`
@@ -507,6 +511,10 @@ Every Reel is rendered from the procedural shot library; every cut and reaction 
 - **Payoff:** The final hit of the song is the moment the night becomes morning.
 - **Loop:** No, ends on the lockup and silence.
 - **Caption:** the sky was getting light when we got home.
+  - the sky was getting light when we got home. nobody said a word.
+  - we took the long way home. on purpose.
+  - some nights end. this one just turned into morning.
+  - moonlight · AMISHAR  #progressivehouse #melodichouse #latenight #AMISHAR
 - **Why it's in the campaign:** Release-week anchor: the whole emotional arc (movement → night → afterglow) in one Reel.
 
 ---

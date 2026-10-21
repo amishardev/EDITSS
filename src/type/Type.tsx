@@ -37,6 +37,9 @@ export type TextUse = {
 
 const POS = { top: 0.13, upper: 0.2, center: 0.47, lower: 0.64, bottom: 0.74 };
 
+/** release date line shown under the title lockup */
+export const RELEASE_LABEL = "coming 23 oct 2026";
+
 const syllables = (w: string) => Math.max(1, (w.toLowerCase().replace(/[^a-z]/g, "").match(/[aeiouy]+/g) ?? []).length);
 
 /** estimated per-word onset times across a sung line, weighted by syllables */
@@ -100,6 +103,17 @@ export const TextLayer: React.FC<{ t: TextUse }> = ({ t }) => {
             }}
           >
             {SONG_TITLE.toLowerCase()}
+          </div>
+          <div
+            style={{
+              ...fontFor("mono", 26),
+              color: "rgba(243,234,217,0.8)",
+              marginTop: 22,
+              letterSpacing: "0.22em",
+              opacity: smooth(t.from + 1.2, t.from + 1.7, T),
+            }}
+          >
+            {RELEASE_LABEL}
           </div>
         </div>
       </AbsoluteFill>

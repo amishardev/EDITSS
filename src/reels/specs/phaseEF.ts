@@ -84,6 +84,12 @@ export const R19: ReelSpec = {
     payoff: "The final hit of the song is the moment the night becomes morning.",
     loop: "No, ends on the lockup and silence.",
     caption: "the sky was getting light when we got home.",
+    captions: [
+      "the sky was getting light when we got home. nobody said a word.",
+      "we took the long way home. on purpose.",
+      "some nights end. this one just turned into morning.",
+      "moonlight · AMISHAR  #progressivehouse #melodichouse #latenight #AMISHAR",
+    ],
     why: "Release-week anchor: the whole emotional arc (movement → night → afterglow) in one Reel.",
   },
   shots: [

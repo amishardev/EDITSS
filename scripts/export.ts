@@ -167,6 +167,7 @@ for (const r of reels) {
     `- **Payoff:** ${r.payoff}`,
     `- **Loop:** ${r.loop}`,
     `- **Caption:** ${r.caption}`,
+    ...(r.captions ?? []).map((c) => `  - ${c}`),
     `- **Why it's in the campaign:** ${r.why}`,
     "",
   );

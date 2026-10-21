@@ -38,6 +38,8 @@ export type ReelConcept = {
   payoff: string;
   loop: string;
   caption: string;
+  /** full post captions: three lines plus the tag line */
+  captions?: string[];
   why: string;
 };
 

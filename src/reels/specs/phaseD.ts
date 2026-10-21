@@ -89,6 +89,12 @@ export const R14: ReelSpec = {
     payoff: "Burst out of the tunnel exactly on 'OUT'.",
     loop: "No.",
     caption: "some nights you hear the exit before you see it.",
+    captions: [
+      "some nights you hear the exit before you see it.",
+      "2:45. that's where it opens up.",
+      "the tunnel was the build. the exit was the drop.",
+      "moonlight · AMISHAR  #progressivehouse #melodichouse #latenight #AMISHAR",
+    ],
     why: "The cleanest possible drop moment for the strongest drop.",
   },
   shots: [
