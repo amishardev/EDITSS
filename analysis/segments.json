@@ -1,0 +1,60 @@
+{
+ "segments": {
+  "S1": {
+   "name": "HOOK_INTO_DROP1",
+   "start_beat": 96,
+   "end_beat": 140,
+   "start": 45.0466,
+   "end": 65.6715,
+   "duration": 20.625,
+   "bars": 11.0,
+   "note": "8 bars of build + 3 bars of drop 1"
+  },
+  "S2": {
+   "name": "DROP1_CORE",
+   "start_beat": 128,
+   "end_beat": 160,
+   "start": 60.0465,
+   "end": 75.0464,
+   "duration": 15.0,
+   "bars": 8.0,
+   "note": "first 8 bars of drop 1"
+  },
+  "S5": {
+   "name": "THE_STOPS",
+   "start_beat": 260,
+   "end_beat": 308,
+   "start": 121.921,
+   "end": 144.4209,
+   "duration": 22.5,
+   "bars": 12.0,
+   "note": "covers stop1 2:05.7 and stop2 2:19.7"
+  },
+  "S7": {
+   "name": "HOOK_INTO_DROP2",
+   "start_beat": 328,
+   "end_beat": 368,
+   "start": 153.7958,
+   "end": 172.5457,
+   "duration": 18.75,
+   "bars": 10.0,
+   "note": "6 bars before drop 2 + 4 bars of drop 2"
+  },
+  "S8": {
+   "name": "OUTRO_SUNRISE",
+   "start_beat": 432,
+   "end_beat": 480,
+   "start": 202.5454,
+   "end": 225.0452,
+   "duration": 22.5,
+   "bars": 12.0,
+   "note": "last 4 bars of drop 2 + outro; 8 bars would run 31s"
+  }
+ },
+ "pending": {
+  "S3": "VERSE_LYRIC, needs accurate word timing",
+  "S4": "MOONLIGHT_LINE, needs accurate word timing (and runs ~30s, over the 24s cap)",
+  "S6": "STARS_LINE, line not located yet",
+  "S9": "OUT_OF_SIGHT, line not located yet"
+ }
+}
