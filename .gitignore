@@ -1,0 +1,9 @@
+node_modules/
+out/
+.remotion/
+*.log
+public/clips/*.mp4
+public/clips/*.mov
+public/clips/*.webm
+!public/clips/.gitkeep
+__pycache__/
