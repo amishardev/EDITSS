@@ -1,0 +1,6 @@
+audio/*.wav
+analysis/_vocal_enh.wav
+analysis/_lyrics.dict
+__pycache__/
+node_modules/
+out/
