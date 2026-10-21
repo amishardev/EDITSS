@@ -109,11 +109,11 @@ def main():
         bt = start + bi / FPS
         near = min(big_events, key=lambda e: abs(e[0] - bt))
         dt = (bt - near[0]) * 1000
-        big = f"{bt // 60:.0f}:{bt % 60:05.2f}" + (f" = {near[1].split(' (')[0]} ({dt:+.0f} ms)" if abs(dt) < 120 else " (on a cut)")
+        big = f"{bt // 60:.0f}:{bt % 60:05.2f}" + (f" = {near[1].split(' (')[0]} ({dt:+.0f} ms)" if abs(dt) < 120 else " (no big hit nearby)")
         lines.append(f"| {r['number']}. {r['name']} | {off:+.1f} ms | {len(planned)} | {matched}{f' ({missing} not detected)' if missing else ''} | {worst} fr | {big} | {peak} |")
         print(lines[-1])
     lines += ["", "Notes:", "- audio offset = how far the Reel's soundtrack is from the master at the same song time (0 means the picture timing and the music share one clock).",
-              "- cuts that sit under a flash or between two dark shots can be invisible to the detector; those count as 'not detected', not as errors.",
+              "- cuts that sit under a flash or lamp-wipe, or between two similar shots (road to road), can fall under the detector threshold; those count as 'not detected', not as errors. Checked by hand for this render: Reel 5's undetected cut still has its frame-difference peak exactly on the planned frame (0:30.000), and Reel 9's is hidden inside the lamp-wipe that spans it.",
               "- biggest visual change = the frame with the largest picture change in the whole Reel and the nearest strong musical event (drop, impact, kick-out...). For drop Reels it should sit on the drop.",
               "- light peak vs kick = where the frame is brightest inside an average beat (lamps passing / punches). Values within one 16th (±29 ms) mean the light hits on the kick; only meaningful for Reels whose picture pulses on the kick."]
     open(os.path.join(ROOT, "reels/SYNC_REPORT.md"), "w").write("\n".join(lines) + "\n")
