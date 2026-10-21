@@ -1,0 +1,3503 @@
+{
+  "song": "MOONLIGHT - AMISHAR",
+  "count": 112,
+  "clips": [
+    {
+      "id": "S001",
+      "title": "The drive, moon on the left",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "road",
+      "code": "src/shots/ (generator \"road\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S001",
+      "url": "still: visual-board/stills/S001.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOVEMENT",
+      "visual_description": "POV down an empty two-lane road at night. Sodium lamps on the right, a fixed moon top-left, a town glowing on the horizon.",
+      "emotional_role": "moving without a destination",
+      "lyric_match": "Moving my feet to the beat of a drum",
+      "song_section_match": [
+        "verse1b",
+        "drop1",
+        "drop2"
+      ],
+      "energy": "mid",
+      "color_mood": "sodium orange / ink navy",
+      "useful_for_reel_types": [
+        "story",
+        "drop",
+        "loop"
+      ],
+      "music_reactivity": "lamps pass at the track's travel rate: 1 per bar in the intro, 1 per beat (on the kick) in verses/drops, 8ths/16ths in the build rolls",
+      "params": {
+        "lamps": "right"
+      },
+      "used_in_reels": [
+        "R05",
+        "R09",
+        "R10",
+        "R20"
+      ]
+    },
+    {
+      "id": "S002",
+      "title": "Rain on the road",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "road",
+      "code": "src/shots/ (generator \"road\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S002",
+      "url": "still: visual-board/stills/S002.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "CITY_MOTION",
+      "visual_description": "Same POV in heavy rain, lamps both sides, rain streaks lit only when a lamp is close.",
+      "emotional_role": "pushing through, not stopping",
+      "lyric_match": "Take a chance, rolling it twice",
+      "song_section_match": [
+        "build1",
+        "build2",
+        "drop2"
+      ],
+      "energy": "high",
+      "color_mood": "wet amber / black",
+      "useful_for_reel_types": [
+        "drop",
+        "build"
+      ],
+      "music_reactivity": "lamps pass at the track's travel rate: 1 per bar in the intro, 1 per beat (on the kick) in verses/drops, 8ths/16ths in the build rolls; rain brightens on each pass",
+      "params": {
+        "lamps": "both",
+        "rain": 0.8,
+        "wet": 1,
+        "moon": false,
+        "fog": 0.8,
+        "stars": 0
+      },
+      "used_in_reels": [
+        "R15"
+      ]
+    },
+    {
+      "id": "S003",
+      "title": "OUT / OF / SIGHT painted",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "road",
+      "code": "src/shots/ (generator \"road\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S003",
+      "url": "still: visual-board/stills/S003.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RISK_CHOICE",
+      "visual_description": "Words painted on the asphalt approach and pass under the car, one every two lamps.",
+      "emotional_role": "the message is on the road ahead",
+      "lyric_match": "Out of sight, out of mind",
+      "song_section_match": [
+        "build1",
+        "build2"
+      ],
+      "energy": "mid",
+      "color_mood": "paint white / sodium",
+      "useful_for_reel_types": [
+        "lyric",
+        "tease"
+      ],
+      "music_reactivity": "lamps pass at the track's travel rate: 1 per bar in the intro, 1 per beat (on the kick) in verses/drops, 8ths/16ths in the build rolls",
+      "params": {
+        "words": [
+          "OUT",
+          "OF",
+          "SIGHT"
+        ],
+        "wordGap": 2
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S004",
+      "title": "TAKE / A / CHANCE painted",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "road",
+      "code": "src/shots/ (generator \"road\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S004",
+      "url": "still: visual-board/stills/S004.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RISK_CHOICE",
+      "visual_description": "Road markings spell the risk line, lamps on the left.",
+      "emotional_role": "commitment you drive over",
+      "lyric_match": "Take a chance, rolling it twice",
+      "song_section_match": [
+        "build1",
+        "build2"
+      ],
+      "energy": "mid",
+      "color_mood": "paint white / sodium",
+      "useful_for_reel_types": [
+        "lyric",
+        "build"
+      ],
+      "music_reactivity": "lamps pass at the track's travel rate: 1 per bar in the intro, 1 per beat (on the kick) in verses/drops, 8ths/16ths in the build rolls",
+      "params": {
+        "words": [
+          "TAKE",
+          "A",
+          "CHANCE"
+        ],
+        "wordGap": 2,
+        "lamps": "left"
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S005",
+      "title": "Following their taillights",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "road",
+      "code": "src/shots/ (generator \"road\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S005",
+      "url": "still: visual-board/stills/S005.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "FRIENDS",
+      "visual_description": "A car ahead, two red taillights drifting in the lane: friends in the other car.",
+      "emotional_role": "following someone into the night",
+      "lyric_match": "It's not where you been, it's about where you're goin",
+      "song_section_match": [
+        "verse1a",
+        "verse1b",
+        "verse2"
+      ],
+      "energy": "mid",
+      "color_mood": "red tail / sodium",
+      "useful_for_reel_types": [
+        "story"
+      ],
+      "music_reactivity": "lamps pass at the track's travel rate: 1 per bar in the intro, 1 per beat (on the kick) in verses/drops, 8ths/16ths in the build rolls",
+      "params": {
+        "tail": true,
+        "lamps": "right"
+      },
+      "used_in_reels": [
+        "R05"
+      ]
+    },
+    {
+      "id": "S006",
+      "title": "Long left curve",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "road",
+      "code": "src/shots/ (generator \"road\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S006",
+      "url": "still: visual-board/stills/S006.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOVEMENT",
+      "visual_description": "The road bends away to the left so the lamp line sweeps across frame.",
+      "emotional_role": "not knowing what's round the bend",
+      "lyric_match": "It's not where you been...",
+      "song_section_match": [
+        "verse1b",
+        "verse2"
+      ],
+      "energy": "mid",
+      "color_mood": "sodium / navy",
+      "useful_for_reel_types": [
+        "story",
+        "build"
+      ],
+      "music_reactivity": "lamps pass at the track's travel rate: 1 per bar in the intro, 1 per beat (on the kick) in verses/drops, 8ths/16ths in the build rolls",
+      "params": {
+        "curve": 0.7,
+        "lamps": "left",
+        "moonX": 0.75
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S007",
+      "title": "Open road, no lamps",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "road",
+      "code": "src/shots/ (generator \"road\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S007",
+      "url": "still: visual-board/stills/S007.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "YOUTH_FREEDOM",
+      "visual_description": "Unlit road under a full star field and a big moon. Only lane dashes give speed.",
+      "emotional_role": "nothing between you and the sky",
+      "lyric_match": "Shoot for the stars",
+      "song_section_match": [
+        "breakdown",
+        "verse2",
+        "intro"
+      ],
+      "energy": "low",
+      "color_mood": "moon blue / black",
+      "useful_for_reel_types": [
+        "lyric",
+        "loop"
+      ],
+      "music_reactivity": "dashes move with travel()",
+      "params": {
+        "lamps": "none",
+        "stars": 1,
+        "moonR": 60,
+        "fog": 0.2
+      },
+      "used_in_reels": [
+        "R07",
+        "R16"
+      ]
+    },
+    {
+      "id": "S008",
+      "title": "Lamps switch off at dawn",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "road",
+      "code": "src/shots/ (generator \"road\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S008",
+      "url": "still: visual-board/stills/S008.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "AFTER_NIGHT",
+      "visual_description": "Blue-hour drive; the streetlamps go out one by one as the sky lightens.",
+      "emotional_role": "the night ending behind you",
+      "lyric_match": "Grooving till the bar kicks us out",
+      "song_section_match": [
+        "outro"
+      ],
+      "energy": "low",
+      "color_mood": "dawn cyan / peach",
+      "useful_for_reel_types": [
+        "endcard",
+        "story"
+      ],
+      "music_reactivity": "lamps off on staggered beats from lampsOffAt",
+      "params": {
+        "sky": "dawn",
+        "lampsOffAt": 214,
+        "moon": false,
+        "stars": 0
+      },
+      "used_in_reels": [
+        "R19",
+        "R21"
+      ]
+    },
+    {
+      "id": "S009",
+      "title": "Cold LED road",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "road",
+      "code": "src/shots/ (generator \"road\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S009",
+      "url": "still: visual-board/stills/S009.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOVEMENT",
+      "visual_description": "Same drive under white LED lamps: colder, more honest light.",
+      "emotional_role": "telling the truth",
+      "lyric_match": "I'm taking my time, telling the truth",
+      "song_section_match": [
+        "verse1b",
+        "verse2"
+      ],
+      "energy": "mid",
+      "color_mood": "cold white / navy",
+      "useful_for_reel_types": [
+        "lyric"
+      ],
+      "music_reactivity": "lamps pass at the track's travel rate: 1 per bar in the intro, 1 per beat (on the kick) in verses/drops, 8ths/16ths in the build rolls",
+      "params": {
+        "lampColor": "#cfe0ff",
+        "sky": "night",
+        "moonX": 0.3
+      },
+      "used_in_reels": [
+        "R06"
+      ]
+    },
+    {
+      "id": "S010",
+      "title": "Fog drive",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "road",
+      "code": "src/shots/ (generator \"road\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S010",
+      "url": "still: visual-board/stills/S010.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOVEMENT",
+      "visual_description": "Thick fog: lamps appear late and bloom, taillights barely visible.",
+      "emotional_role": "not knowing where it ends",
+      "lyric_match": "Out of sight, out of mind",
+      "song_section_match": [
+        "intro",
+        "build1"
+      ],
+      "energy": "low",
+      "color_mood": "smoky amber",
+      "useful_for_reel_types": [
+        "tease",
+        "build"
+      ],
+      "music_reactivity": "lamps pass at the track's travel rate: 1 per bar in the intro, 1 per beat (on the kick) in verses/drops, 8ths/16ths in the build rolls",
+      "params": {
+        "fog": 1.6,
+        "moon": false,
+        "stars": 0,
+        "tail": true
+      },
+      "used_in_reels": [
+        "R09"
+      ]
+    },
+    {
+      "id": "S011",
+      "title": "MOVING / TO THE / MUSIC painted",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "road",
+      "code": "src/shots/ (generator \"road\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S011",
+      "url": "still: visual-board/stills/S011.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RHYTHMIC",
+      "visual_description": "Lyric painted on the road, one phrase per lamp, both sides lit.",
+      "emotional_role": "the road is the song",
+      "lyric_match": "Moving to the music",
+      "song_section_match": [
+        "build1",
+        "build2"
+      ],
+      "energy": "high",
+      "color_mood": "sodium / paint",
+      "useful_for_reel_types": [
+        "lyric",
+        "drop"
+      ],
+      "music_reactivity": "lamps pass at the track's travel rate: 1 per bar in the intro, 1 per beat (on the kick) in verses/drops, 8ths/16ths in the build rolls",
+      "params": {
+        "words": [
+          "MOVING",
+          "TO THE",
+          "MUSIC"
+        ],
+        "wordGap": 1,
+        "lamps": "both"
+      },
+      "used_in_reels": [
+        "R09"
+      ]
+    },
+    {
+      "id": "S012",
+      "title": "Big moon over the road",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "road",
+      "code": "src/shots/ (generator \"road\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S012",
+      "url": "still: visual-board/stills/S012.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOONLIGHT_SKY",
+      "visual_description": "Lower horizon, more sky, oversized moon that never moves while the lamps rush past.",
+      "emotional_role": "the one thing that stays",
+      "lyric_match": "I promise to say it in the moonlight",
+      "song_section_match": [
+        "verse1b",
+        "verse2"
+      ],
+      "energy": "mid",
+      "color_mood": "moon blue / sodium",
+      "useful_for_reel_types": [
+        "loop",
+        "lyric"
+      ],
+      "music_reactivity": "lamps pass at the track's travel rate: 1 per bar in the intro, 1 per beat (on the kick) in verses/drops, 8ths/16ths in the build rolls; moon fixed",
+      "params": {
+        "horizon": 0.58,
+        "moonR": 74,
+        "moonX": 0.28,
+        "moonY": 0.2,
+        "lamps": "right"
+      },
+      "used_in_reels": [
+        "R02",
+        "R14",
+        "R17",
+        "R19"
+      ]
+    },
+    {
+      "id": "S013",
+      "title": "Tunnel, exit on the drop",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "tunnel",
+      "code": "src/shots/ (generator \"tunnel\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S013",
+      "url": "still: visual-board/stills/S013.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOVEMENT",
+      "visual_description": "Inside a tunnel, ceiling fixtures streak past; an opening grows and the camera bursts out at exitAt.",
+      "emotional_role": "the build as a tunnel, the drop as the sky",
+      "lyric_match": "grooving till the bar kicks us out",
+      "song_section_match": [
+        "build1",
+        "build2"
+      ],
+      "energy": "high",
+      "color_mood": "sodium streaks / white burst",
+      "useful_for_reel_types": [
+        "drop",
+        "build"
+      ],
+      "music_reactivity": "fixtures at 16ths of travel; exit flash at exitAt",
+      "params": {
+        "exitAt": 60
+      },
+      "used_in_reels": [
+        "R09",
+        "R14"
+      ]
+    },
+    {
+      "id": "S014",
+      "title": "Cold tunnel",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "tunnel",
+      "code": "src/shots/ (generator \"tunnel\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S014",
+      "url": "still: visual-board/stills/S014.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "TRANSIT",
+      "visual_description": "LED-lit tunnel, cooler and harder.",
+      "emotional_role": "pressure before release",
+      "lyric_match": "Take a chance",
+      "song_section_match": [
+        "build1",
+        "build2"
+      ],
+      "energy": "high",
+      "color_mood": "cold white / black",
+      "useful_for_reel_types": [
+        "build"
+      ],
+      "music_reactivity": "fixtures at 16ths of travel",
+      "params": {
+        "color": "#d6e4ff",
+        "tint": 0.1
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S015",
+      "title": "Tunnel words",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "tunnel",
+      "code": "src/shots/ (generator \"tunnel\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S015",
+      "url": "still: visual-board/stills/S015.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RISK_CHOICE",
+      "visual_description": "Wall panels carry the lyric as the tunnel streaks by.",
+      "emotional_role": "the dare written on the wall",
+      "lyric_match": "Take a chance, rolling it twice",
+      "song_section_match": [
+        "build1",
+        "build2"
+      ],
+      "energy": "high",
+      "color_mood": "sodium / paint",
+      "useful_for_reel_types": [
+        "lyric",
+        "build"
+      ],
+      "music_reactivity": "panels every 4 travel units",
+      "params": {
+        "words": [
+          "TAKE A CHANCE",
+          "ROLLING IT TWICE"
+        ]
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S016",
+      "title": "Endless tunnel",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "tunnel",
+      "code": "src/shots/ (generator \"tunnel\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S016",
+      "url": "still: visual-board/stills/S016.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "TRANSIT",
+      "visual_description": "No exit, just the rhythm of lamps.",
+      "emotional_role": "momentum",
+      "lyric_match": "Moving to the music",
+      "song_section_match": [
+        "drop1",
+        "drop2"
+      ],
+      "energy": "high",
+      "color_mood": "sodium",
+      "useful_for_reel_types": [
+        "drop",
+        "loop"
+      ],
+      "music_reactivity": "fixtures at 16ths of travel",
+      "params": {},
+      "used_in_reels": []
+    },
+    {
+      "id": "S017",
+      "title": "Tunnel into morning",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "tunnel",
+      "code": "src/shots/ (generator \"tunnel\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S017",
+      "url": "still: visual-board/stills/S017.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "AFTER_NIGHT",
+      "visual_description": "Tunnel exit opens on a peach dawn instead of night.",
+      "emotional_role": "coming out the other side",
+      "lyric_match": "We rise and we fall",
+      "song_section_match": [
+        "drop2",
+        "outro"
+      ],
+      "energy": "mid",
+      "color_mood": "sodium / peach",
+      "useful_for_reel_types": [
+        "endcard"
+      ],
+      "music_reactivity": "exit at exitAt",
+      "params": {
+        "exitColor": "#f3b58e",
+        "exitAt": 210
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S018",
+      "title": "Train window, city and moon",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "train",
+      "code": "src/shots/ (generator \"train\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S018",
+      "url": "still: visual-board/stills/S018.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "TRANSIT",
+      "visual_description": "Tall carriage window; skyline, lit windows and streaked street lights slide past, masts cut through on each travel unit.",
+      "emotional_role": "going somewhere, together",
+      "lyric_match": "It's not where you been, it's about where you're goin",
+      "song_section_match": [
+        "verse1a",
+        "verse1b",
+        "verse2"
+      ],
+      "energy": "mid",
+      "color_mood": "sodium / navy / glass",
+      "useful_for_reel_types": [
+        "story",
+        "lyric"
+      ],
+      "music_reactivity": "masts pass once per travel unit (kick in drops)",
+      "params": {},
+      "used_in_reels": [
+        "R05"
+      ]
+    },
+    {
+      "id": "S019",
+      "title": "Rain on the train glass",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "train",
+      "code": "src/shots/ (generator \"train\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S019",
+      "url": "still: visual-board/stills/S019.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "WINDOWS_REFLECTIONS",
+      "visual_description": "Droplets and diagonal streaks on the glass over the moving city.",
+      "emotional_role": "looking back at the night",
+      "lyric_match": "If I took it alive...",
+      "song_section_match": [
+        "verse1a",
+        "breakdown"
+      ],
+      "energy": "low",
+      "color_mood": "wet amber / blue",
+      "useful_for_reel_types": [
+        "lyric",
+        "texture"
+      ],
+      "music_reactivity": "masts on travel",
+      "params": {
+        "rain": 0.9
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S020",
+      "title": "Wide window strip",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "train",
+      "code": "src/shots/ (generator \"train\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S020",
+      "url": "still: visual-board/stills/S020.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "TRANSIT",
+      "visual_description": "Letterbox-like wide window band with dark carriage above and below: negative space for type.",
+      "emotional_role": "in transit, unsure",
+      "lyric_match": "Out of sight, out of mind",
+      "song_section_match": [
+        "build1",
+        "verse2"
+      ],
+      "energy": "mid",
+      "color_mood": "dark frame / city",
+      "useful_for_reel_types": [
+        "lyric"
+      ],
+      "music_reactivity": "masts on travel",
+      "params": {
+        "frame": "wide"
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S021",
+      "title": "First train home",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "train",
+      "code": "src/shots/ (generator \"train\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S021",
+      "url": "still: visual-board/stills/S021.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "AFTER_NIGHT",
+      "visual_description": "The same ride at blue hour, a few windows still on.",
+      "emotional_role": "the ride home",
+      "lyric_match": "Grooving till the bar kicks us out",
+      "song_section_match": [
+        "outro",
+        "breakdown"
+      ],
+      "energy": "low",
+      "color_mood": "dawn / pale",
+      "useful_for_reel_types": [
+        "endcard",
+        "story"
+      ],
+      "music_reactivity": "masts on travel",
+      "params": {
+        "sky": "dawn",
+        "moon": false,
+        "windowColor": "#ffe6c4"
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S022",
+      "title": "Tunnel blinks",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "train",
+      "code": "src/shots/ (generator \"train\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S022",
+      "url": "still: visual-board/stills/S022.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RHYTHMIC",
+      "visual_description": "City through the window, blacked out for a beat whenever the train ducks under a bridge (set blinks to song times).",
+      "emotional_role": "the night flickering",
+      "lyric_match": "Moving to the music",
+      "song_section_match": [
+        "drop1",
+        "drop2"
+      ],
+      "energy": "high",
+      "color_mood": "black / sodium",
+      "useful_for_reel_types": [
+        "drop"
+      ],
+      "music_reactivity": "blackouts on chosen beats",
+      "params": {
+        "blinks": []
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S023",
+      "title": "City stream, no frame",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "train",
+      "code": "src/shots/ (generator \"train\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S023",
+      "url": "still: visual-board/stills/S023.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "CITY_MOTION",
+      "visual_description": "Just the layered city streaming right-to-left, no carriage.",
+      "emotional_role": "the city as a blur of other people's nights",
+      "lyric_match": "Moving my feet...",
+      "song_section_match": [
+        "drop1",
+        "verse1b"
+      ],
+      "energy": "mid",
+      "color_mood": "sodium / ink",
+      "useful_for_reel_types": [
+        "drop",
+        "texture"
+      ],
+      "music_reactivity": "layers scroll with travel",
+      "params": {
+        "frame": "none",
+        "dir": -1
+      },
+      "used_in_reels": [
+        "R12"
+      ]
+    },
+    {
+      "id": "S024",
+      "title": "Rooftop, three of us",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "skyline",
+      "code": "src/shots/ (generator \"skyline\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S024",
+      "url": "still: visual-board/stills/S024.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "ROOFTOPS",
+      "visual_description": "City from a rooftop; three tiny silhouettes on the ledge against the glow.",
+      "emotional_role": "we were up there",
+      "lyric_match": "We rise and we fall, living forever young",
+      "song_section_match": [
+        "verse2",
+        "breakdown"
+      ],
+      "energy": "low",
+      "color_mood": "sodium haze / navy",
+      "useful_for_reel_types": [
+        "lyric",
+        "story"
+      ],
+      "music_reactivity": "beacons blink on the kick",
+      "params": {
+        "figures": 3
+      },
+      "used_in_reels": [
+        "R08",
+        "R16"
+      ]
+    },
+    {
+      "id": "S025",
+      "title": "City closing",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "skyline",
+      "code": "src/shots/ (generator \"skyline\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S025",
+      "url": "still: visual-board/stills/S025.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "AFTER_NIGHT",
+      "visual_description": "From modeAt, a slice of windows goes dark on every beat.",
+      "emotional_role": "the night shutting down around you",
+      "lyric_match": "grooving till the bar kicks us out",
+      "song_section_match": [
+        "breakdown",
+        "outro"
+      ],
+      "energy": "low",
+      "color_mood": "fading amber",
+      "useful_for_reel_types": [
+        "story"
+      ],
+      "music_reactivity": "windows off per beat after modeAt",
+      "params": {
+        "mode": "closing",
+        "modeAt": 105
+      },
+      "used_in_reels": [
+        "R04",
+        "R21"
+      ]
+    },
+    {
+      "id": "S026",
+      "title": "City waking",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "skyline",
+      "code": "src/shots/ (generator \"skyline\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S026",
+      "url": "still: visual-board/stills/S026.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "ROOFTOPS",
+      "visual_description": "Windows switch on across the city beat by beat.",
+      "emotional_role": "the night isn't over",
+      "lyric_match": "Shoot for the stars",
+      "song_section_match": [
+        "verse2"
+      ],
+      "energy": "mid",
+      "color_mood": "amber rising",
+      "useful_for_reel_types": [
+        "build"
+      ],
+      "music_reactivity": "windows on per beat after modeAt",
+      "params": {
+        "mode": "waking",
+        "modeAt": 120
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S027",
+      "title": "City breathing with the bass",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "skyline",
+      "code": "src/shots/ (generator \"skyline\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S027",
+      "url": "still: visual-board/stills/S027.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RHYTHMIC",
+      "visual_description": "A few windows swell with the bass envelope; beacons on the kick.",
+      "emotional_role": "the city hears it too",
+      "lyric_match": "Moving to the music",
+      "song_section_match": [
+        "drop1",
+        "drop2"
+      ],
+      "energy": "mid",
+      "color_mood": "amber / red beacons",
+      "useful_for_reel_types": [
+        "drop",
+        "loop"
+      ],
+      "music_reactivity": "bass envelope + kick",
+      "params": {
+        "mode": "pulse"
+      },
+      "used_in_reels": [
+        "R12"
+      ]
+    },
+    {
+      "id": "S028",
+      "title": "Train on the bridge",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "skyline",
+      "code": "src/shots/ (generator \"skyline\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S028",
+      "url": "still: visual-board/stills/S028.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "TRANSIT",
+      "visual_description": "A lit train slides across a bridge in front of the skyline.",
+      "emotional_role": "someone else's ride home",
+      "lyric_match": "It's out of sight, out of mind",
+      "song_section_match": [
+        "verse1b",
+        "breakdown"
+      ],
+      "energy": "low",
+      "color_mood": "warm windows / navy",
+      "useful_for_reel_types": [
+        "texture",
+        "story"
+      ],
+      "music_reactivity": "beacons on kick",
+      "params": {
+        "trainBridge": true,
+        "figures": 0
+      },
+      "used_in_reels": [
+        "R04"
+      ]
+    },
+    {
+      "id": "S029",
+      "title": "Skyline at first light",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "skyline",
+      "code": "src/shots/ (generator \"skyline\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S029",
+      "url": "still: visual-board/stills/S029.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "AFTER_NIGHT",
+      "visual_description": "Pale sky, windows mostly dark.",
+      "emotional_role": "afterglow",
+      "lyric_match": "Grooving till the bar kicks us out",
+      "song_section_match": [
+        "outro"
+      ],
+      "energy": "low",
+      "color_mood": "dawn peach / slate",
+      "useful_for_reel_types": [
+        "endcard"
+      ],
+      "music_reactivity": "remaining windows switch off per beat",
+      "params": {
+        "sky": "dawn",
+        "moon": false,
+        "stars": 0,
+        "mode": "closing",
+        "modeAt": 0
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S030",
+      "title": "Skyline under a big moon",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "skyline",
+      "code": "src/shots/ (generator \"skyline\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S030",
+      "url": "still: visual-board/stills/S030.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOONLIGHT_SKY",
+      "visual_description": "Oversized moon over the skyline, lots of sky for type.",
+      "emotional_role": "a promise over the city",
+      "lyric_match": "I promise to say it in the moonlight",
+      "song_section_match": [
+        "verse1b",
+        "verse2"
+      ],
+      "energy": "low",
+      "color_mood": "moon blue / amber",
+      "useful_for_reel_types": [
+        "lyric",
+        "loop"
+      ],
+      "music_reactivity": "beacons on kick",
+      "params": {
+        "moonR": 90,
+        "moonY": 0.24,
+        "moonX": 0.3
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S031",
+      "title": "Windows up close",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "skyline",
+      "code": "src/shots/ (generator \"skyline\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S031",
+      "url": "still: visual-board/stills/S031.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "WINDOWS_REFLECTIONS",
+      "visual_description": "Pushed into the towers: rows of lit and dark windows.",
+      "emotional_role": "every window is someone's night",
+      "lyric_match": "Out of sight, out of mind",
+      "song_section_match": [
+        "build1",
+        "verse2"
+      ],
+      "energy": "mid",
+      "color_mood": "amber grid",
+      "useful_for_reel_types": [
+        "texture"
+      ],
+      "music_reactivity": "beacons on kick",
+      "params": {
+        "zoom": 1.7,
+        "parapet": false,
+        "moon": false
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S032",
+      "title": "The moon, clouds crossing",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "moon",
+      "code": "src/shots/ (generator \"moon\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S032",
+      "url": "still: visual-board/stills/S032.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOONLIGHT_SKY",
+      "visual_description": "Big centred moon, soft halo, thin clouds drifting across.",
+      "emotional_role": "truth, said quietly",
+      "lyric_match": "I promise to say it in the moonlight",
+      "song_section_match": [
+        "verse1b",
+        "breakdown",
+        "verse2"
+      ],
+      "energy": "low",
+      "color_mood": "moon white / navy",
+      "useful_for_reel_types": [
+        "lyric",
+        "loop"
+      ],
+      "music_reactivity": "halo breathes on the kick in drops",
+      "params": {},
+      "used_in_reels": [
+        "R02"
+      ]
+    },
+    {
+      "id": "S033",
+      "title": "Small high moon",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "moon",
+      "code": "src/shots/ (generator \"moon\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S033",
+      "url": "still: visual-board/stills/S033.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOONLIGHT_SKY",
+      "visual_description": "A small moon high in frame, the rest is empty night: negative space.",
+      "emotional_role": "alone with a thought",
+      "lyric_match": "If I took it alive",
+      "song_section_match": [
+        "intro",
+        "verse1b"
+      ],
+      "energy": "low",
+      "color_mood": "navy / white",
+      "useful_for_reel_types": [
+        "lyric",
+        "tease"
+      ],
+      "music_reactivity": "halo on kick",
+      "params": {
+        "r": 54,
+        "y": 0.18,
+        "cloudAlpha": 0.25
+      },
+      "used_in_reels": [
+        "R04",
+        "R15"
+      ]
+    },
+    {
+      "id": "S034",
+      "title": "The moon follows (wires)",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "moon",
+      "code": "src/shots/ (generator \"moon\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S034",
+      "url": "still: visual-board/stills/S034.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOONLIGHT_SKY",
+      "visual_description": "Telegraph poles and wires race past, one per travel unit; the moon stays fixed.",
+      "emotional_role": "everything passes except this",
+      "lyric_match": "I promise to say it in the moonlight",
+      "song_section_match": [
+        "verse1b",
+        "verse2",
+        "drop1"
+      ],
+      "energy": "mid",
+      "color_mood": "black wires / moon",
+      "useful_for_reel_types": [
+        "loop",
+        "story"
+      ],
+      "music_reactivity": "poles pass on travel()",
+      "params": {
+        "variant": "follow",
+        "foreground": "wires",
+        "r": 70,
+        "y": 0.3
+      },
+      "used_in_reels": [
+        "R02",
+        "R12",
+        "R19"
+      ]
+    },
+    {
+      "id": "S035",
+      "title": "The moon follows (trees)",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "moon",
+      "code": "src/shots/ (generator \"moon\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S035",
+      "url": "still: visual-board/stills/S035.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOONLIGHT_SKY",
+      "visual_description": "Out-of-focus branches whip past in front of a steady moon.",
+      "emotional_role": "leaving town",
+      "lyric_match": "It's not where you been...",
+      "song_section_match": [
+        "verse1a",
+        "verse2"
+      ],
+      "energy": "mid",
+      "color_mood": "soft black / moon",
+      "useful_for_reel_types": [
+        "story"
+      ],
+      "music_reactivity": "branches on travel()",
+      "params": {
+        "variant": "follow",
+        "foreground": "branches",
+        "r": 80,
+        "y": 0.32
+      },
+      "used_in_reels": [
+        "R05"
+      ]
+    },
+    {
+      "id": "S036",
+      "title": "The moon follows (rooftops)",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "moon",
+      "code": "src/shots/ (generator \"moon\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S036",
+      "url": "still: visual-board/stills/S036.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "CITY_MOTION",
+      "visual_description": "Rooftops stream along the bottom edge under a fixed moon.",
+      "emotional_role": "the city moving under you",
+      "lyric_match": "Moving to the music",
+      "song_section_match": [
+        "drop1",
+        "drop2"
+      ],
+      "energy": "mid",
+      "color_mood": "black / moon",
+      "useful_for_reel_types": [
+        "drop"
+      ],
+      "music_reactivity": "roofs on travel()",
+      "params": {
+        "variant": "follow",
+        "foreground": "roofs",
+        "r": 64,
+        "y": 0.24
+      },
+      "used_in_reels": [
+        "R12",
+        "R17"
+      ]
+    },
+    {
+      "id": "S037",
+      "title": "Moon on black water",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "moon",
+      "code": "src/shots/ (generator \"moon\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S037",
+      "url": "still: visual-board/stills/S037.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOONLIGHT_SKY",
+      "visual_description": "Moon over still water; the glitter path shivers with the hats.",
+      "emotional_role": "honest and calm",
+      "lyric_match": "I'm taking my time, telling the truth",
+      "song_section_match": [
+        "verse1b",
+        "breakdown",
+        "verse2"
+      ],
+      "energy": "low",
+      "color_mood": "silver / black",
+      "useful_for_reel_types": [
+        "lyric",
+        "loop"
+      ],
+      "music_reactivity": "glitter follows the hat envelope",
+      "params": {
+        "variant": "water",
+        "y": 0.3,
+        "r": 92
+      },
+      "used_in_reels": [
+        "R06",
+        "R07"
+      ]
+    },
+    {
+      "id": "S038",
+      "title": "Moonrise",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "moon",
+      "code": "src/shots/ (generator \"moon\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S038",
+      "url": "still: visual-board/stills/S038.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOONLIGHT_SKY",
+      "visual_description": "A warm low moon rising during the first seconds of the shot.",
+      "emotional_role": "the night beginning",
+      "lyric_match": "If I took it alive",
+      "song_section_match": [
+        "intro"
+      ],
+      "energy": "low",
+      "color_mood": "warm moon / dusk",
+      "useful_for_reel_types": [
+        "tease"
+      ],
+      "music_reactivity": "halo on kick",
+      "params": {
+        "rise": 1,
+        "r": 120,
+        "y": 0.45,
+        "warm": 1
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S039",
+      "title": "Moon, heavy cloud",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "moon",
+      "code": "src/shots/ (generator \"moon\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S039",
+      "url": "still: visual-board/stills/S039.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOONLIGHT_SKY",
+      "visual_description": "Faster, thicker clouds keep hiding and revealing the moon.",
+      "emotional_role": "what you almost said",
+      "lyric_match": "Out of sight, out of mind",
+      "song_section_match": [
+        "build1",
+        "build2"
+      ],
+      "energy": "mid",
+      "color_mood": "grey / white",
+      "useful_for_reel_types": [
+        "build",
+        "tease"
+      ],
+      "music_reactivity": "cloud speed constant",
+      "params": {
+        "cloudAlpha": 0.75,
+        "cloudSpeed": 30,
+        "r": 130
+      },
+      "used_in_reels": [
+        "R04"
+      ]
+    },
+    {
+      "id": "S040",
+      "title": "Star field",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "stars",
+      "code": "src/shots/ (generator \"stars\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S040",
+      "url": "still: visual-board/stills/S040.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOONLIGHT_SKY",
+      "visual_description": "Dense, varied star field rotating slowly over dark hills and a far town.",
+      "emotional_role": "ambition, quiet",
+      "lyric_match": "Shoot for the stars",
+      "song_section_match": [
+        "verse2",
+        "breakdown"
+      ],
+      "energy": "low",
+      "color_mood": "white / navy",
+      "useful_for_reel_types": [
+        "lyric",
+        "loop"
+      ],
+      "music_reactivity": "slow rotation",
+      "params": {},
+      "used_in_reels": [
+        "R08"
+      ]
+    },
+    {
+      "id": "S041",
+      "title": "Star trails",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "stars",
+      "code": "src/shots/ (generator \"stars\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S041",
+      "url": "still: visual-board/stills/S041.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "YOUTH_FREEDOM",
+      "visual_description": "Long-exposure circles; the arcs grow longer through the shot.",
+      "emotional_role": "the whole night in one frame",
+      "lyric_match": "living forever young",
+      "song_section_match": [
+        "verse2",
+        "outro"
+      ],
+      "energy": "low",
+      "color_mood": "silver arcs",
+      "useful_for_reel_types": [
+        "lyric",
+        "endcard"
+      ],
+      "music_reactivity": "arc length grows with local time",
+      "params": {
+        "variant": "trails"
+      },
+      "used_in_reels": [
+        "R16"
+      ]
+    },
+    {
+      "id": "S042",
+      "title": "Stars arrive on the beat",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "stars",
+      "code": "src/shots/ (generator \"stars\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S042",
+      "url": "still: visual-board/stills/S042.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RHYTHMIC",
+      "visual_description": "Sky starts empty and fills a notch on every beat from fillFrom.",
+      "emotional_role": "counting up to something",
+      "lyric_match": "Shoot for the stars",
+      "song_section_match": [
+        "verse2",
+        "drop2"
+      ],
+      "energy": "mid",
+      "color_mood": "white / navy",
+      "useful_for_reel_types": [
+        "build"
+      ],
+      "music_reactivity": "reveal per beat",
+      "params": {
+        "variant": "fill"
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S043",
+      "title": "Shooting star",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "stars",
+      "code": "src/shots/ (generator \"stars\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S043",
+      "url": "still: visual-board/stills/S043.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RISK_CHOICE",
+      "visual_description": "A single shooting star crosses at shootAt (default: the silence after 'backs to the sun').",
+      "emotional_role": "the shot you take",
+      "lyric_match": "Shoot for the stars with our backs to the sun",
+      "song_section_match": [
+        "verse2"
+      ],
+      "energy": "low",
+      "color_mood": "white streak",
+      "useful_for_reel_types": [
+        "lyric",
+        "reveal"
+      ],
+      "music_reactivity": "streak at shootAt",
+      "params": {
+        "shootAt": 126.5
+      },
+      "used_in_reels": [
+        "R08"
+      ]
+    },
+    {
+      "id": "S044",
+      "title": "Stars at blue hour",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "stars",
+      "code": "src/shots/ (generator \"stars\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S044",
+      "url": "still: visual-board/stills/S044.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "AFTER_NIGHT",
+      "visual_description": "Fading stars in a lifting blue sky.",
+      "emotional_role": "it's getting light",
+      "lyric_match": "We rise and we fall",
+      "song_section_match": [
+        "outro"
+      ],
+      "energy": "low",
+      "color_mood": "blue",
+      "useful_for_reel_types": [
+        "endcard"
+      ],
+      "music_reactivity": "slow rotation",
+      "params": {
+        "sky": "blue",
+        "hillLights": false
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S045",
+      "title": "Stars, nobody around",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "stars",
+      "code": "src/shots/ (generator \"stars\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S045",
+      "url": "still: visual-board/stills/S045.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOONLIGHT_SKY",
+      "visual_description": "Stars and black hills only.",
+      "emotional_role": "smallness, in a good way",
+      "lyric_match": "living forever young",
+      "song_section_match": [
+        "breakdown"
+      ],
+      "energy": "low",
+      "color_mood": "black / white",
+      "useful_for_reel_types": [
+        "texture"
+      ],
+      "music_reactivity": "slow rotation",
+      "params": {
+        "hillLights": false,
+        "rotate": 0.02
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S046",
+      "title": "Backs to the sun (three)",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "backlight",
+      "code": "src/shots/ (generator \"backlight\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S046",
+      "url": "still: visual-board/stills/S046.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "SUN_BACKLIGHT",
+      "visual_description": "Low sun behind us; three long walking shadows run ahead down a warm road.",
+      "emotional_role": "together, facing forward",
+      "lyric_match": "Shoot for the stars with our backs to the sun",
+      "song_section_match": [
+        "verse2"
+      ],
+      "energy": "mid",
+      "color_mood": "warm amber / dusk",
+      "useful_for_reel_types": [
+        "lyric",
+        "story"
+      ],
+      "music_reactivity": "dust shimmer on kick",
+      "params": {
+        "people": 3
+      },
+      "used_in_reels": [
+        "R08"
+      ]
+    },
+    {
+      "id": "S047",
+      "title": "Backs to the sun (two)",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "backlight",
+      "code": "src/shots/ (generator \"backlight\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S047",
+      "url": "still: visual-board/stills/S047.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "SUN_BACKLIGHT",
+      "visual_description": "Two shadows side by side.",
+      "emotional_role": "the one who stayed",
+      "lyric_match": "We rise and we fall",
+      "song_section_match": [
+        "verse2"
+      ],
+      "energy": "low",
+      "color_mood": "warm",
+      "useful_for_reel_types": [
+        "lyric"
+      ],
+      "music_reactivity": "dust on kick",
+      "params": {
+        "people": 2
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S048",
+      "title": "Backs to the sun (alone)",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "backlight",
+      "code": "src/shots/ (generator \"backlight\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S048",
+      "url": "still: visual-board/stills/S048.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "SUN_BACKLIGHT",
+      "visual_description": "One shadow on the road.",
+      "emotional_role": "going anyway",
+      "lyric_match": "It's about where you're goin",
+      "song_section_match": [
+        "verse1a"
+      ],
+      "energy": "low",
+      "color_mood": "muted warm",
+      "useful_for_reel_types": [
+        "lyric",
+        "tease"
+      ],
+      "music_reactivity": "dust on kick",
+      "params": {
+        "people": 1,
+        "warmth": 0.8
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S049",
+      "title": "Sunrise behind the city",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "backlight",
+      "code": "src/shots/ (generator \"backlight\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S049",
+      "url": "still: visual-board/stills/S049.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "AFTER_NIGHT",
+      "visual_description": "The sun coming up behind the skyline at the end of the night.",
+      "emotional_role": "afterglow",
+      "lyric_match": "We rise and we fall",
+      "song_section_match": [
+        "outro"
+      ],
+      "energy": "low",
+      "color_mood": "peach / slate",
+      "useful_for_reel_types": [
+        "endcard"
+      ],
+      "music_reactivity": "slow sun lift",
+      "params": {
+        "variant": "rise"
+      },
+      "used_in_reels": [
+        "R19",
+        "R21"
+      ]
+    },
+    {
+      "id": "S050",
+      "title": "Running into it",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "backlight",
+      "code": "src/shots/ (generator \"backlight\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S050",
+      "url": "still: visual-board/stills/S050.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "YOUTH_FREEDOM",
+      "visual_description": "Four shadows, faster stride, the road rushing on.",
+      "emotional_role": "chasing something",
+      "lyric_match": "living forever young",
+      "song_section_match": [
+        "drop2"
+      ],
+      "energy": "high",
+      "color_mood": "hot amber",
+      "useful_for_reel_types": [
+        "drop"
+      ],
+      "music_reactivity": "dust on kick",
+      "params": {
+        "people": 4,
+        "walk": 2
+      },
+      "used_in_reels": [
+        "R16"
+      ]
+    },
+    {
+      "id": "S051",
+      "title": "Bar, open late",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "bar",
+      "code": "src/shots/ (generator \"bar\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S051",
+      "url": "still: visual-board/stills/S051.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "NIGHTLIFE",
+      "visual_description": "Brick front, rose neon OPEN LATE, steamed window with shapes dancing, open door spilling light on wet pavement.",
+      "emotional_role": "the place you don't want to leave",
+      "lyric_match": "Moving to the music",
+      "song_section_match": [
+        "drop1",
+        "drop2"
+      ],
+      "energy": "high",
+      "color_mood": "rose neon / amber",
+      "useful_for_reel_types": [
+        "story"
+      ],
+      "music_reactivity": "dancers move with kick + bass",
+      "params": {},
+      "used_in_reels": [
+        "R11",
+        "R13"
+      ]
+    },
+    {
+      "id": "S052",
+      "title": "Bar, last call",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "bar",
+      "code": "src/shots/ (generator \"bar\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S052",
+      "url": "still: visual-board/stills/S052.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "NIGHTLIFE",
+      "visual_description": "At closeAt the neon dies and the inside lights drop beat by beat; the door goes dark.",
+      "emotional_role": "the bar kicks us out",
+      "lyric_match": "grooving till the bar kicks us out",
+      "song_section_match": [
+        "drop1",
+        "breakdown"
+      ],
+      "energy": "mid",
+      "color_mood": "rose -> black",
+      "useful_for_reel_types": [
+        "story",
+        "reveal"
+      ],
+      "music_reactivity": "neon off + lights off per beat at closeAt",
+      "params": {
+        "sign": "LAST CALL",
+        "closeAt": 105
+      },
+      "used_in_reels": [
+        "R11",
+        "R21"
+      ]
+    },
+    {
+      "id": "S053",
+      "title": "Bar in the rain",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "bar",
+      "code": "src/shots/ (generator \"bar\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S053",
+      "url": "still: visual-board/stills/S053.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "NIGHTLIFE",
+      "visual_description": "Same front in rain, amber sign.",
+      "emotional_role": "warmth from the outside",
+      "lyric_match": "Moving my feet...",
+      "song_section_match": [
+        "verse1b"
+      ],
+      "energy": "mid",
+      "color_mood": "amber / wet black",
+      "useful_for_reel_types": [
+        "story",
+        "texture"
+      ],
+      "music_reactivity": "dancers on kick",
+      "params": {
+        "rain": 0.8,
+        "sign": "OPEN",
+        "signColor": "#ffa04a"
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S054",
+      "title": "Bar, serif sign",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "bar",
+      "code": "src/shots/ (generator \"bar\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S054",
+      "url": "still: visual-board/stills/S054.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "NIGHTLIFE",
+      "visual_description": "The bar is called moonlight; cold serif neon.",
+      "emotional_role": "the place the song is named after",
+      "lyric_match": "say it in the moonlight",
+      "song_section_match": [
+        "verse2",
+        "drop2"
+      ],
+      "energy": "mid",
+      "color_mood": "cold neon / amber",
+      "useful_for_reel_types": [
+        "reveal",
+        "endcard"
+      ],
+      "music_reactivity": "dancers on kick",
+      "params": {
+        "sign": "moonlight",
+        "signFont": "serif",
+        "signColor": "#c9dcf2"
+      },
+      "used_in_reels": [
+        "R17"
+      ]
+    },
+    {
+      "id": "S055",
+      "title": "Bar, nearly empty",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "bar",
+      "code": "src/shots/ (generator \"bar\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S055",
+      "url": "still: visual-board/stills/S055.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "AFTER_NIGHT",
+      "visual_description": "Two shapes left inside, door shut.",
+      "emotional_role": "the last ones",
+      "lyric_match": "Oh, oh",
+      "song_section_match": [
+        "breakdown"
+      ],
+      "energy": "low",
+      "color_mood": "dim rose",
+      "useful_for_reel_types": [
+        "story"
+      ],
+      "music_reactivity": "slow sway",
+      "params": {
+        "crowd": 2,
+        "door": 0,
+        "sign": "OPEN LATE"
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S056",
+      "title": "Bar, sign flickers on",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "bar",
+      "code": "src/shots/ (generator \"bar\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S056",
+      "url": "still: visual-board/stills/S056.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "NIGHTLIFE",
+      "visual_description": "Neon stutters on at onAt.",
+      "emotional_role": "here we go again",
+      "lyric_match": "Shoot for the stars",
+      "song_section_match": [
+        "verse2"
+      ],
+      "energy": "mid",
+      "color_mood": "rose",
+      "useful_for_reel_types": [
+        "reveal"
+      ],
+      "music_reactivity": "neon on at onAt",
+      "params": {
+        "onAt": 120
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S057",
+      "title": "Frosted glass, warm",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "frosted",
+      "code": "src/shots/ (generator \"frosted\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S057",
+      "url": "still: visual-board/stills/S057.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "DANCING",
+      "visual_description": "Close on steamed glass: blurred bodies dancing behind it, arms up on the heavy bass bars.",
+      "emotional_role": "inside the moment",
+      "lyric_match": "Moving to the music, grooving",
+      "song_section_match": [
+        "drop1",
+        "drop2"
+      ],
+      "energy": "high",
+      "color_mood": "amber / rose",
+      "useful_for_reel_types": [
+        "drop",
+        "loop"
+      ],
+      "music_reactivity": "bounce on kick, sway on beat, arms on bass bar",
+      "params": {},
+      "used_in_reels": [
+        "R11",
+        "R12",
+        "R13",
+        "R21"
+      ]
+    },
+    {
+      "id": "S058",
+      "title": "Frosted glass, rose",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "frosted",
+      "code": "src/shots/ (generator \"frosted\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S058",
+      "url": "still: visual-board/stills/S058.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "DANCING",
+      "visual_description": "Same, cooler rose/violet light swapping every bar.",
+      "emotional_role": "late, louder",
+      "lyric_match": "grooving till the bar kicks us out",
+      "song_section_match": [
+        "drop2"
+      ],
+      "energy": "high",
+      "color_mood": "rose / violet",
+      "useful_for_reel_types": [
+        "drop"
+      ],
+      "music_reactivity": "light swaps per bar",
+      "params": {
+        "hue": "#ff5a7a",
+        "hue2": "#7a5aff"
+      },
+      "used_in_reels": [
+        "R13",
+        "R16"
+      ]
+    },
+    {
+      "id": "S059",
+      "title": "Frosted crowd",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "frosted",
+      "code": "src/shots/ (generator \"frosted\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S059",
+      "url": "still: visual-board/stills/S059.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "DANCING",
+      "visual_description": "Packed: fifteen shapes, heavier blur.",
+      "emotional_role": "everyone",
+      "lyric_match": "Moving to the music",
+      "song_section_match": [
+        "drop1",
+        "drop2"
+      ],
+      "energy": "high",
+      "color_mood": "amber",
+      "useful_for_reel_types": [
+        "drop"
+      ],
+      "music_reactivity": "kick + bass",
+      "params": {
+        "count": 15,
+        "blur": 12
+      },
+      "used_in_reels": [
+        "R11",
+        "R13"
+      ]
+    },
+    {
+      "id": "S060",
+      "title": "Frosted, lights out",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "frosted",
+      "code": "src/shots/ (generator \"frosted\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S060",
+      "url": "still: visual-board/stills/S060.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "NIGHTLIFE",
+      "visual_description": "Dancers behind glass until closeAt, then dark.",
+      "emotional_role": "kicked out",
+      "lyric_match": "grooving till the bar kicks us out",
+      "song_section_match": [
+        "drop1",
+        "breakdown"
+      ],
+      "energy": "mid",
+      "color_mood": "amber -> black",
+      "useful_for_reel_types": [
+        "story"
+      ],
+      "music_reactivity": "off at closeAt",
+      "params": {
+        "closeAt": 105
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S061",
+      "title": "Neon: LAST CALL",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "neon",
+      "code": "src/shots/ (generator \"neon\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S061",
+      "url": "still: visual-board/stills/S061.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "NIGHTLIFE",
+      "visual_description": "Rose neon on brick, reflected in wet ground.",
+      "emotional_role": "the clock running out",
+      "lyric_match": "grooving till the bar kicks us out",
+      "song_section_match": [
+        "drop1",
+        "build1"
+      ],
+      "energy": "mid",
+      "color_mood": "rose",
+      "useful_for_reel_types": [
+        "story",
+        "tease"
+      ],
+      "music_reactivity": "tube buzz",
+      "params": {
+        "lines": [
+          "LAST",
+          "CALL"
+        ]
+      },
+      "used_in_reels": [
+        "R10",
+        "R11"
+      ]
+    },
+    {
+      "id": "S062",
+      "title": "Neon: OPEN -> CLOSED",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "neon",
+      "code": "src/shots/ (generator \"neon\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S062",
+      "url": "still: visual-board/stills/S062.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "NIGHTLIFE",
+      "visual_description": "The sign switches from OPEN to CLOSED at swapAt (default: the drop).",
+      "emotional_role": "the bar kicks us out",
+      "lyric_match": "grooving till the bar kicks us OUT",
+      "song_section_match": [
+        "build1",
+        "drop1"
+      ],
+      "energy": "high",
+      "color_mood": "rose",
+      "useful_for_reel_types": [
+        "reveal",
+        "drop"
+      ],
+      "music_reactivity": "swap + stutter at swapAt",
+      "params": {
+        "lines": [
+          "OPEN"
+        ],
+        "swapTo": [
+          "CLOSED"
+        ],
+        "swapAt": 60
+      },
+      "used_in_reels": [
+        "R10"
+      ]
+    },
+    {
+      "id": "S063",
+      "title": "Neon: OUT OF SIGHT",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "neon",
+      "code": "src/shots/ (generator \"neon\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S063",
+      "url": "still: visual-board/stills/S063.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RISK_CHOICE",
+      "visual_description": "The hook as a cold blue sign.",
+      "emotional_role": "forget it, keep moving",
+      "lyric_match": "Out of sight, out of mind",
+      "song_section_match": [
+        "build1",
+        "build2"
+      ],
+      "energy": "mid",
+      "color_mood": "ice blue",
+      "useful_for_reel_types": [
+        "lyric"
+      ],
+      "music_reactivity": "tube buzz",
+      "params": {
+        "lines": [
+          "OUT OF SIGHT",
+          "OUT OF MIND"
+        ],
+        "size": 104,
+        "color": "#c9dcf2"
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S064",
+      "title": "Neon: moonlight",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "neon",
+      "code": "src/shots/ (generator \"neon\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S064",
+      "url": "still: visual-board/stills/S064.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOONLIGHT_SKY",
+      "visual_description": "Song title in serif neon on a dark wall.",
+      "emotional_role": "identity",
+      "lyric_match": "say it in the moonlight",
+      "song_section_match": [
+        "verse1b",
+        "verse2",
+        "drop2"
+      ],
+      "energy": "mid",
+      "color_mood": "moon blue",
+      "useful_for_reel_types": [
+        "endcard",
+        "reveal"
+      ],
+      "music_reactivity": "tube buzz",
+      "params": {
+        "lines": [
+          "moonlight"
+        ],
+        "font": "serif",
+        "size": 210,
+        "color": "#c9dcf2",
+        "wall": "dark"
+      },
+      "used_in_reels": [
+        "R17"
+      ]
+    },
+    {
+      "id": "S065",
+      "title": "Neon: TRUTH",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "neon",
+      "code": "src/shots/ (generator \"neon\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S065",
+      "url": "still: visual-board/stills/S065.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "URBAN_DETAILS",
+      "visual_description": "One word, buzzing like it might go out.",
+      "emotional_role": "honesty at 3am",
+      "lyric_match": "I'm taking my time, telling the truth",
+      "song_section_match": [
+        "verse1b",
+        "verse2"
+      ],
+      "energy": "low",
+      "color_mood": "warm white",
+      "useful_for_reel_types": [
+        "lyric"
+      ],
+      "music_reactivity": "heavy buzz",
+      "params": {
+        "lines": [
+          "TRUTH"
+        ],
+        "size": 220,
+        "color": "#ffe6c4",
+        "buzz": 0.6
+      },
+      "used_in_reels": [
+        "R06"
+      ]
+    },
+    {
+      "id": "S066",
+      "title": "Neon: forever young",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "neon",
+      "code": "src/shots/ (generator \"neon\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S066",
+      "url": "still: visual-board/stills/S066.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "YOUTH_FREEDOM",
+      "visual_description": "Serif rose neon.",
+      "emotional_role": "this age, once",
+      "lyric_match": "living forever young",
+      "song_section_match": [
+        "verse2"
+      ],
+      "energy": "mid",
+      "color_mood": "rose",
+      "useful_for_reel_types": [
+        "lyric"
+      ],
+      "music_reactivity": "tube buzz",
+      "params": {
+        "lines": [
+          "forever",
+          "young"
+        ],
+        "font": "serif",
+        "size": 170,
+        "color": "#ff5a7a"
+      },
+      "used_in_reels": [
+        "R08",
+        "R16"
+      ]
+    },
+    {
+      "id": "S067",
+      "title": "Neon: AMISHAR",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "neon",
+      "code": "src/shots/ (generator \"neon\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S067",
+      "url": "still: visual-board/stills/S067.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "URBAN_DETAILS",
+      "visual_description": "Artist name as an amber sign.",
+      "emotional_role": "signature",
+      "lyric_match": "-",
+      "song_section_match": [
+        "drop2",
+        "outro"
+      ],
+      "energy": "mid",
+      "color_mood": "amber",
+      "useful_for_reel_types": [
+        "endcard"
+      ],
+      "music_reactivity": "tube buzz",
+      "params": {
+        "lines": [
+          "AMISHAR"
+        ],
+        "size": 150,
+        "color": "#ffa04a",
+        "wall": "dark"
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S068",
+      "title": "Neon: TAKE A CHANCE",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "neon",
+      "code": "src/shots/ (generator \"neon\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S068",
+      "url": "still: visual-board/stills/S068.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RISK_CHOICE",
+      "visual_description": "Green neon dare.",
+      "emotional_role": "go",
+      "lyric_match": "Take a chance",
+      "song_section_match": [
+        "build1",
+        "build2"
+      ],
+      "energy": "mid",
+      "color_mood": "green",
+      "useful_for_reel_types": [
+        "lyric"
+      ],
+      "music_reactivity": "tube buzz",
+      "params": {
+        "lines": [
+          "TAKE A",
+          "CHANCE"
+        ],
+        "color": "#6bffb0",
+        "size": 140
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S069",
+      "title": "Three shadows walking",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "shadows",
+      "code": "src/shots/ (generator \"shadows\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S069",
+      "url": "still: visual-board/stills/S069.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "FRIENDS",
+      "visual_description": "Looking down at the pavement: three friends' shadows swing round and stretch as each lamp passes.",
+      "emotional_role": "the walk out",
+      "lyric_match": "Moving my feet to the beat of a drum",
+      "song_section_match": [
+        "verse1a",
+        "verse1b",
+        "breakdown"
+      ],
+      "energy": "mid",
+      "color_mood": "sodium pools / concrete",
+      "useful_for_reel_types": [
+        "story",
+        "loop"
+      ],
+      "music_reactivity": "lamps pass on travel()",
+      "params": {},
+      "used_in_reels": [
+        "R01",
+        "R11"
+      ]
+    },
+    {
+      "id": "S070",
+      "title": "Shadows running",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "shadows",
+      "code": "src/shots/ (generator \"shadows\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S070",
+      "url": "still: visual-board/stills/S070.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "YOUTH_FREEDOM",
+      "visual_description": "Four shadows at a run, lamps faster.",
+      "emotional_role": "late for nothing",
+      "lyric_match": "living forever young",
+      "song_section_match": [
+        "drop1",
+        "drop2"
+      ],
+      "energy": "high",
+      "color_mood": "sodium",
+      "useful_for_reel_types": [
+        "drop"
+      ],
+      "music_reactivity": "lamps on travel()",
+      "params": {
+        "run": 1,
+        "people": 4
+      },
+      "used_in_reels": [
+        "R15",
+        "R16"
+      ]
+    },
+    {
+      "id": "S071",
+      "title": "One shadow",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "shadows",
+      "code": "src/shots/ (generator \"shadows\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S071",
+      "url": "still: visual-board/stills/S071.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOVEMENT",
+      "visual_description": "A single shadow under the lamps.",
+      "emotional_role": "on your own, still going",
+      "lyric_match": "I'm taking my time",
+      "song_section_match": [
+        "verse1b",
+        "breakdown"
+      ],
+      "energy": "low",
+      "color_mood": "sodium",
+      "useful_for_reel_types": [
+        "lyric"
+      ],
+      "music_reactivity": "lamps on travel()",
+      "params": {
+        "people": 1
+      },
+      "used_in_reels": [
+        "R04"
+      ]
+    },
+    {
+      "id": "S072",
+      "title": "A crowd of shadows",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "shadows",
+      "code": "src/shots/ (generator \"shadows\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S072",
+      "url": "still: visual-board/stills/S072.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "FRIENDS",
+      "visual_description": "Six overlapping shadows, closer lamps.",
+      "emotional_role": "everyone spilling out",
+      "lyric_match": "grooving till the bar kicks us out",
+      "song_section_match": [
+        "breakdown",
+        "drop2"
+      ],
+      "energy": "mid",
+      "color_mood": "sodium",
+      "useful_for_reel_types": [
+        "story"
+      ],
+      "music_reactivity": "lamps on travel()",
+      "params": {
+        "people": 6,
+        "spacing": 0.8
+      },
+      "used_in_reels": [
+        "R07"
+      ]
+    },
+    {
+      "id": "S073",
+      "title": "Shadows under LED",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "shadows",
+      "code": "src/shots/ (generator \"shadows\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S073",
+      "url": "still: visual-board/stills/S073.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOVEMENT",
+      "visual_description": "Cooler white light, harder shadows.",
+      "emotional_role": "sober moment",
+      "lyric_match": "telling the truth",
+      "song_section_match": [
+        "verse2"
+      ],
+      "energy": "low",
+      "color_mood": "cold white",
+      "useful_for_reel_types": [
+        "lyric"
+      ],
+      "music_reactivity": "lamps on travel()",
+      "params": {
+        "lampColor": "#d6e4ff",
+        "tone": "#2a2c30"
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S074",
+      "title": "Crosswalk in rain",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "crosswalk",
+      "code": "src/shots/ (generator \"crosswalk\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S074",
+      "url": "still: visual-board/stills/S074.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "URBAN_DETAILS",
+      "visual_description": "Top-down zebra crossing, wet, red signal glow, figures crossing as shadows; rain rings.",
+      "emotional_role": "crossing over",
+      "lyric_match": "Take a chance",
+      "song_section_match": [
+        "build1",
+        "verse1b"
+      ],
+      "energy": "mid",
+      "color_mood": "red / wet grey",
+      "useful_for_reel_types": [
+        "story"
+      ],
+      "music_reactivity": "rain rings constant",
+      "params": {},
+      "used_in_reels": []
+    },
+    {
+      "id": "S075",
+      "title": "Crosswalk, dry",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "crosswalk",
+      "code": "src/shots/ (generator \"crosswalk\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S075",
+      "url": "still: visual-board/stills/S075.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "URBAN_DETAILS",
+      "visual_description": "Dry crossing under green.",
+      "emotional_role": "go",
+      "lyric_match": "It's about where you're goin",
+      "song_section_match": [
+        "verse1a"
+      ],
+      "energy": "low",
+      "color_mood": "green / grey",
+      "useful_for_reel_types": [
+        "story"
+      ],
+      "music_reactivity": "-",
+      "params": {
+        "rain": 0,
+        "signalColor": "#6bffb0"
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S076",
+      "title": "Crosswalk crowd",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "crosswalk",
+      "code": "src/shots/ (generator \"crosswalk\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S076",
+      "url": "still: visual-board/stills/S076.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "FRIENDS",
+      "visual_description": "Seven people crossing at once.",
+      "emotional_role": "a group with no plan",
+      "lyric_match": "Moving my feet",
+      "song_section_match": [
+        "verse1a",
+        "drop1"
+      ],
+      "energy": "mid",
+      "color_mood": "red / grey",
+      "useful_for_reel_types": [
+        "story"
+      ],
+      "music_reactivity": "-",
+      "params": {
+        "people": 7
+      },
+      "used_in_reels": [
+        "R16"
+      ]
+    },
+    {
+      "id": "S077",
+      "title": "Walk signal countdown",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "signal",
+      "code": "src/shots/ (generator \"signal\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S077",
+      "url": "still: visual-board/stills/S077.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RISK_CHOICE",
+      "visual_description": "Rain-blurred pedestrian signal; the amber digits count down one per beat and it goes green on goAt.",
+      "emotional_role": "waiting to go",
+      "lyric_match": "grooving till the bar kicks us out",
+      "song_section_match": [
+        "build1",
+        "build2"
+      ],
+      "energy": "high",
+      "color_mood": "red -> green",
+      "useful_for_reel_types": [
+        "build",
+        "drop"
+      ],
+      "music_reactivity": "count per beat to goAt",
+      "params": {
+        "kind": "walk",
+        "goAt": 60,
+        "countFrom": 8
+      },
+      "used_in_reels": [
+        "R03"
+      ]
+    },
+    {
+      "id": "S078",
+      "title": "Traffic light on the drop",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "signal",
+      "code": "src/shots/ (generator \"signal\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S078",
+      "url": "still: visual-board/stills/S078.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RISK_CHOICE",
+      "visual_description": "Red holds through the build, green on goAt.",
+      "emotional_role": "permission",
+      "lyric_match": "Take a chance",
+      "song_section_match": [
+        "build1",
+        "build2"
+      ],
+      "energy": "high",
+      "color_mood": "red -> green",
+      "useful_for_reel_types": [
+        "drop"
+      ],
+      "music_reactivity": "switch at goAt",
+      "params": {
+        "kind": "traffic",
+        "goAt": 60
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S079",
+      "title": "Amber flashing at 4am",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "signal",
+      "code": "src/shots/ (generator \"signal\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S079",
+      "url": "still: visual-board/stills/S079.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "AFTER_NIGHT",
+      "visual_description": "After-hours amber flashing on the beat.",
+      "emotional_role": "nobody's driving now",
+      "lyric_match": "Oh, oh",
+      "song_section_match": [
+        "breakdown",
+        "outro"
+      ],
+      "energy": "low",
+      "color_mood": "amber",
+      "useful_for_reel_types": [
+        "texture",
+        "loop"
+      ],
+      "music_reactivity": "flash on every beat",
+      "params": {
+        "kind": "traffic",
+        "flashAmber": true,
+        "rain": 0.3
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S080",
+      "title": "Walk, green",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "signal",
+      "code": "src/shots/ (generator \"signal\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S080",
+      "url": "still: visual-board/stills/S080.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOVEMENT",
+      "visual_description": "The walk light is already green; it pulses on the kick.",
+      "emotional_role": "go now",
+      "lyric_match": "Moving my feet",
+      "song_section_match": [
+        "verse1b",
+        "drop1"
+      ],
+      "energy": "mid",
+      "color_mood": "green",
+      "useful_for_reel_types": [
+        "texture"
+      ],
+      "music_reactivity": "green glow on kick",
+      "params": {
+        "kind": "walk",
+        "goAt": 0,
+        "rain": 0.2
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S081",
+      "title": "Red, dry night",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "signal",
+      "code": "src/shots/ (generator \"signal\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S081",
+      "url": "still: visual-board/stills/S081.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RISK_CHOICE",
+      "visual_description": "A red light that doesn't change.",
+      "emotional_role": "the choice to wait or not",
+      "lyric_match": "Take a chance",
+      "song_section_match": [
+        "build1"
+      ],
+      "energy": "mid",
+      "color_mood": "red",
+      "useful_for_reel_types": [
+        "tease"
+      ],
+      "music_reactivity": "-",
+      "params": {
+        "kind": "traffic",
+        "goAt": 9999,
+        "rain": 0
+      },
+      "used_in_reels": [
+        "R03"
+      ]
+    },
+    {
+      "id": "S082",
+      "title": "Dice, rolled twice",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "dice",
+      "code": "src/shots/ (generator \"dice\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S082",
+      "url": "still: visual-board/stills/S082.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RISK_CHOICE",
+      "visual_description": "Two dice thrown on a bar counter on 'take a chance', thrown again on 'rolling it twice'.",
+      "emotional_role": "the chance itself",
+      "lyric_match": "Take a chance, rolling it twice",
+      "song_section_match": [
+        "build1",
+        "build2"
+      ],
+      "energy": "mid",
+      "color_mood": "warm wood / ivory",
+      "useful_for_reel_types": [
+        "lyric",
+        "tease"
+      ],
+      "music_reactivity": "throws at song times",
+      "params": {
+        "throws": [
+          48.75,
+          50.625
+        ],
+        "results": [
+          [
+            3,
+            5
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "used_in_reels": [
+        "R03"
+      ]
+    },
+    {
+      "id": "S083",
+      "title": "Dice, one throw",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "dice",
+      "code": "src/shots/ (generator \"dice\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S083",
+      "url": "still: visual-board/stills/S083.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RISK_CHOICE",
+      "visual_description": "Single throw landing on the drop.",
+      "emotional_role": "all in",
+      "lyric_match": "Take a chance",
+      "song_section_match": [
+        "drop1",
+        "drop2"
+      ],
+      "energy": "high",
+      "color_mood": "warm",
+      "useful_for_reel_types": [
+        "drop"
+      ],
+      "music_reactivity": "throw at time",
+      "params": {
+        "throws": [
+          60
+        ],
+        "results": [
+          [
+            6,
+            6
+          ]
+        ]
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S084",
+      "title": "Snake eyes",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "dice",
+      "code": "src/shots/ (generator \"dice\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S084",
+      "url": "still: visual-board/stills/S084.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RISK_CHOICE",
+      "visual_description": "Second build's throws, snake eyes.",
+      "emotional_role": "lost, laughing",
+      "lyric_match": "rolling it twice",
+      "song_section_match": [
+        "build2"
+      ],
+      "energy": "mid",
+      "color_mood": "warm",
+      "useful_for_reel_types": [
+        "lyric"
+      ],
+      "music_reactivity": "throws at times",
+      "params": {
+        "throws": [
+          153.75,
+          155.625
+        ],
+        "results": [
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S085",
+      "title": "Dice in cold light",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "dice",
+      "code": "src/shots/ (generator \"dice\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S085",
+      "url": "still: visual-board/stills/S085.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RISK_CHOICE",
+      "visual_description": "Same counter under a cold light.",
+      "emotional_role": "sober risk",
+      "lyric_match": "Take a chance",
+      "song_section_match": [
+        "verse2"
+      ],
+      "energy": "low",
+      "color_mood": "cold",
+      "useful_for_reel_types": [
+        "texture"
+      ],
+      "music_reactivity": "throws at times",
+      "params": {
+        "tableLight": "#c9dcf2"
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S086",
+      "title": "Clock: 02:00 on the drop",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "clock",
+      "code": "src/shots/ (generator \"clock\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S086",
+      "url": "still: visual-board/stills/S086.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "URBAN_DETAILS",
+      "visual_description": "LED clock; 01:59 becomes 02:00 exactly on the drop.",
+      "emotional_role": "closing time",
+      "lyric_match": "grooving till the bar kicks us out",
+      "song_section_match": [
+        "build1",
+        "drop1"
+      ],
+      "energy": "mid",
+      "color_mood": "ember",
+      "useful_for_reel_types": [
+        "reveal",
+        "drop"
+      ],
+      "music_reactivity": "minute flips at songAt",
+      "params": {
+        "at": "02:00",
+        "songAt": 60,
+        "label": ""
+      },
+      "used_in_reels": [
+        "R10"
+      ]
+    },
+    {
+      "id": "S087",
+      "title": "Clock: 04:44",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "clock",
+      "code": "src/shots/ (generator \"clock\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S087",
+      "url": "still: visual-board/stills/S087.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "AFTER_NIGHT",
+      "visual_description": "Cold-blue clock at the end of the night.",
+      "emotional_role": "where did the night go",
+      "lyric_match": "-",
+      "song_section_match": [
+        "outro"
+      ],
+      "energy": "low",
+      "color_mood": "cyan",
+      "useful_for_reel_types": [
+        "endcard"
+      ],
+      "music_reactivity": "colon on the beat",
+      "params": {
+        "at": "04:44",
+        "songAt": 210,
+        "color": "#86b7cc"
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S088",
+      "title": "Clock: 23:59",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "clock",
+      "code": "src/shots/ (generator \"clock\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S088",
+      "url": "still: visual-board/stills/S088.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "URBAN_DETAILS",
+      "visual_description": "Midnight arrives on the first vocal.",
+      "emotional_role": "the start",
+      "lyric_match": "Moving my feet to the beat of a drum",
+      "song_section_match": [
+        "intro",
+        "verse1a"
+      ],
+      "energy": "low",
+      "color_mood": "warm white",
+      "useful_for_reel_types": [
+        "tease"
+      ],
+      "music_reactivity": "flip at songAt",
+      "params": {
+        "at": "00:00",
+        "songAt": 15,
+        "color": "#ffe6c4"
+      },
+      "used_in_reels": [
+        "R01"
+      ]
+    },
+    {
+      "id": "S089",
+      "title": "Clock: LAST CALL",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "clock",
+      "code": "src/shots/ (generator \"clock\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S089",
+      "url": "still: visual-board/stills/S089.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "NIGHTLIFE",
+      "visual_description": "Clock with a LAST CALL caption.",
+      "emotional_role": "running out",
+      "lyric_match": "Out of sight, out of mind",
+      "song_section_match": [
+        "build1"
+      ],
+      "energy": "mid",
+      "color_mood": "ember",
+      "useful_for_reel_types": [
+        "build"
+      ],
+      "music_reactivity": "colon on the beat",
+      "params": {
+        "at": "01:58",
+        "songAt": 52.5,
+        "label": "LAST CALL"
+      },
+      "used_in_reels": [
+        "R10"
+      ]
+    },
+    {
+      "id": "S090",
+      "title": "Bokeh, sodium",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "bokeh",
+      "code": "src/shots/ (generator \"bokeh\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S090",
+      "url": "still: visual-board/stills/S090.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "WINDOWS_REFLECTIONS",
+      "visual_description": "Defocused amber city lights drifting.",
+      "emotional_role": "memory",
+      "lyric_match": "If I took it alive",
+      "song_section_match": [
+        "intro",
+        "breakdown"
+      ],
+      "energy": "low",
+      "color_mood": "amber",
+      "useful_for_reel_types": [
+        "texture",
+        "lyric"
+      ],
+      "music_reactivity": "discs brighten on kick",
+      "params": {
+        "palette": "sodium"
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S091",
+      "title": "Bokeh, mixed",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "bokeh",
+      "code": "src/shots/ (generator \"bokeh\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S091",
+      "url": "still: visual-board/stills/S091.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "CITY_MOTION",
+      "visual_description": "Red, amber, white and blue discs.",
+      "emotional_role": "a busy night, out of focus",
+      "lyric_match": "Moving to the music",
+      "song_section_match": [
+        "drop1",
+        "verse1b"
+      ],
+      "energy": "mid",
+      "color_mood": "mixed",
+      "useful_for_reel_types": [
+        "texture"
+      ],
+      "music_reactivity": "kick",
+      "params": {},
+      "used_in_reels": []
+    },
+    {
+      "id": "S092",
+      "title": "Rack focus to sharp",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "bokeh",
+      "code": "src/shots/ (generator \"bokeh\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S092",
+      "url": "still: visual-board/stills/S092.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "CITY_MOTION",
+      "visual_description": "Soft discs snap into sharp points at rackAt.",
+      "emotional_role": "clarity",
+      "lyric_match": "telling the truth",
+      "song_section_match": [
+        "build1",
+        "drop1"
+      ],
+      "energy": "mid",
+      "color_mood": "mixed",
+      "useful_for_reel_types": [
+        "reveal"
+      ],
+      "music_reactivity": "rack at rackAt",
+      "params": {
+        "rackTo": 1,
+        "rackAt": 60
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S093",
+      "title": "Bokeh, cold",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "bokeh",
+      "code": "src/shots/ (generator \"bokeh\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S093",
+      "url": "still: visual-board/stills/S093.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOONLIGHT_SKY",
+      "visual_description": "Moon-blue discs.",
+      "emotional_role": "distance",
+      "lyric_match": "Out of sight, out of mind",
+      "song_section_match": [
+        "verse2"
+      ],
+      "energy": "low",
+      "color_mood": "blue",
+      "useful_for_reel_types": [
+        "texture"
+      ],
+      "music_reactivity": "kick",
+      "params": {
+        "palette": "cool"
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S094",
+      "title": "Bokeh, dawn",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "bokeh",
+      "code": "src/shots/ (generator \"bokeh\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S094",
+      "url": "still: visual-board/stills/S094.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "AFTER_NIGHT",
+      "visual_description": "Peach and cyan discs on slate.",
+      "emotional_role": "afterglow",
+      "lyric_match": "-",
+      "song_section_match": [
+        "outro"
+      ],
+      "energy": "low",
+      "color_mood": "peach / cyan",
+      "useful_for_reel_types": [
+        "endcard"
+      ],
+      "music_reactivity": "-",
+      "params": {
+        "palette": "dawn"
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S095",
+      "title": "Light trails, curve",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "trails",
+      "code": "src/shots/ (generator \"trails\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S095",
+      "url": "still: visual-board/stills/S095.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "CITY_MOTION",
+      "visual_description": "Long-exposure lanes curving below an overpass; a pulse rides down the lanes on each kick.",
+      "emotional_role": "the city flowing",
+      "lyric_match": "Moving to the music",
+      "song_section_match": [
+        "drop1",
+        "drop2"
+      ],
+      "energy": "high",
+      "color_mood": "red / white",
+      "useful_for_reel_types": [
+        "drop",
+        "loop"
+      ],
+      "music_reactivity": "lane pulse per kick",
+      "params": {},
+      "used_in_reels": [
+        "R12",
+        "R15",
+        "R16"
+      ]
+    },
+    {
+      "id": "S096",
+      "title": "Light trails, straight",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "trails",
+      "code": "src/shots/ (generator \"trails\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S096",
+      "url": "still: visual-board/stills/S096.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "CITY_MOTION",
+      "visual_description": "Straight lanes, symmetrical.",
+      "emotional_role": "direction",
+      "lyric_match": "where you're goin",
+      "song_section_match": [
+        "verse2"
+      ],
+      "energy": "mid",
+      "color_mood": "red / white",
+      "useful_for_reel_types": [
+        "texture"
+      ],
+      "music_reactivity": "kick",
+      "params": {
+        "curve": 0
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S097",
+      "title": "Leaving (all red)",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "trails",
+      "code": "src/shots/ (generator \"trails\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S097",
+      "url": "still: visual-board/stills/S097.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOVEMENT",
+      "visual_description": "Only taillights: everyone leaving.",
+      "emotional_role": "out of sight",
+      "lyric_match": "Out of sight, out of mind",
+      "song_section_match": [
+        "build2"
+      ],
+      "energy": "mid",
+      "color_mood": "red",
+      "useful_for_reel_types": [
+        "lyric"
+      ],
+      "music_reactivity": "kick",
+      "params": {
+        "red": 1
+      },
+      "used_in_reels": [
+        "R04"
+      ]
+    },
+    {
+      "id": "S098",
+      "title": "Arriving (all white)",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "trails",
+      "code": "src/shots/ (generator \"trails\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S098",
+      "url": "still: visual-board/stills/S098.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "CITY_MOTION",
+      "visual_description": "Only headlights: everyone coming in.",
+      "emotional_role": "the night arriving",
+      "lyric_match": "Moving my feet",
+      "song_section_match": [
+        "verse1b"
+      ],
+      "energy": "mid",
+      "color_mood": "white",
+      "useful_for_reel_types": [
+        "texture"
+      ],
+      "music_reactivity": "kick",
+      "params": {
+        "red": 0
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S099",
+      "title": "Facade, quiet",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "facade",
+      "code": "src/shots/ (generator \"facade\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S099",
+      "url": "still: visual-board/stills/S099.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "WINDOWS_REFLECTIONS",
+      "visual_description": "Apartment block face-on, a few windows lit.",
+      "emotional_role": "other people's nights",
+      "lyric_match": "Out of sight, out of mind",
+      "song_section_match": [
+        "intro",
+        "verse1a"
+      ],
+      "energy": "low",
+      "color_mood": "amber / concrete",
+      "useful_for_reel_types": [
+        "texture"
+      ],
+      "music_reactivity": "-",
+      "params": {},
+      "used_in_reels": []
+    },
+    {
+      "id": "S100",
+      "title": "Facade, one window",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "facade",
+      "code": "src/shots/ (generator \"facade\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S100",
+      "url": "still: visual-board/stills/S100.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "WINDOWS_REFLECTIONS",
+      "visual_description": "Dark block; one window switches on at oneAt: someone getting ready to go out.",
+      "emotional_role": "the start of a night",
+      "lyric_match": "Moving my feet...",
+      "song_section_match": [
+        "intro"
+      ],
+      "energy": "low",
+      "color_mood": "dark / one amber",
+      "useful_for_reel_types": [
+        "tease",
+        "story"
+      ],
+      "music_reactivity": "on at oneAt",
+      "params": {
+        "mode": "one",
+        "oneAt": 7.5
+      },
+      "used_in_reels": [
+        "R01",
+        "R21"
+      ]
+    },
+    {
+      "id": "S101",
+      "title": "Facade as a sequencer",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "facade",
+      "code": "src/shots/ (generator \"facade\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S101",
+      "url": "still: visual-board/stills/S101.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RHYTHMIC",
+      "visual_description": "Windows play the drop's real drum pattern: kick rows, clap rows, offbeat-hat rows.",
+      "emotional_role": "the city is the track",
+      "lyric_match": "Moving to the music",
+      "song_section_match": [
+        "drop1",
+        "drop2"
+      ],
+      "energy": "high",
+      "color_mood": "amber / white / blue",
+      "useful_for_reel_types": [
+        "drop",
+        "micro"
+      ],
+      "music_reactivity": "16-step pattern, active only in drops",
+      "params": {
+        "mode": "sequencer"
+      },
+      "used_in_reels": [
+        "R12",
+        "R18"
+      ]
+    },
+    {
+      "id": "S102",
+      "title": "Facade, one flat partying",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "facade",
+      "code": "src/shots/ (generator \"facade\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S102",
+      "url": "still: visual-board/stills/S102.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "DANCING",
+      "visual_description": "A whole dark block and one window full of moving people.",
+      "emotional_role": "the party you can see from the street",
+      "lyric_match": "grooving",
+      "song_section_match": [
+        "drop1",
+        "drop2"
+      ],
+      "energy": "mid",
+      "color_mood": "rose window",
+      "useful_for_reel_types": [
+        "story"
+      ],
+      "music_reactivity": "silhouettes bounce on kick",
+      "params": {
+        "mode": "party"
+      },
+      "used_in_reels": [
+        "R12",
+        "R13"
+      ]
+    },
+    {
+      "id": "S103",
+      "title": "Facade, cold",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "facade",
+      "code": "src/shots/ (generator \"facade\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S103",
+      "url": "still: visual-board/stills/S103.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "AFTER_NIGHT",
+      "visual_description": "Bluer concrete, fewer lights.",
+      "emotional_role": "late",
+      "lyric_match": "-",
+      "song_section_match": [
+        "outro"
+      ],
+      "energy": "low",
+      "color_mood": "blue",
+      "useful_for_reel_types": [
+        "texture"
+      ],
+      "music_reactivity": "-",
+      "params": {
+        "tone": "#121722"
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S104",
+      "title": "Moon in a puddle",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "puddle",
+      "code": "src/shots/ (generator \"puddle\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S104",
+      "url": "still: visual-board/stills/S104.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "WINDOWS_REFLECTIONS",
+      "visual_description": "Looking down into a puddle holding the moon; rings on every kick.",
+      "emotional_role": "the sky at your feet",
+      "lyric_match": "say it in the moonlight",
+      "song_section_match": [
+        "verse1b",
+        "drop1"
+      ],
+      "energy": "mid",
+      "color_mood": "moon / asphalt",
+      "useful_for_reel_types": [
+        "lyric",
+        "loop"
+      ],
+      "music_reactivity": "rings on kicks",
+      "params": {},
+      "used_in_reels": [
+        "R06"
+      ]
+    },
+    {
+      "id": "S105",
+      "title": "Neon in a puddle",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "puddle",
+      "code": "src/shots/ (generator \"puddle\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S105",
+      "url": "still: visual-board/stills/S105.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "NIGHTLIFE",
+      "visual_description": "A rose sign reflected and shivering on the offbeats.",
+      "emotional_role": "the bar from the street",
+      "lyric_match": "Moving to the music",
+      "song_section_match": [
+        "drop1",
+        "drop2"
+      ],
+      "energy": "mid",
+      "color_mood": "rose / black",
+      "useful_for_reel_types": [
+        "texture"
+      ],
+      "music_reactivity": "rings on offbeats",
+      "params": {
+        "holds": "neon",
+        "rings": "hat"
+      },
+      "used_in_reels": [
+        "R12",
+        "R13"
+      ]
+    },
+    {
+      "id": "S106",
+      "title": "Lamp in a puddle",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "puddle",
+      "code": "src/shots/ (generator \"puddle\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S106",
+      "url": "still: visual-board/stills/S106.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "URBAN_DETAILS",
+      "visual_description": "Sodium lamp reflection, a ring on every beat.",
+      "emotional_role": "time passing",
+      "lyric_match": "Moving my feet to the beat",
+      "song_section_match": [
+        "verse1a"
+      ],
+      "energy": "low",
+      "color_mood": "amber",
+      "useful_for_reel_types": [
+        "texture"
+      ],
+      "music_reactivity": "rings on beats",
+      "params": {
+        "holds": "lamp",
+        "rings": "beat"
+      },
+      "used_in_reels": [
+        "R01"
+      ]
+    },
+    {
+      "id": "S107",
+      "title": "Footstep in the puddle",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "puddle",
+      "code": "src/shots/ (generator \"puddle\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S107",
+      "url": "still: visual-board/stills/S107.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "MOVEMENT",
+      "visual_description": "A foot lands in the moon at `step` (default: the drop) and the reflection shatters.",
+      "emotional_role": "the moment you go",
+      "lyric_match": "kicks us OUT",
+      "song_section_match": [
+        "drop1",
+        "drop2"
+      ],
+      "energy": "high",
+      "color_mood": "black / moon",
+      "useful_for_reel_types": [
+        "drop",
+        "reveal"
+      ],
+      "music_reactivity": "splash at step",
+      "params": {
+        "step": 60,
+        "rings": "none"
+      },
+      "used_in_reels": [
+        "R15"
+      ]
+    },
+    {
+      "id": "S108",
+      "title": "Still puddle",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "puddle",
+      "code": "src/shots/ (generator \"puddle\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S108",
+      "url": "still: visual-board/stills/S108.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "WINDOWS_REFLECTIONS",
+      "visual_description": "Perfectly still reflection: holding breath.",
+      "emotional_role": "the second before",
+      "lyric_match": "-",
+      "song_section_match": [
+        "build1",
+        "breakdown"
+      ],
+      "energy": "low",
+      "color_mood": "moon",
+      "useful_for_reel_types": [
+        "contrast",
+        "tease"
+      ],
+      "music_reactivity": "none",
+      "params": {
+        "rings": "none"
+      },
+      "used_in_reels": [
+        "R07",
+        "R15"
+      ]
+    },
+    {
+      "id": "S109",
+      "title": "Arrangement, following",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "arrangement",
+      "code": "src/shots/ (generator \"arrangement\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S109",
+      "url": "still: visual-board/stills/S109.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RHYTHMIC",
+      "visual_description": "Stylised arrangement built from the measured structure; playhead locked to the audio.",
+      "emotional_role": "the inside of the track",
+      "lyric_match": "-",
+      "song_section_match": [
+        "build1",
+        "drop1",
+        "build2"
+      ],
+      "energy": "mid",
+      "color_mood": "dark UI / warm clips",
+      "useful_for_reel_types": [
+        "micro"
+      ],
+      "music_reactivity": "playhead = audio",
+      "params": {},
+      "used_in_reels": [
+        "R18"
+      ]
+    },
+    {
+      "id": "S110",
+      "title": "Arrangement, zoomed on the drop",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "arrangement",
+      "code": "src/shots/ (generator \"arrangement\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S110",
+      "url": "still: visual-board/stills/S110.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RHYTHMIC",
+      "visual_description": "Eight bars across the screen: you see the kick lane stop and restart.",
+      "emotional_role": "where the space is",
+      "lyric_match": "-",
+      "song_section_match": [
+        "build1",
+        "build2"
+      ],
+      "energy": "mid",
+      "color_mood": "dark UI",
+      "useful_for_reel_types": [
+        "micro"
+      ],
+      "music_reactivity": "playhead",
+      "params": {
+        "zoomBars": 8
+      },
+      "used_in_reels": [
+        "R18"
+      ]
+    },
+    {
+      "id": "S111",
+      "title": "Whole song map",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "arrangement",
+      "code": "src/shots/ (generator \"arrangement\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S111",
+      "url": "still: visual-board/stills/S111.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RHYTHMIC",
+      "visual_description": "All 121 bars on one screen, playhead travelling.",
+      "emotional_role": "the shape of the night",
+      "lyric_match": "-",
+      "song_section_match": [
+        "any"
+      ],
+      "energy": "low",
+      "color_mood": "dark UI",
+      "useful_for_reel_types": [
+        "micro",
+        "endcard"
+      ],
+      "music_reactivity": "playhead",
+      "params": {
+        "zoomBars": 121,
+        "follow": false,
+        "centerBar": 61
+      },
+      "used_in_reels": []
+    },
+    {
+      "id": "S112",
+      "title": "Drop step grid",
+      "source": "Procedural (Remotion generator, this repo)",
+      "generator": "arrangement",
+      "code": "src/shots/ (generator \"arrangement\"), preset in src/library/shots.ts",
+      "preview_composition": "Shot-S112",
+      "url": "still: visual-board/stills/S112.jpg",
+      "license": "Original work generated in this project. No third-party footage. Owned by AMISHAR.",
+      "category": "RHYTHMIC",
+      "visual_description": "The drop's 16-step drum grid lighting up step by step.",
+      "emotional_role": "how it hits",
+      "lyric_match": "-",
+      "song_section_match": [
+        "drop1",
+        "drop2"
+      ],
+      "energy": "high",
+      "color_mood": "dark UI / amber",
+      "useful_for_reel_types": [
+        "micro",
+        "loop"
+      ],
+      "music_reactivity": "step = audio position",
+      "params": {
+        "mode": "steps"
+      },
+      "used_in_reels": [
+        "R18"
+      ]
+    }
+  ]
+}

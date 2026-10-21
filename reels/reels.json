@@ -1,0 +1,2714 @@
+[
+  {
+    "number": 1,
+    "id": "R01",
+    "composition": "R01-before",
+    "phase": "A",
+    "name": "BEFORE",
+    "core": "The part of the night nobody films: a window switching on, a lamp in a puddle, the clock tipping into midnight, then three shadows heading out on the first sung line.",
+    "hook": "the part before the night starts.",
+    "approach": "Quiet setup. Uses the intro the way the record does: keys only, then the first vocal.",
+    "lyricSection": "Intro (0:00-0:15) + 'Moving my feet to the beat of a drum' (0:15.96)",
+    "editing": "Long holds (3.75-7.5 s), one cut per 2-4 bars, slow push-ins. Nothing reacts until the first vocal.",
+    "transitions": "Dip on the window, lamp-wipe into the shadows on the first vocal.",
+    "payoff": "The clock flips to 00:00 exactly when the percussion enters (0:15.00) and the walk starts on the first word.",
+    "loop": "No, it ends walking out of frame (fade).",
+    "caption": "the best nights start with nobody saying where we're going.",
+    "why": "First post. Sets the world (sodium, moon, shadows instead of faces) before anyone knows it's a song campaign.",
+    "song_timestamp": "0:00.00 - 0:21.50 (bar 1.1 to bar 12.2)",
+    "duration_s": 21.5,
+    "clip_ids": [
+      "S100",
+      "S106",
+      "S088",
+      "S069"
+    ],
+    "shot_order": [
+      {
+        "at": "0:00.00",
+        "reel_time": 0,
+        "shot": "S100",
+        "title": "Facade, one window",
+        "len_s": 7.5,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.08
+          ],
+          "handheld": 0.6
+        },
+        "warp": null
+      },
+      {
+        "at": "0:07.50",
+        "reel_time": 7.5,
+        "shot": "S106",
+        "title": "Lamp in a puddle",
+        "len_s": 3.75,
+        "transition_in": "dip",
+        "camera": {
+          "zoom": [
+            1.1,
+            1.04
+          ],
+          "handheld": 0.8
+        },
+        "warp": null
+      },
+      {
+        "at": "0:11.25",
+        "reel_time": 11.25,
+        "shot": "S088",
+        "title": "Clock: 23:59",
+        "len_s": 4.69,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.06
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "0:15.94",
+        "reel_time": 15.94,
+        "shot": "S069",
+        "title": "Three shadows walking",
+        "len_s": 5.56,
+        "transition_in": "lampwipe",
+        "camera": {
+          "zoom": [
+            1.06,
+            1
+          ],
+          "handheld": 1.2
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "the part before the night starts.",
+        "at": "0:00.00"
+      },
+      {
+        "kind": "label",
+        "text": "11:58 PM",
+        "at": "0:07.50"
+      },
+      {
+        "kind": "lyric",
+        "text": "Moving my feet to the beat of a drum",
+        "at": "0:15.96"
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "id": "R02",
+    "composition": "R02-the-moon-follows",
+    "phase": "A",
+    "name": "THE MOON FOLLOWS",
+    "core": "Everything on the road rushes past: poles, wires, lamps. The moon doesn't move. It's the one witness to the night, the place you promise to tell the truth.",
+    "hook": "the moon still follows the car.",
+    "approach": "Visual loop built on a childhood observation; the kick entry at 0:30.00 starts the lamps.",
+    "lyricSection": "'If I took it alive, I promise to say it in the moonlight' (0:29.31-0:34.76) + breath",
+    "editing": "4 shots in 8.4 s. Lamps and poles pass exactly on the kick (travel rate locked to the grid). The moon shot has no reactivity at all.",
+    "transitions": "Hard cut on the kick entry (0:30.00), cut on the beat before 'moonlight' (0:33.75).",
+    "payoff": "'say it in the moonlight' lands on the only still image in the Reel.",
+    "loop": "Yes. Starts and ends on the same wires-and-moon shot, so the loop reads as one endless drive.",
+    "caption": "everything on the road moves. except the moon.",
+    "why": "Introduces the central visual idea (everything passes, the moon stays) in under 9 seconds.",
+    "song_timestamp": "0:29.07 - 0:37.50 (bar 16.3 to bar 21.1)",
+    "duration_s": 8.43,
+    "clip_ids": [
+      "S034",
+      "S012",
+      "S032"
+    ],
+    "shot_order": [
+      {
+        "at": "0:29.06",
+        "reel_time": 0,
+        "shot": "S034",
+        "title": "The moon follows (wires)",
+        "len_s": 0.94,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.06,
+            1.04
+          ],
+          "handheld": 1
+        },
+        "warp": null
+      },
+      {
+        "at": "0:30.00",
+        "reel_time": 0.93,
+        "shot": "S012",
+        "title": "Big moon over the road",
+        "len_s": 3.75,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.02,
+            1.07
+          ],
+          "kick": 0.006,
+          "handheld": 1.2
+        },
+        "warp": null
+      },
+      {
+        "at": "0:33.75",
+        "reel_time": 4.68,
+        "shot": "S032",
+        "title": "The moon, clouds crossing",
+        "len_s": 2.34,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.06
+          ],
+          "handheld": 0.3
+        },
+        "warp": null
+      },
+      {
+        "at": "0:36.09",
+        "reel_time": 7.03,
+        "shot": "S034",
+        "title": "The moon follows (wires)",
+        "len_s": 1.41,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.04,
+            1.06
+          ],
+          "kick": 0.005,
+          "handheld": 1
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "the moon still follows the car.",
+        "at": "0:29.06"
+      },
+      {
+        "kind": "lyric",
+        "text": "If I took it alive, I promise to say it in the moonlight",
+        "at": "0:33.00"
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "id": "R03",
+    "composition": "R03-the-second-roll",
+    "phase": "A",
+    "name": "THE SECOND ROLL",
+    "core": "Decision, action, consequence. A red light that won't change, two dice thrown on the bar on 'take a chance', thrown again on 'rolling it twice', then a walk signal counting down one beat at a time.",
+    "hook": "the second roll is the one you remember.",
+    "approach": "Tease. Builds the whole pre-chorus and cuts out one beat after the light turns green, before the drop.",
+    "lyricSection": "'Out of sight, out of mind / Take a chance, rolling it twice / It's out of sight...' (0:46.6-0:55.4)",
+    "editing": "Cuts on the lyric: dice thrown on 'take a chance' (bar 27) and again exactly where the kick drops out (bar 28). The countdown digits tick on the 8th-roll beats: 8 beats, 8 numbers.",
+    "transitions": "Hard cuts only. Matte tightens through the build.",
+    "payoff": "Green light on 0:56.25 as the 16th roll starts, then black. No drop.",
+    "loop": "No. Deliberate cliffhanger.",
+    "caption": "we never left on the first try.",
+    "why": "Owns the 'take a chance, rolling it twice' line as an image (dice) without spending the drop.",
+    "song_timestamp": "0:46.40 - 0:56.72 (bar 25.3 to bar 31.2)",
+    "duration_s": 10.32,
+    "clip_ids": [
+      "S081",
+      "S082",
+      "S077"
+    ],
+    "shot_order": [
+      {
+        "at": "0:46.41",
+        "reel_time": 0.01,
+        "shot": "S081",
+        "title": "Red, dry night",
+        "len_s": 2.34,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.06
+          ],
+          "handheld": 0.8
+        },
+        "warp": null
+      },
+      {
+        "at": "0:48.75",
+        "reel_time": 2.35,
+        "shot": "S082",
+        "title": "Dice, rolled twice",
+        "len_s": 3.75,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.04,
+            1.1
+          ],
+          "handheld": 1
+        },
+        "warp": null
+      },
+      {
+        "at": "0:52.50",
+        "reel_time": 6.1,
+        "shot": "S077",
+        "title": "Walk signal countdown",
+        "len_s": 4.22,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.02,
+            1.12
+          ],
+          "tension": 0.04,
+          "handheld": 0.8
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "the second roll is the one you remember.",
+        "at": "0:46.41"
+      },
+      {
+        "kind": "lyric",
+        "text": "Take a chance, rolling it twice",
+        "at": "0:48.73"
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "id": "R04",
+    "composition": "R04-out-of-sight",
+    "phase": "A",
+    "name": "OUT OF SIGHT",
+    "core": "'Out of sight, out of mind' as a visual rule: everything that leaves the frame stops existing. A train slides off the bridge, taillights leave, the moon goes behind cloud, the city switches off window by window, one shadow walks out of the lamp, and the frame closes to a slit.",
+    "hook": "out of sight. not out of mind.",
+    "approach": "Metaphor + tease. Second build, cut to black before the 16th roll.",
+    "lyricSection": "Build 2: 'Out of sight, out of mind / Take a chance... / It's out of sight, out of mind' (2:31.6-2:40.8)",
+    "editing": "One shot per bar, every shot ends with something leaving. From the kick-out (2:35.63) windows go dark on each beat.",
+    "transitions": "Matte closes from full frame to a slit over the last two bars; final cut to black on 2:41.25.",
+    "payoff": "Black, with the 16th roll just starting. The viewer has to go find the drop.",
+    "loop": "No.",
+    "caption": "some things you leave behind on purpose.",
+    "why": "Second tease, uses build 2 so build 1 stays fresh for the vocal-to-drop Reels.",
+    "song_timestamp": "2:30.00 - 2:41.25 (bar 81.1 to bar 87.1)",
+    "duration_s": 11.25,
+    "clip_ids": [
+      "S028",
+      "S097",
+      "S039",
+      "S025",
+      "S071",
+      "S033"
+    ],
+    "shot_order": [
+      {
+        "at": "2:30.00",
+        "reel_time": 0,
+        "shot": "S028",
+        "title": "Train on the bridge",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.04,
+            1
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "2:31.88",
+        "reel_time": 1.88,
+        "shot": "S097",
+        "title": "Leaving (all red)",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.06
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "2:33.75",
+        "reel_time": 3.75,
+        "shot": "S039",
+        "title": "Moon, heavy cloud",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.05
+          ],
+          "handheld": 0.5
+        },
+        "warp": null
+      },
+      {
+        "at": "2:35.63",
+        "reel_time": 5.63,
+        "shot": "S025",
+        "title": "City closing",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.04
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "2:37.50",
+        "reel_time": 7.5,
+        "shot": "S071",
+        "title": "One shadow",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.05,
+            1
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "2:39.38",
+        "reel_time": 9.38,
+        "shot": "S033",
+        "title": "Small high moon",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.1
+          ],
+          "handheld": 0.3
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "out of sight. not out of mind.",
+        "at": "2:30.00"
+      },
+      {
+        "kind": "lyric",
+        "text": "It's out of sight, out of mind",
+        "at": "2:36.50"
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "id": "R05",
+    "composition": "R05-no-destination",
+    "phase": "B",
+    "name": "NO DESTINATION",
+    "core": "A ride with no stated end: train window, trees whipping past the moon, a friend's taillights ahead. The line does the talking. The kick arrives under 'alive' and we're suddenly on the open road.",
+    "hook": "no plan was the plan.",
+    "approach": "Lyric-led, verse 1. Ends one beat into the kick entry as a tease of the groove.",
+    "lyricSection": "'It's not where you been, it's about where you're goin' (0:23.41-0:28.64) + 'If I took it alive' pickup",
+    "editing": "Cuts on 2-bar phrases; masts and branches pass at the verse travel rate (2 per bar), so motion speeds up the moment the kick comes in.",
+    "transitions": "Cut, cut, hard cut on 0:30.00.",
+    "payoff": "The road and its lamps start pumping on the kick entry.",
+    "loop": "Loosely: ends moving forward, starts moving forward.",
+    "caption": "it's not where you been.",
+    "why": "Makes the most quotable verse line recognisable on its own.",
+    "song_timestamp": "0:22.50 - 0:30.94 (bar 13.1 to bar 17.3)",
+    "duration_s": 8.44,
+    "clip_ids": [
+      "S018",
+      "S035",
+      "S005",
+      "S001"
+    ],
+    "shot_order": [
+      {
+        "at": "0:22.50",
+        "reel_time": 0,
+        "shot": "S018",
+        "title": "Train window, city and moon",
+        "len_s": 3.75,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.02,
+            1.06
+          ],
+          "handheld": 1
+        },
+        "warp": null
+      },
+      {
+        "at": "0:26.25",
+        "reel_time": 3.75,
+        "shot": "S035",
+        "title": "The moon follows (trees)",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.06,
+            1.02
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "0:28.13",
+        "reel_time": 5.63,
+        "shot": "S005",
+        "title": "Following their taillights",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.05
+          ],
+          "handheld": 1.2
+        },
+        "warp": null
+      },
+      {
+        "at": "0:30.00",
+        "reel_time": 7.5,
+        "shot": "S001",
+        "title": "The drive, moon on the left",
+        "len_s": 0.94,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.08,
+            1.05
+          ],
+          "kick": 0.012,
+          "impact": 0.04
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "no plan was the plan.",
+        "at": "0:22.50"
+      },
+      {
+        "kind": "lyric",
+        "text": "It's not where you been, it's about where you're goin",
+        "at": "0:23.41"
+      },
+      {
+        "kind": "lyric",
+        "text": "It's not where you been, it's about where you're goin",
+        "at": "0:25.07"
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "id": "R06",
+    "composition": "R06-3am-honesty",
+    "phase": "B",
+    "name": "3AM HONESTY",
+    "core": "The truth lines, set against the calmest images in the library: moonlight on black water, a buzzing neon word, the moon in a puddle that ripples on each kick, a cold white road.",
+    "hook": "everything sounds more honest after midnight.",
+    "approach": "Lyric-focused, intimate. The C-minor side of the song.",
+    "lyricSection": "'I'm taking my time, telling the truth / 'Cause only fools lie, fools lie' (0:37.06-0:46.2)",
+    "editing": "Long first shot (4.7 s). The TRUTH sign buzzes on the line. Puddle rings land on the verse kicks.",
+    "transitions": "Fade into TRUTH, cuts after.",
+    "payoff": "'fools lie' over the cold road: the warm palette drops away.",
+    "loop": "No.",
+    "caption": "only fools lie.",
+    "why": "Gives the song an emotional voice, not just a drop.",
+    "song_timestamp": "0:36.57 - 0:46.41 (bar 20.3 to bar 25.4)",
+    "duration_s": 9.84,
+    "clip_ids": [
+      "S037",
+      "S065",
+      "S104",
+      "S009"
+    ],
+    "shot_order": [
+      {
+        "at": "0:36.56",
+        "reel_time": 0,
+        "shot": "S037",
+        "title": "Moon on black water",
+        "len_s": 4.69,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.08
+          ],
+          "handheld": 0.4
+        },
+        "warp": null
+      },
+      {
+        "at": "0:41.25",
+        "reel_time": 4.68,
+        "shot": "S065",
+        "title": "Neon: TRUTH",
+        "len_s": 1.41,
+        "transition_in": "fade",
+        "camera": {
+          "zoom": [
+            1.1,
+            1.04
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "0:42.66",
+        "reel_time": 6.09,
+        "shot": "S104",
+        "title": "Moon in a puddle",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.02,
+            1.06
+          ],
+          "kick": 0.005
+        },
+        "warp": null
+      },
+      {
+        "at": "0:44.53",
+        "reel_time": 7.96,
+        "shot": "S009",
+        "title": "Cold LED road",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.04,
+            1.06
+          ],
+          "kick": 0.006
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "everything sounds more honest after midnight.",
+        "at": "0:36.56"
+      },
+      {
+        "kind": "lyric",
+        "text": "I'm taking my time, telling the truth",
+        "at": "0:37.06"
+      },
+      {
+        "kind": "lyric",
+        "text": "'Cause only fools lie, fools lie",
+        "at": "0:42.80"
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "id": "R07",
+    "composition": "R07-the-walk-home",
+    "phase": "B",
+    "name": "THE WALK HOME",
+    "core": "Everyone spills out, the night goes quiet, and for two seconds there's no music under anything. Then the kick comes back.",
+    "hook": "walking home slower than we need to.",
+    "approach": "Quiet → payoff. The breakdown is the most intimate part of the record; this Reel lives inside it.",
+    "lyricSection": "Breakdown: 'Grooving till the bar kicks us out / Oh, oh, oh' (1:50.7-1:58.9) + near silence + kick return (2:00.00)",
+    "editing": "Three slow shots, then a held, totally still puddle in the near-silence (1:58.1-2:00), then the open road on the returning kick.",
+    "transitions": "Fades between the slow shots, matte closes in the silence and snaps open on the kick.",
+    "payoff": "The kick at 2:00.00 opens the frame and the road starts moving.",
+    "loop": "No.",
+    "caption": "nobody said it but nobody wanted to go home yet.",
+    "why": "Recognition through feeling: the breakdown vocal is the most human moment in the track.",
+    "song_timestamp": "1:50.10 - 2:00.47 (bar 59.3 to bar 65.2)",
+    "duration_s": 10.37,
+    "clip_ids": [
+      "S072",
+      "S037",
+      "S108",
+      "S007"
+    ],
+    "shot_order": [
+      {
+        "at": "1:50.11",
+        "reel_time": 0.01,
+        "shot": "S072",
+        "title": "A crowd of shadows",
+        "len_s": 5.09,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.05
+          ],
+          "handheld": 0.8
+        },
+        "warp": null
+      },
+      {
+        "at": "1:55.20",
+        "reel_time": 5.1,
+        "shot": "S037",
+        "title": "Moon on black water",
+        "len_s": 2.92,
+        "transition_in": "fade",
+        "camera": {
+          "zoom": [
+            1.04,
+            1.1
+          ],
+          "handheld": 0.4
+        },
+        "warp": null
+      },
+      {
+        "at": "1:58.13",
+        "reel_time": 8.03,
+        "shot": "S108",
+        "title": "Still puddle",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.06,
+            1.06
+          ],
+          "handheld": 0
+        },
+        "warp": {
+          "speed": 0
+        }
+      },
+      {
+        "at": "2:00.00",
+        "reel_time": 9.9,
+        "shot": "S007",
+        "title": "Open road, no lamps",
+        "len_s": 0.47,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.08,
+            1.04
+          ],
+          "impact": 0.05
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "walking home slower than we need to.",
+        "at": "1:50.16"
+      },
+      {
+        "kind": "lyric",
+        "text": "Grooving till the bar kicks us out",
+        "at": "1:50.67"
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "id": "R08",
+    "composition": "R08-we-rise-and-we-fall",
+    "phase": "B",
+    "name": "WE RISE AND WE FALL",
+    "core": "The bridge lyric, sung once in the whole song, gets the most cinematic treatment: our three shadows running ahead with the sun behind us, a shooting star across the 2-second gap after 'sun', the rooftop, the lyric becoming a neon sign, then just stars.",
+    "hook": "for the ones who stayed out with you.",
+    "approach": "Lyric-focused emotional peak. Longest takes in the campaign.",
+    "lyricSection": "'Shoot for the stars with our backs to the sun / We rise and we fall, living forever young' (2:00.79-2:14.03)",
+    "editing": "5.6 s opening take. The shooting star is placed in the vocal gap (2:05.7-2:08.0) so the silence has an event. The camera rises on 'we rise'.",
+    "transitions": "Fade into the stars, cut on 'we rise', cut into the neon on 'forever young'.",
+    "payoff": "'forever young' appears as a sign in the world instead of a caption.",
+    "loop": "No, ends on open sky.",
+    "caption": "we rise and we fall. say it while it's still true.",
+    "why": "This is the line people will quote. It should feel like a memory, not an ad.",
+    "song_timestamp": "2:00.00 - 2:15.00 (bar 65.1 to bar 73.1)",
+    "duration_s": 15,
+    "clip_ids": [
+      "S046",
+      "S043",
+      "S024",
+      "S066",
+      "S040"
+    ],
+    "shot_order": [
+      {
+        "at": "2:00.00",
+        "reel_time": 0,
+        "shot": "S046",
+        "title": "Backs to the sun (three)",
+        "len_s": 5.63,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.12
+          ],
+          "kick": 0.004,
+          "handheld": 1
+        },
+        "warp": null
+      },
+      {
+        "at": "2:05.63",
+        "reel_time": 5.63,
+        "shot": "S043",
+        "title": "Shooting star",
+        "len_s": 1.88,
+        "transition_in": "fade",
+        "camera": {
+          "zoom": [
+            1,
+            1.04
+          ],
+          "handheld": 0.4
+        },
+        "warp": null
+      },
+      {
+        "at": "2:07.50",
+        "reel_time": 7.5,
+        "shot": "S024",
+        "title": "Rooftop, three of us",
+        "len_s": 3.75,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.04,
+            1.1
+          ],
+          "pan": [
+            [
+              0,
+              90
+            ],
+            [
+              0,
+              -20
+            ]
+          ],
+          "kick": 0.004
+        },
+        "warp": null
+      },
+      {
+        "at": "2:11.25",
+        "reel_time": 11.25,
+        "shot": "S066",
+        "title": "Neon: forever young",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.08,
+            1.02
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "2:13.13",
+        "reel_time": 13.13,
+        "shot": "S040",
+        "title": "Star field",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.05
+          ],
+          "handheld": 0.5
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "for the ones who stayed out with you.",
+        "at": "2:00.00"
+      },
+      {
+        "kind": "lyric",
+        "text": "Shoot for the stars with our backs to the sun",
+        "at": "2:00.79"
+      },
+      {
+        "kind": "lyric",
+        "text": "We rise and we fall, living forever young",
+        "at": "2:07.99"
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "id": "R09",
+    "composition": "R09-written-on-the-road",
+    "phase": "C",
+    "name": "WRITTEN ON THE ROAD",
+    "core": "The pre-chorus is painted on the asphalt, each word arriving under the car as it's sung. The build becomes a tunnel; 'kicks us OUT' bursts out of it and the word OUT passes under the wheels on the drop.",
+    "hook": "the signs were on the road the whole time.",
+    "approach": "Vocal-to-drop. The words are the environment, not captions.",
+    "lyricSection": "Build 1 + drop 1: 'Out of sight... take a chance, rolling it twice... moving to the music, grooving till the bar kicks us OUT' (0:46.6-1:01.4)",
+    "editing": "Road words timed to the vocal (SIGHT, MIND, CHANCE, TWICE, SIGHT, MIND). Kick drops out at 0:50.63 and the road goes to fog. 8th roll: lamps double. 16th roll: tunnel. Drop: exit flash, lamp on every kick, small punch on each one.",
+    "transitions": "Cut into fog on the kick-out, lamp-wipe into the 8ths, tunnel exit flash on 1:00.000.",
+    "payoff": "OUT painted on the road passes under the camera in the first beat of the drop.",
+    "loop": "No.",
+    "caption": "out of sight, out of mind. it was written on the road the whole way.",
+    "why": "The clearest statement of what the song is: movement, risk, the hook line and the drop in one shot language.",
+    "song_timestamp": "0:45.00 - 1:03.75 (bar 25.1 to bar 35.1)",
+    "duration_s": 18.75,
+    "clip_ids": [
+      "S001",
+      "S010",
+      "S011",
+      "S013"
+    ],
+    "shot_order": [
+      {
+        "at": "0:45.00",
+        "reel_time": 0,
+        "shot": "S001",
+        "title": "The drive, moon on the left",
+        "len_s": 5.63,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.02,
+            1.06
+          ],
+          "kick": 0.006
+        },
+        "warp": null
+      },
+      {
+        "at": "0:50.63",
+        "reel_time": 5.63,
+        "shot": "S010",
+        "title": "Fog drive",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.04,
+            1.08
+          ],
+          "handheld": 1.4
+        },
+        "warp": null
+      },
+      {
+        "at": "0:52.50",
+        "reel_time": 7.5,
+        "shot": "S011",
+        "title": "MOVING / TO THE / MUSIC painted",
+        "len_s": 3.75,
+        "transition_in": "lampwipe",
+        "camera": {
+          "zoom": [
+            1.04,
+            1.1
+          ],
+          "tension": 0.05
+        },
+        "warp": null
+      },
+      {
+        "at": "0:56.25",
+        "reel_time": 11.25,
+        "shot": "S013",
+        "title": "Tunnel, exit on the drop",
+        "len_s": 3.75,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.04,
+            1.12
+          ],
+          "tension": 0.05
+        },
+        "warp": null
+      },
+      {
+        "at": "1:00.00",
+        "reel_time": 15,
+        "shot": "S011",
+        "title": "MOVING / TO THE / MUSIC painted",
+        "len_s": 3.75,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.12,
+            1.04
+          ],
+          "kick": 0.012,
+          "drop": 0.06,
+          "blur": 2
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "the signs were on the road the whole time.",
+        "at": "0:45.00"
+      },
+      {
+        "kind": "lyric",
+        "text": "Moving to the music,",
+        "at": "0:55.97"
+      },
+      {
+        "kind": "lyric",
+        "text": "grooving till the bar kicks us out",
+        "at": "0:57.92"
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "id": "R10",
+    "composition": "R10-1-59",
+    "phase": "C",
+    "name": "1:59",
+    "core": "Closing time as a countdown. The clock sits on 01:59 through the build, LAST CALL buzzes, the sign still says OPEN... and the minute flips to 02:00 on the drop. The bar kicks us out, literally on 'out', and we're on the road.",
+    "hook": "1:59. nobody's going home.",
+    "approach": "Vocal-to-drop story. The drop is a time, not an effect.",
+    "lyricSection": "8th/16th build + 'grooving till the bar kicks us out' → drop 1 (0:52.5-1:03.75)",
+    "editing": "Cuts accelerate with the roll: 3.75 s, 1.9 s, 0.94 s, then one-beat shots across the drop (clock flip, CLOSED, road).",
+    "transitions": "Matte closes during the build; exposure flash on the flip.",
+    "payoff": "01:59 → 02:00 exactly on 1:00.000, then the road with a lamp on every kick.",
+    "loop": "No, ends hard on the bar line.",
+    "caption": "closing time was never the end of it.",
+    "why": "Gives the drop a story the audience remembers ('the 2am song').",
+    "song_timestamp": "0:52.50 - 1:03.75 (bar 29.1 to bar 35.1)",
+    "duration_s": 11.25,
+    "clip_ids": [
+      "S089",
+      "S061",
+      "S062",
+      "S086",
+      "S001"
+    ],
+    "shot_order": [
+      {
+        "at": "0:52.50",
+        "reel_time": 0,
+        "shot": "S089",
+        "title": "Clock: LAST CALL",
+        "len_s": 3.75,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.08
+          ],
+          "tension": 0.05
+        },
+        "warp": null
+      },
+      {
+        "at": "0:56.25",
+        "reel_time": 3.75,
+        "shot": "S061",
+        "title": "Neon: LAST CALL",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.04,
+            1.1
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "0:58.13",
+        "reel_time": 5.63,
+        "shot": "S062",
+        "title": "Neon: OPEN -> CLOSED",
+        "len_s": 1.41,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.06,
+            1.12
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "0:59.53",
+        "reel_time": 7.03,
+        "shot": "S086",
+        "title": "Clock: 02:00 on the drop",
+        "len_s": 0.94,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.25,
+            1.3
+          ],
+          "drop": 0.06
+        },
+        "warp": null
+      },
+      {
+        "at": "1:00.47",
+        "reel_time": 7.97,
+        "shot": "S062",
+        "title": "Neon: OPEN -> CLOSED",
+        "len_s": 0.47,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.1,
+            1.1
+          ],
+          "kick": 0.015
+        },
+        "warp": null
+      },
+      {
+        "at": "1:00.94",
+        "reel_time": 8.44,
+        "shot": "S001",
+        "title": "The drive, moon on the left",
+        "len_s": 2.81,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.06,
+            1.04
+          ],
+          "kick": 0.012,
+          "bass": 0.02
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "1:59. nobody's going home.",
+        "at": "0:52.50"
+      },
+      {
+        "kind": "lyric",
+        "text": "grooving till the bar kicks us out",
+        "at": "0:57.92"
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "id": "R11",
+    "composition": "R11-when-the-lights-come-on",
+    "phase": "C",
+    "name": "WHEN THE LIGHTS COME ON",
+    "core": "Inside the drop we only ever see the party through steamed glass. On the last kick of drop 1 (1:45.00) the neon dies and the lights go out in steps, one per beat. Then it's just our shadows on the pavement and the 'oh, oh'.",
+    "hook": "when the lights come on.",
+    "approach": "Story: nightlife → kicked out → walking. The end of drop 1 into the breakdown.",
+    "lyricSection": "End of drop 1 + 'grooving till the bar kicks us out / Oh, oh' (1:40.9-1:50.5)",
+    "editing": "Groove cuts in the drop (2 bars, then 1 bar), the closing plays as one take so you watch the lights go beat by beat, then a slow walk.",
+    "transitions": "Cuts in the drop, hard cut on 1:45.000, lamp-wipe into the walk.",
+    "payoff": "The sign stutters out on the exact frame the kick stops.",
+    "loop": "No, fades out walking.",
+    "caption": "the bar kicked us out. the night didn't.",
+    "why": "Makes the lyric's image (the bar kicking us out) the brand story of the song.",
+    "song_timestamp": "1:37.50 - 1:50.63 (bar 53.1 to bar 60.1)",
+    "duration_s": 13.13,
+    "clip_ids": [
+      "S057",
+      "S051",
+      "S059",
+      "S061",
+      "S052",
+      "S069"
+    ],
+    "shot_order": [
+      {
+        "at": "1:37.50",
+        "reel_time": 0,
+        "shot": "S057",
+        "title": "Frosted glass, warm",
+        "len_s": 3.75,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.02,
+            1.06
+          ],
+          "kick": 0.008,
+          "bass": 0.03
+        },
+        "warp": null
+      },
+      {
+        "at": "1:41.25",
+        "reel_time": 3.75,
+        "shot": "S051",
+        "title": "Bar, open late",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.04,
+            1.06
+          ],
+          "kick": 0.008
+        },
+        "warp": null
+      },
+      {
+        "at": "1:43.13",
+        "reel_time": 5.63,
+        "shot": "S059",
+        "title": "Frosted crowd",
+        "len_s": 0.94,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.06,
+            1.12
+          ],
+          "kick": 0.01
+        },
+        "warp": null
+      },
+      {
+        "at": "1:44.06",
+        "reel_time": 6.56,
+        "shot": "S061",
+        "title": "Neon: LAST CALL",
+        "len_s": 0.94,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.1,
+            1.14
+          ],
+          "kick": 0.01
+        },
+        "warp": null
+      },
+      {
+        "at": "1:45.00",
+        "reel_time": 7.5,
+        "shot": "S052",
+        "title": "Bar, last call",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.06,
+            1.02
+          ],
+          "impact": 0.03
+        },
+        "warp": null
+      },
+      {
+        "at": "1:46.88",
+        "reel_time": 9.38,
+        "shot": "S069",
+        "title": "Three shadows walking",
+        "len_s": 3.75,
+        "transition_in": "lampwipe",
+        "camera": {
+          "zoom": [
+            1.04,
+            1
+          ],
+          "handheld": 1
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "when the lights come on.",
+        "at": "1:37.50"
+      },
+      {
+        "kind": "lyric",
+        "text": "grooving till the bar kicks us out",
+        "at": "1:42.94"
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "id": "R12",
+    "composition": "R12-the-city-plays-along",
+    "phase": "D",
+    "name": "THE CITY PLAYS ALONG",
+    "core": "Rhythm-driven. The city performs the drop: apartment windows play the real kick/clap/hat pattern, beacons blink on the kick, light pulses ride the highway lanes, bodies bounce behind glass.",
+    "hook": "even the windows know this one.",
+    "approach": "Rhythm-driven drop edit, cut on claps (beats 2 and 4) and phrase lines, never on every beat.",
+    "lyricSection": "Drop 1, bars 37-44 (1:07.5-1:22.5), vocal chops at 1:07.7 and 1:09.2",
+    "editing": "Phrase 1: two 2-beat cuts, then 1-bar shots; the heavy Cm bar (bar 39) gets the longest, deepest-pushing shot. Phrase 2 mirrors it, and the last bar accelerates to one shot per beat as a fill into the loop point.",
+    "transitions": "Hard cuts only, on claps and bar lines.",
+    "payoff": "Bar 44: four one-beat shots, then it loops back to the windows.",
+    "loop": "Yes, bar 37 to bar 45 is 8 full bars of the same loop; the audio and the first shot line up.",
+    "caption": "the whole city's on the same beat tonight.",
+    "why": "Shows the groove itself; no lyric needed, high replay value.",
+    "song_timestamp": "1:07.50 - 1:22.50 (bar 37.1 to bar 45.1)",
+    "duration_s": 15,
+    "clip_ids": [
+      "S101",
+      "S027",
+      "S095",
+      "S057",
+      "S034",
+      "S023",
+      "S105",
+      "S102",
+      "S036"
+    ],
+    "shot_order": [
+      {
+        "at": "1:07.50",
+        "reel_time": 0,
+        "shot": "S101",
+        "title": "Facade as a sequencer",
+        "len_s": 0.94,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.02,
+            1.04
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "1:08.44",
+        "reel_time": 0.94,
+        "shot": "S027",
+        "title": "City breathing with the bass",
+        "len_s": 0.94,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.04,
+            1.07
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "1:09.38",
+        "reel_time": 1.88,
+        "shot": "S095",
+        "title": "Light trails, curve",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.02,
+            1.05
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "1:11.25",
+        "reel_time": 3.75,
+        "shot": "S057",
+        "title": "Frosted glass, warm",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.06,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.02,
+            1.08
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "1:13.13",
+        "reel_time": 5.63,
+        "shot": "S034",
+        "title": "The moon follows (wires)",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.04,
+            1.04
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "1:15.00",
+        "reel_time": 7.5,
+        "shot": "S023",
+        "title": "City stream, no frame",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.02,
+            1.05
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "1:16.88",
+        "reel_time": 9.38,
+        "shot": "S105",
+        "title": "Neon in a puddle",
+        "len_s": 0.94,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.04,
+            1.06
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "1:17.81",
+        "reel_time": 10.31,
+        "shot": "S102",
+        "title": "Facade, one flat partying",
+        "len_s": 0.94,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.02,
+            1.05
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "1:18.75",
+        "reel_time": 11.25,
+        "shot": "S036",
+        "title": "The moon follows (rooftops)",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.06,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.02,
+            1.08
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "1:20.63",
+        "reel_time": 13.13,
+        "shot": "S101",
+        "title": "Facade as a sequencer",
+        "len_s": 0.47,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.06,
+            1.06
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "1:21.09",
+        "reel_time": 13.59,
+        "shot": "S095",
+        "title": "Light trails, curve",
+        "len_s": 0.47,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.06,
+            1.06
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "1:21.56",
+        "reel_time": 14.06,
+        "shot": "S027",
+        "title": "City breathing with the bass",
+        "len_s": 0.47,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.06,
+            1.06
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "1:22.03",
+        "reel_time": 14.53,
+        "shot": "S057",
+        "title": "Frosted glass, warm",
+        "len_s": 0.47,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.06,
+            1.06
+          ]
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "even the windows know this one.",
+        "at": "1:07.50"
+      }
+    ]
+  },
+  {
+    "number": 13,
+    "id": "R13",
+    "composition": "R13-behind-the-glass",
+    "phase": "D",
+    "name": "BEHIND THE GLASS",
+    "core": "Dancing without faces. We stay on the street side of the window: shapes behind steamed glass bounce on the kick and throw their arms up on the heavy bass bar, a single flat in a dark block is the only party in town.",
+    "hook": "you could see the party from the street.",
+    "approach": "Groove-follow. Longer shots that let the dancing play; the bass bars decide where the cuts go.",
+    "lyricSection": "Drop 1, bars 45-52 (1:22.5-1:37.5), vocal chops 1:24.6 and 1:28.0-1:31.3",
+    "editing": "2-bar opening take, cuts on bar lines, the bass-accent bars (47, 51) get the shots with arms up and the deepest camera push.",
+    "transitions": "Cuts; one fade between the two frosted shots.",
+    "payoff": "Bar 51: the crowd shot with every arm up on the heaviest bass of the phrase.",
+    "loop": "Yes, 8 bars from a phrase start.",
+    "caption": "we were the window you could see from the street.",
+    "why": "The nightlife/dance pillar without stock dancers or DJ hands.",
+    "song_timestamp": "1:22.50 - 1:37.50 (bar 45.1 to bar 53.1)",
+    "duration_s": 15,
+    "clip_ids": [
+      "S057",
+      "S102",
+      "S058",
+      "S051",
+      "S059",
+      "S105"
+    ],
+    "shot_order": [
+      {
+        "at": "1:22.50",
+        "reel_time": 0,
+        "shot": "S057",
+        "title": "Frosted glass, warm",
+        "len_s": 3.75,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.02,
+            1.07
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "1:26.25",
+        "reel_time": 3.75,
+        "shot": "S102",
+        "title": "Facade, one flat partying",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.05,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1,
+            1.04
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "1:28.13",
+        "reel_time": 5.63,
+        "shot": "S058",
+        "title": "Frosted glass, rose",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.04,
+            1.08
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "1:30.00",
+        "reel_time": 7.5,
+        "shot": "S051",
+        "title": "Bar, open late",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.02,
+            1.05
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "1:31.88",
+        "reel_time": 9.38,
+        "shot": "S059",
+        "title": "Frosted crowd",
+        "len_s": 3.75,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.06,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.04,
+            1.1
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "1:35.63",
+        "reel_time": 13.13,
+        "shot": "S105",
+        "title": "Neon in a puddle",
+        "len_s": 0.94,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2
+        },
+        "warp": null
+      },
+      {
+        "at": "1:36.56",
+        "reel_time": 14.06,
+        "shot": "S057",
+        "title": "Frosted glass, warm",
+        "len_s": 0.94,
+        "transition_in": "fade",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.08,
+            1.06
+          ]
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "you could see the party from the street.",
+        "at": "1:22.50"
+      }
+    ]
+  },
+  {
+    "number": 14,
+    "id": "R14",
+    "composition": "R14-exit",
+    "phase": "D",
+    "name": "EXIT",
+    "core": "Impact-driven. One tunnel, one exit. The fixtures accelerate with the 8th and 16th rolls, the frame tightens, and the opening at the end grows until we burst out into the night on the drop.",
+    "hook": "the exit is the best part.",
+    "approach": "Build-and-release with as few cuts as possible: the drop is the only cut that matters.",
+    "lyricSection": "Build 2 into drop 2: 'moving to the music, grooving till the bar kicks us out' (2:40.96-2:45.85)",
+    "editing": "A 7.5 s single take through the build, then one 3.75 s shot of the drop. The only reactive moves are tension (zoom creep) in the build and a single big push on the drop.",
+    "transitions": "Matte closes through the build and snaps open with an exposure flash on 2:45.000.",
+    "payoff": "Burst out of the tunnel exactly on 'OUT'.",
+    "loop": "No.",
+    "caption": "some nights you hear the exit before you see it.",
+    "why": "The cleanest possible drop moment for the strongest drop.",
+    "song_timestamp": "2:37.50 - 2:48.75 (bar 85.1 to bar 91.1)",
+    "duration_s": 11.25,
+    "clip_ids": [
+      "S013",
+      "S012"
+    ],
+    "shot_order": [
+      {
+        "at": "2:37.50",
+        "reel_time": 0,
+        "shot": "S013",
+        "title": "Tunnel, exit on the drop",
+        "len_s": 7.5,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.08
+          ],
+          "tension": 0.08,
+          "handheld": 1
+        },
+        "warp": null
+      },
+      {
+        "at": "2:45.00",
+        "reel_time": 7.5,
+        "shot": "S012",
+        "title": "Big moon over the road",
+        "len_s": 3.75,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.1,
+            1.03
+          ],
+          "drop": 0.08,
+          "kick": 0.012,
+          "bass": 0.03,
+          "blur": 2.5
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "the exit is the best part.",
+        "at": "2:37.50"
+      },
+      {
+        "kind": "lyric",
+        "text": "grooving till the bar kicks us out",
+        "at": "2:42.95"
+      }
+    ]
+  },
+  {
+    "number": 15,
+    "id": "R15",
+    "composition": "R15-still",
+    "phase": "D",
+    "name": "STILL",
+    "core": "Contrast. Drop 2 is playing at full power and the picture refuses to move: a still puddle holding the moon, no camera, no reaction. When the kick drops out (3:13.1) the frame closes to a slit. When it slams back (3:15.000) a foot lands in the moon and everything moves at once.",
+    "hook": "nothing moved until it did.",
+    "approach": "Extremely restrained opening → sudden reaction, built on the kick-out bar that only exists in drop 2.",
+    "lyricSection": "Drop 2, bars 101-106 (3:07.5-3:18.75), kick-out bar 104",
+    "editing": "5.6 s frozen frame, 1 bar of slit, then four fast shots (one beat, then 1-2 bars) in the slam.",
+    "transitions": "Matte to slit in the kick-out bar, flash + full open on the slam.",
+    "payoff": "The moon reflection shatters on 3:15.000.",
+    "loop": "No.",
+    "caption": "wait for it.",
+    "why": "Different from every other drop Reel because the visuals ignore the music on purpose until the one moment they can't.",
+    "song_timestamp": "3:07.50 - 3:18.75 (bar 101.1 to bar 107.1)",
+    "duration_s": 11.25,
+    "clip_ids": [
+      "S108",
+      "S033",
+      "S107",
+      "S070",
+      "S095",
+      "S002"
+    ],
+    "shot_order": [
+      {
+        "at": "3:07.50",
+        "reel_time": 0,
+        "shot": "S108",
+        "title": "Still puddle",
+        "len_s": 5.63,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.06,
+            1.06
+          ],
+          "handheld": 0
+        },
+        "warp": {
+          "speed": 0
+        }
+      },
+      {
+        "at": "3:13.13",
+        "reel_time": 5.63,
+        "shot": "S033",
+        "title": "Small high moon",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.18
+          ],
+          "handheld": 0.2
+        },
+        "warp": null
+      },
+      {
+        "at": "3:15.00",
+        "reel_time": 7.5,
+        "shot": "S107",
+        "title": "Footstep in the puddle",
+        "len_s": 0.47,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.12,
+            1.04
+          ],
+          "impact": 0.1,
+          "blur": 3
+        },
+        "warp": null
+      },
+      {
+        "at": "3:15.47",
+        "reel_time": 7.97,
+        "shot": "S070",
+        "title": "Shadows running",
+        "len_s": 1.41,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.06,
+            1.04
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "3:16.88",
+        "reel_time": 9.38,
+        "shot": "S095",
+        "title": "Light trails, curve",
+        "len_s": 0.94,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2
+        },
+        "warp": null
+      },
+      {
+        "at": "3:17.81",
+        "reel_time": 10.31,
+        "shot": "S002",
+        "title": "Rain on the road",
+        "len_s": 0.94,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.04,
+            1.06
+          ]
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "nothing moved until it did.",
+        "at": "3:07.50"
+      }
+    ]
+  },
+  {
+    "number": 16,
+    "id": "R16",
+    "composition": "R16-the-summer-nobody-slept",
+    "phase": "D",
+    "name": "THE SUMMER NOBODY SLEPT",
+    "core": "A youth montage without models or fake freedom: running shadows, four shadows racing the sun, the rooftop, a crowd on the crossing, glass full of dancers, 'forever young' as a neon sign, star trails, the open road.",
+    "hook": "the summer nobody slept.",
+    "approach": "Phrase montage: one image per bar, faster only at the end of the 8-bar phrase.",
+    "lyricSection": "Drop 2, bars 93-100 (2:52.5-3:07.5)",
+    "editing": "Bar-length shots; the heavy Cm bars (95, 99) hold the two widest, most emotional images (rooftop, star trails) with the deepest push; bar 100 splits into beats as a fill.",
+    "transitions": "Hard cuts on bar lines.",
+    "payoff": "'forever young' neon on bar 98, star trails on the heaviest bass of the phrase.",
+    "loop": "Yes, 8 bars of the same loop.",
+    "caption": "we were young and up all night and it felt like it would last.",
+    "why": "Youth/freedom pillar, built from the library instead of stock 'freedom' footage.",
+    "song_timestamp": "2:52.50 - 3:07.50 (bar 93.1 to bar 101.1)",
+    "duration_s": 15,
+    "clip_ids": [
+      "S070",
+      "S050",
+      "S024",
+      "S076",
+      "S058",
+      "S066",
+      "S041",
+      "S007",
+      "S095"
+    ],
+    "shot_order": [
+      {
+        "at": "2:52.50",
+        "reel_time": 0,
+        "shot": "S070",
+        "title": "Shadows running",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2
+        },
+        "warp": null
+      },
+      {
+        "at": "2:54.38",
+        "reel_time": 1.88,
+        "shot": "S050",
+        "title": "Running into it",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2
+        },
+        "warp": null
+      },
+      {
+        "at": "2:56.25",
+        "reel_time": 3.75,
+        "shot": "S024",
+        "title": "Rooftop, three of us",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.07,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1,
+            1.06
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "2:58.13",
+        "reel_time": 5.63,
+        "shot": "S076",
+        "title": "Crosswalk crowd",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2
+        },
+        "warp": null
+      },
+      {
+        "at": "3:00.00",
+        "reel_time": 7.5,
+        "shot": "S058",
+        "title": "Frosted glass, rose",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2
+        },
+        "warp": null
+      },
+      {
+        "at": "3:01.88",
+        "reel_time": 9.38,
+        "shot": "S066",
+        "title": "Neon: forever young",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.06,
+            1.02
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "3:03.75",
+        "reel_time": 11.25,
+        "shot": "S041",
+        "title": "Star trails",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.07,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1,
+            1.06
+          ]
+        },
+        "warp": null
+      },
+      {
+        "at": "3:05.63",
+        "reel_time": 13.13,
+        "shot": "S007",
+        "title": "Open road, no lamps",
+        "len_s": 0.94,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2
+        },
+        "warp": null
+      },
+      {
+        "at": "3:06.56",
+        "reel_time": 14.06,
+        "shot": "S070",
+        "title": "Shadows running",
+        "len_s": 0.47,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2
+        },
+        "warp": null
+      },
+      {
+        "at": "3:07.03",
+        "reel_time": 14.53,
+        "shot": "S095",
+        "title": "Light trails, curve",
+        "len_s": 0.47,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "the summer nobody slept.",
+        "at": "2:52.50"
+      }
+    ]
+  },
+  {
+    "number": 17,
+    "id": "R17",
+    "composition": "R17-the-sign",
+    "phase": "E",
+    "name": "THE SIGN",
+    "core": "A dead neon tube that says 'moonlight' hangs in the dark through the roll. It stutters on exactly on the drop. Then the bar it belongs to, the city, and the name.",
+    "hook": "you'll know it when the sign comes on.",
+    "approach": "Title reveal on the strongest drop. The only Reel that spells out artist + title on screen.",
+    "lyricSection": "16th roll + 'grooving till the bar kicks us out' → drop 2 (2:41.25-2:52.5)",
+    "editing": "3.75 s hold on the unlit sign, flicker-on synced to 2:45.000, then 1-bar shots with groove reactivity, title lockup over the last bar.",
+    "transitions": "Flash on the drop, hard cuts after.",
+    "payoff": "The title literally lights up on the drop.",
+    "loop": "No, ends on the lockup.",
+    "caption": "moonlight. AMISHAR.",
+    "why": "Release day: the name and the feeling arrive in the same frame.",
+    "song_timestamp": "2:41.27 - 2:52.50 (bar 87.1 to bar 93.1)",
+    "duration_s": 11.23,
+    "clip_ids": [
+      "S064",
+      "S054",
+      "S036",
+      "S012"
+    ],
+    "shot_order": [
+      {
+        "at": "2:41.25",
+        "reel_time": 0,
+        "shot": "S064",
+        "title": "Neon: moonlight",
+        "len_s": 5.63,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.04,
+            1.12
+          ],
+          "tension": 0.03,
+          "drop": 0.06,
+          "kick": 0.006
+        },
+        "warp": null
+      },
+      {
+        "at": "2:46.88",
+        "reel_time": 5.61,
+        "shot": "S054",
+        "title": "Bar, serif sign",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2
+        },
+        "warp": null
+      },
+      {
+        "at": "2:48.75",
+        "reel_time": 7.48,
+        "shot": "S036",
+        "title": "The moon follows (rooftops)",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.06,
+          "clap": 3,
+          "handheld": 1.2
+        },
+        "warp": null
+      },
+      {
+        "at": "2:50.63",
+        "reel_time": 9.36,
+        "shot": "S012",
+        "title": "Big moon over the road",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2,
+          "zoom": [
+            1.04,
+            1
+          ]
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "you'll know it when the sign comes on.",
+        "at": "2:41.25"
+      },
+      {
+        "kind": "title",
+        "text": "",
+        "at": "2:50.63"
+      }
+    ]
+  },
+  {
+    "number": 18,
+    "id": "R18",
+    "composition": "R18-nine-seconds-without-a-kick",
+    "phase": "E",
+    "name": "NINE SECONDS WITHOUT A KICK",
+    "core": "Micro-detail for people who make music. A stylised arrangement of the actual track shows the kick lane stopping at 0:50.63 and the roll going 8ths then 16ths; at 1:00.000 the drop's real step pattern plays, then the city's windows play it.",
+    "hook": "9.4 seconds with no kick. that's the whole trick.",
+    "approach": "Micro-detail / production, built from the measured arrangement, not a DAW screen recording.",
+    "lyricSection": "Build 1 into drop 1 (0:50.63-1:05.63)",
+    "editing": "The arrangement scrolls with the audio; mono labels mark each real event at its timestamp; cut to the step grid on the drop, then the facade sequencer.",
+    "transitions": "Hard cuts on bar 31 and the drop.",
+    "payoff": "The step grid lights up on 1:00.000.",
+    "loop": "No.",
+    "caption": "take the floor away before you drop the floor.",
+    "why": "Credibility with producers and DJs during release week; a different kind of shareable.",
+    "song_timestamp": "0:50.63 - 1:05.63 (bar 28.1 to bar 36.1)",
+    "duration_s": 14.99,
+    "clip_ids": [
+      "S110",
+      "S109",
+      "S112",
+      "S101"
+    ],
+    "shot_order": [
+      {
+        "at": "0:50.63",
+        "reel_time": 0,
+        "shot": "S110",
+        "title": "Arrangement, zoomed on the drop",
+        "len_s": 5.63,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1
+          ],
+          "handheld": 0.4
+        },
+        "warp": null
+      },
+      {
+        "at": "0:56.25",
+        "reel_time": 5.62,
+        "shot": "S109",
+        "title": "Arrangement, following",
+        "len_s": 3.75,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.04
+          ],
+          "tension": 0.03,
+          "handheld": 0.4
+        },
+        "warp": null
+      },
+      {
+        "at": "1:00.00",
+        "reel_time": 9.37,
+        "shot": "S112",
+        "title": "Drop step grid",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.02,
+            1.02
+          ],
+          "kick": 0.01,
+          "drop": 0.04
+        },
+        "warp": null
+      },
+      {
+        "at": "1:01.88",
+        "reel_time": 11.24,
+        "shot": "S101",
+        "title": "Facade as a sequencer",
+        "len_s": 3.75,
+        "transition_in": "cut",
+        "camera": {
+          "kick": 0.01,
+          "bass": 0.035,
+          "clap": 3,
+          "handheld": 1.2
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "9.4 seconds with no kick. that's the whole trick.",
+        "at": "0:50.63"
+      },
+      {
+        "kind": "label",
+        "text": "0:50.63  kick out",
+        "at": "0:50.63"
+      },
+      {
+        "kind": "label",
+        "text": "0:52.50  roll in 8ths",
+        "at": "0:52.50"
+      },
+      {
+        "kind": "label",
+        "text": "0:56.25  16ths",
+        "at": "0:56.25"
+      },
+      {
+        "kind": "label",
+        "text": "1:00.000",
+        "at": "1:00.00"
+      }
+    ]
+  },
+  {
+    "number": 19,
+    "id": "R19",
+    "composition": "R19-the-long-way-home",
+    "phase": "E",
+    "name": "THE LONG WAY HOME",
+    "core": "The cinematic one. A long drive under the moon through the end of drop 2, a float through the last kick-out, then the final hit becomes morning: lamps switching off one by one, the sun behind the city, the name.",
+    "hook": "we took the long way home. on purpose.",
+    "approach": "Cinematic: long takes, rare and precise reactions (the last kick-out floats, the last hit turns the night into morning).",
+    "lyricSection": "End of drop 2 + final vocal (3:26.2) + outro (3:30-3:45)",
+    "editing": "7.5 s opening take with only a light kick response; no punch during the kick-out bar; the outro is three long shots and the title.",
+    "transitions": "Soft flash on 3:30.000, fades through the outro.",
+    "payoff": "The final hit of the song is the moment the night becomes morning.",
+    "loop": "No, ends on the lockup and silence.",
+    "caption": "the sky was getting light when we got home.",
+    "why": "Release-week anchor: the whole emotional arc (movement → night → afterglow) in one Reel.",
+    "song_timestamp": "3:22.50 - 3:45.00 (bar 109.1 to bar 121.1)",
+    "duration_s": 22.5,
+    "clip_ids": [
+      "S012",
+      "S034",
+      "S008",
+      "S049"
+    ],
+    "shot_order": [
+      {
+        "at": "3:22.50",
+        "reel_time": 0,
+        "shot": "S012",
+        "title": "Big moon over the road",
+        "len_s": 5.63,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1,
+            1.08
+          ],
+          "kick": 0.005,
+          "handheld": 1
+        },
+        "warp": null
+      },
+      {
+        "at": "3:28.13",
+        "reel_time": 5.63,
+        "shot": "S034",
+        "title": "The moon follows (wires)",
+        "len_s": 1.88,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.04,
+            1.07
+          ],
+          "handheld": 0.8
+        },
+        "warp": null
+      },
+      {
+        "at": "3:30.00",
+        "reel_time": 7.5,
+        "shot": "S008",
+        "title": "Lamps switch off at dawn",
+        "len_s": 7.5,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.06,
+            1
+          ],
+          "handheld": 0.8
+        },
+        "warp": null
+      },
+      {
+        "at": "3:37.50",
+        "reel_time": 15,
+        "shot": "S049",
+        "title": "Sunrise behind the city",
+        "len_s": 7.5,
+        "transition_in": "fade",
+        "camera": {
+          "zoom": [
+            1,
+            1.06
+          ],
+          "handheld": 0.5
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "we took the long way home. on purpose.",
+        "at": "3:22.50"
+      },
+      {
+        "kind": "label",
+        "text": "4:52 AM",
+        "at": "3:30.40"
+      },
+      {
+        "kind": "title",
+        "text": "",
+        "at": "3:41.25"
+      }
+    ]
+  },
+  {
+    "number": 20,
+    "id": "R20",
+    "composition": "R20-watch-the-lamps",
+    "phase": "F",
+    "name": "WATCH THE LAMPS",
+    "core": "One shot. A night drive where a streetlamp passes overhead exactly on every kick. Nothing else.",
+    "hook": "watch the lamps.",
+    "approach": "Satisfying-sync loop for discovery; one take, zero cuts.",
+    "lyricSection": "Drop 2, bars 97-100 (3:00.0-3:07.5)",
+    "editing": "No cuts. Kick = lamp pass + 1% punch; heavy Cm bar = slower deeper push.",
+    "transitions": "None.",
+    "payoff": "You notice the sync on the second loop.",
+    "loop": "Perfect: 4 bars of the loop, the last frame flows into the first.",
+    "caption": "128 bpm. one lamp per kick.",
+    "why": "Long-tail: the kind of Reel people rewatch and share without knowing the song yet.",
+    "song_timestamp": "3:00.00 - 3:07.50 (bar 97.1 to bar 101.1)",
+    "duration_s": 7.5,
+    "clip_ids": [
+      "S001"
+    ],
+    "shot_order": [
+      {
+        "at": "3:00.00",
+        "reel_time": 0,
+        "shot": "S001",
+        "title": "The drive, moon on the left",
+        "len_s": 7.5,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.04,
+            1.04
+          ],
+          "kick": 0.01,
+          "bass": 0.03,
+          "handheld": 0.8
+        },
+        "warp": null
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "watch the lamps.",
+        "at": "3:00.00"
+      },
+      {
+        "kind": "label",
+        "text": "128 BPM",
+        "at": "3:00.00"
+      }
+    ]
+  },
+  {
+    "number": 21,
+    "id": "R21",
+    "composition": "R21-rewind",
+    "phase": "F",
+    "name": "REWIND",
+    "core": "Reverse narrative. Start at sunrise and play the night backwards: the sun goes down, the lamps relight, the city's windows come back on, the bar's lights return, the dancers move in reverse, the walk goes backwards, and one window goes dark. The music keeps going forward over it.",
+    "hook": "start at the end.",
+    "approach": "Memory of a night; time runs backwards inside every shot while the song plays forward.",
+    "lyricSection": "Verse 2: 'If I took it alive... in the moonlight / I'm taking my time, telling the truth / 'cause only fools lie' (2:14.1-2:30.0)",
+    "editing": "Six shots, each a reversed piece of the night, with a mono clock label counting backwards.",
+    "transitions": "Dips between chapters.",
+    "payoff": "Ends where R01 started: one window, someone getting ready to go out.",
+    "loop": "Conceptually loops into R01.",
+    "caption": "how did we end up here? start at the end.",
+    "why": "Long-tail: rewards people who have already seen the campaign.",
+    "song_timestamp": "2:14.07 - 2:30.00 (bar 72.3 to bar 81.1)",
+    "duration_s": 15.93,
+    "clip_ids": [
+      "S049",
+      "S008",
+      "S025",
+      "S052",
+      "S057",
+      "S100"
+    ],
+    "shot_order": [
+      {
+        "at": "2:14.06",
+        "reel_time": 0,
+        "shot": "S049",
+        "title": "Sunrise behind the city",
+        "len_s": 2.34,
+        "transition_in": "cut",
+        "camera": {
+          "zoom": [
+            1.04,
+            1
+          ]
+        },
+        "warp": {
+          "speed": -1,
+          "shift": 8
+        }
+      },
+      {
+        "at": "2:16.41",
+        "reel_time": 2.34,
+        "shot": "S008",
+        "title": "Lamps switch off at dawn",
+        "len_s": 2.81,
+        "transition_in": "dip",
+        "camera": {
+          "zoom": [
+            1.02,
+            1.06
+          ]
+        },
+        "warp": {
+          "speed": -1,
+          "shift": 83.5625
+        }
+      },
+      {
+        "at": "2:19.22",
+        "reel_time": 5.15,
+        "shot": "S025",
+        "title": "City closing",
+        "len_s": 2.81,
+        "transition_in": "dip",
+        "camera": {
+          "zoom": [
+            1.06,
+            1.02
+          ]
+        },
+        "warp": {
+          "speed": -1,
+          "shift": -25.21875
+        }
+      },
+      {
+        "at": "2:22.03",
+        "reel_time": 7.96,
+        "shot": "S052",
+        "title": "Bar, last call",
+        "len_s": 2.81,
+        "transition_in": "dip",
+        "camera": {
+          "zoom": [
+            1.02,
+            1.06
+          ]
+        },
+        "warp": {
+          "speed": -1,
+          "shift": -34.631249999999994
+        }
+      },
+      {
+        "at": "2:24.84",
+        "reel_time": 10.78,
+        "shot": "S057",
+        "title": "Frosted glass, warm",
+        "len_s": 2.81,
+        "transition_in": "dip",
+        "camera": {
+          "zoom": [
+            1.06,
+            1.02
+          ]
+        },
+        "warp": {
+          "speed": -1,
+          "shift": -45.3125
+        }
+      },
+      {
+        "at": "2:27.66",
+        "reel_time": 13.59,
+        "shot": "S100",
+        "title": "Facade, one window",
+        "len_s": 2.34,
+        "transition_in": "dip",
+        "camera": {
+          "zoom": [
+            1,
+            1.06
+          ]
+        },
+        "warp": {
+          "speed": -1,
+          "shift": -143.99375
+        }
+      }
+    ],
+    "text": [
+      {
+        "kind": "hook",
+        "text": "start at the end.",
+        "at": "2:14.06"
+      },
+      {
+        "kind": "label",
+        "text": "5:12 AM",
+        "at": "2:16.61"
+      },
+      {
+        "kind": "label",
+        "text": "4:30 AM",
+        "at": "2:19.42"
+      },
+      {
+        "kind": "label",
+        "text": "2:00 AM",
+        "at": "2:22.23"
+      },
+      {
+        "kind": "label",
+        "text": "1:15 AM",
+        "at": "2:25.04"
+      },
+      {
+        "kind": "label",
+        "text": "11:58 PM",
+        "at": "2:27.86"
+      },
+      {
+        "kind": "lyric",
+        "text": "I'm taking my time, telling the truth",
+        "at": "2:22.06"
+      }
+    ]
+  }
+]
