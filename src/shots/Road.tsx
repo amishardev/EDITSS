@@ -90,7 +90,7 @@ export const Road: React.FC<{ p?: Partial<RoadParams> }> = ({ p }) => {
         drawSky(ctx, w, cy, P.sky);
         if (P.stars > 0) drawStars(ctx, w, cy * 0.85, T, { alpha: P.stars, seed: 11 });
         if (P.moon) drawMoon(ctx, w * P.moonX, h * P.moonY, P.moonR, { halo: 1 });
-        drawClouds(ctx, w, cy * 0.25, cy * 0.75, T, { alpha: 0.5, count: 5, speed: 6 });
+        drawClouds(ctx, w, cy * 0.25, cy * 0.75, T, P.sky === "dawn" ? { alpha: 0.35, count: 5, speed: 6, color: "#a99aa6", lit: "#ffd9b8" } : { alpha: 0.5, count: 5, speed: 6 });
         ctx.save();
         ctx.beginPath();
         ctx.rect(0, 0, w, cy + 4);
@@ -284,11 +284,15 @@ export const Road: React.FC<{ p?: Partial<RoadParams> }> = ({ p }) => {
               glowEllipse(ctx, cx + (headX + curveAt(z)) * s, (ys0 + ys1) / 2, 7.5 * s, Math.max(2, (ys0 - ys1) * 0.7), P.lampColor, 0.3 * fa * on);
               streakWet(ctx, hx, gy, Math.min(90, Math.max(3, 0.9 * s)), Math.min(h - gy, (2 * CAM_H + 7.8) * s * 1.2), P.lampColor, 0.3 * P.wet * fa * on, T, lampId * 7 + side);
               // the lamp
-              glow(ctx, hx, hy, Math.max(10, 3.2 * s), P.lampColor, 0.95 * fa * on, 0.1);
-              glow(ctx, hx, hy, Math.max(18, 9 * s), P.lampColor, 0.18 * fa * on, 0.05);
+              // the head stops growing as it nears the top edge, so the light "hit" is the pass itself
+              const approach = smooth(1.5, 9, z);
+              glow(ctx, hx, hy, Math.min(260, Math.max(10, 3.2 * s)), P.lampColor, 0.95 * fa * on * (0.35 + 0.65 * approach), 0.1);
+              glow(ctx, hx, hy, Math.min(420, Math.max(18, 9 * s)), P.lampColor, 0.18 * fa * on * approach, 0.05);
             }
             // overhead pass
-            const near = Math.exp(-(z * z) / (2 * 7 * 7));
+            // passing light shaped like a kick: fast attack as we go under the lamp, short decay behind it
+            const zc = z + 0.5;
+            const near = zc > 0 ? Math.exp(-(zc * zc) / (2 * 1.3 * 1.3)) : Math.exp(-(zc * zc) / (2 * 4.5 * 4.5));
             amb += near * on * (sides.length > 1 ? 0.6 : 1);
             if (z > -2 && z < 8) {
               const s = f / Math.max(0.6, z);
@@ -330,7 +334,7 @@ export const Road: React.FC<{ p?: Partial<RoadParams> }> = ({ p }) => {
         if (amb > 0.001) {
           ctx.save();
           ctx.globalCompositeOperation = "lighter";
-          ctx.fillStyle = rgba(P.lampColor, 0.07 * amb);
+          ctx.fillStyle = rgba(P.lampColor, 0.09 * amb);
           ctx.fillRect(0, 0, w, h);
           ctx.restore();
           glow(ctx, topX, -40, 900, P.lampColor, 0.45 * topFlare, 0.04);

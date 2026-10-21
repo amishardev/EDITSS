@@ -40,10 +40,11 @@ npx remotion render src/index.ts R14-exit out/R14.mp4    # or straight through t
 
 In a container without a downloadable Chrome, point Remotion at a local one: `REMOTION_BROWSER=/path/to/chrome-headless-shell npm run render`.
 
-After rendering, check the sync:
+After rendering, check the sync and refresh the preview strips:
 
 ```bash
-python3 scripts/sync_check.py   # writes reels/SYNC_REPORT.md
+npm run sync-check   # writes reels/SYNC_REPORT.md
+npm run previews     # reels/previews/*.jpg
 ```
 
 It compares the Reel's audio with the master (offset should be 0 ms), detects every hard cut and compares it with the planned cut frame, and measures where the picture's light peaks inside the beat.
@@ -76,7 +77,7 @@ export const R22: ReelSpec = {
 };
 ```
 
-4. `npx tsx scripts/export.ts` to refresh the board/concept docs, then render.
+4. `npm run docs` to refresh `reels/CONCEPTS.md`, `reels/reels.json` and the board JSON, then render. `npm run board` also re-renders every shot still and the contact sheet.
 
 Shot options: `params` (override any generator parameter), `cam` (`zoom`, `pan`, `rot`, `kick`, `bass`, `clap`, `drop`, `impact`, `tension`, `handheld`, `blur`), `in` (`cut`, `fade`, `dip`, `lampwipe`, `flash`, `iris`, `slit`, `whip`), `warp` (`speed: 0` freeze, `0.5` slow, `-1` reverse while the music runs forward), `grade`.
 Reel options: `matte` keyframes (cinematic crop that can close in builds and snap open on drops), `overlays` (flashes on hits), `grade`, `grain`, `vignette`, `fadeIn`, `fadeOut`.

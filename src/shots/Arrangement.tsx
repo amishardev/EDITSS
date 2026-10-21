@@ -38,7 +38,7 @@ export const Arrangement: React.FC<{ p?: Partial<ArrangementParams> }> = ({ p })
         ctx.fillRect(0, 0, w, h);
         const barNow = T / BAR + 1;
         if (P.mode === "lanes") {
-          const top = h * 0.26;
+          const top = h * 0.33;
           const laneH = 130;
           const left = 150;
           const pxPerBar = (w - left - 40) / P.zoomBars;
@@ -59,11 +59,15 @@ export const Arrangement: React.FC<{ p?: Partial<ArrangementParams> }> = ({ p })
           }
           // section names
           SONG.sections.forEach((s) => {
-            const x = xOf(s.bars[0]);
-            if (x > w || xOf(s.bars[1] + 1) < left) return;
-            ctx.fillStyle = rgba(C.warmWhite, 0.5);
-            ctx.font = `500 30px ${F.mono}`;
-            ctx.fillText(s.label.toUpperCase(), Math.max(left + 4, x + 6), top - 80);
+            const x0 = Math.max(left + 4, xOf(s.bars[0]) + 6);
+            const x1 = Math.min(w - 10, xOf(s.bars[1] + 1) - 6);
+            if (x1 - x0 < 60) return;
+            ctx.font = `500 28px ${F.mono}`;
+            let label = s.label.toUpperCase();
+            while (label.length > 3 && ctx.measureText(label).width > x1 - x0) label = label.slice(0, -2);
+            if (label !== s.label.toUpperCase()) label = label.trimEnd() + ".";
+            ctx.fillStyle = rgba(C.warmWhite, 0.55);
+            ctx.fillText(label, x0, top - 80);
           });
           LANES.forEach((lane, i) => {
             const y = top + i * laneH;
@@ -97,10 +101,10 @@ export const Arrangement: React.FC<{ p?: Partial<ArrangementParams> }> = ({ p })
           const s = (T % 60).toFixed(2).padStart(5, "0");
           ctx.font = `500 64px ${F.mono}`;
           ctx.fillStyle = rgba(C.warmWhite, 0.85);
-          ctx.fillText(`${m}:${s}`, 24, h * 0.14);
+          ctx.fillText(`${m}:${s}`, 24, h * 0.205);
           ctx.font = `400 32px ${F.mono}`;
           ctx.fillStyle = rgba(C.warmWhite, 0.45);
-          ctx.fillText(`BAR ${Math.floor(barNow)}  ·  128 BPM  ·  C MINOR`, 24, h * 0.14 + 60);
+          ctx.fillText(`BAR ${Math.floor(barNow)}  ·  128 BPM  ·  C MINOR`, 24, h * 0.205 + 54);
         } else {
           // steps: the drop's real 16-step pattern
           const rows: { name: string; steps: number[]; color: string }[] = [

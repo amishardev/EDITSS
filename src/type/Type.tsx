@@ -66,8 +66,8 @@ export const TextLayer: React.FC<{ t: TextUse }> = ({ t }) => {
   if (T < t.from - 0.001 || T > t.to + 0.4) return null;
   const kind = t.kind;
   const style = t.style ?? (kind === "lyric" ? "serif" : kind === "label" ? "mono" : kind === "word" ? "wide" : "sans");
-  const size = t.size ?? (kind === "hook" ? 54 : kind === "lyric" ? 88 : kind === "label" ? 28 : kind === "word" ? 150 : 60);
-  const color = t.color ?? (kind === "label" ? "rgba(243,234,217,0.7)" : C.paper);
+  const size = t.size ?? (kind === "hook" ? 54 : kind === "lyric" ? 88 : kind === "label" ? 34 : kind === "word" ? 150 : 60);
+  const color = t.color ?? (kind === "label" ? "rgba(243,234,217,0.85)" : C.paper);
   const posY = typeof t.pos === "number" ? t.pos : POS[t.pos ?? (kind === "hook" ? "top" : kind === "lyric" ? "lower" : kind === "label" ? "bottom" : "center")];
   const exitK = t.exit === "cut" ? (T > t.to ? 0 : 1) : 1 - smooth(t.to, t.to + (t.exit === "blur" ? 0.35 : 0.25), T);
   if (exitK <= 0) return null;

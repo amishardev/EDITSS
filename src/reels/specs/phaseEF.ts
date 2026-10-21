@@ -61,10 +61,10 @@ export const R18: ReelSpec = {
   ],
   texts: [
     { kind: "hook", text: "9.4 seconds with no kick. that's the whole trick.", from: bar(28), to: 54.2 },
-    { kind: "label", text: "0:50.63  kick out", from: bar(28), to: bar(29) - 0.1, pos: 0.8 },
-    { kind: "label", text: "0:52.50  roll in 8ths", from: bar(29), to: bar(31) - 0.1, pos: 0.8 },
-    { kind: "label", text: "0:56.25  16ths", from: bar(31), to: bar(33) - 0.05, pos: 0.8 },
-    { kind: "label", text: "1:00.000", from: bar(33), to: bar(34), pos: 0.8 },
+    { kind: "label", text: "0:50.63  kick out", from: bar(28), to: bar(29) - 0.1, pos: 0.262 },
+    { kind: "label", text: "0:52.50  roll in 8ths", from: bar(29), to: bar(31) - 0.1, pos: 0.262 },
+    { kind: "label", text: "0:56.25  16ths", from: bar(31), to: bar(33) - 0.05, pos: 0.262 },
+    { kind: "label", text: "1:00.000", from: bar(33), to: bar(34), pos: 0.262 },
   ],
 };
 
@@ -95,7 +95,7 @@ export const R19: ReelSpec = {
   texts: [
     { kind: "hook", text: "we took the long way home. on purpose.", from: bar(109), to: 206.0 },
     { kind: "label", text: "4:52 AM", from: bar(113) + 0.4, to: bar(115) },
-    { kind: "title", from: bar(119), to: bar(121) + 1, pos: 0.32, size: 56 },
+    { kind: "title", from: bar(119), to: bar(121) + 1, pos: 0.76, size: 56 },
   ],
   overlays: [{ type: "flash", at: 210, strength: 0.4, color: "#ffe9d2" }],
   fadeOut: 1.4,

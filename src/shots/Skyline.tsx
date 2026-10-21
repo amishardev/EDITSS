@@ -65,7 +65,7 @@ export const Skyline: React.FC<{ p?: Partial<SkylineParams> }> = ({ p }) => {
         drawSky(ctx, w, hz + 10, P.sky);
         if (P.stars) drawStars(ctx, w, hz * 0.7, T, { alpha: P.stars, seed: 9 });
         if (P.moon) drawMoon(ctx, w * P.moonX, h * P.moonY, P.moonR);
-        drawClouds(ctx, w, h * 0.1, h * 0.4, T, { alpha: 0.45, count: 4, speed: 5, seed: 8 });
+        drawClouds(ctx, w, h * 0.1, h * 0.4, T, P.sky === "dawn" ? { alpha: 0.3, count: 4, speed: 5, seed: 8, color: "#a99aa6", lit: "#ffd9b8" } : { alpha: 0.45, count: 4, speed: 5, seed: 8 });
         ctx.save();
         ctx.translate(w / 2, hz);
         ctx.scale(P.zoom, P.zoom);

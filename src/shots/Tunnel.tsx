@@ -48,7 +48,8 @@ export const Tunnel: React.FC<{ p?: Partial<TunnelParams> }> = ({ p }) => {
         const camZ = travel(T) * UNIT * P.speed;
         const v = (travel(T + 1 / 60) - travel(T)) * UNIT * P.speed * 60; // m/s
         const blur = v / 60; // metres travelled during a 1/60 shutter
-        const exitZ = P.exitAt !== null ? (P.exitAt - T) * Math.max(v, 20) : 9999;
+        // the opening never quite fills the frame before the exit, so the exit frame stays the biggest change
+        const exitZ = P.exitAt !== null ? Math.max(T < P.exitAt ? 9 : 0, (P.exitAt - T) * Math.max(v, 20)) : 9999;
         const prj = (x: number, y: number, z: number) => {
           const s = f / Math.max(0.15, z);
           return [cx + x * s, cy + y * s] as const;
@@ -98,8 +99,8 @@ export const Tunnel: React.FC<{ p?: Partial<TunnelParams> }> = ({ p }) => {
           const o1 = prj(HW, FLOOR, Math.max(0.2, exitZ));
           const near = clamp(1 - exitZ / 400);
           const g = ctx.createLinearGradient(0, o0[1], 0, o1[1]);
-          g.addColorStop(0, mix("#0b1730", P.exitColor, near * 0.8));
-          g.addColorStop(1, mix("#1b2a44", "#ffffff", near * 0.5));
+          g.addColorStop(0, mix("#0b1730", P.exitColor, near * 0.65));
+          g.addColorStop(1, mix("#1b2a44", "#ffffff", near * 0.3));
           ctx.fillStyle = g;
           ctx.fillRect(o0[0], o0[1], o1[0] - o0[0], o1[1] - o0[1]);
           glow(ctx, (o0[0] + o1[0]) / 2, (o0[1] + o1[1]) / 2, (o1[0] - o0[0]) * 1.4, P.exitColor, 0.5 * near, 0.2);

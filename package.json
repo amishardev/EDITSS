@@ -7,8 +7,10 @@
   "scripts": {
     "studio": "remotion studio src/index.ts",
     "render": "node scripts/render.mjs",
-    "stills": "node scripts/stills.mjs",
-    "board": "node scripts/build-board.mjs",
+    "board": "bash scripts/board.sh",
+    "docs": "tsx scripts/export.ts",
+    "sync-check": "python3 scripts/sync_check.py",
+    "previews": "python3 scripts/previews.py",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

@@ -99,7 +99,7 @@ export const R14: ReelSpec = {
     { kind: "hook", text: "the exit is the best part.", from: bar(85), to: 160.5 },
     { kind: "lyric", lyric: "PC2L5", from: 162.95, to: 164.98, pos: "upper", exit: "cut" },
   ],
-  overlays: [{ type: "flash", at: 165, strength: 0.75, dur: 0.6 }],
+  overlays: [{ type: "flash", at: 165, strength: 0.6, dur: 0.4 }],
   matte: [
     [bar(85), 1.78],
     [bar(89) - 0.02, 1.0],

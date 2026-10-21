@@ -200,7 +200,7 @@ After D+12: repost the two best performers with a new hook, and build new edits 
   - **Recognition** ("the part before the night starts.", "walking home slower than we need to.", "when the lights come on.")
   - **Curiosity** ("the second roll is the one you remember.", "nothing moved until it did.", "you'll know it when the sign comes on.")
   - **Observation** ("the moon still follows the car.", "even the windows know this one.", "watch the lamps.")
-- The best musical moment arrives fast: 12 of 21 Reels reach their payoff inside 8 seconds; the slow ones (1, 8, 19) are slow on purpose and say so in the first frame.
+- The best musical moment arrives fast: 14 of 21 Reels hit their payoff within 8 seconds. The slower ones (1, 3, 4, 7, 9, 18) are builds on purpose, and their hook tells you something is coming.
 - A/B option: every Reel can be re-rendered with a different hook by editing one line in its spec.
 
 All 21 hooks: the part before the night starts · the moon still follows the car · the second roll is the one you remember · out of sight. not out of mind · no plan was the plan · everything sounds more honest after midnight · walking home slower than we need to · for the ones who stayed out with you · the signs were on the road the whole time · 1:59. nobody's going home · when the lights come on · even the windows know this one · you could see the party from the street · the exit is the best part · nothing moved until it did · the summer nobody slept · you'll know it when the sign comes on · 9.4 seconds with no kick. that's the whole trick · we took the long way home. on purpose · watch the lamps · start at the end.
